@@ -6,10 +6,10 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
-<link href="https://chainsafe.github.io/lodestar/packages/types/interfaces/altair_types.synccommitteesignature/" rel="canonical"/>
+<link href="https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1935.reflection-1416.ibeaconstatetransitionmetrics/" rel="canonical"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.2.1, mkdocs-material-7.1.8" name="generator"/>
-<title>Altair types.synccommitteesignature - Lodestar documentation</title>
+<title>Reflection 1935.reflection 1416.ibeaconstatetransitionmetrics - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.ca7ac06f.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#interface-synccommitteesignature">
+<a class="md-skip" href="#interface-ibeaconstatetransitionmetrics">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Altair types.synccommitteesignature
+              Reflection 1935.reflection 1416.ibeaconstatetransitionmetrics
             
           </span>
 </div>
@@ -262,23 +262,27 @@
 <nav aria-label="Properties" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#beaconblockroot">
-    beaconBlockRoot
+<a class="md-nav__link" href="#registervalidatorstatuses">
+    registerValidatorStatuses
+  </a>
+<nav aria-label="registerValidatorStatuses" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-declaration">
+    Type declaration:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stfnepochtransition">
+    stfnEpochTransition
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#signature">
-    signature
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slot">
-    slot
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#validatorindex">
-    validatorIndex
+<a class="md-nav__link" href="#stfnprocessblock">
+    stfnProcessBlock
   </a>
 </li>
 </ul>
@@ -291,39 +295,55 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/types/interfaces/altair_types.synccommitteesignature.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/beacon-state-transition/interfaces/reflection-1935.reflection-1416.ibeaconstatetransitionmetrics.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<p><a href="../../">@chainsafe/lodestar-types</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/altair_types/">altair/types</a> › <a href="./">SyncCommitteeSignature</a></p>
-<h1 id="interface-synccommitteesignature">Interface: SyncCommitteeSignature<a class="headerlink" href="#interface-synccommitteesignature" title="Permanent link">¶</a></h1>
+<p><a href="../../">@chainsafe/lodestar-beacon-state-transition</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/reflection-1935/"></a> › <a href="../../modules/reflection-1935.reflection-1416/"></a> › <a href="./">IBeaconStateTransitionMetrics</a></p>
+<h1 id="interface-ibeaconstatetransitionmetrics">Interface: IBeaconStateTransitionMetrics<a class="headerlink" href="#interface-ibeaconstatetransitionmetrics" title="Permanent link">¶</a></h1>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>SyncCommitteeSignature</strong></li>
+<li><strong>IBeaconStateTransitionMetrics</strong></li>
 </ul>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">¶</a></h2>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="./#beaconblockroot">beaconBlockRoot</a></li>
-<li><a href="./#signature">signature</a></li>
-<li><a href="./#slot">slot</a></li>
-<li><a href="./#validatorindex">validatorIndex</a></li>
+<li><a href="./#registervalidatorstatuses">registerValidatorStatuses</a></li>
+<li><a href="./#stfnepochtransition">stfnEpochTransition</a></li>
+<li><a href="./#stfnprocessblock">stfnProcessBlock</a></li>
 </ul>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
-<h3 id="beaconblockroot">beaconBlockRoot<a class="headerlink" href="#beaconblockroot" title="Permanent link">¶</a></h3>
-<p>• <strong>beaconBlockRoot</strong>: <em><a href="../../modules/phase0/#root">Root</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f52728f/packages/types/src/altair/types/committee.ts#L12">packages/types/src/altair/types/committee.ts:12</a></em></p>
+<h3 id="registervalidatorstatuses">registerValidatorStatuses<a class="headerlink" href="#registervalidatorstatuses" title="Permanent link">¶</a></h3>
+<p>• <strong>registerValidatorStatuses</strong>: <em>function</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6142c13/packages/beacon-state-transition/src/metrics.ts#L7">metrics.ts:7</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
+<p>▸ (<code>currentEpoch</code>: <a href="../../modules/phase0/#epoch">Epoch</a>, <code>statuses</code>: <a href="../allforks_util.iattesterstatus/">IAttesterStatus</a>[]): <em>void</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>currentEpoch</code></td>
+<td><a href="../../modules/phase0/#epoch">Epoch</a></td>
+</tr>
+<tr>
+<td><code>statuses</code></td>
+<td><a href="../allforks_util.iattesterstatus/">IAttesterStatus</a>[]</td>
+</tr>
+</tbody>
+</table>
 <hr/>
-<h3 id="signature">signature<a class="headerlink" href="#signature" title="Permanent link">¶</a></h3>
-<p>• <strong>signature</strong>: <em><a href="../../modules/phase0/#blssignature">BLSSignature</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f52728f/packages/types/src/altair/types/committee.ts#L14">packages/types/src/altair/types/committee.ts:14</a></em></p>
+<h3 id="stfnepochtransition">stfnEpochTransition<a class="headerlink" href="#stfnepochtransition" title="Permanent link">¶</a></h3>
+<p>• <strong>stfnEpochTransition</strong>: <em><a href="../reflection-1935.reflection-1416.ihistogram/">IHistogram</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6142c13/packages/beacon-state-transition/src/metrics.ts#L5">metrics.ts:5</a></em></p>
 <hr/>
-<h3 id="slot">slot<a class="headerlink" href="#slot" title="Permanent link">¶</a></h3>
-<p>• <strong>slot</strong>: <em><a href="../../modules/phase0/#slot">Slot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f52728f/packages/types/src/altair/types/committee.ts#L11">packages/types/src/altair/types/committee.ts:11</a></em></p>
-<hr/>
-<h3 id="validatorindex">validatorIndex<a class="headerlink" href="#validatorindex" title="Permanent link">¶</a></h3>
-<p>• <strong>validatorIndex</strong>: <em><a href="../../modules/phase0/#validatorindex">ValidatorIndex</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f52728f/packages/types/src/altair/types/committee.ts#L13">packages/types/src/altair/types/committee.ts:13</a></em></p>
+<h3 id="stfnprocessblock">stfnProcessBlock<a class="headerlink" href="#stfnprocessblock" title="Permanent link">¶</a></h3>
+<p>• <strong>stfnProcessBlock</strong>: <em><a href="../reflection-1935.reflection-1416.ihistogram/">IHistogram</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6142c13/packages/beacon-state-transition/src/metrics.ts#L6">metrics.ts:6</a></em></p>
 </article>
 </div>
 </div>
