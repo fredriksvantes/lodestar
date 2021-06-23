@@ -216,12 +216,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1935.reflection-1416.ibeaconstatetransitionmetrics/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1944.reflection-1416.ibeaconstatetransitionmetrics/</loc>
          <lastmod>2021-06-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1935.reflection-1416.ihistogram/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1944.reflection-1416.ihistogram/</loc>
          <lastmod>2021-06-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -296,12 +296,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-1935/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-1944/</loc>
          <lastmod>2021-06-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-1935.reflection-1416/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-1944.reflection-1416/</loc>
          <lastmod>2021-06-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -576,12 +576,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1794/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1832/</loc>
          <lastmod>2021-06-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1794.reflection-1789/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1832.reflection-1827/</loc>
          <lastmod>2021-06-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
