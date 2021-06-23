@@ -391,7 +391,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="attestationprocessormodules">AttestationProcessorModules<a class="headerlink" href="#attestationprocessormodules" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>AttestationProcessorModules</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ebb28cb/packages/lodestar/src/chain/attestation/processor.ts#L19">packages/lodestar/src/chain/attestation/processor.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fe8bd79/packages/lodestar/src/chain/attestation/processor.ts#L19">packages/lodestar/src/chain/attestation/processor.ts:19</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -413,7 +413,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="mapattestationerror_1">mapAttestationError<a class="headerlink" href="#mapattestationerror_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>mapAttestationError</strong>(<code>e</code>: <a href="../../classes/chain_regen.regenerror/#static-error">Error</a>, <code>job</code>: <a href="../../interfaces/chain.iattestationjob/">IAttestationJob</a>): <em><a href="../../classes/chain_errors.attestationerror/">AttestationError</a> | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ebb28cb/packages/lodestar/src/chain/attestation/processor.ts#L67">packages/lodestar/src/chain/attestation/processor.ts:67</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fe8bd79/packages/lodestar/src/chain/attestation/processor.ts#L67">packages/lodestar/src/chain/attestation/processor.ts:67</a></em></p>
 <p>Map ForkChoice attestation error to lodestar version.
 Return null if the error is not an attestation error.</p>
 <p><strong>Parameters:</strong></p>
@@ -439,7 +439,7 @@ Return null if the error is not an attestation error.</p>
 <hr/>
 <h3 id="processattestation">processAttestation<a class="headerlink" href="#processattestation" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processAttestation</strong>(<code>__namedParameters</code>: object): <em>Promise‹IndexedAttestation›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ebb28cb/packages/lodestar/src/chain/attestation/process.ts#L15">packages/lodestar/src/chain/attestation/process.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fe8bd79/packages/lodestar/src/chain/attestation/process.ts#L15">packages/lodestar/src/chain/attestation/process.ts:15</a></em></p>
 <p>Expects valid attestation which is to be applied in forkchoice.</p>
 <p>Several final validations are performed in the process of converting the Attestation to an IndexedAttestation.</p>
 <p><strong>Parameters:</strong></p>
@@ -474,7 +474,7 @@ Return null if the error is not an attestation error.</p>
 <hr/>
 <h3 id="processattestationjob_1">processAttestationJob<a class="headerlink" href="#processattestationjob_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processAttestationJob</strong>(<code>modules</code>: <a href="./#attestationprocessormodules">AttestationProcessorModules</a>, <code>job</code>: <a href="../../interfaces/chain.iattestationjob/">IAttestationJob</a>): <em>Promise‹IndexedAttestation | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ebb28cb/packages/lodestar/src/chain/attestation/processor.ts#L49">packages/lodestar/src/chain/attestation/processor.ts:49</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fe8bd79/packages/lodestar/src/chain/attestation/processor.ts#L49">packages/lodestar/src/chain/attestation/processor.ts:49</a></em></p>
 <p>Validate and process an attestation</p>
 <p>The only effects of running this are:
 - forkChoice update, in the case of a valid attestation
