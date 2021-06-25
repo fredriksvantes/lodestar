@@ -358,7 +358,7 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="getblockslotstate">getBlockSlotState<a class="headerlink" href="#getblockslotstate" title="Permanent link">¶</a></h3>
 <p>• <strong>getBlockSlotState</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3fb5bb1/packages/lodestar/src/chain/regen/interface.ts#L23">packages/lodestar/src/chain/regen/interface.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bebe6a5/packages/lodestar/src/chain/regen/interface.ts#L23">packages/lodestar/src/chain/regen/interface.ts:23</a></em></p>
 <p>Return the state of <code>blockRoot</code> processed to slot <code>slot</code></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <p>▸ (<code>blockRoot</code>: Root, <code>slot</code>: Slot): <em>Promise‹CachedBeaconState‹allForks.BeaconState››</em></p>
@@ -384,7 +384,7 @@
 <hr/>
 <h3 id="getcheckpointstate">getCheckpointState<a class="headerlink" href="#getcheckpointstate" title="Permanent link">¶</a></h3>
 <p>• <strong>getCheckpointState</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3fb5bb1/packages/lodestar/src/chain/regen/interface.ts#L18">packages/lodestar/src/chain/regen/interface.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bebe6a5/packages/lodestar/src/chain/regen/interface.ts#L18">packages/lodestar/src/chain/regen/interface.ts:18</a></em></p>
 <p>Return a valid checkpoint state
 This will always return a state with <code>state.slot % SLOTS_PER_EPOCH === 0</code></p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
@@ -407,7 +407,7 @@ This will always return a state with <code>state.slot % SLOTS_PER_EPOCH === 0</c
 <hr/>
 <h3 id="getprestate">getPreState<a class="headerlink" href="#getprestate" title="Permanent link">¶</a></h3>
 <p>• <strong>getPreState</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3fb5bb1/packages/lodestar/src/chain/regen/interface.ts#L12">packages/lodestar/src/chain/regen/interface.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bebe6a5/packages/lodestar/src/chain/regen/interface.ts#L12">packages/lodestar/src/chain/regen/interface.ts:12</a></em></p>
 <p>Return a valid pre-state for a beacon block
 This will always return a state in the latest viable epoch</p>
 <h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">¶</a></h4>
@@ -430,7 +430,7 @@ This will always return a state in the latest viable epoch</p>
 <hr/>
 <h3 id="getstate">getState<a class="headerlink" href="#getstate" title="Permanent link">¶</a></h3>
 <p>• <strong>getState</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3fb5bb1/packages/lodestar/src/chain/regen/interface.ts#L28">packages/lodestar/src/chain/regen/interface.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bebe6a5/packages/lodestar/src/chain/regen/interface.ts#L28">packages/lodestar/src/chain/regen/interface.ts:28</a></em></p>
 <p>Return the exact state with <code>stateRoot</code></p>
 <h4 id="type-declaration_3">Type declaration:<a class="headerlink" href="#type-declaration_3" title="Permanent link">¶</a></h4>
 <p>▸ (<code>stateRoot</code>: Root): <em>Promise‹CachedBeaconState‹allForks.BeaconState››</em></p>
