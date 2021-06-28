@@ -401,7 +401,7 @@ Currently relies on discv5 automatic periodic queries</p>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new PeerDiscovery</strong>(<code>modules</code>: <a href="../../modules/network_peers/#peerdiscoverymodules">PeerDiscoveryModules</a>, <code>opts</code>: <a href="../../modules/network_peers/#peerdiscoveryopts">PeerDiscoveryOpts</a>): <em><a href="./">PeerDiscovery</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L38">packages/lodestar/src/network/peers/discover.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L38">packages/lodestar/src/network/peers/discover.ts:38</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -425,28 +425,28 @@ Currently relies on discv5 automatic periodic queries</p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="private-config"><code>Private</code> config<a class="headerlink" href="#private-config" title="Permanent link">¶</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L35">packages/lodestar/src/network/peers/discover.ts:35</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L35">packages/lodestar/src/network/peers/discover.ts:35</a></em></p>
 <hr/>
 <h3 id="private-libp2p"><code>Private</code> libp2p<a class="headerlink" href="#private-libp2p" title="Permanent link">¶</a></h3>
 <p>• <strong>libp2p</strong>: <em>LibP2p</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L32">packages/lodestar/src/network/peers/discover.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L32">packages/lodestar/src/network/peers/discover.ts:32</a></em></p>
 <hr/>
 <h3 id="private-logger"><code>Private</code> logger<a class="headerlink" href="#private-logger" title="Permanent link">¶</a></h3>
 <p>• <strong>logger</strong>: <em>ILogger</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L34">packages/lodestar/src/network/peers/discover.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L34">packages/lodestar/src/network/peers/discover.ts:34</a></em></p>
 <hr/>
 <h3 id="private-maxpeers"><code>Private</code> maxPeers<a class="headerlink" href="#private-maxpeers" title="Permanent link">¶</a></h3>
 <p>• <strong>maxPeers</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L38">packages/lodestar/src/network/peers/discover.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L38">packages/lodestar/src/network/peers/discover.ts:38</a></em></p>
 <p>The maximum number of peers we allow (exceptions for subnet peers)</p>
 <hr/>
 <h3 id="private-peerrpcscores"><code>Private</code> peerRpcScores<a class="headerlink" href="#private-peerrpcscores" title="Permanent link">¶</a></h3>
 <p>• <strong>peerRpcScores</strong>: <em><a href="../../interfaces/network_peers.ipeerrpcscorestore/">IPeerRpcScoreStore</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L33">packages/lodestar/src/network/peers/discover.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L33">packages/lodestar/src/network/peers/discover.ts:33</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="discoverpeers">discoverPeers<a class="headerlink" href="#discoverpeers" title="Permanent link">¶</a></h3>
 <p>▸ <strong>discoverPeers</strong>(<code>maxPeersToDiscover</code>: number): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L51">packages/lodestar/src/network/peers/discover.ts:51</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L51">packages/lodestar/src/network/peers/discover.ts:51</a></em></p>
 <p>Request to find peers. First, looked at cached peers in peerStore</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -467,7 +467,7 @@ Currently relies on discv5 automatic periodic queries</p>
 <hr/>
 <h3 id="discoversubnetpeers">discoverSubnetPeers<a class="headerlink" href="#discoversubnetpeers" title="Permanent link">¶</a></h3>
 <p>▸ <strong>discoverSubnetPeers</strong>(<code>subnetsToDiscover</code>: <a href="../../modules/network_peers/#attsubnetquery">AttSubnetQuery</a>[]): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L67">packages/lodestar/src/network/peers/discover.ts:67</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L67">packages/lodestar/src/network/peers/discover.ts:67</a></em></p>
 <p>Request to find peers on a given subnet.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -488,7 +488,7 @@ Currently relies on discv5 automatic periodic queries</p>
 <hr/>
 <h3 id="getcacheddiscoverypeersonsubnet">getCachedDiscoveryPeersOnSubnet<a class="headerlink" href="#getcacheddiscoverypeersonsubnet" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getCachedDiscoveryPeersOnSubnet</strong>(<code>subnet</code>: number, <code>maxPeersToDiscover</code>: number): <em>Promise‹<a href="../../modules/network_peers/#peeridstr">PeerIdStr</a>[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L95">packages/lodestar/src/network/peers/discover.ts:95</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L95">packages/lodestar/src/network/peers/discover.ts:95</a></em></p>
 <p>List existing peers that declare being part of a target subnet</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -513,13 +513,13 @@ Currently relies on discv5 automatic periodic queries</p>
 <hr/>
 <h3 id="private-getstoredpeeridstr"><code>Private</code> getStoredPeerIdStr<a class="headerlink" href="#private-getstoredpeeridstr" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getStoredPeerIdStr</strong>(): <em><a href="../../modules/network_peers/#peeridstr">PeerIdStr</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L174">packages/lodestar/src/network/peers/discover.ts:174</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L174">packages/lodestar/src/network/peers/discover.ts:174</a></em></p>
 <p>Return stored peerIdStr, may return self peerIdStr</p>
 <p><strong>Returns:</strong> <em><a href="../../modules/network_peers/#peeridstr">PeerIdStr</a>[]</em></p>
 <hr/>
 <h3 id="private-ispeerconnected"><code>Private</code> isPeerConnected<a class="headerlink" href="#private-ispeerconnected" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isPeerConnected</strong>(<code>peerIdStr</code>: <a href="../../modules/network_peers/#peeridstr">PeerIdStr</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L179">packages/lodestar/src/network/peers/discover.ts:179</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L179">packages/lodestar/src/network/peers/discover.ts:179</a></em></p>
 <p>Check if there is 1+ open connection with this peer</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -540,7 +540,7 @@ Currently relies on discv5 automatic periodic queries</p>
 <hr/>
 <h3 id="private-peersdiscovered"><code>Private</code> peersDiscovered<a class="headerlink" href="#private-peersdiscovered" title="Permanent link">¶</a></h3>
 <p>▸ <strong>peersDiscovered</strong>(<code>discoveredPeers</code>: <a href="../../modules/network_peers/#peeridstr">PeerIdStr</a>[]): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L143">packages/lodestar/src/network/peers/discover.ts:143</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L143">packages/lodestar/src/network/peers/discover.ts:143</a></em></p>
 <p>Handles DiscoveryEvent::QueryResult
 Peers that have been returned by discovery requests are dialed here if they are suitable.</p>
 <p><strong>Parameters:</strong></p>
@@ -562,7 +562,7 @@ Peers that have been returned by discovery requests are dialed here if they are 
 <hr/>
 <h3 id="private-runsubnetquery"><code>Private</code> runSubnetQuery<a class="headerlink" href="#private-runsubnetquery" title="Permanent link">¶</a></h3>
 <p>▸ <strong>runSubnetQuery</strong>(<code>subnets</code>: number[]): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3847e25/packages/lodestar/src/network/peers/discover.ts#L135">packages/lodestar/src/network/peers/discover.ts:135</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/777ebd3/packages/lodestar/src/network/peers/discover.ts#L135">packages/lodestar/src/network/peers/discover.ts:135</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

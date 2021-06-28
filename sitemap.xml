@@ -331,6 +331,41 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.beaconstatecontext/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.cachedbalancelist/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.cachedepochparticipation/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.cachedvalidatorlist/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.epochcontext/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.indexedsynccommittee/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.pubkeyindexmap/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/util.yargserror/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
@@ -357,6 +392,11 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/cli/classes/wallet.walletmanager/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/enums/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_util.signaturesettype/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -471,6 +511,61 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src.ibeaconstatetransitionmetrics/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src.ihistogram/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.iattesterstatus/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.icachedepochparticipationopts/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.iepochcontextdata/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.iepochprocess/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.iepochshuffling/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.iepochstakesummary/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.iparticipationstatus/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util.ireadonlyepochshuffling/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_util.blockprocess/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/util.iclicommand/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
@@ -576,12 +671,97 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1832/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1832.reflection-1827/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_block/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_epoch/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_signaturesets/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_slot/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_allforks_util/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_altair/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_altair_block/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_altair_epoch/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_constants/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_phase0/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_phase0_block/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_phase0_epoch/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834._beacon_state_transition_src_util/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832._.reflection-3834/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-3831.reflection-3832/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -987,11 +1167,6 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_bls.blssinglethreadverifier/</loc>
-         <lastmod>2021-06-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_bls.blsverifier/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1446,6 +1621,41 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.beaconstatecontext/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.cachedbalancelist/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.cachedepochparticipation/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.cachedvalidatorlist/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.epochcontext/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.indexedsynccommittee/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.pubkeyindexmap/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/classes/sync.beaconsync/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
@@ -1721,6 +1931,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/enums/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_util.signaturesettype/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/enums/sync.syncstate/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
@@ -1817,11 +2032,6 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/chain_bls.iblsverifier/</loc>
-         <lastmod>2021-06-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/chain_bls.iblsverifierimpl/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2092,6 +2302,61 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/node.ivalidatorloggeroptions/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src.ibeaconstatetransitionmetrics/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src.ihistogram/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.iattesterstatus/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.icachedepochparticipationopts/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.iepochcontextdata/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.iepochprocess/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.iepochshuffling/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.iepochstakesummary/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.iparticipationstatus/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util.ireadonlyepochshuffling/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_util.blockprocess/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2447,6 +2712,101 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/node_utils_interop/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_block/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_epoch/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_signaturesets/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_slot/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_allforks_util/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_altair/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_altair_block/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_altair_epoch/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_constants/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_phase0/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_phase0_block/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_phase0_epoch/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484._beacon_state_transition_src_util/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482._.reflection-11484/</loc>
+         <lastmod>2021-06-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11481.reflection-11482/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
