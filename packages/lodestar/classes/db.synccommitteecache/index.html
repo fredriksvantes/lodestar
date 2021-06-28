@@ -378,7 +378,7 @@ This stays in-memory and should be pruned per slot.</p>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new SyncCommitteeCache</strong>(<code>config</code>: IBeaconConfig): <em><a href="./">SyncCommitteeCache</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L42">packages/lodestar/src/db/syncCommittee.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L42">packages/lodestar/src/db/syncCommittee.ts:42</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -398,7 +398,7 @@ This stays in-memory and should be pruned per slot.</p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="private-readonly-config"><code>Private</code> <code>Readonly</code> config<a class="headerlink" href="#private-readonly-config" title="Permanent link">¶</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L44">packages/lodestar/src/db/syncCommittee.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L44">packages/lodestar/src/db/syncCommittee.ts:44</a></em></p>
 <hr/>
 <h3 id="private-readonly-contributionsbyrootbysubnetbyslot"><code>Private</code> <code>Readonly</code> contributionsByRootBySubnetBySlot<a class="headerlink" href="#private-readonly-contributionsbyrootbysubnetbyslot" title="Permanent link">¶</a></h3>
 <p>• <strong>contributionsByRootBySubnetBySlot</strong>: <em>Map‹number, Map‹number, Map‹string, <a href="../../modules/db/#contributionfast">ContributionFast</a>›››</em> = new Map&lt;
@@ -407,19 +407,19 @@ This stays in-memory and should be pruned per slot.</p>
 <blockquote>
 <p>()</p>
 </blockquote>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L33">packages/lodestar/src/db/syncCommittee.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L33">packages/lodestar/src/db/syncCommittee.ts:33</a></em></p>
 <p>Each array item is respective to a subCommitteeIndex.
 Preaggregate into SyncCommitteeContribution.</p>
 <hr/>
 <h3 id="private-readonly-seencachebyslot"><code>Private</code> <code>Readonly</code> seenCacheBySlot<a class="headerlink" href="#private-readonly-seencachebyslot" title="Permanent link">¶</a></h3>
 <p>• <strong>seenCacheBySlot</strong>: <em>Map‹number, Set‹string››</em> = new Map<phase0.slot, set\<validataorsubnetkey="">&gt;()</phase0.slot,></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L42">packages/lodestar/src/db/syncCommittee.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L42">packages/lodestar/src/db/syncCommittee.ts:42</a></em></p>
 <p>Each array item is respective to a subCommitteeIndex.
 A seen SyncCommitteeMessage is decided by slot + validator index.</p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="add">add<a class="headerlink" href="#add" title="Permanent link">¶</a></h3>
 <p>▸ <strong>add</strong>(<code>subnet</code>: phase0.SubCommitteeIndex, <code>signature</code>: SyncCommitteeMessage, <code>indexInSubCommittee</code>: number): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L58">packages/lodestar/src/db/syncCommittee.ts:58</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L58">packages/lodestar/src/db/syncCommittee.ts:58</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -447,7 +447,7 @@ A seen SyncCommitteeMessage is decided by slot + validator index.</p>
 <hr/>
 <h3 id="getsynccommitteecontribution">getSyncCommitteeContribution<a class="headerlink" href="#getsynccommitteecontribution" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSyncCommitteeContribution</strong>(<code>subnet</code>: phase0.SubCommitteeIndex, <code>slot</code>: phase0.Slot, <code>prevBlockRoot</code>: phase0.Root): <em>SyncCommitteeContribution | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L99">packages/lodestar/src/db/syncCommittee.ts:99</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L99">packages/lodestar/src/db/syncCommittee.ts:99</a></em></p>
 <p>This is for the aggregator to produce ContributionAndProof.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -476,7 +476,7 @@ A seen SyncCommitteeMessage is decided by slot + validator index.</p>
 <hr/>
 <h3 id="has">has<a class="headerlink" href="#has" title="Permanent link">¶</a></h3>
 <p>▸ <strong>has</strong>(<code>subnet</code>: phase0.SubCommitteeIndex, <code>syncCommittee</code>: SyncCommitteeMessage): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L92">packages/lodestar/src/db/syncCommittee.ts:92</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L92">packages/lodestar/src/db/syncCommittee.ts:92</a></em></p>
 <p>based on slot + validator index</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -501,7 +501,7 @@ A seen SyncCommitteeMessage is decided by slot + validator index.</p>
 <hr/>
 <h3 id="prune">prune<a class="headerlink" href="#prune" title="Permanent link">¶</a></h3>
 <p>▸ <strong>prune</strong>(<code>clockSlot</code>: Slot): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L120">packages/lodestar/src/db/syncCommittee.ts:120</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L120">packages/lodestar/src/db/syncCommittee.ts:120</a></em></p>
 <p>Prune per clock slot.
 SyncCommittee signatures are only useful during a single slot according to our peer's clocks</p>
 <p><strong>Parameters:</strong></p>
@@ -523,7 +523,7 @@ SyncCommittee signatures are only useful during a single slot according to our p
 <hr/>
 <h3 id="seen">seen<a class="headerlink" href="#seen" title="Permanent link">¶</a></h3>
 <p>▸ <strong>seen</strong>(<code>subnet</code>: phase0.SubCommitteeIndex, <code>syncCommitteeSignature</code>: SyncCommitteeMessage): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85deb7f/packages/lodestar/src/db/syncCommittee.ts#L47">packages/lodestar/src/db/syncCommittee.ts:47</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/37e222d/packages/lodestar/src/db/syncCommittee.ts#L47">packages/lodestar/src/db/syncCommittee.ts:47</a></em></p>
 <p>Register item as seen in the cache</p>
 <p><strong>Parameters:</strong></p>
 <table>
