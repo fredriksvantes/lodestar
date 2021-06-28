@@ -216,12 +216,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1944.reflection-1416.ibeaconstatetransitionmetrics/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1939.reflection-1419.ibeaconstatetransitionmetrics/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1944.reflection-1416.ihistogram/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-1939.reflection-1419.ihistogram/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -296,12 +296,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-1944/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-1939/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-1944.reflection-1416/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-1939.reflection-1419/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -3051,7 +3051,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/validator/classes/reflection-1094.reflection-1.validator/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/classes/reflection-1083.reflection-1.validator/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -3171,7 +3171,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/validator/enums/reflection-1094.reflection-1.status/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/enums/reflection-1083.reflection-1.status/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -3246,12 +3246,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/validator/modules/reflection-1094/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/modules/reflection-1083/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/validator/modules/reflection-1094.reflection-1/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/modules/reflection-1083.reflection-1/</loc>
          <lastmod>2021-06-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
