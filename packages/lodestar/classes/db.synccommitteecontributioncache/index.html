@@ -378,7 +378,7 @@ This stays in-memory and should be pruned per slot.</p>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new SyncCommitteeContributionCache</strong>(<code>config</code>: IBeaconConfig): <em><a href="./">SyncCommitteeContributionCache</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L31">packages/lodestar/src/db/syncCommitteeContribution.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L31">packages/lodestar/src/db/syncCommitteeContribution.ts:31</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -398,19 +398,19 @@ This stays in-memory and should be pruned per slot.</p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="private-readonly-aggregatebyrootbyslot"><code>Private</code> <code>Readonly</code> aggregateByRootBySlot<a class="headerlink" href="#private-readonly-aggregatebyrootbyslot" title="Permanent link">¶</a></h3>
 <p>• <strong>aggregateByRootBySlot</strong>: <em>Map‹number, Map‹string, <a href="../../modules/db/#syncaggregatefast">SyncAggregateFast</a>››</em> = new Map<phase0.slot, map\<blockroothex,="" syncaggregatefast="">&gt;()</phase0.slot,></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L30">packages/lodestar/src/db/syncCommitteeContribution.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L30">packages/lodestar/src/db/syncCommitteeContribution.ts:30</a></em></p>
 <hr/>
 <h3 id="private-readonly-config"><code>Private</code> <code>Readonly</code> config<a class="headerlink" href="#private-readonly-config" title="Permanent link">¶</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L33">packages/lodestar/src/db/syncCommitteeContribution.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L33">packages/lodestar/src/db/syncCommitteeContribution.ts:33</a></em></p>
 <hr/>
 <h3 id="private-readonly-seencachebyslot"><code>Private</code> <code>Readonly</code> seenCacheBySlot<a class="headerlink" href="#private-readonly-seencachebyslot" title="Permanent link">¶</a></h3>
 <p>• <strong>seenCacheBySlot</strong>: <em>Map‹number, Set‹string››</em> = new Map<phase0.slot, set\<aggregatorsubnetkey="">&gt;()</phase0.slot,></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L31">packages/lodestar/src/db/syncCommitteeContribution.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L31">packages/lodestar/src/db/syncCommitteeContribution.ts:31</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="add">add<a class="headerlink" href="#add" title="Permanent link">¶</a></h3>
 <p>▸ <strong>add</strong>(<code>contributionAndProof</code>: ContributionAndProof): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L49">packages/lodestar/src/db/syncCommitteeContribution.ts:49</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L49">packages/lodestar/src/db/syncCommitteeContribution.ts:49</a></em></p>
 <p>Only call this once we pass all validation.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -431,7 +431,7 @@ This stays in-memory and should be pruned per slot.</p>
 <hr/>
 <h3 id="getsyncaggregate">getSyncAggregate<a class="headerlink" href="#getsyncaggregate" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSyncAggregate</strong>(<code>slot</code>: phase0.Slot, <code>prevBlockRoot</code>: phase0.Root): <em>SyncAggregate</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L86">packages/lodestar/src/db/syncCommitteeContribution.ts:86</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L86">packages/lodestar/src/db/syncCommitteeContribution.ts:86</a></em></p>
 <p>This is for the block factory, the same to process_sync_committee_contributions in the spec.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -456,7 +456,7 @@ This stays in-memory and should be pruned per slot.</p>
 <hr/>
 <h3 id="has">has<a class="headerlink" href="#has" title="Permanent link">¶</a></h3>
 <p>▸ <strong>has</strong>(<code>contributionAndProof</code>: ContributionAndProof): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L78">packages/lodestar/src/db/syncCommitteeContribution.ts:78</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L78">packages/lodestar/src/db/syncCommitteeContribution.ts:78</a></em></p>
 <p>Gossip validation requires to check:
 The sync committee contribution is the first valid contribution received for the aggregator with index
 contribution_and_proof.aggregator_index for the slot contribution.slot and subcommittee index contribution.subcommittee_index.</p>
@@ -479,7 +479,7 @@ contribution_and_proof.aggregator_index for the slot contribution.slot and subco
 <hr/>
 <h3 id="prune">prune<a class="headerlink" href="#prune" title="Permanent link">¶</a></h3>
 <p>▸ <strong>prune</strong>(<code>headSlot</code>: <a href="../../modules/reflection-11520.reflection-11521._.reflection-11523._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L104">packages/lodestar/src/db/syncCommitteeContribution.ts:104</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L104">packages/lodestar/src/db/syncCommitteeContribution.ts:104</a></em></p>
 <p>Prune per head slot.
 SyncCommittee aggregates are only useful for the next block they have signed.
 We don't want to prune by clock slot in case there's a long period of skipped slots.</p>
@@ -502,7 +502,7 @@ We don't want to prune by clock slot in case there's a long period of skipped sl
 <hr/>
 <h3 id="seen">seen<a class="headerlink" href="#seen" title="Permanent link">¶</a></h3>
 <p>▸ <strong>seen</strong>(<code>contributionAndProof</code>: ContributionAndProof): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f0e48bd/packages/lodestar/src/db/syncCommitteeContribution.ts#L36">packages/lodestar/src/db/syncCommitteeContribution.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a6dd6dd/packages/lodestar/src/db/syncCommitteeContribution.ts#L36">packages/lodestar/src/db/syncCommitteeContribution.ts:36</a></em></p>
 <p>Register item as seen in the cache</p>
 <p><strong>Parameters:</strong></p>
 <table>
