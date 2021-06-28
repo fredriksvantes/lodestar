@@ -596,20 +596,20 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="ieth1streamparams_1">IEth1StreamParams<a class="headerlink" href="#ieth1streamparams_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>IEth1StreamParams</strong>: <em>Pick‹IBeaconConfig, "ETH1_FOLLOW_DISTANCE" | "MIN_GENESIS_TIME" | "GENESIS_DELAY" | "SECONDS_PER_ETH1_BLOCK"› &amp; object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/interface.ts#L38">packages/lodestar/src/eth1/interface.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/interface.ts#L38">packages/lodestar/src/eth1/interface.ts:38</a></em></p>
 <hr/>
 <h3 id="ijson_1">IJson<a class="headerlink" href="#ijson_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>IJson</strong>: <em>string | number | boolean | undefined | <a href="./#ijson">IJson</a>[] | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/interface.ts#L45">packages/lodestar/src/eth1/interface.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/interface.ts#L45">packages/lodestar/src/eth1/interface.ts:45</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-maxstringlengthtoprint"><code>Const</code> maxStringLengthToPrint<a class="headerlink" href="#const-maxstringlengthtoprint" title="Permanent link">¶</a></h3>
 <p>• <strong>maxStringLengthToPrint</strong>: <em>500</em> = 500</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L12">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L12">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:12</a></em></p>
 <p>Limits the amount of response text printed with RPC or parsing errors</p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="fetchjson">fetchJson<a class="headerlink" href="#fetchjson" title="Permanent link">¶</a></h3>
 <p>▸ <strong>fetchJson</strong>‹<strong>R</strong>, <strong>T</strong>›(<code>url</code>: string, <code>json</code>: T, <code>signal?</code>: AbortSignal): <em>Promise‹R›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L66">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:66</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L66">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:66</a></em></p>
 <p>Fetches JSON and throws detailed errors in case the HTTP request is not ok</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>R</strong></p>
@@ -641,7 +641,7 @@
 <hr/>
 <h3 id="getdepositsandblockstreamforgenesis_1">getDepositsAndBlockStreamForGenesis<a class="headerlink" href="#getdepositsandblockstreamforgenesis_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getDepositsAndBlockStreamForGenesis</strong>(<code>fromBlock</code>: number, <code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>, <code>signal?</code>: AbortSignal): <em>AsyncGenerator‹[DepositEvent[], Eth1Block]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/stream.ts#L45">packages/lodestar/src/eth1/stream.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/stream.ts#L45">packages/lodestar/src/eth1/stream.ts:45</a></em></p>
 <p>Phase 2 of genesis building.
 There are enough validators, stream deposits and blocks</p>
 <p><strong>Parameters:</strong></p>
@@ -680,7 +680,7 @@ There are enough validators, stream deposits and blocks</p>
 <hr/>
 <h3 id="getdepositsstream_1">getDepositsStream<a class="headerlink" href="#getdepositsstream_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getDepositsStream</strong>(<code>fromBlock</code>: number, <code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>, <code>signal?</code>: AbortSignal): <em>AsyncGenerator‹<a href="../../interfaces/eth1.ibatchdepositevents/">IBatchDepositEvents</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/stream.ts#L17">packages/lodestar/src/eth1/stream.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/stream.ts#L17">packages/lodestar/src/eth1/stream.ts:17</a></em></p>
 <p>Phase 1 of genesis building.
 Not enough validators, only stream deposits</p>
 <p><strong>Parameters:</strong></p>
@@ -719,7 +719,7 @@ Not enough validators, only stream deposits</p>
 <hr/>
 <h3 id="getremotefollowblock">getRemoteFollowBlock<a class="headerlink" href="#getremotefollowblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getRemoteFollowBlock</strong>(<code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>): <em>Promise‹number›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/stream.ts#L72">packages/lodestar/src/eth1/stream.ts:72</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/stream.ts#L72">packages/lodestar/src/eth1/stream.ts:72</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -743,7 +743,7 @@ Not enough validators, only stream deposits</p>
 <hr/>
 <h3 id="parseblock">parseBlock<a class="headerlink" href="#parseblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseBlock</strong>(<code>blockRaw</code>: IEthJsonRpcTypes["eth_getBlockByNumber"]): <em>Eth1Block</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/eth1JsonRpcClient.ts#L117">packages/lodestar/src/eth1/eth1JsonRpcClient.ts:117</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/eth1JsonRpcClient.ts#L117">packages/lodestar/src/eth1/eth1JsonRpcClient.ts:117</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -763,7 +763,7 @@ Not enough validators, only stream deposits</p>
 <hr/>
 <h3 id="parsejson">parseJson<a class="headerlink" href="#parsejson" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseJson</strong>‹<strong>T</strong>›(<code>json</code>: string): <em>T</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L91">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:91</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L91">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:91</a></em></p>
 <p>Util: Parse JSON but display the original source string in case of error
 Helps debug instances where an API returns a plain text instead of JSON,
 such as getting an HTML page due to a wrong API URL</p>
@@ -788,7 +788,7 @@ such as getting an HTML page due to a wrong API URL</p>
 <hr/>
 <h3 id="parsejsonrpcerrorcode">parseJsonRpcErrorCode<a class="headerlink" href="#parsejsonrpcerrorcode" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseJsonRpcErrorCode</strong>(<code>code</code>: number): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L127">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:127</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L127">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:127</a></em></p>
 <p>JSON RPC spec errors https://www.jsonrpc.org/specification#response_object</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -809,7 +809,7 @@ such as getting an HTML page due to a wrong API URL</p>
 <hr/>
 <h3 id="parserpcresponse">parseRpcResponse<a class="headerlink" href="#parserpcresponse" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseRpcResponse</strong>‹<strong>R</strong>›(<code>res</code>: <a href="../../interfaces/eth1.irpcresponse/">IRpcResponse</a>‹R›, <code>payload</code>: <a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a>): <em>R</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L58">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:58</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L58">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:58</a></em></p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>R</strong></p>
 <p><strong>Parameters:</strong></p>
@@ -835,7 +835,7 @@ such as getting an HTML page due to a wrong API URL</p>
 <hr/>
 <h3 id="tohex">toHex<a class="headerlink" href="#tohex" title="Permanent link">¶</a></h3>
 <p>▸ <strong>toHex</strong>(<code>n</code>: number): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/eth1JsonRpcClient.ts#L113">packages/lodestar/src/eth1/eth1JsonRpcClient.ts:113</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/eth1JsonRpcClient.ts#L113">packages/lodestar/src/eth1/eth1JsonRpcClient.ts:113</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -855,16 +855,16 @@ such as getting an HTML page due to a wrong API URL</p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">¶</a></h2>
 <h3 id="const-defaulteth1options"><code>Const</code> defaultEth1Options<a class="headerlink" href="#const-defaulteth1options" title="Permanent link">¶</a></h3>
 <h3 id="defaulteth1options-object">▪ <strong>defaultEth1Options</strong>: <em>object</em><a class="headerlink" href="#defaulteth1options-object" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/options.ts#L7">packages/lodestar/src/eth1/options.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/options.ts#L7">packages/lodestar/src/eth1/options.ts:7</a></em></p>
 <h3 id="depositcontractdeployblock">depositContractDeployBlock<a class="headerlink" href="#depositcontractdeployblock" title="Permanent link">¶</a></h3>
 <p>• <strong>depositContractDeployBlock</strong>: <em>number</em> = 0</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/options.ts#L10">packages/lodestar/src/eth1/options.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/options.ts#L10">packages/lodestar/src/eth1/options.ts:10</a></em></p>
 <h3 id="enabled">enabled<a class="headerlink" href="#enabled" title="Permanent link">¶</a></h3>
 <p>• <strong>enabled</strong>: <em>true</em> = true</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/options.ts#L8">packages/lodestar/src/eth1/options.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/options.ts#L8">packages/lodestar/src/eth1/options.ts:8</a></em></p>
 <h3 id="providerurl">providerUrl<a class="headerlink" href="#providerurl" title="Permanent link">¶</a></h3>
 <p>• <strong>providerUrl</strong>: <em>string</em> = "http://localhost:8545"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/88233ba/packages/lodestar/src/eth1/options.ts#L9">packages/lodestar/src/eth1/options.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/86f9cf2/packages/lodestar/src/eth1/options.ts#L9">packages/lodestar/src/eth1/options.ts:9</a></em></p>
 </article>
 </div>
 </div>
