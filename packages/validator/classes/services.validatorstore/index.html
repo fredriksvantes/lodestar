@@ -436,7 +436,7 @@
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new ValidatorStore</strong>(<code>config</code>: IBeaconConfig, <code>slashingProtection</code>: <a href="../../interfaces/slashingprotection.islashingprotection/">ISlashingProtection</a>, <code>secretKeys</code>: SecretKey[], <code>genesis</code>: Genesis): <em><a href="./">ValidatorStore</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L43">packages/validator/src/services/validatorStore.ts:43</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L43">packages/validator/src/services/validatorStore.ts:43</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -468,23 +468,23 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="private-readonly-config"><code>Private</code> <code>Readonly</code> config<a class="headerlink" href="#private-readonly-config" title="Permanent link">¶</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L46">packages/validator/src/services/validatorStore.ts:46</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L46">packages/validator/src/services/validatorStore.ts:46</a></em></p>
 <hr/>
 <h3 id="private-readonly-genesisvalidatorsroot"><code>Private</code> <code>Readonly</code> genesisValidatorsRoot<a class="headerlink" href="#private-readonly-genesisvalidatorsroot" title="Permanent link">¶</a></h3>
 <p>• <strong>genesisValidatorsRoot</strong>: <em>Root</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L43">packages/validator/src/services/validatorStore.ts:43</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L43">packages/validator/src/services/validatorStore.ts:43</a></em></p>
 <hr/>
 <h3 id="private-readonly-slashingprotection"><code>Private</code> <code>Readonly</code> slashingProtection<a class="headerlink" href="#private-readonly-slashingprotection" title="Permanent link">¶</a></h3>
 <p>• <strong>slashingProtection</strong>: <em><a href="../../interfaces/slashingprotection.islashingprotection/">ISlashingProtection</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L47">packages/validator/src/services/validatorStore.ts:47</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L47">packages/validator/src/services/validatorStore.ts:47</a></em></p>
 <hr/>
 <h3 id="private-readonly-validators"><code>Private</code> <code>Readonly</code> validators<a class="headerlink" href="#private-readonly-validators" title="Permanent link">¶</a></h3>
 <p>• <strong>validators</strong>: <em>Map‹<a href="../../modules/services/#pubkeyhex">PubkeyHex</a>, <a href="../../modules/reflection-1096.reflection-1/#blskeypair">BLSKeypair</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L42">packages/validator/src/services/validatorStore.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L42">packages/validator/src/services/validatorStore.ts:42</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="private-getdomain"><code>Private</code> getDomain<a class="headerlink" href="#private-getdomain" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getDomain</strong>(<code>domainType</code>: DomainType, <code>epoch</code>: <a href="../../enums/util.timeitem/#epoch">Epoch</a>): <em>Promise‹Buffer›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L211">packages/validator/src/services/validatorStore.ts:211</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L211">packages/validator/src/services/validatorStore.ts:211</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -508,7 +508,7 @@
 <hr/>
 <h3 id="private-getsecretkey"><code>Private</code> getSecretKey<a class="headerlink" href="#private-getsecretkey" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSecretKey</strong>(<code>pubkey</code>: BLSPubkey | string): <em>SecretKey</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L221">packages/validator/src/services/validatorStore.ts:221</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L221">packages/validator/src/services/validatorStore.ts:221</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -528,13 +528,13 @@
 <hr/>
 <h3 id="hassomevalidators">hasSomeValidators<a class="headerlink" href="#hassomevalidators" title="Permanent link">¶</a></h3>
 <p>▸ <strong>hasSomeValidators</strong>(): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L57">packages/validator/src/services/validatorStore.ts:57</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L57">packages/validator/src/services/validatorStore.ts:57</a></em></p>
 <p>Return true if there is at least 1 pubkey registered</p>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr/>
 <h3 id="hasvotingpubkey">hasVotingPubkey<a class="headerlink" href="#hasvotingpubkey" title="Permanent link">¶</a></h3>
 <p>▸ <strong>hasVotingPubkey</strong>(<code>pubkeyHex</code>: <a href="../../modules/services/#pubkeyhex">PubkeyHex</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L65">packages/validator/src/services/validatorStore.ts:65</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L65">packages/validator/src/services/validatorStore.ts:65</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -554,7 +554,7 @@
 <hr/>
 <h3 id="signaggregateandproof">signAggregateAndProof<a class="headerlink" href="#signaggregateandproof" title="Permanent link">¶</a></h3>
 <p>▸ <strong>signAggregateAndProof</strong>(<code>duty</code>: routes.validator.AttesterDuty, <code>selectionProof</code>: BLSSignature, <code>aggregate</code>: Attestation): <em>Promise‹SignedAggregateAndProof›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L131">packages/validator/src/services/validatorStore.ts:131</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L131">packages/validator/src/services/validatorStore.ts:131</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -582,7 +582,7 @@
 <hr/>
 <h3 id="signattestation">signAttestation<a class="headerlink" href="#signattestation" title="Permanent link">¶</a></h3>
 <p>▸ <strong>signAttestation</strong>(<code>duty</code>: routes.validator.AttesterDuty, <code>attestationData</code>: AttestationData, <code>currentEpoch</code>: <a href="../../enums/util.timeitem/#epoch">Epoch</a>): <em>Promise‹Attestation›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L100">packages/validator/src/services/validatorStore.ts:100</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L100">packages/validator/src/services/validatorStore.ts:100</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -610,7 +610,7 @@
 <hr/>
 <h3 id="signattestationselectionproof">signAttestationSelectionProof<a class="headerlink" href="#signattestationselectionproof" title="Permanent link">¶</a></h3>
 <p>▸ <strong>signAttestationSelectionProof</strong>(<code>pubkey</code>: BLSPubkey, <code>slot</code>: <a href="../../enums/util.timeitem/#slot">Slot</a>): <em>Promise‹BLSSignature›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L190">packages/validator/src/services/validatorStore.ts:190</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L190">packages/validator/src/services/validatorStore.ts:190</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -634,7 +634,7 @@
 <hr/>
 <h3 id="signblock">signBlock<a class="headerlink" href="#signblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>signBlock</strong>(<code>pubkey</code>: BLSPubkey, <code>block</code>: allForks.BeaconBlock, <code>currentSlot</code>: <a href="../../enums/util.timeitem/#slot">Slot</a>): <em>Promise‹allForks.SignedBeaconBlock›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L69">packages/validator/src/services/validatorStore.ts:69</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L69">packages/validator/src/services/validatorStore.ts:69</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -662,7 +662,7 @@
 <hr/>
 <h3 id="signcontributionandproof">signContributionAndProof<a class="headerlink" href="#signcontributionandproof" title="Permanent link">¶</a></h3>
 <p>▸ <strong>signContributionAndProof</strong>(<code>duty</code>: Pick‹routes.validator.SyncDuty, "pubkey" | "validatorIndex"›, <code>selectionProof</code>: BLSSignature, <code>contribution</code>: SyncCommitteeContribution): <em>Promise‹SignedContributionAndProof›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L170">packages/validator/src/services/validatorStore.ts:170</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L170">packages/validator/src/services/validatorStore.ts:170</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -690,7 +690,7 @@
 <hr/>
 <h3 id="signrandao">signRandao<a class="headerlink" href="#signrandao" title="Permanent link">¶</a></h3>
 <p>▸ <strong>signRandao</strong>(<code>pubkey</code>: BLSPubkey, <code>slot</code>: <a href="../../enums/util.timeitem/#slot">Slot</a>): <em>Promise‹BLSSignature›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L92">packages/validator/src/services/validatorStore.ts:92</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L92">packages/validator/src/services/validatorStore.ts:92</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -714,7 +714,7 @@
 <hr/>
 <h3 id="signsynccommitteeselectionproof">signSyncCommitteeSelectionProof<a class="headerlink" href="#signsynccommitteeselectionproof" title="Permanent link">¶</a></h3>
 <p>▸ <strong>signSyncCommitteeSelectionProof</strong>(<code>pubkey</code>: BLSPubkey | string, <code>slot</code>: <a href="../../enums/util.timeitem/#slot">Slot</a>, <code>subCommitteeIndex</code>: number): <em>Promise‹BLSSignature›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L196">packages/validator/src/services/validatorStore.ts:196</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L196">packages/validator/src/services/validatorStore.ts:196</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -742,7 +742,7 @@
 <hr/>
 <h3 id="signsynccommitteesignature">signSyncCommitteeSignature<a class="headerlink" href="#signsynccommitteesignature" title="Permanent link">¶</a></h3>
 <p>▸ <strong>signSyncCommitteeSignature</strong>(<code>pubkey</code>: BLSPubkey, <code>validatorIndex</code>: ValidatorIndex, <code>slot</code>: <a href="../../enums/util.timeitem/#slot">Slot</a>, <code>beaconBlockRoot</code>: Root): <em>Promise‹SyncCommitteeMessage›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L153">packages/validator/src/services/validatorStore.ts:153</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L153">packages/validator/src/services/validatorStore.ts:153</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -774,7 +774,7 @@
 <hr/>
 <h3 id="private-validateattestationduty"><code>Private</code> validateAttestationDuty<a class="headerlink" href="#private-validateattestationduty" title="Permanent link">¶</a></h3>
 <p>▸ <strong>validateAttestationDuty</strong>(<code>duty</code>: routes.validator.AttesterDuty, <code>data</code>: AttestationData): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L234">packages/validator/src/services/validatorStore.ts:234</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L234">packages/validator/src/services/validatorStore.ts:234</a></em></p>
 <p>Prevent signing bad data sent by the Beacon node</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -799,7 +799,7 @@
 <hr/>
 <h3 id="votingpubkeys">votingPubkeys<a class="headerlink" href="#votingpubkeys" title="Permanent link">¶</a></h3>
 <p>▸ <strong>votingPubkeys</strong>(): <em>BLSPubkey[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a171e6/packages/validator/src/services/validatorStore.ts#L61">packages/validator/src/services/validatorStore.ts:61</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0a616bb/packages/validator/src/services/validatorStore.ts#L61">packages/validator/src/services/validatorStore.ts:61</a></em></p>
 <p><strong>Returns:</strong> <em>BLSPubkey[]</em></p>
 </article>
 </div>
