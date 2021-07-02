@@ -367,11 +367,11 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-max_random_byte"><code>Const</code> MAX_RANDOM_BYTE<a class="headerlink" href="#const-max_random_byte" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_RANDOM_BYTE</strong>: <em>bigint</em> = BigInt(2 ** 8 - 1)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L9">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L9">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:9</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="getbasereward">getBaseReward<a class="headerlink" href="#getbasereward" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getBaseReward</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a>, <code>index</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a>): <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/balance.ts#L99">packages/beacon-state-transition/src/altair/epoch/balance.ts:99</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/balance.ts#L99">packages/beacon-state-transition/src/altair/epoch/balance.ts:99</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -399,7 +399,7 @@
 <hr/>
 <h3 id="getflagindexdeltas">getFlagIndexDeltas<a class="headerlink" href="#getflagindexdeltas" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getFlagIndexDeltas</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a>, <code>flagIndex</code>: number): <em>[<a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_phase0/#gwei">Gwei</a>[], <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/balance.ts#L26">packages/beacon-state-transition/src/altair/epoch/balance.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/balance.ts#L26">packages/beacon-state-transition/src/altair/epoch/balance.ts:26</a></em></p>
 <p>Return the deltas for a given flag index by scanning through the participation flags.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -428,7 +428,7 @@
 <hr/>
 <h3 id="getinactivitypenaltydeltas">getInactivityPenaltyDeltas<a class="headerlink" href="#getinactivitypenaltydeltas" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getInactivityPenaltyDeltas</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a>): <em>[<a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_phase0/#gwei">Gwei</a>[], <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/balance.ts#L77">packages/beacon-state-transition/src/altair/epoch/balance.ts:77</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/balance.ts#L77">packages/beacon-state-transition/src/altair/epoch/balance.ts:77</a></em></p>
 <p>Return the inactivity penalty deltas by considering timely target participation flags and inactivity scores.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -453,7 +453,7 @@
 <hr/>
 <h3 id="getnextsynccommittee">getNextSyncCommittee<a class="headerlink" href="#getnextsynccommittee" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getNextSyncCommittee</strong>(<code>state</code>: allForks.BeaconState): <em>SyncCommittee</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L45">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L45">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:45</a></em></p>
 <p>TODO: NAIVE</p>
 <p>Return the sync committee for a given state and epoch.</p>
 <p><strong>Parameters:</strong></p>
@@ -475,7 +475,7 @@
 <hr/>
 <h3 id="getnextsynccommitteeindices">getNextSyncCommitteeIndices<a class="headerlink" href="#getnextsynccommitteeindices" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getNextSyncCommitteeIndices</strong>(<code>state</code>: allForks.BeaconState): <em><a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L19">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L19">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:19</a></em></p>
 <p>TODO: NAIVE</p>
 <p>Return the sync committee indices for a given state and epoch.
 Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same with any <code>epoch</code> within a sync period.
@@ -500,7 +500,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processepoch">processEpoch<a class="headerlink" href="#processepoch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processEpoch</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›): <em><a href="../../interfaces/reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/index.ts#L29">packages/beacon-state-transition/src/altair/epoch/index.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/index.ts#L29">packages/beacon-state-transition/src/altair/epoch/index.ts:29</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -520,7 +520,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processinactivityupdates">processInactivityUpdates<a class="headerlink" href="#processinactivityupdates" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processInactivityUpdates</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/processInactivityUpdates.ts#L12">packages/beacon-state-transition/src/altair/epoch/processInactivityUpdates.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/processInactivityUpdates.ts#L12">packages/beacon-state-transition/src/altair/epoch/processInactivityUpdates.ts:12</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -544,7 +544,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processparticipationflagupdates">processParticipationFlagUpdates<a class="headerlink" href="#processparticipationflagupdates" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processParticipationFlagUpdates</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/processParticipationFlagUpdates.ts#L5">packages/beacon-state-transition/src/altair/epoch/processParticipationFlagUpdates.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/processParticipationFlagUpdates.ts#L5">packages/beacon-state-transition/src/altair/epoch/processParticipationFlagUpdates.ts:5</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -564,7 +564,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processrewardsandpenalties">processRewardsAndPenalties<a class="headerlink" href="#processrewardsandpenalties" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processRewardsAndPenalties</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/processRewardsAndPenalties.ts#L7">packages/beacon-state-transition/src/altair/epoch/processRewardsAndPenalties.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/processRewardsAndPenalties.ts#L7">packages/beacon-state-transition/src/altair/epoch/processRewardsAndPenalties.ts:7</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -588,7 +588,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processslashings">processSlashings<a class="headerlink" href="#processslashings" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processSlashings</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/processSlashings.ts#L7">packages/beacon-state-transition/src/altair/epoch/processSlashings.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/processSlashings.ts#L7">packages/beacon-state-transition/src/altair/epoch/processSlashings.ts:7</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -612,7 +612,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processsynccommitteeupdates">processSyncCommitteeUpdates<a class="headerlink" href="#processsynccommitteeupdates" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processSyncCommitteeUpdates</strong>(<code>state</code>: <a href="../reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/reflection-3871.reflection-3872._.reflection-3874._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/beacon-state-transition/src/altair/epoch/processSyncCommitteeUpdates.ts#L5">packages/beacon-state-transition/src/altair/epoch/processSyncCommitteeUpdates.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/beacon-state-transition/src/altair/epoch/processSyncCommitteeUpdates.ts#L5">packages/beacon-state-transition/src/altair/epoch/processSyncCommitteeUpdates.ts:5</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

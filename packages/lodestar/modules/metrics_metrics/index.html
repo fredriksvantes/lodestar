@@ -334,15 +334,15 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="ibeaconmetrics">IBeaconMetrics<a class="headerlink" href="#ibeaconmetrics" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>IBeaconMetrics</strong>: <em>ReturnType‹typeof createBeaconMetrics›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/lodestar/src/metrics/metrics/beacon.ts#L3">packages/lodestar/src/metrics/metrics/beacon.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/lodestar/src/metrics/metrics/beacon.ts#L3">packages/lodestar/src/metrics/metrics/beacon.ts:3</a></em></p>
 <hr/>
 <h3 id="ilodestarmetrics">ILodestarMetrics<a class="headerlink" href="#ilodestarmetrics" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ILodestarMetrics</strong>: <em>ReturnType‹typeof createLodestarMetrics›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/lodestar/src/metrics/metrics/lodestar.ts#L5">packages/lodestar/src/metrics/metrics/lodestar.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/lodestar/src/metrics/metrics/lodestar.ts#L5">packages/lodestar/src/metrics/metrics/lodestar.ts:5</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="createbeaconmetrics">createBeaconMetrics<a class="headerlink" href="#createbeaconmetrics" title="Permanent link">¶</a></h3>
 <p>▸ <strong>createBeaconMetrics</strong>(<code>register</code>: <a href="../../classes/metrics_utils.registrymetriccreator/">RegistryMetricCreator</a>): <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/lodestar/src/metrics/metrics/beacon.ts#L11">packages/lodestar/src/metrics/metrics/beacon.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/lodestar/src/metrics/metrics/beacon.ts#L11">packages/lodestar/src/metrics/metrics/beacon.ts:11</a></em></p>
 <p>Metrics from:
 https://github.com/ethereum/eth2.0-metrics/ and
 https://hackmd.io/D5FmoeFZScim_squBFl8oA</p>
@@ -553,6 +553,40 @@ https://hackmd.io/D5FmoeFZScim_squBFl8oA</p>
     })</p>
 </li>
 <li>
+<p><strong>reqRespDialErrors</strong>: <em><a href="../../classes/metrics_utils.gaugeextra/">GaugeExtra</a>‹string›</em> = register.gauge({
+      name: "beacon_reqresp_dial_errors_total",
+      help: "Count total dial errors",
+    })</p>
+</li>
+<li>
+<p><strong>reqRespIncomingErrors</strong>: <em><a href="../../classes/metrics_utils.gaugeextra/">GaugeExtra</a>‹"method"›</em> = register.gauge&lt;"method"&gt;({
+      name: "beacon_reqresp_incoming_requests_error_total",
+      help: "Counts total failed responses handled per method",
+      labelNames: ["method"],
+    })</p>
+</li>
+<li>
+<p><strong>reqRespIncomingRequests</strong>: <em><a href="../../classes/metrics_utils.gaugeextra/">GaugeExtra</a>‹"method"›</em> = register.gauge&lt;"method"&gt;({
+      name: "beacon_reqresp_incoming_requests_total",
+      labelNames: ["method"],
+      help: "Counts total responses handled per method",
+    })</p>
+</li>
+<li>
+<p><strong>reqRespOutgoingErrors</strong>: <em><a href="../../classes/metrics_utils.gaugeextra/">GaugeExtra</a>‹"method"›</em> = register.gauge&lt;"method"&gt;({
+      name: "beacon_reqresp_outgoing_requests_error_total",
+      labelNames: ["method"],
+      help: "Counts total failed requests done per method",
+    })</p>
+</li>
+<li>
+<p><strong>reqRespOutgoingRequests</strong>: <em><a href="../../classes/metrics_utils.gaugeextra/">GaugeExtra</a>‹"method"›</em> = register.gauge&lt;"method"&gt;({
+      name: "beacon_reqresp_outgoing_requests_total",
+      labelNames: ["method"],
+      help: "Counts total requests done per method",
+    })</p>
+</li>
+<li>
 <p><strong>slot</strong>: <em><a href="../../classes/metrics_utils.gaugeextra/">GaugeExtra</a>‹string›</em> = register.gauge({
       name: "beacon_slot",
       help: "latest slot",
@@ -562,7 +596,7 @@ https://hackmd.io/D5FmoeFZScim_squBFl8oA</p>
 <hr/>
 <h3 id="createlodestarmetrics">createLodestarMetrics<a class="headerlink" href="#createlodestarmetrics" title="Permanent link">¶</a></h3>
 <p>▸ <strong>createLodestarMetrics</strong>(<code>register</code>: <a href="../../classes/metrics_utils.registrymetriccreator/">RegistryMetricCreator</a>, <code>metadata</code>: IMetricsOptions["metadata"], <code>anchorState?</code>: allForks.BeaconState): <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/17cfdff/packages/lodestar/src/metrics/metrics/lodestar.ts#L11">packages/lodestar/src/metrics/metrics/lodestar.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7a3c282/packages/lodestar/src/metrics/metrics/lodestar.ts#L11">packages/lodestar/src/metrics/metrics/lodestar.ts:11</a></em></p>
 <p>Extra Lodestar custom metrics</p>
 <p><strong>Parameters:</strong></p>
 <table>
