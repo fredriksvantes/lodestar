@@ -262,25 +262,11 @@
 <span class="p">};</span>
 </code></pre></div>
 <h4 id="using-the-ssz-types">Using the ssz types<a class="headerlink" href="#using-the-ssz-types" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code><span class="c1">// mainnet and minimal types pre-generated under non-default export</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">types</span> <span class="kr">as</span> <span class="nx">mainnetTypes</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types/lib/presets/mainnet"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">types</span> <span class="kr">as</span> <span class="nx">minimalTypes</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types/lib/presets/mainnet"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ssz</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
 
-<span class="nx">mainnetTypes</span><span class="p">.</span><span class="nx">phase0</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
-<span class="nx">minimalTypes</span><span class="p">.</span><span class="nx">phase0</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
-
+<span class="nx">ssz</span><span class="p">.</span><span class="nx">phase0</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
+<span class="nx">ssz</span><span class="p">.</span><span class="nx">altair</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
 <span class="p">...</span>
-
-<span class="c1">// create your own IBeaconSSZTypes object from an IBeaconParams</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">createIBeaconSSZTypes</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">IBeaconParams</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">testnetParams</span>: <span class="kt">IBeaconParams</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">};</span>
-
-<span class="kd">const</span> <span class="nx">testnetTypes</span> <span class="o">=</span> <span class="nx">createIBeaconSSZTypes</span><span class="p">(</span><span class="nx">testnetParams</span><span class="p">);</span>
-
-<span class="nx">testnetTypes</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
 </code></pre></div>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">¶</a></h2>
 <p>Apache-2.0 <a href="https://chainsafe.io">ChainSafe Systems</a></p>
