@@ -563,9 +563,9 @@ Removed when included on chain or old</p>
 </ul>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
-<p>+ <strong>new DepositEventRepository</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>metrics?</code>: IDbMetrics): <em><a href="./">DepositEventRepository</a></em></p>
+<p>+ <strong>new DepositEventRepository</strong>(<code>config</code>: IChainForkConfig, <code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>metrics?</code>: IDbMetrics): <em><a href="./">DepositEventRepository</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c96f3b0/packages/lodestar/src/db/repositories/depositEvent.ts#L9">packages/lodestar/src/db/repositories/depositEvent.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e363db6/packages/lodestar/src/db/repositories/depositEvent.ts#L9">packages/lodestar/src/db/repositories/depositEvent.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -577,7 +577,7 @@ Removed when included on chain or old</p>
 <tbody>
 <tr>
 <td><code>config</code></td>
-<td>IBeaconConfig</td>
+<td>IChainForkConfig</td>
 </tr>
 <tr>
 <td><code>db</code></td>
@@ -597,7 +597,7 @@ Removed when included on chain or old</p>
 <p>Defined in packages/db/lib/abstractRepository.d.ts:19</p>
 <hr/>
 <h3 id="protected-config"><code>Protected</code> config<a class="headerlink" href="#protected-config" title="Permanent link">¶</a></h3>
-<p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
+<p>• <strong>config</strong>: <em>IChainForkConfig</em></p>
 <p><em>Inherited from <a href="../db_repositories.blockrepository/">BlockRepository</a>.<a href="../db_repositories.blockrepository/#protected-config">config</a></em></p>
 <p>Defined in packages/db/lib/abstractRepository.d.ts:17</p>
 <hr/>
@@ -728,7 +728,7 @@ Removed when included on chain or old</p>
 <hr/>
 <h3 id="batchputvalues">batchPutValues<a class="headerlink" href="#batchputvalues" title="Permanent link">¶</a></h3>
 <p>▸ <strong>batchPutValues</strong>(<code>depositEvents</code>: DepositEvent[]): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c96f3b0/packages/lodestar/src/db/repositories/depositEvent.ts#L22">packages/lodestar/src/db/repositories/depositEvent.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e363db6/packages/lodestar/src/db/repositories/depositEvent.ts#L22">packages/lodestar/src/db/repositories/depositEvent.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -854,7 +854,7 @@ Removed when included on chain or old</p>
 <hr/>
 <h3 id="deleteold">deleteOld<a class="headerlink" href="#deleteold" title="Permanent link">¶</a></h3>
 <p>▸ <strong>deleteOld</strong>(<code>depositCount</code>: number): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c96f3b0/packages/lodestar/src/db/repositories/depositEvent.ts#L14">packages/lodestar/src/db/repositories/depositEvent.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e363db6/packages/lodestar/src/db/repositories/depositEvent.ts#L14">packages/lodestar/src/db/repositories/depositEvent.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
