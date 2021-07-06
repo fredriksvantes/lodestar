@@ -388,7 +388,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="aggregatefast">AggregateFast<a class="headerlink" href="#aggregatefast" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>AggregateFast</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/opsPool/attestationPool.ts#L38">packages/lodestar/src/chain/opsPool/attestationPool.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/opsPool/attestationPool.ts#L38">packages/lodestar/src/chain/opsPool/attestationPool.ts:38</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -404,22 +404,22 @@
 <hr/>
 <h3 id="attestationpoolerrortype">AttestationPoolErrorType<a class="headerlink" href="#attestationpoolerrortype" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>AttestationPoolErrorType</strong>: <em>object | object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/opsPool/attestationPool.ts#L15">packages/lodestar/src/chain/opsPool/attestationPool.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/opsPool/attestationPool.ts#L15">packages/lodestar/src/chain/opsPool/attestationPool.ts:15</a></em></p>
 <hr/>
 <h3 id="dataroothex">DataRootHex<a class="headerlink" href="#dataroothex" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>DataRootHex</strong>: <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/opsPool/attestationPool.ts#L45">packages/lodestar/src/chain/opsPool/attestationPool.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/opsPool/attestationPool.ts#L45">packages/lodestar/src/chain/opsPool/attestationPool.ts:45</a></em></p>
 <p>Hex string of DataRoot <code>TODO</code></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-max_attestations_per_slot"><code>Const</code> MAX_ATTESTATIONS_PER_SLOT<a class="headerlink" href="#const-max_attestations_per_slot" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_ATTESTATIONS_PER_SLOT</strong>: <em>16384</em> = 16384</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/opsPool/attestationPool.ts#L36">packages/lodestar/src/chain/opsPool/attestationPool.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/opsPool/attestationPool.ts#L36">packages/lodestar/src/chain/opsPool/attestationPool.ts:36</a></em></p>
 <p>The maximum number of distinct <code>AttestationData</code> that will be stored in each slot.</p>
 <p>This is a DoS protection measure.</p>
 <hr/>
 <h3 id="const-slots_retained"><code>Const</code> SLOTS_RETAINED<a class="headerlink" href="#const-slots_retained" title="Permanent link">¶</a></h3>
 <p>• <strong>SLOTS_RETAINED</strong>: <em>3</em> = 3</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/opsPool/attestationPool.ts#L29">packages/lodestar/src/chain/opsPool/attestationPool.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/opsPool/attestationPool.ts#L29">packages/lodestar/src/chain/opsPool/attestationPool.ts:29</a></em></p>
 <p>The number of slots that will be stored in the pool.</p>
 <p>For example, if <code>SLOTS_RETAINED == 3</code> and the pool is pruned at slot <code>6</code>, then all attestations
 at slots less than <code>4</code> will be dropped and any future attestation with a slot less than <code>4</code>
@@ -427,7 +427,7 @@ will be refused.</p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="aggregateattestationinto">aggregateAttestationInto<a class="headerlink" href="#aggregateattestationinto" title="Permanent link">¶</a></h3>
 <p>▸ <strong>aggregateAttestationInto</strong>(<code>aggregate</code>: <a href="./#aggregatefast">AggregateFast</a>, <code>attestation</code>: Attestation): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/opsPool/attestationPool.ts#L189">packages/lodestar/src/chain/opsPool/attestationPool.ts:189</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/opsPool/attestationPool.ts#L189">packages/lodestar/src/chain/opsPool/attestationPool.ts:189</a></em></p>
 <p>Aggregate a new contribution into <code>aggregate</code> mutating it</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -452,7 +452,7 @@ will be refused.</p>
 <hr/>
 <h3 id="attestationtoaggregate">attestationToAggregate<a class="headerlink" href="#attestationtoaggregate" title="Permanent link">¶</a></h3>
 <p>▸ <strong>attestationToAggregate</strong>(<code>attestation</code>: Attestation): <em><a href="./#aggregatefast">AggregateFast</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/opsPool/attestationPool.ts#L213">packages/lodestar/src/chain/opsPool/attestationPool.ts:213</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/opsPool/attestationPool.ts#L213">packages/lodestar/src/chain/opsPool/attestationPool.ts:213</a></em></p>
 <p>Format <code>contribution</code> into an efficient <code>aggregate</code> to add more contributions in with aggregateContributionInto()</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -473,7 +473,7 @@ will be refused.</p>
 <hr/>
 <h3 id="fasttoattestation">fastToAttestation<a class="headerlink" href="#fasttoattestation" title="Permanent link">¶</a></h3>
 <p>▸ <strong>fastToAttestation</strong>(<code>aggFast</code>: <a href="./#aggregatefast">AggregateFast</a>): <em>Attestation</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/opsPool/attestationPool.ts#L224">packages/lodestar/src/chain/opsPool/attestationPool.ts:224</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/opsPool/attestationPool.ts#L224">packages/lodestar/src/chain/opsPool/attestationPool.ts:224</a></em></p>
 <p>Unwrap AggregateFast to phase0.Attestation</p>
 <p><strong>Parameters:</strong></p>
 <table>
