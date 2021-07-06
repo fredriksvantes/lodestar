@@ -601,7 +601,7 @@
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new LodestarForkChoice</strong>(<code>__namedParameters</code>: object): <em><a href="./">LodestarForkChoice</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3d1f78f/packages/lodestar/src/chain/forkChoice/forkChoice.ts#L19">packages/lodestar/src/chain/forkChoice/forkChoice.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0c5d827/packages/lodestar/src/chain/forkChoice/forkChoice.ts#L19">packages/lodestar/src/chain/forkChoice/forkChoice.ts:19</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -699,7 +699,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="forwarditerateblocksummaries">forwardIterateBlockSummaries<a class="headerlink" href="#forwarditerateblocksummaries" title="Permanent link">¶</a></h3>
 <p>▸ <strong>forwardIterateBlockSummaries</strong>(): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#forwarditerateblocksummaries">forwardIterateBlockSummaries</a></em></p>
-<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:196</p>
+<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:197</p>
 <p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
 <hr/>
 <h3 id="getancestor">getAncestor<a class="headerlink" href="#getancestor" title="Permanent link">¶</a></h3>
@@ -763,7 +763,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getblocksummariesatslot">getBlockSummariesAtSlot<a class="headerlink" href="#getblocksummariesatslot" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getBlockSummariesAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getblocksummariesatslot">getBlockSummariesAtSlot</a></em></p>
-<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:198</p>
+<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:199</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -784,7 +784,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getblocksummariesbyparentroot">getBlockSummariesByParentRoot<a class="headerlink" href="#getblocksummariesbyparentroot" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getBlockSummariesByParentRoot</strong>(<code>parentRoot</code>: phase0.Root): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getblocksummariesbyparentroot">getBlockSummariesByParentRoot</a></em></p>
-<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:197</p>
+<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:198</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -805,7 +805,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot<a class="headerlink" href="#getcanonicalblocksummaryatslot" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getCanonicalBlockSummaryAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>IBlockSummary | null</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot</a></em></p>
-<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:195</p>
+<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:196</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -969,8 +969,9 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <h3 id="iterateblocksummaries">iterateBlockSummaries<a class="headerlink" href="#iterateblocksummaries" title="Permanent link">¶</a></h3>
 <p>▸ <strong>iterateBlockSummaries</strong>(<code>blockRoot</code>: phase0.Root): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#iterateblocksummaries">iterateBlockSummaries</a></em></p>
-<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:190</p>
-<p>Iterates backwards through block summaries, starting from a block root</p>
+<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:191</p>
+<p>Iterates backwards through block summaries, starting from a block root.
+Return only the non-finalized blocks.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -991,7 +992,7 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <h3 id="iteratenonancestors">iterateNonAncestors<a class="headerlink" href="#iteratenonancestors" title="Permanent link">¶</a></h3>
 <p>▸ <strong>iterateNonAncestors</strong>(<code>blockRoot</code>: phase0.Root): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#iteratenonancestors">iterateNonAncestors</a></em></p>
-<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:194</p>
+<p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:195</p>
 <p>The same to iterateBlockSummaries but this gets non-ancestor nodes instead of ancestor nodes.</p>
 <p><strong>Parameters:</strong></p>
 <table>
