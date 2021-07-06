@@ -601,7 +601,7 @@
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new LodestarForkChoice</strong>(<code>__namedParameters</code>: object): <em><a href="./">LodestarForkChoice</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9cc19c4/packages/lodestar/src/chain/forkChoice/forkChoice.ts#L19">packages/lodestar/src/chain/forkChoice/forkChoice.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/732f767/packages/lodestar/src/chain/forkChoice/forkChoice.ts#L19">packages/lodestar/src/chain/forkChoice/forkChoice.ts:19</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -630,14 +630,14 @@
 </tr>
 <tr>
 <td><code>state</code></td>
-<td><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#beaconstate">BeaconState</a>›</td>
+<td><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#beaconstate">BeaconState</a>›</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em><a href="./">LodestarForkChoice</a></em></p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="bestjustifiedbalances">bestJustifiedBalances<a class="headerlink" href="#bestjustifiedbalances" title="Permanent link">¶</a></h3>
-<p>• <strong>bestJustifiedBalances</strong>: <em><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]</em></p>
+<p>• <strong>bestJustifiedBalances</strong>: <em><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#bestjustifiedbalances">bestJustifiedBalances</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:54</p>
 <p>Balances tracked in the protoArray, or soon to be tracked
@@ -662,7 +662,7 @@ Indexed by validator index</p>
 <p>Cached head</p>
 <hr/>
 <h3 id="justifiedbalances">justifiedBalances<a class="headerlink" href="#justifiedbalances" title="Permanent link">¶</a></h3>
-<p>• <strong>justifiedBalances</strong>: <em><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]</em></p>
+<p>• <strong>justifiedBalances</strong>: <em><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#justifiedbalances">justifiedBalances</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:47</p>
 <p>Balances currently tracked in the protoArray
@@ -703,7 +703,7 @@ Each vote contains the latest message and previous message</p>
 <p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
 <hr/>
 <h3 id="getancestor">getAncestor<a class="headerlink" href="#getancestor" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getAncestor</strong>(<code>blockRoot</code>: phase0.Root, <code>ancestorSlot</code>: <a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>Uint8Array</em></p>
+<p>▸ <strong>getAncestor</strong>(<code>blockRoot</code>: phase0.Root, <code>ancestorSlot</code>: <a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>Uint8Array</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getancestor">getAncestor</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:95</p>
 <p>Returns the block root of an ancestor of <code>blockRoot</code> at the given <code>slot</code>.
@@ -726,7 +726,7 @@ Each vote contains the latest message and previous message</p>
 </tr>
 <tr>
 <td><code>ancestorSlot</code></td>
-<td><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>
@@ -761,7 +761,7 @@ Each vote contains the latest message and previous message</p>
 <p><strong>Returns:</strong> <em>IBlockSummary | null</em></p>
 <hr/>
 <h3 id="getblocksummariesatslot">getBlockSummariesAtSlot<a class="headerlink" href="#getblocksummariesatslot" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getBlockSummariesAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>IBlockSummary[]</em></p>
+<p>▸ <strong>getBlockSummariesAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getblocksummariesatslot">getBlockSummariesAtSlot</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:198</p>
 <p><strong>Parameters:</strong></p>
@@ -775,7 +775,7 @@ Each vote contains the latest message and previous message</p>
 <tbody>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>
@@ -803,7 +803,7 @@ Each vote contains the latest message and previous message</p>
 <p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
 <hr/>
 <h3 id="getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot<a class="headerlink" href="#getcanonicalblocksummaryatslot" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getCanonicalBlockSummaryAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>IBlockSummary | null</em></p>
+<p>▸ <strong>getCanonicalBlockSummaryAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>IBlockSummary | null</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:195</p>
 <p><strong>Parameters:</strong></p>
@@ -817,7 +817,7 @@ Each vote contains the latest message and previous message</p>
 <tbody>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>
@@ -868,7 +868,7 @@ Each vote contains the latest message and previous message</p>
 <p><strong>Returns:</strong> <em>Checkpoint</em></p>
 <hr/>
 <h3 id="getlatestmessage">getLatestMessage<a class="headerlink" href="#getlatestmessage" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getLatestMessage</strong>(<code>validatorIndex</code>: <a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a>): <em>ILatestMessage | undefined</em></p>
+<p>▸ <strong>getLatestMessage</strong>(<code>validatorIndex</code>: <a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a>): <em>ILatestMessage | undefined</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getlatestmessage">getLatestMessage</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:158</p>
 <p><strong>Parameters:</strong></p>
@@ -882,17 +882,17 @@ Each vote contains the latest message and previous message</p>
 <tbody>
 <tr>
 <td><code>validatorIndex</code></td>
-<td><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a></td>
+<td><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>ILatestMessage | undefined</em></p>
 <hr/>
 <h3 id="gettime">getTime<a class="headerlink" href="#gettime" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getTime</strong>(): <em><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
+<p>▸ <strong>getTime</strong>(): <em><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#gettime">getTime</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:163</p>
-<p><strong>Returns:</strong> <em><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
+<p><strong>Returns:</strong> <em><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
 <hr/>
 <h3 id="hasblock">hasBlock<a class="headerlink" href="#hasblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>hasBlock</strong>(<code>blockRoot</code>: phase0.Root): <em>boolean</em></p>
@@ -1042,7 +1042,7 @@ will not be run here.</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr/>
 <h3 id="onblock">onBlock<a class="headerlink" href="#onblock" title="Permanent link">¶</a></h3>
-<p>▸ <strong>onBlock</strong>(<code>block</code>: allForks.BeaconBlock, <code>state</code>: allForks.BeaconState, <code>justifiedBalances?</code>: <a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]): <em>void</em></p>
+<p>▸ <strong>onBlock</strong>(<code>block</code>: allForks.BeaconBlock, <code>state</code>: allForks.BeaconState, <code>justifiedBalances?</code>: <a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]): <em>void</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#onblock">onBlock</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:138</p>
 <p>Add <code>block</code> to the fork choice DAG.</p>
@@ -1074,7 +1074,7 @@ This ensures that the forkchoice is never out of sync.</p>
 </tr>
 <tr>
 <td><code>justifiedBalances?</code></td>
-<td><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]</td>
+<td><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#gwei">Gwei</a>[]</td>
 </tr>
 </tbody>
 </table>
@@ -1134,7 +1134,7 @@ Update the head cache.</p>
 <p><strong>Returns:</strong> <em>IBlockSummary</em></p>
 <hr/>
 <h3 id="updatetime">updateTime<a class="headerlink" href="#updatetime" title="Permanent link">¶</a></h3>
-<p>▸ <strong>updateTime</strong>(<code>currentSlot</code>: <a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>void</em></p>
+<p>▸ <strong>updateTime</strong>(<code>currentSlot</code>: <a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>void</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#updatetime">updateTime</a></em></p>
 <p>Defined in packages/fork-choice/lib/forkChoice/forkChoice.d.ts:162</p>
 <p>Call <code>onTick</code> for all slots between <code>fcStore.getCurrentSlot()</code> and the provided <code>currentSlot</code>.</p>
@@ -1149,7 +1149,7 @@ Update the head cache.</p>
 <tbody>
 <tr>
 <td><code>currentSlot</code></td>
-<td><a href="../../modules/reflection-11491.reflection-11492._.reflection-11494._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-11494.reflection-11495._.reflection-11497._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>
