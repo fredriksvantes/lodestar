@@ -322,6 +322,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#blockgossiperror">
+    BlockGossipError
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#chainsegmenterror">
     ChainSegmentError
   </a>
@@ -337,13 +342,8 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gossipvalidationerror">
-    GossipValidationError
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#icontributionandproofjob">
-    IContributionAndProofJob
+<a class="md-nav__link" href="#gossipactionerror">
+    GossipActionError
   </a>
 </li>
 <li class="md-nav__item">
@@ -476,11 +476,11 @@
 <li><a href="./#blockerror">BlockError</a></li>
 <li><a href="./#blockerrorcode">BlockErrorCode</a></li>
 <li><a href="./#blockerrortype">BlockErrorType</a></li>
+<li><a href="./#blockgossiperror">BlockGossipError</a></li>
 <li><a href="./#chainsegmenterror">ChainSegmentError</a></li>
 <li><a href="./#chainsegmentjobobject">ChainSegmentJobObject</a></li>
 <li><a href="./#gossipaction">GossipAction</a></li>
-<li><a href="./#gossipvalidationerror">GossipValidationError</a></li>
-<li><a href="./#icontributionandproofjob">IContributionAndProofJob</a></li>
+<li><a href="./#gossipactionerror">GossipActionError</a></li>
 <li><a href="./#isynccommitteejob">ISyncCommitteeJob</a></li>
 <li><a href="./#proposerslashingerror">ProposerSlashingError</a></li>
 <li><a href="./#proposerslashingerrorcode">ProposerSlashingErrorCode</a></li>
@@ -507,15 +507,15 @@
 <li><a href="../../classes/chain_errors.attestationerror/">AttestationError</a></li>
 <li><a href="../../classes/chain_errors.attesterslashingerror/">AttesterSlashingError</a></li>
 <li><a href="../../classes/chain_errors.blockerror/">BlockError</a></li>
+<li><a href="../../classes/chain_errors.blockgossiperror/">BlockGossipError</a></li>
 <li><a href="../../classes/chain_errors.chainsegmenterror/">ChainSegmentError</a></li>
-<li><a href="../../classes/chain_errors.gossipvalidationerror/">GossipValidationError</a></li>
+<li><a href="../../classes/chain_errors.gossipactionerror/">GossipActionError</a></li>
 <li><a href="../../classes/chain_errors.proposerslashingerror/">ProposerSlashingError</a></li>
 <li><a href="../../classes/chain_errors.synccommitteeerror/">SyncCommitteeError</a></li>
 <li><a href="../../classes/chain_errors.voluntaryexiterror/">VoluntaryExitError</a></li>
 </ul>
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="../../interfaces/chain_errors.icontributionandproofjob/">IContributionAndProofJob</a></li>
 <li><a href="../../interfaces/chain_errors.isynccommitteejob/">ISyncCommitteeJob</a></li>
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">¶</a></h3>
@@ -556,6 +556,9 @@
 <h3 id="blockerrortype">BlockErrorType<a class="headerlink" href="#blockerrortype" title="Permanent link">¶</a></h3>
 <p>• <strong>BlockErrorType</strong>:</p>
 <hr/>
+<h3 id="blockgossiperror">BlockGossipError<a class="headerlink" href="#blockgossiperror" title="Permanent link">¶</a></h3>
+<p>• <strong>BlockGossipError</strong>:</p>
+<hr/>
 <h3 id="chainsegmenterror">ChainSegmentError<a class="headerlink" href="#chainsegmenterror" title="Permanent link">¶</a></h3>
 <p>• <strong>ChainSegmentError</strong>:</p>
 <hr/>
@@ -565,11 +568,8 @@
 <h3 id="gossipaction">GossipAction<a class="headerlink" href="#gossipaction" title="Permanent link">¶</a></h3>
 <p>• <strong>GossipAction</strong>:</p>
 <hr/>
-<h3 id="gossipvalidationerror">GossipValidationError<a class="headerlink" href="#gossipvalidationerror" title="Permanent link">¶</a></h3>
-<p>• <strong>GossipValidationError</strong>:</p>
-<hr/>
-<h3 id="icontributionandproofjob">IContributionAndProofJob<a class="headerlink" href="#icontributionandproofjob" title="Permanent link">¶</a></h3>
-<p>• <strong>IContributionAndProofJob</strong>:</p>
+<h3 id="gossipactionerror">GossipActionError<a class="headerlink" href="#gossipactionerror" title="Permanent link">¶</a></h3>
+<p>• <strong>GossipActionError</strong>:</p>
 <hr/>
 <h3 id="isynccommitteejob">ISyncCommitteeJob<a class="headerlink" href="#isynccommitteejob" title="Permanent link">¶</a></h3>
 <p>• <strong>ISyncCommitteeJob</strong>:</p>
@@ -603,19 +603,19 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="attestationerrortype_1">AttestationErrorType<a class="headerlink" href="#attestationerrortype_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>AttestationErrorType</strong>: <em>object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2685d2f/packages/lodestar/src/chain/errors/attestationError.ts#L134">packages/lodestar/src/chain/errors/attestationError.ts:134</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/34f5549/packages/lodestar/src/chain/errors/attestationError.ts#L134">packages/lodestar/src/chain/errors/attestationError.ts:134</a></em></p>
 <hr/>
 <h3 id="attesterslashingerrortype_1">AttesterSlashingErrorType<a class="headerlink" href="#attesterslashingerrortype_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>AttesterSlashingErrorType</strong>: <em>object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2685d2f/packages/lodestar/src/chain/errors/attesterSlashingError.ts#L7">packages/lodestar/src/chain/errors/attesterSlashingError.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/34f5549/packages/lodestar/src/chain/errors/attesterSlashingError.ts#L7">packages/lodestar/src/chain/errors/attesterSlashingError.ts:7</a></em></p>
 <hr/>
 <h3 id="blockerrortype_1">BlockErrorType<a class="headerlink" href="#blockerrortype_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>BlockErrorType</strong>: <em>object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2685d2f/packages/lodestar/src/chain/errors/blockError.ts#L86">packages/lodestar/src/chain/errors/blockError.ts:86</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/34f5549/packages/lodestar/src/chain/errors/blockError.ts#L87">packages/lodestar/src/chain/errors/blockError.ts:87</a></em></p>
 <hr/>
 <h3 id="chainsegmentjobobject_1">ChainSegmentJobObject<a class="headerlink" href="#chainsegmentjobobject_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ChainSegmentJobObject</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2685d2f/packages/lodestar/src/chain/errors/blockError.ts#L116">packages/lodestar/src/chain/errors/blockError.ts:116</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/34f5549/packages/lodestar/src/chain/errors/blockError.ts#L119">packages/lodestar/src/chain/errors/blockError.ts:119</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -628,15 +628,15 @@
 <hr/>
 <h3 id="proposerslashingerrortype_1">ProposerSlashingErrorType<a class="headerlink" href="#proposerslashingerrortype_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ProposerSlashingErrorType</strong>: <em>object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2685d2f/packages/lodestar/src/chain/errors/proposerSlashingError.ts#L7">packages/lodestar/src/chain/errors/proposerSlashingError.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/34f5549/packages/lodestar/src/chain/errors/proposerSlashingError.ts#L7">packages/lodestar/src/chain/errors/proposerSlashingError.ts:7</a></em></p>
 <hr/>
 <h3 id="synccommitteeerrortype_1">SyncCommitteeErrorType<a class="headerlink" href="#synccommitteeerrortype_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>SyncCommitteeErrorType</strong>: <em>object | object | object | object | object | object | object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2685d2f/packages/lodestar/src/chain/errors/syncCommitteeError.ts#L14">packages/lodestar/src/chain/errors/syncCommitteeError.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/34f5549/packages/lodestar/src/chain/errors/syncCommitteeError.ts#L14">packages/lodestar/src/chain/errors/syncCommitteeError.ts:14</a></em></p>
 <hr/>
 <h3 id="voluntaryexiterrortype_1">VoluntaryExitErrorType<a class="headerlink" href="#voluntaryexiterrortype_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>VoluntaryExitErrorType</strong>: <em>object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2685d2f/packages/lodestar/src/chain/errors/voluntaryExitError.ts#L7">packages/lodestar/src/chain/errors/voluntaryExitError.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/34f5549/packages/lodestar/src/chain/errors/voluntaryExitError.ts#L7">packages/lodestar/src/chain/errors/voluntaryExitError.ts:7</a></em></p>
 </article>
 </div>
 </div>
