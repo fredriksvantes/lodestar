@@ -3531,7 +3531,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/validator/classes/reflection-1112.reflection-1.validator/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/classes/reflection-1135.reflection-1.validator/</loc>
          <lastmod>2021-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -3552,6 +3552,11 @@
     </url>
     <url>
          <loc>https://chainsafe.github.io/lodestar/packages/validator/classes/services.blockproposingservice/</loc>
+         <lastmod>2021-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/classes/services.chainheadertracker/</loc>
          <lastmod>2021-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -3651,7 +3656,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/validator/enums/reflection-1112.reflection-1.status/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/enums/reflection-1135.reflection-1.status/</loc>
          <lastmod>2021-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -3726,12 +3731,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/validator/modules/reflection-1112/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/modules/reflection-1135/</loc>
          <lastmod>2021-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/validator/modules/reflection-1112.reflection-1/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/validator/modules/reflection-1135.reflection-1/</loc>
          <lastmod>2021-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
