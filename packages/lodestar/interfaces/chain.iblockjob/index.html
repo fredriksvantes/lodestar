@@ -8,9 +8,9 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/chain.iblockjob/" rel="canonical"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.1, mkdocs-material-7.1.9" name="generator"/>
+<meta content="mkdocs-1.2.1, mkdocs-material-7.1.10" name="generator"/>
 <title>Chain.iblockjob - Lodestar documentation</title>
-<link href="../../../../assets/stylesheets/main.ca7ac06f.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.1fe995fd.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -130,43 +130,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-        Design
+        CLI Usage
         <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Design" class="md-nav" data-md-level="1">
+<nav aria-label="CLI Usage" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          Design
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../design/architecture/">
-        Beacon node architecture
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../design/events/">
-        Beacon node events
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../design/depgraph/">
-        Lodestar package structure
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
-        Usage
-        <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Usage" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
-          Usage
+          CLI Usage
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -193,13 +163,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
         Reference
         <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Reference" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
+<label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
           Reference
         </label>
@@ -213,9 +183,34 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../">
-        Packages
+<a class="md-nav__link" href="../../../../libraries/">
+        Libraries
       </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+        Design
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Design
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../design/architecture/">
+        Beacon node architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../design/depgraph/">
+        Lodestar package structure
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../contributing/">
@@ -319,30 +314,30 @@
 <h3 id="prefinalized">prefinalized<a class="headerlink" href="#prefinalized" title="Permanent link">¶</a></h3>
 <p>• <strong>prefinalized</strong>: <em>boolean</em></p>
 <p><em>Inherited from <a href="../chain.iprocessblock/">IProcessBlock</a>.<a href="../chain.iprocessblock/#prefinalized">prefinalized</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/lodestar/src/chain/interface.ts#L26">packages/lodestar/src/chain/interface.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/lodestar/src/chain/interface.ts#L26">packages/lodestar/src/chain/interface.ts:26</a></em></p>
 <p>blocks fed to the processor that occur before the best known finalized checkpoint</p>
 <hr/>
 <h3 id="reprocess">reprocess<a class="headerlink" href="#reprocess" title="Permanent link">¶</a></h3>
 <p>• <strong>reprocess</strong>: <em>boolean</em></p>
 <p><em>Inherited from <a href="../chain.iprocessblock/">IProcessBlock</a>.<a href="../chain.iprocessblock/#reprocess">reprocess</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/lodestar/src/chain/interface.ts#L22">packages/lodestar/src/chain/interface.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/lodestar/src/chain/interface.ts#L22">packages/lodestar/src/chain/interface.ts:22</a></em></p>
 <p>Metadata: lets a block thats already been processed to be processed again.
 After processing, the block will not be stored in the database</p>
 <hr/>
 <h3 id="signedblock">signedBlock<a class="headerlink" href="#signedblock" title="Permanent link">¶</a></h3>
 <p>• <strong>signedBlock</strong>: <em>allForks.SignedBeaconBlock</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/lodestar/src/chain/interface.ts#L42">packages/lodestar/src/chain/interface.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/lodestar/src/chain/interface.ts#L42">packages/lodestar/src/chain/interface.ts:42</a></em></p>
 <hr/>
 <h3 id="validproposersignature">validProposerSignature<a class="headerlink" href="#validproposersignature" title="Permanent link">¶</a></h3>
 <p>• <strong>validProposerSignature</strong>: <em>boolean</em></p>
 <p><em>Inherited from <a href="../chain.iprocessblock/">IProcessBlock</a>.<a href="../chain.iprocessblock/#validproposersignature">validProposerSignature</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/lodestar/src/chain/interface.ts#L30">packages/lodestar/src/chain/interface.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/lodestar/src/chain/interface.ts#L30">packages/lodestar/src/chain/interface.ts:30</a></em></p>
 <p>Metadata: <code>true</code> if only the block proposer signature has been verified</p>
 <hr/>
 <h3 id="validsignatures">validSignatures<a class="headerlink" href="#validsignatures" title="Permanent link">¶</a></h3>
 <p>• <strong>validSignatures</strong>: <em>boolean</em></p>
 <p><em>Inherited from <a href="../chain.iprocessblock/">IProcessBlock</a>.<a href="../chain.iprocessblock/#validsignatures">validSignatures</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/lodestar/src/chain/interface.ts#L34">packages/lodestar/src/chain/interface.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/lodestar/src/chain/interface.ts#L34">packages/lodestar/src/chain/interface.ts:34</a></em></p>
 <p>Metadata: <code>true</code> if all the signatures including the proposer signature have been verified</p>
 </article>
 </div>
@@ -380,6 +375,6 @@ After processing, the block will not be stored in the database</p>
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+<script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
 </body>
 </html>

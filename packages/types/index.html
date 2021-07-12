@@ -8,9 +8,9 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/types/" rel="canonical"/>
 <link href="../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.1, mkdocs-material-7.1.9" name="generator"/>
+<meta content="mkdocs-1.2.1, mkdocs-material-7.1.10" name="generator"/>
 <title>Index - Lodestar documentation</title>
-<link href="../../assets/stylesheets/main.ca7ac06f.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.1fe995fd.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -130,43 +130,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-        Design
+        CLI Usage
         <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Design" class="md-nav" data-md-level="1">
+<nav aria-label="CLI Usage" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          Design
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/architecture/">
-        Beacon node architecture
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/events/">
-        Beacon node events
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/depgraph/">
-        Lodestar package structure
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
-        Usage
-        <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Usage" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
-          Usage
+          CLI Usage
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -193,13 +163,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
         Reference
         <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Reference" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
+<label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
           Reference
         </label>
@@ -213,9 +183,34 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../">
-        Packages
+<a class="md-nav__link" href="../../libraries/">
+        Libraries
       </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+        Design
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Design
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/architecture/">
+        Beacon node architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/depgraph/">
+        Lodestar package structure
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../contributing/">
@@ -251,22 +246,49 @@
 <blockquote>
 <p>This package is part of <a href="https://lodestar.chainsafe.io">ChainSafe's Lodestar</a> project</p>
 </blockquote>
-<p>Typescript and SSZ types for Eth2 datastructures</p>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">¶</a></h2>
-<h4 id="using-the-typescript-types">Using the typescript types<a class="headerlink" href="#using-the-typescript-types" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">BeaconState</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">b</span>: <span class="kt">BeaconState</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="nx">slot</span>: <span class="kt">5</span><span class="p">,</span>
-  <span class="p">...</span>
-<span class="p">};</span>
+<p>Lodestar defines all datatypes defined in the <a href="https://github.com/ethereum/eth2.0-specs">Ethereum Consensus / Eth2 spec</a>. This tooling can be used for any Typescript project looking to operate on these types. Both Typescript interfaces <em>and</em> Simple Serialize (SSZ) methods are exported for consumers.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>npm install @chainsafe/lodestar-types
 </code></pre></div>
-<h4 id="using-the-ssz-types">Using the ssz types<a class="headerlink" href="#using-the-ssz-types" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ssz</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">¶</a></h2>
+<p>The lodestar types library organizes datatypes on several dimensions:</p>
+<ul>
+<li>Typescript interfaces vs SSZ objects</li>
+<li>By fork</li>
+</ul>
+<h3 id="typescript-interfaces">Typescript interfaces<a class="headerlink" href="#typescript-interfaces" title="Permanent link">¶</a></h3>
+<p>Lodestar types are all defined as typescript interfaces. These interfaces can be used independently, and are used throughout downstream Lodestar packages (eg: in the beacon node).</p>
+<p>These interfaces are accessible via named exports.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">Epoch</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
 
-<span class="nx">ssz</span><span class="p">.</span><span class="nx">phase0</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
-<span class="nx">ssz</span><span class="p">.</span><span class="nx">altair</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
-<span class="p">...</span>
+<span class="kd">const</span> <span class="nx">x</span>: <span class="kt">Epoch</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="ssz-objects">SSZ objects<a class="headerlink" href="#ssz-objects" title="Permanent link">¶</a></h3>
+<p>Lodestar types are also defined as SSZ objects. These "Type" objects provide convenient methods to perform SSZ operations (serialization / deserialization / merkleization/etc). The library exports a singleton object containing all SSZ objects.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">Type</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/ssz"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">ssz</span><span class="p">,</span> <span class="nx">Epoch</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">EpochType</span>: <span class="kt">Type</span><span class="o">&lt;</span><span class="nx">Epoch</span><span class="o">&gt;</span> <span class="o">=</span> <span class="nx">ssz</span><span class="p">.</span><span class="nx">Epoch</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">e</span> <span class="o">=</span> <span class="nx">EpochType</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="by-fork">By fork<a class="headerlink" href="#by-fork" title="Permanent link">¶</a></h3>
+<p>Lodestar types support multiple different consensus forks. In order to easily differentiate types that may change across forks, types are organized in namespaces according to the fork in which they're introduced. Types introduced in phase 0 are available under the <code>phase0</code> namespace. Types introduced in altair are available under the <code>altair</code> namespace.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">altair</span><span class="p">,</span> <span class="nx">phase0</span><span class="p">,</span> <span class="nx">ssz</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">phase0State</span>: <span class="kt">phase0.BeaconState</span> <span class="o">=</span> <span class="nx">ssz</span><span class="p">.</span><span class="nx">phase0</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">altairState</span>: <span class="kt">altair.BeaconState</span> <span class="o">=</span> <span class="nx">ssz</span><span class="p">.</span><span class="nx">altair</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
+</code></pre></div>
+<p>Primitive types are directly available without a namespace.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">Epoch</span><span class="p">,</span> <span class="nx">ssz</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">epoch</span>: <span class="kt">Epoch</span> <span class="o">=</span> <span class="nx">ssz</span><span class="p">.</span><span class="nx">Epoch</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
+</code></pre></div>
+<p>In some cases, we need interfaces that accept types across all forks, eg: when the fork is not known ahead of time. Typescript interfaces for this purpose are exported under the <code>allForks</code> namespace. SSZ Types typed to these interfaces are also provided under an <code>allForks</code> namespace, but keyed by <code>ForkName</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ForkName</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">allForks</span><span class="p">,</span> <span class="nx">ssz</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-types"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">state</span>: <span class="kt">allForks.BeaconState</span> <span class="o">=</span> <span class="nx">ssz</span><span class="p">.</span><span class="nx">allForks</span><span class="p">[</span><span class="nx">ForkName</span><span class="p">.</span><span class="nx">phase0</span><span class="p">].</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">();</span>
 </code></pre></div>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">¶</a></h2>
 <p>Apache-2.0 <a href="https://chainsafe.io">ChainSafe Systems</a></p>
@@ -306,6 +328,6 @@
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+<script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
 </body>
 </html>

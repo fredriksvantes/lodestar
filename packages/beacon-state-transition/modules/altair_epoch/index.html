@@ -8,9 +8,9 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/altair_epoch/" rel="canonical"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.1, mkdocs-material-7.1.9" name="generator"/>
+<meta content="mkdocs-1.2.1, mkdocs-material-7.1.10" name="generator"/>
 <title>Altair epoch - Lodestar documentation</title>
-<link href="../../../../assets/stylesheets/main.ca7ac06f.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.1fe995fd.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -130,43 +130,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-        Design
+        CLI Usage
         <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Design" class="md-nav" data-md-level="1">
+<nav aria-label="CLI Usage" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          Design
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../design/architecture/">
-        Beacon node architecture
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../design/events/">
-        Beacon node events
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../design/depgraph/">
-        Lodestar package structure
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
-        Usage
-        <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Usage" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
-          Usage
+          CLI Usage
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -193,13 +163,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
         Reference
         <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Reference" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
+<label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
           Reference
         </label>
@@ -213,9 +183,34 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../">
-        Packages
+<a class="md-nav__link" href="../../../../libraries/">
+        Libraries
       </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+        Design
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Design
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../design/architecture/">
+        Beacon node architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../design/depgraph/">
+        Lodestar package structure
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../contributing/">
@@ -402,11 +397,11 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-max_random_byte"><code>Const</code> MAX_RANDOM_BYTE<a class="headerlink" href="#const-max_random_byte" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_RANDOM_BYTE</strong>: <em>bigint</em> = BigInt(2 ** 8 - 1)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L9">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L9">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:9</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="getbasereward">getBaseReward<a class="headerlink" href="#getbasereward" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getBaseReward</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/allforks_util.iepochprocess/">IEpochProcess</a>, <code>index</code>: <a href="../phase0/#validatorindex">ValidatorIndex</a>): <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/balance.ts#L99">packages/beacon-state-transition/src/altair/epoch/balance.ts:99</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/balance.ts#L99">packages/beacon-state-transition/src/altair/epoch/balance.ts:99</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -434,7 +429,7 @@
 <hr/>
 <h3 id="getflagindexdeltas_1">getFlagIndexDeltas<a class="headerlink" href="#getflagindexdeltas_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getFlagIndexDeltas</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/allforks_util.iepochprocess/">IEpochProcess</a>, <code>flagIndex</code>: number): <em>[<a href="../phase0/#gwei">Gwei</a>[], <a href="../phase0/#gwei">Gwei</a>[]]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/balance.ts#L26">packages/beacon-state-transition/src/altair/epoch/balance.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/balance.ts#L26">packages/beacon-state-transition/src/altair/epoch/balance.ts:26</a></em></p>
 <p>Return the deltas for a given flag index by scanning through the participation flags.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -463,7 +458,7 @@
 <hr/>
 <h3 id="getinactivitypenaltydeltas_1">getInactivityPenaltyDeltas<a class="headerlink" href="#getinactivitypenaltydeltas_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getInactivityPenaltyDeltas</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/allforks_util.iepochprocess/">IEpochProcess</a>): <em>[<a href="../phase0/#gwei">Gwei</a>[], <a href="../phase0/#gwei">Gwei</a>[]]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/balance.ts#L77">packages/beacon-state-transition/src/altair/epoch/balance.ts:77</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/balance.ts#L77">packages/beacon-state-transition/src/altair/epoch/balance.ts:77</a></em></p>
 <p>Return the inactivity penalty deltas by considering timely target participation flags and inactivity scores.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -488,7 +483,7 @@
 <hr/>
 <h3 id="getnextsynccommittee">getNextSyncCommittee<a class="headerlink" href="#getnextsynccommittee" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getNextSyncCommittee</strong>(<code>state</code>: <a href="../allforks/#beaconstate">BeaconState</a>): <em>SyncCommittee</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L45">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L45">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:45</a></em></p>
 <p>TODO: NAIVE</p>
 <p>Return the sync committee for a given state and epoch.</p>
 <p><strong>Parameters:</strong></p>
@@ -510,7 +505,7 @@
 <hr/>
 <h3 id="getnextsynccommitteeindices">getNextSyncCommitteeIndices<a class="headerlink" href="#getnextsynccommitteeindices" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getNextSyncCommitteeIndices</strong>(<code>state</code>: <a href="../allforks/#beaconstate">BeaconState</a>): <em><a href="../phase0/#validatorindex">ValidatorIndex</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L19">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/sync_committee.ts#L19">packages/beacon-state-transition/src/altair/epoch/sync_committee.ts:19</a></em></p>
 <p>TODO: NAIVE</p>
 <p>Return the sync committee indices for a given state and epoch.
 Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same with any <code>epoch</code> within a sync period.
@@ -535,7 +530,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processepoch">processEpoch<a class="headerlink" href="#processepoch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processEpoch</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›): <em><a href="../../interfaces/allforks_util.iepochprocess/">IEpochProcess</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/index.ts#L32">packages/beacon-state-transition/src/altair/epoch/index.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/index.ts#L32">packages/beacon-state-transition/src/altair/epoch/index.ts:32</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -555,7 +550,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processinactivityupdates">processInactivityUpdates<a class="headerlink" href="#processinactivityupdates" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processInactivityUpdates</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/allforks_util.iepochprocess/">IEpochProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/processInactivityUpdates.ts#L12">packages/beacon-state-transition/src/altair/epoch/processInactivityUpdates.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/processInactivityUpdates.ts#L12">packages/beacon-state-transition/src/altair/epoch/processInactivityUpdates.ts:12</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -579,7 +574,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processparticipationflagupdates">processParticipationFlagUpdates<a class="headerlink" href="#processparticipationflagupdates" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processParticipationFlagUpdates</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/processParticipationFlagUpdates.ts#L5">packages/beacon-state-transition/src/altair/epoch/processParticipationFlagUpdates.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/processParticipationFlagUpdates.ts#L5">packages/beacon-state-transition/src/altair/epoch/processParticipationFlagUpdates.ts:5</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -599,7 +594,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processrewardsandpenalties">processRewardsAndPenalties<a class="headerlink" href="#processrewardsandpenalties" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processRewardsAndPenalties</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/allforks_util.iepochprocess/">IEpochProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/processRewardsAndPenalties.ts#L7">packages/beacon-state-transition/src/altair/epoch/processRewardsAndPenalties.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/processRewardsAndPenalties.ts#L7">packages/beacon-state-transition/src/altair/epoch/processRewardsAndPenalties.ts:7</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -623,7 +618,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processslashings">processSlashings<a class="headerlink" href="#processslashings" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processSlashings</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/allforks_util.iepochprocess/">IEpochProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/processSlashings.ts#L7">packages/beacon-state-transition/src/altair/epoch/processSlashings.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/processSlashings.ts#L7">packages/beacon-state-transition/src/altair/epoch/processSlashings.ts:7</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -647,7 +642,7 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <hr/>
 <h3 id="processsynccommitteeupdates">processSyncCommitteeUpdates<a class="headerlink" href="#processsynccommitteeupdates" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processSyncCommitteeUpdates</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>process</code>: <a href="../../interfaces/allforks_util.iepochprocess/">IEpochProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b49ac4c/packages/beacon-state-transition/src/altair/epoch/processSyncCommitteeUpdates.ts#L5">packages/beacon-state-transition/src/altair/epoch/processSyncCommitteeUpdates.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1e3b144/packages/beacon-state-transition/src/altair/epoch/processSyncCommitteeUpdates.ts#L5">packages/beacon-state-transition/src/altair/epoch/processSyncCommitteeUpdates.ts:5</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -704,6 +699,6 @@ Aligns <code>epoch</code> to <code>baseEpoch</code> so the result is the same wi
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+<script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
 </body>
 </html>

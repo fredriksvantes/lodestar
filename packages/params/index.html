@@ -8,9 +8,9 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/params/" rel="canonical"/>
 <link href="../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.1, mkdocs-material-7.1.9" name="generator"/>
+<meta content="mkdocs-1.2.1, mkdocs-material-7.1.10" name="generator"/>
 <title>Index - Lodestar documentation</title>
-<link href="../../assets/stylesheets/main.ca7ac06f.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.1fe995fd.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -130,43 +130,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-        Design
+        CLI Usage
         <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Design" class="md-nav" data-md-level="1">
+<nav aria-label="CLI Usage" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          Design
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/architecture/">
-        Beacon node architecture
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/events/">
-        Beacon node events
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/depgraph/">
-        Lodestar package structure
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
-        Usage
-        <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Usage" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
-          Usage
+          CLI Usage
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -193,13 +163,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
         Reference
         <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Reference" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
+<label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
           Reference
         </label>
@@ -213,9 +183,34 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../">
-        Packages
+<a class="md-nav__link" href="../../libraries/">
+        Libraries
       </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+        Design
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Design
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/architecture/">
+        Beacon node architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/depgraph/">
+        Lodestar package structure
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../contributing/">
@@ -251,23 +246,48 @@
 <blockquote>
 <p>This package is part of <a href="https://lodestar.chainsafe.io">ChainSafe's Lodestar</a> project</p>
 </blockquote>
-<p>Parameters for configuring an Eth2 network</p>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1">// mainnet and minimal presets are available under non-default exports</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">params</span> <span class="kr">as</span> <span class="nx">mainnetPreset</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params/mainnet"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">params</span> <span class="kr">as</span> <span class="nx">minimalPreset</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params/mainnet"</span><span class="p">;</span>
-
-<span class="nx">mainnetPreset</span><span class="p">.</span><span class="nx">SHARD_COUNT</span><span class="p">;</span>
-
-<span class="c1">// custom params should follow the IBeaconPreset interface</span>
-
-<span class="k">import</span> <span class="p">{</span><span class="nx">IBeaconPreset</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">testnetPreset</span>: <span class="kt">IBeaconPreset</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="p">...</span><span class="nx">mainnetPreset</span><span class="p">,</span>
-  <span class="nx">SHARD_COUNT</span>: <span class="kt">4</span><span class="p">,</span>
-<span class="p">};</span>
+<p>Lodestar defines all constants and presets defined in the <a href="https://github.com/ethereum/eth2.0-specs">Ethereum Consensus / Eth2 spec</a>. This can be used in conjunction with other Lodestar libraries to interact with the Ethereum consensus.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>npm install @chainsafe/lodestar-params
 </code></pre></div>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">¶</a></h2>
+<p>The Lodestar params package contains several items used in all downstream Lodestar libraries:</p>
+<ul>
+<li>Fork names</li>
+<li>Constants</li>
+<li>Presets</li>
+</ul>
+<h3 id="fork-names">Fork names<a class="headerlink" href="#fork-names" title="Permanent link">¶</a></h3>
+<p>Many downstream components are namespaced on fork names, or otherwise rely on knowing the fork names ahead of time. The Lodestar params package exports an enum <code>ForkName</code> the enumerates all known fork names.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ForkName</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">f</span>: <span class="kt">ForkName</span><span class="p">;</span>
+<span class="k">switch</span> <span class="p">(</span><span class="nx">f</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="nx">ForkName.phase0</span>:
+  <span class="kt">case</span> <span class="nx">ForkName.altair</span>:
+  <span class="kt">default</span><span class="o">:</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">¶</a></h3>
+<p>All constants defined in the spec are exported verbatim.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="presets">Presets<a class="headerlink" href="#presets" title="Permanent link">¶</a></h3>
+<p>Presets are "constants"-ish defined in the spec that can only be configured at build-time. These are meant to be treated as constants, and indeed are treated as constants by all downstream Lodestar libraries. The default preset is <code>mainnet</code>.  The only other preset defined is <code>minimal</code>, used only in testing environments.</p>
+<p>The active preset is exported under the <code>ACTIVE_PRESET</code> named export.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ACTIVE_PRESET</span><span class="p">,</span> <span class="nx">SLOTS_PER_EPOCH</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+</code></pre></div>
+<p>The preset may be set in one of two ways:</p>
+<ol>
+<li>by setting the <code>LODESTAR_PRESET</code> environment variable</li>
+<li>by executing the <code>setActivePreset(preset: Preset)</code> function</li>
+</ol>
+<p>Important Notes:</p>
+<ul>
+<li>Interacting with and understanding the active preset is only necessary in very limited testing environments, eg: for ephemeral testnets</li>
+<li>The <code>minimal</code> preset is NOT compatible with the <code>mainnet</code> preset.</li>
+<li>using <code>setActivePreset</code> may be dangerous, and only should be run once before loading any other libraries. All downstream Lodestar libraries expect the active preset to never change.</li>
+</ul>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">¶</a></h2>
 <p>Apache-2.0 <a href="https://chainsafe.io">ChainSafe Systems</a></p>
 </article>
@@ -306,6 +326,6 @@
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+<script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
 </body>
 </html>

@@ -8,9 +8,9 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/config/" rel="canonical"/>
 <link href="../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.1, mkdocs-material-7.1.9" name="generator"/>
+<meta content="mkdocs-1.2.1, mkdocs-material-7.1.10" name="generator"/>
 <title>Index - Lodestar documentation</title>
-<link href="../../assets/stylesheets/main.ca7ac06f.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.1fe995fd.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -130,43 +130,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-        Design
+        CLI Usage
         <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Design" class="md-nav" data-md-level="1">
+<nav aria-label="CLI Usage" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          Design
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/architecture/">
-        Beacon node architecture
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/events/">
-        Beacon node events
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../design/depgraph/">
-        Lodestar package structure
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
-        Usage
-        <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Usage" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
-          Usage
+          CLI Usage
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -193,13 +163,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
         Reference
         <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Reference" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
+<label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
           Reference
         </label>
@@ -213,9 +183,34 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../">
-        Packages
+<a class="md-nav__link" href="../../libraries/">
+        Libraries
       </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+        Design
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Design
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/architecture/">
+        Beacon node architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/depgraph/">
+        Lodestar package structure
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../contributing/">
@@ -251,18 +246,66 @@
 <blockquote>
 <p>This package is part of <a href="https://lodestar.chainsafe.io">ChainSafe's Lodestar</a> project</p>
 </blockquote>
-<p>Configuration variables for an Eth2 network -- consists of params and ssz types (from <a href="https://github.com/ChainSafe/lodestar/tree/master/packages/params">lodestar-params</a> and <a href="https://github.com/ChainSafe/lodestar/tree/master/packages/types">lodestar-types</a> respectively).</p>
+<p>Lodestar defines all <a href="https://github.com/ethereum/eth2.0-specs/tree/dev/configs">network configuration variables</a> defined in the <a href="https://github.com/ethereum/eth2.0-specs">Ethereum Consensus / Eth2 spec</a>. This tooling may be used to configure testnets, ingest mainnet/testnet config variables, or be used in downstream Lodestar libraries.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>npm install @chainsafe/lodestar-config
+</code></pre></div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1">// mainet and minimal presets are available under non-default exports</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">config</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config/mainnet"</span><span class="p">;</span>
-<span class="c1">// or</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">config</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config/minimal"</span><span class="p">;</span>
+<p>The Lodestar config package contains several interfaces used in downstream Lodestar libraries:</p>
+<ul>
+<li><code>IChainConfig</code> - Typescript interface, Default (mainnet) values, and matching SSZ helper type object</li>
+<li><code>IForkConfig</code> - A fork helper object that's structured around the fork schedule</li>
+<li><code>IChainForkConfig</code> A wrapper object that implements <code>IChainConfig</code> and <code>IForkConfig</code></li>
+<li><code>ICachedGenesis</code> - A helper object for caching domains (which relies on the genesis validators root)</li>
+<li><code>IBeaconConfig</code> - A wrapper object that implements all above interfaces</li>
+</ul>
+<h3 id="chain-config">Chain config<a class="headerlink" href="#chain-config" title="Permanent link">¶</a></h3>
+<p>The Ethereum consensus spec defines a bunch of variables that may be easily configured per testnet. These include the <code>GENESIS_TIME</code>, <code>SECONDS_PER_SLOT</code>, and various <code>*_FORK_EPOCH</code>s, <code>*_FORK_VERSION</code>s, etc. The Lodestar config package exports the <code>IChainConfig</code> interface and matching <code>ChainConfig</code> SSZ type, which include all of these variables, named verbatim from the spec.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">IChainConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
 
-<span class="c1">// params available under `params`</span>
-<span class="kd">const</span> <span class="nx">shardCount</span> <span class="o">=</span> <span class="nx">mainnetConfig</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">SHARD_COUNT</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">chainConfig</span>: <span class="kt">IChainConfig</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">x</span>: <span class="kt">number</span> <span class="o">=</span> <span class="nx">chainConfig</span><span class="p">.</span><span class="nx">SECONDS_PER_SLOT</span><span class="p">;</span>
+</code></pre></div>
+<p>Mainnet default values are available as a singleton <code>IChainConfig</code> under the <code>default</code> import path.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">chainConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
 
-<span class="c1">// types available under `types`</span>
-<span class="kd">const</span> <span class="nx">BeaconStateType</span> <span class="o">=</span> <span class="nx">mainnetConfig</span><span class="p">.</span><span class="nx">types</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">;</span>
+<span class="nx">chainConfig</span><span class="p">.</span><span class="nx">SECONDS_PER_SLOT</span> <span class="o">===</span> <span class="mf">12</span><span class="p">;</span>
+</code></pre></div>
+<p>There are also utility functions to help create a <code>IChainConfig</code> from unknown input and partial configs.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">createIChainConfig</span><span class="p">,</span> <span class="nx">IChainConfig</span><span class="p">,</span> <span class="nx">parsePartialIChainConfigJson</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">chainConfigObj</span>: <span class="kt">Record</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="nx">unknown</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// Eg: read yaml file into an object</span>
+<span class="p">};</span>
+
+<span class="kd">const</span> <span class="nx">partialChainConfig</span>: <span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">IChainConfig</span><span class="o">&gt;</span> <span class="o">=</span> <span class="nx">parsePartialIChainConfigJson</span><span class="p">(</span><span class="nx">configObj</span><span class="p">);</span>
+
+<span class="c1">// Fill in the missing values with mainnet default values</span>
+<span class="kd">const</span> <span class="nx">chainConfig</span>: <span class="kt">IChainConfig</span> <span class="o">=</span> <span class="nx">createIChainConfig</span><span class="p">(</span><span class="nx">partialChainConfig</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="fork-config">Fork config<a class="headerlink" href="#fork-config" title="Permanent link">¶</a></h3>
+<p>The variables described in the spec can be used to assemble a more structured 'fork schedule'. This info is organized as <code>IForkConfig</code> in the Lodestar config package. In practice, the <code>IChainConfig</code> and <code>IForkConfig</code> are usually combined as a <code>IChainForkConfig</code>.</p>
+<p>A <code>IForkConfig</code> provides methods to select the fork info, fork name, fork version, or fork ssz types given a slot. </p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">createIChainForkConfig</span><span class="p">,</span> <span class="nx">IChainConfig</span><span class="p">,</span> <span class="nx">IChainForkConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">chainConfig</span>: <span class="kt">IChainConfig</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">config</span>: <span class="kt">IChainForkConfig</span> <span class="o">=</span> <span class="nx">createIChainForkConfig</span><span class="p">(</span><span class="nx">chainConfig</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">version</span> <span class="o">=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">getForkVersion</span><span class="p">(</span><span class="nx">GENESIS_SLOT</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="cached-genesis">Cached genesis<a class="headerlink" href="#cached-genesis" title="Permanent link">¶</a></h3>
+<p>For signing Ethereum consensus objects, a cryptographic "domain" is computed and mixed into the signed message. This domain separates signatures made for the Ethereum mainnet from testnets or other instances of the chain. The <code>ICachedGenesis</code> interface is used to provide a cache for this purpose. Practically, the domain rarely changes, only per-fork, and so the value can be easily cached. Since the genesis validators root is part of the domain, it is required input to instantiate an <code>ICachedGenesis</code>. In practice, the <code>IChainForkConfig</code> and <code>ICachedGenesis</code> are usually combined as a <code>IBeaconConfig</code>. This is the 'highest level' object exported by the Lodestar config library.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">DOMAIN_DEPOSIT</span><span class="p">,</span> <span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">createIBeaconConfig</span><span class="p">,</span> <span class="nx">IBeaconConfig</span><span class="p">,</span> <span class="nx">IChainConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">chainConfig</span>: <span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">IChainConfig</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">genesisValidatorsRoot</span>: <span class="kt">Uint8Array</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">config</span>: <span class="kt">IBeaconConfig</span> <span class="o">=</span> <span class="nx">createIBeaconConfig</span><span class="p">(</span><span class="nx">chainConfig</span><span class="p">,</span> <span class="nx">genesisValidatorsRoot</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">domain</span> <span class="o">=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">getDomain</span><span class="p">(</span><span class="nx">DOMAIN_DEPOSIT</span><span class="p">,</span> <span class="nx">GENESIS_SLOT</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">¶</a></h2>
 <p>Apache-2.0 <a href="https://chainsafe.io">ChainSafe Systems</a></p>
@@ -302,6 +345,6 @@
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+<script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
 </body>
 </html>
