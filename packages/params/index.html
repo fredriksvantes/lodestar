@@ -261,8 +261,10 @@
 <p>Many downstream components are namespaced on fork names, or otherwise rely on knowing the fork names ahead of time. The Lodestar params package exports an enum <code>ForkName</code> the enumerates all known fork names.</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ForkName</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
 
-<span class="kd">let</span> <span class="nx">f</span>: <span class="kt">ForkName</span><span class="p">;</span>
-<span class="k">switch</span> <span class="p">(</span><span class="nx">f</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// dummy data</span>
+<span class="kd">let</span> <span class="nx">forkName</span> <span class="o">=</span> <span class="s2">"phase0"</span><span class="p">;</span>
+
+<span class="k">switch</span> <span class="p">(</span><span class="nx">forkName</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">case</span> <span class="nx">ForkName.phase0</span>:
   <span class="kt">case</span> <span class="nx">ForkName.altair</span>:
   <span class="kt">default</span><span class="o">:</span>
