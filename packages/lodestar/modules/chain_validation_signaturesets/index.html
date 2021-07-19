@@ -8,9 +8,9 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/chain_validation_signaturesets/" rel="canonical"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.1, mkdocs-material-7.1.10" name="generator"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.1.11" name="generator"/>
 <title>Chain validation signaturesets - Lodestar documentation</title>
-<link href="../../../../assets/stylesheets/main.1fe995fd.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.3754935a.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -386,7 +386,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="getaggregateandproofsignatureset_1">getAggregateAndProofSignatureSet<a class="headerlink" href="#getaggregateandproofsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getAggregateAndProofSignatureSet</strong>(<code>state</code>: allForks.CachedBeaconState‹allForks.BeaconState›, <code>epoch</code>: <a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_phase0/#epoch">Epoch</a>, <code>aggregator</code>: PublicKey, <code>aggregateAndProof</code>: SignedAggregateAndProof): <em><a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_util/#isignatureset">ISignatureSet</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/70949d5/packages/lodestar/src/chain/validation/signatureSets/aggregateAndProof.ts#L13">packages/lodestar/src/chain/validation/signatureSets/aggregateAndProof.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/623994c/packages/lodestar/src/chain/validation/signatureSets/aggregateAndProof.ts#L13">packages/lodestar/src/chain/validation/signatureSets/aggregateAndProof.ts:13</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -418,7 +418,7 @@
 <hr/>
 <h3 id="getcontributionandproofsignatureset_1">getContributionAndProofSignatureSet<a class="headerlink" href="#getcontributionandproofsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getContributionAndProofSignatureSet</strong>(<code>state</code>: <a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›, <code>signedContributionAndProof</code>: SignedContributionAndProof): <em><a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_util/#isignatureset">ISignatureSet</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/70949d5/packages/lodestar/src/chain/validation/signatureSets/contributionAndProof.ts#L10">packages/lodestar/src/chain/validation/signatureSets/contributionAndProof.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/623994c/packages/lodestar/src/chain/validation/signatureSets/contributionAndProof.ts#L10">packages/lodestar/src/chain/validation/signatureSets/contributionAndProof.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -442,7 +442,7 @@
 <hr/>
 <h3 id="getcontributionpubkeys">getContributionPubkeys<a class="headerlink" href="#getcontributionpubkeys" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getContributionPubkeys</strong>(<code>state</code>: <a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>contribution</code>: SyncCommitteeContribution): <em>PublicKey[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/70949d5/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts#L30">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/623994c/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts#L30">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts:30</a></em></p>
 <p>Retrieve pubkeys in contribution aggregate using epochCtx:
 - currSyncCommitteeIndexes cache
 - index2pubkey cache</p>
@@ -469,7 +469,7 @@
 <hr/>
 <h3 id="getselectionproofsignatureset_1">getSelectionProofSignatureSet<a class="headerlink" href="#getselectionproofsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSelectionProofSignatureSet</strong>(<code>state</code>: allForks.CachedBeaconState‹allForks.BeaconState›, <code>slot</code>: <a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_phase0/#slot">Slot</a>, <code>aggregator</code>: PublicKey, <code>aggregateAndProof</code>: SignedAggregateAndProof): <em><a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_util/#isignatureset">ISignatureSet</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/70949d5/packages/lodestar/src/chain/validation/signatureSets/selectionProof.ts#L11">packages/lodestar/src/chain/validation/signatureSets/selectionProof.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/623994c/packages/lodestar/src/chain/validation/signatureSets/selectionProof.ts#L11">packages/lodestar/src/chain/validation/signatureSets/selectionProof.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -501,7 +501,7 @@
 <hr/>
 <h3 id="getsynccommitteecontributionsignatureset_1">getSyncCommitteeContributionSignatureSet<a class="headerlink" href="#getsynccommitteecontributionsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSyncCommitteeContributionSignatureSet</strong>(<code>state</code>: <a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹BeaconState›, <code>contribution</code>: SyncCommitteeContribution): <em><a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_util/#isignatureset">ISignatureSet</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/70949d5/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts#L12">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/623994c/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts#L12">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts:12</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -525,7 +525,7 @@
 <hr/>
 <h3 id="getsynccommitteeselectionproofsignatureset_1">getSyncCommitteeSelectionProofSignatureSet<a class="headerlink" href="#getsynccommitteeselectionproofsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSyncCommitteeSelectionProofSignatureSet</strong>(<code>state</code>: <a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›, <code>contributionAndProof</code>: ContributionAndProof): <em><a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_util/#isignatureset">ISignatureSet</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/70949d5/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeSelectionProof.ts#L10">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeSelectionProof.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/623994c/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeSelectionProof.ts#L10">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeSelectionProof.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -549,7 +549,7 @@
 <hr/>
 <h3 id="getsynccommitteesignatureset_1">getSyncCommitteeSignatureSet<a class="headerlink" href="#getsynccommitteesignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSyncCommitteeSignatureSet</strong>(<code>state</code>: <a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›, <code>syncCommittee</code>: SyncCommitteeMessage): <em><a href="../reflection-11822.reflection-11823._.reflection-11825._beacon_state_transition_src_util/#isignatureset">ISignatureSet</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/70949d5/packages/lodestar/src/chain/validation/signatureSets/syncCommittee.ts#L10">packages/lodestar/src/chain/validation/signatureSets/syncCommittee.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/623994c/packages/lodestar/src/chain/validation/signatureSets/syncCommittee.ts#L10">packages/lodestar/src/chain/validation/signatureSets/syncCommittee.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
