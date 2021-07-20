@@ -297,6 +297,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#subnetsserviceopts">
+    SubnetsServiceOpts
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#syncnetsservice">
     SyncnetsService
   </a>
@@ -318,6 +323,20 @@
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#type-declaration">
+    Type declaration:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#subnetsserviceopts_1">
+    SubnetsServiceOpts
+  </a>
+<nav aria-label="SubnetsServiceOpts" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-declaration_1">
     Type declaration:
   </a>
 </li>
@@ -384,6 +403,7 @@
 <li><a href="./#committeesubscription">CommitteeSubscription</a></li>
 <li><a href="./#iattnetsservice">IAttnetsService</a></li>
 <li><a href="./#isubnetsservice">ISubnetsService</a></li>
+<li><a href="./#subnetsserviceopts">SubnetsServiceOpts</a></li>
 <li><a href="./#syncnetsservice">SyncnetsService</a></li>
 </ul>
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">¶</a></h3>
@@ -399,6 +419,7 @@
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">¶</a></h3>
 <ul>
 <li><a href="./#committeesubscription">CommitteeSubscription</a></li>
+<li><a href="./#subnetsserviceopts">SubnetsServiceOpts</a></li>
 </ul>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">¶</a></h3>
 <ul>
@@ -423,12 +444,15 @@
 <h3 id="isubnetsservice">ISubnetsService<a class="headerlink" href="#isubnetsservice" title="Permanent link">¶</a></h3>
 <p>• <strong>ISubnetsService</strong>:</p>
 <hr/>
+<h3 id="subnetsserviceopts">SubnetsServiceOpts<a class="headerlink" href="#subnetsserviceopts" title="Permanent link">¶</a></h3>
+<p>• <strong>SubnetsServiceOpts</strong>:</p>
+<hr/>
 <h3 id="syncnetsservice">SyncnetsService<a class="headerlink" href="#syncnetsservice" title="Permanent link">¶</a></h3>
 <p>• <strong>SyncnetsService</strong>:</p>
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="committeesubscription_1">CommitteeSubscription<a class="headerlink" href="#committeesubscription_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>CommitteeSubscription</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0f6abc4/packages/lodestar/src/network/subnets/interface.ts#L5">packages/lodestar/src/network/subnets/interface.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9453c73/packages/lodestar/src/network/subnets/interface.ts#L5">packages/lodestar/src/network/subnets/interface.ts:5</a></em></p>
 <p>Generic CommitteeSubscription for both beacon attnets subs and syncnets subs</p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
@@ -436,34 +460,42 @@
 <p><strong>isAggregator</strong>: <em>boolean</em></p>
 </li>
 <li>
-<p><strong>slot</strong>: <em><a href="../reflection-11823.reflection-11824._.reflection-11826._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
+<p><strong>slot</strong>: <em><a href="../reflection-11833.reflection-11834._.reflection-11836._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
 </li>
 <li>
 <p><strong>subnet</strong>: <em>number</em></p>
 </li>
 <li>
-<p><strong>validatorIndex</strong>: <em><a href="../reflection-11823.reflection-11824._.reflection-11826._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a></em></p>
+<p><strong>validatorIndex</strong>: <em><a href="../reflection-11833.reflection-11834._.reflection-11836._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a></em></p>
 </li>
+</ul>
+<hr/>
+<h3 id="subnetsserviceopts_1">SubnetsServiceOpts<a class="headerlink" href="#subnetsserviceopts_1" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>SubnetsServiceOpts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9453c73/packages/lodestar/src/network/subnets/interface.ts#L25">packages/lodestar/src/network/subnets/interface.ts:25</a></em></p>
+<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>subscribeAllSubnets</strong>? : <em>undefined | false | true</em></li>
 </ul>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-last_seen_validator_timeout"><code>Const</code> LAST_SEEN_VALIDATOR_TIMEOUT<a class="headerlink" href="#const-last_seen_validator_timeout" title="Permanent link">¶</a></h3>
 <p>• <strong>LAST_SEEN_VALIDATOR_TIMEOUT</strong>: <em>150</em> = 150</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0f6abc4/packages/lodestar/src/network/subnets/attnetsService.ts#L24">packages/lodestar/src/network/subnets/attnetsService.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9453c73/packages/lodestar/src/network/subnets/attnetsService.ts#L24">packages/lodestar/src/network/subnets/attnetsService.ts:24</a></em></p>
 <p>The time (in slots) before a last seen validator is considered absent and we unsubscribe from the random
 gossip topics that we subscribed to due to the validator connection.</p>
 <hr/>
 <h3 id="const-gossiptype"><code>Const</code> gossipType<a class="headerlink" href="#const-gossiptype" title="Permanent link">¶</a></h3>
 <p>• <strong>gossipType</strong>: <em><a href="../../enums/network_gossip.gossiptype/#beacon_attestation">beacon_attestation</a></em> = GossipType.beacon_attestation</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0f6abc4/packages/lodestar/src/network/subnets/attnetsService.ts#L26">packages/lodestar/src/network/subnets/attnetsService.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9453c73/packages/lodestar/src/network/subnets/attnetsService.ts#L26">packages/lodestar/src/network/subnets/attnetsService.ts:26</a></em></p>
 <hr/>
 <h3 id="const-gossiptype_1"><code>Const</code> gossipType<a class="headerlink" href="#const-gossiptype_1" title="Permanent link">¶</a></h3>
 <p>• <strong>gossipType</strong>: <em><a href="../../enums/network_gossip.gossiptype/#sync_committee">sync_committee</a></em> = GossipType.sync_committee</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0f6abc4/packages/lodestar/src/network/subnets/syncnetsService.ts#L13">packages/lodestar/src/network/subnets/syncnetsService.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9453c73/packages/lodestar/src/network/subnets/syncnetsService.ts#L13">packages/lodestar/src/network/subnets/syncnetsService.ts:13</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="randomsubscriptionslotlen">randomSubscriptionSlotLen<a class="headerlink" href="#randomsubscriptionslotlen" title="Permanent link">¶</a></h3>
-<p>▸ <strong>randomSubscriptionSlotLen</strong>(): <em><a href="../reflection-11823.reflection-11824._.reflection-11826._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0f6abc4/packages/lodestar/src/network/subnets/attnetsService.ts#L288">packages/lodestar/src/network/subnets/attnetsService.ts:288</a></em></p>
-<p><strong>Returns:</strong> <em><a href="../reflection-11823.reflection-11824._.reflection-11826._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
+<p>▸ <strong>randomSubscriptionSlotLen</strong>(): <em><a href="../reflection-11833.reflection-11834._.reflection-11836._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9453c73/packages/lodestar/src/network/subnets/attnetsService.ts#L294">packages/lodestar/src/network/subnets/attnetsService.ts:294</a></em></p>
+<p><strong>Returns:</strong> <em><a href="../reflection-11833.reflection-11834._.reflection-11836._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
 </article>
 </div>
 </div>
