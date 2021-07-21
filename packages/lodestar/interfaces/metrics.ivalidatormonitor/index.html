@@ -8,10 +8,10 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/metrics.ivalidatormonitor/" rel="canonical"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-7.1.11" name="generator"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.2.0" name="generator"/>
 <title>Metrics.ivalidatormonitor - Lodestar documentation</title>
-<link href="../../../../assets/stylesheets/main.3754935a.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.fe914879.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.ba0d045b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
@@ -60,14 +60,16 @@
 <label class="md-search__overlay" for="__search"></label>
 <div class="md-search__inner" role="search">
 <form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
 <label class="md-search__icon md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </label>
+<nav aria-label="Search" class="md-search__options">
 <button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
 </button>
+</nav>
 </form>
 <div class="md-search__output">
 <div class="md-search__scrollwrap" data-md-scrollfix="">
@@ -324,7 +326,7 @@
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="registeraggregatedattestation">registerAggregatedAttestation<a class="headerlink" href="#registeraggregatedattestation" title="Permanent link">¶</a></h3>
 <p>▸ <strong>registerAggregatedAttestation</strong>(<code>src</code>: <a href="../../enums/metrics.opsource/">OpSource</a>, <code>seenTimestampSec</code>: <a href="../../modules/metrics/#seconds">Seconds</a>, <code>signedAggregateAndProof</code>: SignedAggregateAndProof, <code>indexedAttestation</code>: IndexedAttestation): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/lodestar/src/metrics/validatorMonitor.ts#L29">packages/lodestar/src/metrics/validatorMonitor.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/lodestar/src/metrics/validatorMonitor.ts#L29">packages/lodestar/src/metrics/validatorMonitor.ts:29</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -356,7 +358,7 @@
 <hr/>
 <h3 id="registerattestationinblock">registerAttestationInBlock<a class="headerlink" href="#registerattestationinblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>registerAttestationInBlock</strong>(<code>indexedAttestation</code>: IndexedAttestation, <code>block</code>: allForks.BeaconBlock): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/lodestar/src/metrics/validatorMonitor.ts#L35">packages/lodestar/src/metrics/validatorMonitor.ts:35</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/lodestar/src/metrics/validatorMonitor.ts#L35">packages/lodestar/src/metrics/validatorMonitor.ts:35</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -380,7 +382,7 @@
 <hr/>
 <h3 id="registerbeaconblock">registerBeaconBlock<a class="headerlink" href="#registerbeaconblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>registerBeaconBlock</strong>(<code>src</code>: <a href="../../enums/metrics.opsource/">OpSource</a>, <code>seenTimestampSec</code>: <a href="../../modules/metrics/#seconds">Seconds</a>, <code>block</code>: allForks.BeaconBlock): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/lodestar/src/metrics/validatorMonitor.ts#L23">packages/lodestar/src/metrics/validatorMonitor.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/lodestar/src/metrics/validatorMonitor.ts#L23">packages/lodestar/src/metrics/validatorMonitor.ts:23</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -408,7 +410,7 @@
 <hr/>
 <h3 id="registerlocalvalidator">registerLocalValidator<a class="headerlink" href="#registerlocalvalidator" title="Permanent link">¶</a></h3>
 <p>▸ <strong>registerLocalValidator</strong>(<code>index</code>: number): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/lodestar/src/metrics/validatorMonitor.ts#L21">packages/lodestar/src/metrics/validatorMonitor.ts:21</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/lodestar/src/metrics/validatorMonitor.ts#L21">packages/lodestar/src/metrics/validatorMonitor.ts:21</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -428,7 +430,7 @@
 <hr/>
 <h3 id="registerunaggregatedattestation">registerUnaggregatedAttestation<a class="headerlink" href="#registerunaggregatedattestation" title="Permanent link">¶</a></h3>
 <p>▸ <strong>registerUnaggregatedAttestation</strong>(<code>src</code>: <a href="../../enums/metrics.opsource/">OpSource</a>, <code>seenTimestampSec</code>: <a href="../../modules/metrics/#seconds">Seconds</a>, <code>indexedAttestation</code>: IndexedAttestation): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/lodestar/src/metrics/validatorMonitor.ts#L24">packages/lodestar/src/metrics/validatorMonitor.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/lodestar/src/metrics/validatorMonitor.ts#L24">packages/lodestar/src/metrics/validatorMonitor.ts:24</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -456,7 +458,7 @@
 <hr/>
 <h3 id="registervalidatorstatuses">registerValidatorStatuses<a class="headerlink" href="#registervalidatorstatuses" title="Permanent link">¶</a></h3>
 <p>▸ <strong>registerValidatorStatuses</strong>(<code>currentEpoch</code>: <a href="../../modules/reflection-11833.reflection-11834._.reflection-11836._beacon_state_transition_src_phase0/#epoch">Epoch</a>, <code>statuses</code>: IAttesterStatus[]): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/lodestar/src/metrics/validatorMonitor.ts#L22">packages/lodestar/src/metrics/validatorMonitor.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/lodestar/src/metrics/validatorMonitor.ts#L22">packages/lodestar/src/metrics/validatorMonitor.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -480,7 +482,7 @@
 <hr/>
 <h3 id="scrapemetrics">scrapeMetrics<a class="headerlink" href="#scrapemetrics" title="Permanent link">¶</a></h3>
 <p>▸ <strong>scrapeMetrics</strong>(<code>slotClock</code>: <a href="../../modules/reflection-11833.reflection-11834._.reflection-11836._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/lodestar/src/metrics/validatorMonitor.ts#L36">packages/lodestar/src/metrics/validatorMonitor.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/lodestar/src/metrics/validatorMonitor.ts#L36">packages/lodestar/src/metrics/validatorMonitor.ts:36</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -532,7 +534,7 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.716f8af4.min.js"></script>
 </body>
 </html>

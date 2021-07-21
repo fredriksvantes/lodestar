@@ -8,10 +8,10 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/light-client/modules/utils/" rel="canonical"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-7.1.11" name="generator"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.2.0" name="generator"/>
 <title>Utils - Lodestar documentation</title>
-<link href="../../../../assets/stylesheets/main.3754935a.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.fe914879.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.ba0d045b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
@@ -60,14 +60,16 @@
 <label class="md-search__overlay" for="__search"></label>
 <div class="md-search__inner" role="search">
 <form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
 <label class="md-search__icon md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </label>
+<nav aria-label="Search" class="md-search__options">
 <button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
 </button>
+</nav>
 </form>
 <div class="md-search__output">
 <div class="md-search__scrollwrap" data-md-scrollfix="">
@@ -419,7 +421,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="onslotfn">OnSlotFn<a class="headerlink" href="#onslotfn" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>OnSlotFn</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/clock.ts#L7">utils/clock.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/clock.ts#L7">utils/clock.ts:7</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <p>▸ (<code>slot</code>: Slot, <code>signal</code>: AbortSignal): <em>Promise‹void›</em></p>
 <p><strong>Parameters:</strong></p>
@@ -444,7 +446,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="assertzerohashes">assertZeroHashes<a class="headerlink" href="#assertzerohashes" title="Permanent link">¶</a></h3>
 <p>▸ <strong>assertZeroHashes</strong>(<code>rootArray</code>: ArrayLike‹Root›, <code>expectedLength</code>: number, <code>errorMessage</code>: string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L26">utils/utils.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L26">utils/utils.ts:26</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -472,7 +474,7 @@
 <hr/>
 <h3 id="chunkifyinclusiverange">chunkifyInclusiveRange<a class="headerlink" href="#chunkifyinclusiverange" title="Permanent link">¶</a></h3>
 <p>▸ <strong>chunkifyInclusiveRange</strong>(<code>from</code>: number, <code>to</code>: number, <code>itemsPerChunk</code>: number): <em>number[][]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/chunkify.ts#L12">utils/chunkify.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/chunkify.ts#L12">utils/chunkify.ts:12</a></em></p>
 <p>Split an inclusive range into a sequence of contiguous inclusive ranges
 <div class="highlight"><pre><span></span><code>[[a,b], [c,d] ... Sn] = chunkifyInclusiveRange([a,z], n)
 // where
@@ -509,7 +511,7 @@
 <hr/>
 <h3 id="computeepochatslot">computeEpochAtSlot<a class="headerlink" href="#computeepochatslot" title="Permanent link">¶</a></h3>
 <p>▸ <strong>computeEpochAtSlot</strong>(<code>config</code>: IBeaconConfig, <code>slot</code>: Slot): <em>Epoch</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/syncPeriod.ts#L8">utils/syncPeriod.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/syncPeriod.ts#L8">utils/syncPeriod.ts:8</a></em></p>
 <p>Return the epoch number at the given slot.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -534,7 +536,7 @@
 <hr/>
 <h3 id="computesyncperiodatepoch">computeSyncPeriodAtEpoch<a class="headerlink" href="#computesyncperiodatepoch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>computeSyncPeriodAtEpoch</strong>(<code>config</code>: IBeaconConfig, <code>epoch</code>: Epoch): <em>SyncPeriod</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/syncPeriod.ts#L22">utils/syncPeriod.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/syncPeriod.ts#L22">utils/syncPeriod.ts:22</a></em></p>
 <p>Return the sync committee period at epoch</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -559,7 +561,7 @@
 <hr/>
 <h3 id="computesyncperiodatslot">computeSyncPeriodAtSlot<a class="headerlink" href="#computesyncperiodatslot" title="Permanent link">¶</a></h3>
 <p>▸ <strong>computeSyncPeriodAtSlot</strong>(<code>config</code>: IBeaconConfig, <code>slot</code>: Slot): <em>SyncPeriod</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/syncPeriod.ts#L15">utils/syncPeriod.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/syncPeriod.ts#L15">utils/syncPeriod.ts:15</a></em></p>
 <p>Return the sync committee period at slot</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -584,7 +586,7 @@
 <hr/>
 <h3 id="deserializepubkeys">deserializePubkeys<a class="headerlink" href="#deserializepubkeys" title="Permanent link">¶</a></h3>
 <p>▸ <strong>deserializePubkeys</strong>(<code>pubkeys</code>: LightClientUpdate["nextSyncCommittee"]["pubkeys"]): <em>PublicKey[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L63">utils/utils.ts:63</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L63">utils/utils.ts:63</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -604,7 +606,7 @@
 <hr/>
 <h3 id="deserializesynccommittee">deserializeSyncCommittee<a class="headerlink" href="#deserializesynccommittee" title="Permanent link">¶</a></h3>
 <p>▸ <strong>deserializeSyncCommittee</strong>(<code>syncCommittee</code>: SyncCommittee): <em><a href="../client/#synccommitteefast">SyncCommitteeFast</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L71">utils/utils.ts:71</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L71">utils/utils.ts:71</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -624,7 +626,7 @@
 <hr/>
 <h3 id="getparticipantpubkeys">getParticipantPubkeys<a class="headerlink" href="#getparticipantpubkeys" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getParticipantPubkeys</strong>‹<strong>T</strong>›(<code>pubkeys</code>: ArrayLike‹T›, <code>bits</code>: BitVector): <em>T[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L41">utils/utils.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L41">utils/utils.ts:41</a></em></p>
 <p>Util to guarantee that all bits have a corresponding pubkey</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong></p>
@@ -651,7 +653,7 @@
 <hr/>
 <h3 id="isemptyheader">isEmptyHeader<a class="headerlink" href="#isemptyheader" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isEmptyHeader</strong>(<code>header</code>: BeaconBlockHeader): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L85">utils/utils.ts:85</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L85">utils/utils.ts:85</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -671,7 +673,7 @@
 <hr/>
 <h3 id="isemptysynccommitte">isEmptySyncCommitte<a class="headerlink" href="#isemptysynccommitte" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isEmptySyncCommitte</strong>(<code>syncCommittee</code>: SyncCommittee): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L90">utils/utils.ts:90</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L90">utils/utils.ts:90</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -691,7 +693,7 @@
 <hr/>
 <h3 id="isvalidmerklebranch">isValidMerkleBranch<a class="headerlink" href="#isvalidmerklebranch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isValidMerkleBranch</strong>(<code>leaf</code>: Uint8Array, <code>proof</code>: Uint8Array[], <code>depth</code>: number, <code>index</code>: number, <code>root</code>: Uint8Array): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/verifyMerkleBranch.ts#L9">utils/verifyMerkleBranch.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/verifyMerkleBranch.ts#L9">utils/verifyMerkleBranch.ts:9</a></em></p>
 <p>Verify that the given <code>leaf</code> is on the merkle branch <code>proof</code>
 starting with the given <code>root</code>.</p>
 <p>Browser friendly version of verifyMerkleBranch</p>
@@ -730,7 +732,7 @@ starting with the given <code>root</code>.</p>
 <hr/>
 <h3 id="iszerohash">isZeroHash<a class="headerlink" href="#iszerohash" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isZeroHash</strong>(<code>root</code>: Root): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L17">utils/utils.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L17">utils/utils.ts:17</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -750,7 +752,7 @@ starting with the given <code>root</code>.</p>
 <hr/>
 <h3 id="serializepubkeys">serializePubkeys<a class="headerlink" href="#serializepubkeys" title="Permanent link">¶</a></h3>
 <p>▸ <strong>serializePubkeys</strong>(<code>pubkeys</code>: PublicKey[]): <em>LightClientUpdate["nextSyncCommittee"]["pubkeys"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L67">utils/utils.ts:67</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L67">utils/utils.ts:67</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -770,7 +772,7 @@ starting with the given <code>root</code>.</p>
 <hr/>
 <h3 id="serializesynccommittee">serializeSyncCommittee<a class="headerlink" href="#serializesynccommittee" title="Permanent link">¶</a></h3>
 <p>▸ <strong>serializeSyncCommittee</strong>(<code>syncCommittee</code>: <a href="../client/#synccommitteefast">SyncCommitteeFast</a>): <em>SyncCommittee</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L78">utils/utils.ts:78</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L78">utils/utils.ts:78</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -790,7 +792,7 @@ starting with the given <code>root</code>.</p>
 <hr/>
 <h3 id="sumbits">sumBits<a class="headerlink" href="#sumbits" title="Permanent link">¶</a></h3>
 <p>▸ <strong>sumBits</strong>(<code>bits</code>: ArrayLike‹boolean›): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L7">utils/utils.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L7">utils/utils.ts:7</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -810,7 +812,7 @@ starting with the given <code>root</code>.</p>
 <hr/>
 <h3 id="toblockheader">toBlockHeader<a class="headerlink" href="#toblockheader" title="Permanent link">¶</a></h3>
 <p>▸ <strong>toBlockHeader</strong>(<code>block</code>: BeaconBlock): <em>BeaconBlockHeader</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/light-client/src/utils/utils.ts#L53">utils/utils.ts:53</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/light-client/src/utils/utils.ts#L53">utils/utils.ts:53</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -862,7 +864,7 @@ starting with the given <code>root</code>.</p>
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.716f8af4.min.js"></script>
 </body>
 </html>

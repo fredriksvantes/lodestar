@@ -8,10 +8,10 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/fork-choice/interfaces/protoarray.iprotonode/" rel="canonical"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-7.1.11" name="generator"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.2.0" name="generator"/>
 <title>Protoarray.iprotonode - Lodestar documentation</title>
-<link href="../../../../assets/stylesheets/main.3754935a.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.fe914879.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.ba0d045b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
@@ -60,14 +60,16 @@
 <label class="md-search__overlay" for="__search"></label>
 <div class="md-search__inner" role="search">
 <form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
 <label class="md-search__icon md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </label>
+<nav aria-label="Search" class="md-search__options">
 <button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
 </button>
+</nav>
 </form>
 <div class="md-search__output">
 <div class="md-search__scrollwrap" data-md-scrollfix="">
@@ -351,40 +353,40 @@ with vote weights and best blocks stored as metadata</p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="optional-bestchild"><code>Optional</code> bestChild<a class="headerlink" href="#optional-bestchild" title="Permanent link">¶</a></h3>
 <p>• <strong>bestChild</strong>? : <em>undefined | number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L56">packages/fork-choice/src/protoArray/interface.ts:56</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L56">packages/fork-choice/src/protoArray/interface.ts:56</a></em></p>
 <hr/>
 <h3 id="optional-bestdescendant"><code>Optional</code> bestDescendant<a class="headerlink" href="#optional-bestdescendant" title="Permanent link">¶</a></h3>
 <p>• <strong>bestDescendant</strong>? : <em>undefined | number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L57">packages/fork-choice/src/protoArray/interface.ts:57</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L57">packages/fork-choice/src/protoArray/interface.ts:57</a></em></p>
 <hr/>
 <h3 id="blockroot">blockRoot<a class="headerlink" href="#blockroot" title="Permanent link">¶</a></h3>
 <p>• <strong>blockRoot</strong>: <em><a href="../../modules/protoarray/#hexroot">HexRoot</a></em></p>
 <p><em>Inherited from <a href="../protoarray.iprotoblock/">IProtoBlock</a>.<a href="../protoarray.iprotoblock/#blockroot">blockRoot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L31">packages/fork-choice/src/protoArray/interface.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L31">packages/fork-choice/src/protoArray/interface.ts:31</a></em></p>
 <hr/>
 <h3 id="finalizedepoch">finalizedEpoch<a class="headerlink" href="#finalizedepoch" title="Permanent link">¶</a></h3>
 <p>• <strong>finalizedEpoch</strong>: <em>Epoch</em></p>
 <p><em>Inherited from <a href="../protoarray.iprotoblock/">IProtoBlock</a>.<a href="../protoarray.iprotoblock/#finalizedepoch">finalizedEpoch</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L46">packages/fork-choice/src/protoArray/interface.ts:46</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L46">packages/fork-choice/src/protoArray/interface.ts:46</a></em></p>
 <hr/>
 <h3 id="justifiedepoch">justifiedEpoch<a class="headerlink" href="#justifiedepoch" title="Permanent link">¶</a></h3>
 <p>• <strong>justifiedEpoch</strong>: <em>Epoch</em></p>
 <p><em>Inherited from <a href="../protoarray.iprotoblock/">IProtoBlock</a>.<a href="../protoarray.iprotoblock/#justifiedepoch">justifiedEpoch</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L45">packages/fork-choice/src/protoArray/interface.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L45">packages/fork-choice/src/protoArray/interface.ts:45</a></em></p>
 <hr/>
 <h3 id="optional-parent"><code>Optional</code> parent<a class="headerlink" href="#optional-parent" title="Permanent link">¶</a></h3>
 <p>• <strong>parent</strong>? : <em>undefined | number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L54">packages/fork-choice/src/protoArray/interface.ts:54</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L54">packages/fork-choice/src/protoArray/interface.ts:54</a></em></p>
 <hr/>
 <h3 id="parentroot">parentRoot<a class="headerlink" href="#parentroot" title="Permanent link">¶</a></h3>
 <p>• <strong>parentRoot</strong>: <em><a href="../../modules/protoarray/#hexroot">HexRoot</a></em></p>
 <p><em>Inherited from <a href="../protoarray.iprotoblock/">IProtoBlock</a>.<a href="../protoarray.iprotoblock/#parentroot">parentRoot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L32">packages/fork-choice/src/protoArray/interface.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L32">packages/fork-choice/src/protoArray/interface.ts:32</a></em></p>
 <hr/>
 <h3 id="slot">slot<a class="headerlink" href="#slot" title="Permanent link">¶</a></h3>
 <p>• <strong>slot</strong>: <em>Slot</em></p>
 <p><em>Inherited from <a href="../protoarray.iprotoblock/">IProtoBlock</a>.<a href="../protoarray.iprotoblock/#slot">slot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L30">packages/fork-choice/src/protoArray/interface.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L30">packages/fork-choice/src/protoArray/interface.ts:30</a></em></p>
 <p>The slot is not necessary for ProtoArray,
 it just exists so external components can easily query the block slot.
 This is useful for upstream fork choice logic.</p>
@@ -392,21 +394,21 @@ This is useful for upstream fork choice logic.</p>
 <h3 id="stateroot">stateRoot<a class="headerlink" href="#stateroot" title="Permanent link">¶</a></h3>
 <p>• <strong>stateRoot</strong>: <em><a href="../../modules/protoarray/#hexroot">HexRoot</a></em></p>
 <p><em>Inherited from <a href="../protoarray.iprotoblock/">IProtoBlock</a>.<a href="../protoarray.iprotoblock/#stateroot">stateRoot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L37">packages/fork-choice/src/protoArray/interface.ts:37</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L37">packages/fork-choice/src/protoArray/interface.ts:37</a></em></p>
 <p>The stateRoot is not necessary for ProtoArray either,
 it also just exists for upstream components (namely attestation verification)</p>
 <hr/>
 <h3 id="targetroot">targetRoot<a class="headerlink" href="#targetroot" title="Permanent link">¶</a></h3>
 <p>• <strong>targetRoot</strong>: <em><a href="../../modules/protoarray/#hexroot">HexRoot</a></em></p>
 <p><em>Inherited from <a href="../protoarray.iprotoblock/">IProtoBlock</a>.<a href="../protoarray.iprotoblock/#targetroot">targetRoot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L44">packages/fork-choice/src/protoArray/interface.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L44">packages/fork-choice/src/protoArray/interface.ts:44</a></em></p>
 <p>The root that would be used for the attestation.data.target.root if a LMD vote was cast for this block.</p>
 <p>The targetRoot is not necessary for ProtoArray either,
 it also just exists for upstream components (namely attestation verification)</p>
 <hr/>
 <h3 id="weight">weight<a class="headerlink" href="#weight" title="Permanent link">¶</a></h3>
 <p>• <strong>weight</strong>: <em>Gwei</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/fork-choice/src/protoArray/interface.ts#L55">packages/fork-choice/src/protoArray/interface.ts:55</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/fork-choice/src/protoArray/interface.ts#L55">packages/fork-choice/src/protoArray/interface.ts:55</a></em></p>
 </article>
 </div>
 </div>
@@ -442,7 +444,7 @@ it also just exists for upstream components (namely attestation verification)</p
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.716f8af4.min.js"></script>
 </body>
 </html>

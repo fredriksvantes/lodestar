@@ -8,10 +8,10 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/cli/modules/cmds_account/" rel="canonical"/>
 <link href="../../../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-7.1.11" name="generator"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.2.0" name="generator"/>
 <title>Cmds account - Lodestar documentation</title>
-<link href="../../../../assets/stylesheets/main.3754935a.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.fe914879.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.ba0d045b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
@@ -60,14 +60,16 @@
 <label class="md-search__overlay" for="__search"></label>
 <div class="md-search__inner" role="search">
 <form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
 <label class="md-search__icon md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </label>
+<nav aria-label="Search" class="md-search__options">
 <button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
 </button>
+</nav>
 </form>
 <div class="md-search__output">
 <div class="md-search__scrollwrap" data-md-scrollfix="">
@@ -354,12 +356,12 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-defaultaccountpaths"><code>Const</code> defaultAccountPaths<a class="headerlink" href="#const-defaultaccountpaths" title="Permanent link">¶</a></h3>
 <p>• <strong>defaultAccountPaths</strong>: <em><a href="../../interfaces/cmds_account.iaccountpaths/">IAccountPaths</a> &amp; <a href="../../interfaces/paths.iglobalpaths/">IGlobalPaths</a></em> = getAccountPaths({rootDir: "$rootDir"})</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/cli/src/cmds/account/paths.ts#L56">packages/cli/src/cmds/account/paths.ts:56</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/cli/src/cmds/account/paths.ts#L56">packages/cli/src/cmds/account/paths.ts:56</a></em></p>
 <p>Constructs representations of the path structure to show in command's description</p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="getaccountpaths">getAccountPaths<a class="headerlink" href="#getaccountpaths" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getAccountPaths</strong>(<code>args</code>: Partial‹<a href="../../interfaces/cmds_account.iaccountpaths/">IAccountPaths</a>› &amp; Pick‹<a href="../options/#iglobalargs">IGlobalArgs</a>, "rootDir"›): <em><a href="../../interfaces/cmds_account.iaccountpaths/">IAccountPaths</a> &amp; <a href="../../interfaces/paths.iglobalpaths/">IGlobalPaths</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/cli/src/cmds/account/paths.ts#L35">packages/cli/src/cmds/account/paths.ts:35</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/cli/src/cmds/account/paths.ts#L35">packages/cli/src/cmds/account/paths.ts:35</a></em></p>
 <p>Defines the path structure of the account files</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$accountsRootDir</span>
 ├── secrets
@@ -398,16 +400,16 @@
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">¶</a></h2>
 <h3 id="const-account"><code>Const</code> account<a class="headerlink" href="#const-account" title="Permanent link">¶</a></h3>
 <h3 id="account-object">▪ <strong>account</strong>: <em>object</em><a class="headerlink" href="#account-object" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/cli/src/cmds/account/index.ts#L6">packages/cli/src/cmds/account/index.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/cli/src/cmds/account/index.ts#L6">packages/cli/src/cmds/account/index.ts:6</a></em></p>
 <h3 id="command">command<a class="headerlink" href="#command" title="Permanent link">¶</a></h3>
 <p>• <strong>command</strong>: <em>string</em> = "account <command/>"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/cli/src/cmds/account/index.ts#L7">packages/cli/src/cmds/account/index.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/cli/src/cmds/account/index.ts#L7">packages/cli/src/cmds/account/index.ts:7</a></em></p>
 <h3 id="describe">describe<a class="headerlink" href="#describe" title="Permanent link">¶</a></h3>
 <p>• <strong>describe</strong>: <em>string</em> = "Utilities for generating and managing Ethereum 2.0 accounts"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/cli/src/cmds/account/index.ts#L8">packages/cli/src/cmds/account/index.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/cli/src/cmds/account/index.ts#L8">packages/cli/src/cmds/account/index.ts:8</a></em></p>
 <h3 id="subcommands">subcommands<a class="headerlink" href="#subcommands" title="Permanent link">¶</a></h3>
 <p>• <strong>subcommands</strong>: <em>(<a href="../../interfaces/util.iclicommand/">ICliCommand</a>‹<a href="../../interfaces/cmds_account_cmds_validator.iaccountvalidatorargs/">IAccountValidatorArgs</a>, <a href="../options/#iglobalargs">IGlobalArgs</a>, any› | <a href="../../interfaces/util.iclicommand/">ICliCommand</a>‹<a href="../../interfaces/cmds_account_cmds_wallet.iaccountwalletargs/">IAccountWalletArgs</a>, <a href="../options/#iglobalargs">IGlobalArgs</a>, any›)[]</em> = [validator, wallet]</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbd22c5/packages/cli/src/cmds/account/index.ts#L9">packages/cli/src/cmds/account/index.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5428329/packages/cli/src/cmds/account/index.ts#L9">packages/cli/src/cmds/account/index.ts:9</a></em></p>
 </article>
 </div>
 </div>
@@ -443,7 +445,7 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
-<script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.716f8af4.min.js"></script>
 </body>
 </html>
