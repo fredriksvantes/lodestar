@@ -323,6 +323,11 @@
 <nav aria-label="Variables" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#const-zero_root">
+    Const ZERO_ROOT
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#const-blspubkeylen">
     Const blsPubkeyLen
   </a>
@@ -339,11 +344,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#fromoptionalhexstring">
     fromOptionalHexString
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#getzeroroot">
-    getZeroRoot
   </a>
 </li>
 <li class="md-nav__item">
@@ -410,15 +410,17 @@
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">¶</a></h3>
 <ul>
 <li><a href="../../interfaces/slashingprotection.islashingprotection/">ISlashingProtection</a></li>
+<li><a href="../../interfaces/slashingprotection.slashingprotectionattestation/">SlashingProtectionAttestation</a></li>
+<li><a href="../../interfaces/slashingprotection.slashingprotectionblock/">SlashingProtectionBlock</a></li>
 </ul>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">¶</a></h3>
 <ul>
+<li><a href="./#const-zero_root">ZERO_ROOT</a></li>
 <li><a href="./#const-blspubkeylen">blsPubkeyLen</a></li>
 </ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h3>
 <ul>
 <li><a href="./#fromoptionalhexstring">fromOptionalHexString</a></li>
-<li><a href="./#getzeroroot">getZeroRoot</a></li>
 <li><a href="./#isequalnonzeroroot">isEqualNonZeroRoot</a></li>
 <li><a href="./#isequalroot">isEqualRoot</a></li>
 <li><a href="./#minepoch">minEpoch</a></li>
@@ -451,13 +453,17 @@
 <h3 id="invalidblockerrorcode">InvalidBlockErrorCode<a class="headerlink" href="#invalidblockerrorcode" title="Permanent link">¶</a></h3>
 <p>• <strong>InvalidBlockErrorCode</strong>:</p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
+<h3 id="const-zero_root"><code>Const</code> ZERO_ROOT<a class="headerlink" href="#const-zero_root" title="Permanent link">¶</a></h3>
+<p>• <strong>ZERO_ROOT</strong>: <em>ByteVector</em> = ssz.Root.defaultValue()</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L5">packages/validator/src/slashingProtection/utils.ts:5</a></em></p>
+<hr/>
 <h3 id="const-blspubkeylen"><code>Const</code> blsPubkeyLen<a class="headerlink" href="#const-blspubkeylen" title="Permanent link">¶</a></h3>
 <p>• <strong>blsPubkeyLen</strong>: <em>48</em> = 48</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L4">packages/validator/src/slashingProtection/utils.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L4">packages/validator/src/slashingProtection/utils.ts:4</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="fromoptionalhexstring">fromOptionalHexString<a class="headerlink" href="#fromoptionalhexstring" title="Permanent link">¶</a></h3>
 <p>▸ <strong>fromOptionalHexString</strong>(<code>hex</code>: string | undefined): <em>Root</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L19">packages/validator/src/slashingProtection/utils.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L15">packages/validator/src/slashingProtection/utils.ts:15</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -475,14 +481,9 @@
 </table>
 <p><strong>Returns:</strong> <em>Root</em></p>
 <hr/>
-<h3 id="getzeroroot">getZeroRoot<a class="headerlink" href="#getzeroroot" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getZeroRoot</strong>(): <em>Root</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L6">packages/validator/src/slashingProtection/utils.ts:6</a></em></p>
-<p><strong>Returns:</strong> <em>Root</em></p>
-<hr/>
 <h3 id="isequalnonzeroroot">isEqualNonZeroRoot<a class="headerlink" href="#isequalnonzeroroot" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isEqualNonZeroRoot</strong>(<code>root1</code>: Root, <code>root2</code>: Root): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L14">packages/validator/src/slashingProtection/utils.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L11">packages/validator/src/slashingProtection/utils.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -506,7 +507,7 @@
 <hr/>
 <h3 id="isequalroot">isEqualRoot<a class="headerlink" href="#isequalroot" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isEqualRoot</strong>(<code>root1</code>: Root, <code>root2</code>: Root): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L10">packages/validator/src/slashingProtection/utils.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L7">packages/validator/src/slashingProtection/utils.ts:7</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -530,7 +531,7 @@
 <hr/>
 <h3 id="minepoch">minEpoch<a class="headerlink" href="#minepoch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>minEpoch</strong>(<code>epochs</code>: <a href="../../enums/util.timeitem/#epoch">Epoch</a>[]): <em><a href="../../enums/util.timeitem/#epoch">Epoch</a> | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L36">packages/validator/src/slashingProtection/utils.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L30">packages/validator/src/slashingProtection/utils.ts:30</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -550,7 +551,7 @@
 <hr/>
 <h3 id="numtostring">numToString<a class="headerlink" href="#numtostring" title="Permanent link">¶</a></h3>
 <p>▸ <strong>numToString</strong>(<code>num</code>: number): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L32">packages/validator/src/slashingProtection/utils.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L26">packages/validator/src/slashingProtection/utils.ts:26</a></em></p>
 <p>Typesafe wrapper around <code>String()</code>. The String constructor accepts any which is dangerous</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -558,14 +559,12 @@
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>num</code></td>
 <td>number</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -573,7 +572,7 @@
 <hr/>
 <h3 id="tooptionalhexstring">toOptionalHexString<a class="headerlink" href="#tooptionalhexstring" title="Permanent link">¶</a></h3>
 <p>▸ <strong>toOptionalHexString</strong>(<code>root</code>: Root): <em>string | undefined</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L23">packages/validator/src/slashingProtection/utils.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L19">packages/validator/src/slashingProtection/utils.ts:19</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -593,7 +592,7 @@
 <hr/>
 <h3 id="uniquevectorarr">uniqueVectorArr<a class="headerlink" href="#uniquevectorarr" title="Permanent link">¶</a></h3>
 <p>▸ <strong>uniqueVectorArr</strong>(<code>buffers</code>: Vector‹number›[]): <em>Vector‹number›[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/85613e6/packages/validator/src/slashingProtection/utils.ts#L40">packages/validator/src/slashingProtection/utils.ts:40</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/25ec250/packages/validator/src/slashingProtection/utils.ts#L34">packages/validator/src/slashingProtection/utils.ts:34</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
