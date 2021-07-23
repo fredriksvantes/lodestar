@@ -269,11 +269,6 @@
 <nav aria-label="References" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#aggregateandproofrepository">
-    AggregateAndProofRepository
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#attesterslashingrepository">
     AttesterSlashingRepository
   </a>
@@ -363,11 +358,6 @@
 <nav aria-label="Functions" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#computeattestationvaluescore">
-    computeAttestationValueScore
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#deleteparentrootindex">
     deleteParentRootIndex
   </a>
@@ -407,11 +397,6 @@
     storeRootIndex
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sumbits">
-    sumBits
-  </a>
-</li>
 </ul>
 </nav>
 </li>
@@ -430,7 +415,6 @@
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">¶</a></h2>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="./#aggregateandproofrepository">AggregateAndProofRepository</a></li>
 <li><a href="./#attesterslashingrepository">AttesterSlashingRepository</a></li>
 <li><a href="./#bestupdatepercommitteeperiod">BestUpdatePerCommitteePeriod</a></li>
 <li><a href="./#blockarchiverepository">BlockArchiveRepository</a></li>
@@ -450,7 +434,6 @@
 </ul>
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="../../classes/db_repositories.aggregateandproofrepository/">AggregateAndProofRepository</a></li>
 <li><a href="../../classes/db_repositories.attesterslashingrepository/">AttesterSlashingRepository</a></li>
 <li><a href="../../classes/db_repositories.bestupdatepercommitteeperiod/">BestUpdatePerCommitteePeriod</a></li>
 <li><a href="../../classes/db_repositories.blockarchiverepository/">BlockArchiveRepository</a></li>
@@ -473,7 +456,6 @@
 </ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="./#computeattestationvaluescore">computeAttestationValueScore</a></li>
 <li><a href="./#deleteparentrootindex">deleteParentRootIndex</a></li>
 <li><a href="./#deleterootindex">deleteRootIndex</a></li>
 <li><a href="./#getparentrootindexkey">getParentRootIndexKey</a></li>
@@ -482,12 +464,8 @@
 <li><a href="./#storeparentrootindex">storeParentRootIndex</a></li>
 <li><a href="./#storerootindex">storeRootIndex</a></li>
 <li><a href="./#storerootindex">storeRootIndex</a></li>
-<li><a href="./#sumbits">sumBits</a></li>
 </ul>
 <h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">¶</a></h2>
-<h3 id="aggregateandproofrepository">AggregateAndProofRepository<a class="headerlink" href="#aggregateandproofrepository" title="Permanent link">¶</a></h3>
-<p>• <strong>AggregateAndProofRepository</strong>:</p>
-<hr/>
 <h3 id="attesterslashingrepository">AttesterSlashingRepository<a class="headerlink" href="#attesterslashingrepository" title="Permanent link">¶</a></h3>
 <p>• <strong>AttesterSlashingRepository</strong>:</p>
 <hr/>
@@ -536,33 +514,9 @@
 <h3 id="voluntaryexitrepository">VoluntaryExitRepository<a class="headerlink" href="#voluntaryexitrepository" title="Permanent link">¶</a></h3>
 <p>• <strong>VoluntaryExitRepository</strong>:</p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
-<h3 id="computeattestationvaluescore">computeAttestationValueScore<a class="headerlink" href="#computeattestationvaluescore" title="Permanent link">¶</a></h3>
-<p>▸ <strong>computeAttestationValueScore</strong>(<code>attestation</code>: Attestation, <code>toBeIncludedSlot</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/aggregateAndProof.ts#L65">packages/lodestar/src/db/repositories/aggregateAndProof.ts:65</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>attestation</code></td>
-<td>Attestation</td>
-</tr>
-<tr>
-<td><code>toBeIncludedSlot</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#slot">Slot</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>number</em></p>
-<hr/>
 <h3 id="deleteparentrootindex">deleteParentRootIndex<a class="headerlink" href="#deleteparentrootindex" title="Permanent link">¶</a></h3>
 <p>▸ <strong>deleteParentRootIndex</strong>(<code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>block</code>: allForks.SignedBeaconBlock): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L30">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L30">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:30</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -586,7 +540,7 @@
 <hr/>
 <h3 id="deleterootindex">deleteRootIndex<a class="headerlink" href="#deleterootindex" title="Permanent link">¶</a></h3>
 <p>▸ <strong>deleteRootIndex</strong>(<code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>blockType</code>: ContainerType‹allForks.SignedBeaconBlock›, <code>block</code>: allForks.SignedBeaconBlock): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L22">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L22">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -613,8 +567,8 @@
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr/>
 <h3 id="getparentrootindexkey">getParentRootIndexKey<a class="headerlink" href="#getparentrootindexkey" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getParentRootIndexKey</strong>(<code>parentRoot</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a>): <em>Buffer</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L37">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:37</a></em></p>
+<p>▸ <strong>getParentRootIndexKey</strong>(<code>parentRoot</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a>): <em>Buffer</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L37">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:37</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -626,15 +580,15 @@
 <tbody>
 <tr>
 <td><code>parentRoot</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Buffer</em></p>
 <hr/>
 <h3 id="getrootindexkey">getRootIndexKey<a class="headerlink" href="#getrootindexkey" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getRootIndexKey</strong>(<code>root</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a>): <em>Buffer</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L41">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:41</a></em></p>
+<p>▸ <strong>getRootIndexKey</strong>(<code>root</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a>): <em>Buffer</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L41">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:41</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -646,15 +600,15 @@
 <tbody>
 <tr>
 <td><code>root</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Buffer</em></p>
 <hr/>
 <h3 id="getrootindexkey_1">getRootIndexKey<a class="headerlink" href="#getrootindexkey_1" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getRootIndexKey</strong>(<code>root</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a>): <em>Buffer</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/stateArchiveIndex.ts#L9">packages/lodestar/src/db/repositories/stateArchiveIndex.ts:9</a></em></p>
+<p>▸ <strong>getRootIndexKey</strong>(<code>root</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a>): <em>Buffer</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/lodestar/src/db/repositories/stateArchiveIndex.ts#L9">packages/lodestar/src/db/repositories/stateArchiveIndex.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -666,15 +620,15 @@
 <tbody>
 <tr>
 <td><code>root</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Buffer</em></p>
 <hr/>
 <h3 id="storeparentrootindex">storeParentRootIndex<a class="headerlink" href="#storeparentrootindex" title="Permanent link">¶</a></h3>
-<p>▸ <strong>storeParentRootIndex</strong>(<code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>slot</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#slot">Slot</a>, <code>parentRoot</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a>): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L14">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:14</a></em></p>
+<p>▸ <strong>storeParentRootIndex</strong>(<code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>slot</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#slot">Slot</a>, <code>parentRoot</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L14">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -690,19 +644,19 @@
 </tr>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 <tr>
 <td><code>parentRoot</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr/>
 <h3 id="storerootindex">storeRootIndex<a class="headerlink" href="#storerootindex" title="Permanent link">¶</a></h3>
-<p>▸ <strong>storeRootIndex</strong>(<code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>slot</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#slot">Slot</a>, <code>blockRoot</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a>): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L6">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:6</a></em></p>
+<p>▸ <strong>storeRootIndex</strong>(<code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>slot</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#slot">Slot</a>, <code>blockRoot</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/lodestar/src/db/repositories/blockArchiveIndex.ts#L6">packages/lodestar/src/db/repositories/blockArchiveIndex.ts:6</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -718,19 +672,19 @@
 </tr>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 <tr>
 <td><code>blockRoot</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr/>
 <h3 id="storerootindex_1">storeRootIndex<a class="headerlink" href="#storerootindex_1" title="Permanent link">¶</a></h3>
-<p>▸ <strong>storeRootIndex</strong>(<code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>slot</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#slot">Slot</a>, <code>stateRoot</code>: <a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a>): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/stateArchiveIndex.ts#L5">packages/lodestar/src/db/repositories/stateArchiveIndex.ts:5</a></em></p>
+<p>▸ <strong>storeRootIndex</strong>(<code>db</code>: IDatabaseController‹Buffer, Buffer›, <code>slot</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#slot">Slot</a>, <code>stateRoot</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/lodestar/src/db/repositories/stateArchiveIndex.ts#L5">packages/lodestar/src/db/repositories/stateArchiveIndex.ts:5</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -746,35 +700,15 @@
 </tr>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 <tr>
 <td><code>stateRoot</code></td>
-<td><a href="../reflection-11508.reflection-11509._.reflection-11511._beacon_state_transition_src_phase0/#root">Root</a></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr/>
-<h3 id="sumbits">sumBits<a class="headerlink" href="#sumbits" title="Permanent link">¶</a></h3>
-<p>▸ <strong>sumBits</strong>(<code>aggregationBits</code>: BitList): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7e00bf4/packages/lodestar/src/db/repositories/aggregateAndProof.ts#L71">packages/lodestar/src/db/repositories/aggregateAndProof.ts:71</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>aggregationBits</code></td>
-<td>BitList</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>number</em></p>
 </article>
 </div>
 </div>

@@ -1,0 +1,2533 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
+<link href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util/" rel="canonical"/>
+<link href="../../../../images/favicon.ico" rel="icon"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.2.0" name="generator"/>
+<title>Reflection 11457.reflection 11458. .reflection 11460. beacon state transition src allforks util - Lodestar documentation</title>
+<link href="../../../../assets/stylesheets/main.fe914879.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.ba0d045b.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="../../../../stylesheets/extras.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="black" data-md-color-primary="" data-md-color-scheme="preference" dir="ltr">
+<script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#module-beacon-state-transitionsrcallforksutil">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Lodestar documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
+<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Lodestar documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Reflection 11457.reflection 11458. .reflection 11460. beacon state transition src allforks util
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/chainsafe/lodestar/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    chainsafe/lodestar
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Lodestar documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
+<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+</a>
+    Lodestar documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/chainsafe/lodestar/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    chainsafe/lodestar
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../..">
+        Getting started
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../installation/">
+        Installation
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+        CLI Usage
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="CLI Usage" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          CLI Usage
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../usage/testnet/">
+        Mainnet or public testnet
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../usage/local/">
+        Local testnet
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../usage/key-management/">
+        Key management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../usage/prometheus-grafana/">
+        Prometheus &amp; Grafana Setup
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+        Reference
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Reference" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../reference/cli/">
+        Command line
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../libraries/">
+        Libraries
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+        Design
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Design
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../design/architecture/">
+        Beacon node architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../design/depgraph/">
+        Lodestar package structure
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../contributing/">
+        Contributing
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#index">
+    Index
+  </a>
+<nav aria-label="Index" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+    References
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#enumerations">
+    Enumerations
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#classes">
+    Classes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interfaces">
+    Interfaces
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-aliases">
+    Type aliases
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#variables">
+    Variables
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functions">
+    Functions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#object-literals">
+    Object literals
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references_1">
+    References
+  </a>
+<nav aria-label="References" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#attesterduty">
+    AttesterDuty
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#attesterflags">
+    AttesterFlags
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beaconstatecontext">
+    BeaconStateContext
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedbeaconstate">
+    CachedBeaconState
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedbeaconstateproxyhandler">
+    CachedBeaconStateProxyHandler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedvalidatorlist">
+    CachedValidatorList
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedvalidatorlistproxyhandler">
+    CachedValidatorListProxyHandler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eth_to_gwei">
+    ETH_TO_GWEI
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epochcontext">
+    EpochContext
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epochcontexterror">
+    EpochContextError
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epochcontexterrorcode">
+    EpochContextErrorCode
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epochcontextopts">
+    EpochContextOpts
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_curr_head_attester">
+    FLAG_CURR_HEAD_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_curr_source_attester">
+    FLAG_CURR_SOURCE_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_curr_target_attester">
+    FLAG_CURR_TARGET_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_eligible_attester">
+    FLAG_ELIGIBLE_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_prev_head_attester">
+    FLAG_PREV_HEAD_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_prev_head_attester_or_unslashed">
+    FLAG_PREV_HEAD_ATTESTER_OR_UNSLASHED
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_prev_source_attester">
+    FLAG_PREV_SOURCE_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_prev_source_attester_or_unslashed">
+    FLAG_PREV_SOURCE_ATTESTER_OR_UNSLASHED
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_prev_target_attester">
+    FLAG_PREV_TARGET_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_prev_target_attester_or_unslashed">
+    FLAG_PREV_TARGET_ATTESTER_OR_UNSLASHED
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flag_unslashed">
+    FLAG_UNSLASHED
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iattesterstatus">
+    IAttesterStatus
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iepochprocess">
+    IEpochProcess
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iepochshuffling">
+    IEpochShuffling
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iepochstakesummary">
+    IEpochStakeSummary
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ireadonlyepochshuffling">
+    IReadonlyEpochShuffling
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#indexedsynccommittee">
+    IndexedSyncCommittee
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pubkeyindexmap">
+    PubkeyIndexMap
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computecommitteecount">
+    computeCommitteeCount
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computeepochshuffling">
+    computeEpochShuffling
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computeproposers">
+    computeProposers
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesubnetforattestation">
+    computeSubnetForAttestation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesubnetforslot">
+    computeSubnetForSlot
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesynccomitteemap">
+    computeSyncComitteeMap
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesyncparticipantreward">
+    computeSyncParticipantReward
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computeweaksubjectivityperiod">
+    computeWeakSubjectivityPeriod
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computeweaksubjectivityperiodfromconstituents">
+    computeWeakSubjectivityPeriodFromConstituents
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#converttoindexedsynccommittee">
+    convertToIndexedSyncCommittee
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createcachedbeaconstate">
+    createCachedBeaconState
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createepochcontext">
+    createEpochContext
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createiattesterstatus">
+    createIAttesterStatus
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createiepochprocess">
+    createIEpochProcess
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createindexedsynccommittee">
+    createIndexedSyncCommittee
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createvalidatorflat">
+    createValidatorFlat
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#emptyindexedsynccommittee">
+    emptyIndexedSyncCommittee
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getlatestblockroot">
+    getLatestBlockRoot
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getlatestweaksubjectivitycheckpointepoch">
+    getLatestWeakSubjectivityCheckpointEpoch
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hasmarkers">
+    hasMarkers
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iswithinweaksubjectivityperiod">
+    isWithinWeakSubjectivityPeriod
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parseattesterflags">
+    parseAttesterFlags
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prepareepochprocessstate">
+    prepareEpochProcessState
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rotateepochs">
+    rotateEpochs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#syncpubkeys">
+    syncPubkeys
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-aliases_1">
+    Type aliases
+  </a>
+<nav aria-label="Type aliases" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#attesterduty_1">
+    AttesterDuty
+  </a>
+<nav aria-label="AttesterDuty" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-declaration">
+    Type declaration:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#attesterflags_1">
+    AttesterFlags
+  </a>
+<nav aria-label="AttesterFlags" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-declaration_1">
+    Type declaration:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedbeaconstate_1">
+    CachedBeaconState
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epochcontexterrortype">
+    EpochContextErrorType
+  </a>
+<nav aria-label="EpochContextErrorType" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-declaration_2">
+    Type declaration:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epochcontextopts_1">
+    EpochContextOpts
+  </a>
+<nav aria-label="EpochContextOpts" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-declaration_3">
+    Type declaration:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pubkeyhex">
+    PubkeyHex
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#synccomitteevalidatorindexmap">
+    SyncComitteeValidatorIndexMap
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#variables_1">
+    Variables
+  </a>
+<nav aria-label="Variables" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-eth_to_gwei">
+    Const ETH_TO_GWEI
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_curr_head_attester">
+    Const FLAG_CURR_HEAD_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_curr_source_attester">
+    Const FLAG_CURR_SOURCE_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_curr_target_attester">
+    Const FLAG_CURR_TARGET_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_eligible_attester">
+    Const FLAG_ELIGIBLE_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_prev_head_attester">
+    Const FLAG_PREV_HEAD_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_prev_head_attester_or_unslashed">
+    Const FLAG_PREV_HEAD_ATTESTER_OR_UNSLASHED
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_prev_source_attester">
+    Const FLAG_PREV_SOURCE_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_prev_source_attester_or_unslashed">
+    Const FLAG_PREV_SOURCE_ATTESTER_OR_UNSLASHED
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_prev_target_attester">
+    Const FLAG_PREV_TARGET_ATTESTER
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_prev_target_attester_or_unslashed">
+    Const FLAG_PREV_TARGET_ATTESTER_OR_UNSLASHED
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-flag_unslashed">
+    Const FLAG_UNSLASHED
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-safety_decay">
+    Const SAFETY_DECAY
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-timely_head">
+    Const TIMELY_HEAD
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-timely_source">
+    Const TIMELY_SOURCE
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-timely_target">
+    Const TIMELY_TARGET
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-emptyindexedsynccommittee">
+    Const emptyIndexedSyncCommittee
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functions_1">
+    Functions
+  </a>
+<nav aria-label="Functions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computecommitteecount_1">
+    computeCommitteeCount
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computeepochshuffling_1">
+    computeEpochShuffling
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computeproposers_1">
+    computeProposers
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesubnetforattestation_1">
+    computeSubnetForAttestation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesubnetforslot_1">
+    computeSubnetForSlot
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesynccomitteemap_1">
+    computeSyncComitteeMap
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesynccommitteeindices">
+    computeSyncCommitteeIndices
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computesyncparticipantreward_1">
+    computeSyncParticipantReward
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computeweaksubjectivityperiod_1">
+    computeWeakSubjectivityPeriod
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computeweaksubjectivityperiodfromconstituents_1">
+    computeWeakSubjectivityPeriodFromConstituents
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#converttoindexedsynccommittee_1">
+    convertToIndexedSyncCommittee
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createcachedbeaconstate_1">
+    createCachedBeaconState
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createepochcontext_1">
+    createEpochContext
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createiattesterstatus_1">
+    createIAttesterStatus
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createiepochprocess_1">
+    createIEpochProcess
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createindexedsynccommittee_1">
+    createIndexedSyncCommittee
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#createvalidatorflat_1">
+    createValidatorFlat
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fromparticipationflags">
+    fromParticipationFlags
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getlatestblockroot_1">
+    getLatestBlockRoot
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getlatestweaksubjectivitycheckpointepoch_1">
+    getLatestWeakSubjectivityCheckpointEpoch
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hasmarkers_1">
+    hasMarkers
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iswithinweaksubjectivityperiod_1">
+    isWithinWeakSubjectivityPeriod
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parseattesterflags_1">
+    parseAttesterFlags
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prepareepochprocessstate_1">
+    prepareEpochProcessState
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rotateepochs_1">
+    rotateEpochs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#syncpubkeys_1">
+    syncPubkeys
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tohexstringmaybe">
+    toHexStringMaybe
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#toparticipationflags">
+    toParticipationFlags
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unsafeuint8arraytotree">
+    unsafeUint8ArrayToTree
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#object-literals_1">
+    Object literals
+  </a>
+<nav aria-label="Object literals" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-cachedbalancelistproxyhandler">
+    Const CachedBalanceListProxyHandler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedbalancelistproxyhandler-object">
+    ▪ CachedBalanceListProxyHandler: object
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get">
+    get
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set">
+    set
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-cachedbeaconstateproxyhandler">
+    Const CachedBeaconStateProxyHandler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedbeaconstateproxyhandler-object">
+    ▪ CachedBeaconStateProxyHandler: object
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get_1">
+    get
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set_1">
+    set
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-cachedepochparticipationproxyhandler">
+    Const CachedEpochParticipationProxyHandler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedepochparticipationproxyhandler-object">
+    ▪ CachedEpochParticipationProxyHandler: object
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get_2">
+    get
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set_2">
+    set
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-cachedinactivityscorelistproxyhandler">
+    Const CachedInactivityScoreListProxyHandler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedinactivityscorelistproxyhandler-object">
+    ▪ CachedInactivityScoreListProxyHandler: object
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get_3">
+    get
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set_3">
+    set
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-cachedvalidatorlistproxyhandler">
+    Const CachedValidatorListProxyHandler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cachedvalidatorlistproxyhandler-object">
+    ▪ CachedValidatorListProxyHandler: object
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get_4">
+    get
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set_4">
+    set
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/modules/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="../reflection-11457/"></a> › <a href="../reflection-11457.reflection-11458/"></a> › <a href="../reflection-11457.reflection-11458._/">/</a> › <a href="../reflection-11457.reflection-11458._.reflection-11460/"></a> › <a href="./">/beacon-state-transition/src/allForks/util</a></p>
+<h1 id="module-beacon-state-transitionsrcallforksutil">Module: /beacon-state-transition/src/allForks/util<a class="headerlink" href="#module-beacon-state-transitionsrcallforksutil" title="Permanent link">¶</a></h1>
+<h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">¶</a></h2>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="./#attesterduty">AttesterDuty</a></li>
+<li><a href="./#attesterflags">AttesterFlags</a></li>
+<li><a href="./#beaconstatecontext">BeaconStateContext</a></li>
+<li><a href="./#cachedbeaconstate">CachedBeaconState</a></li>
+<li><a href="./#cachedbeaconstateproxyhandler">CachedBeaconStateProxyHandler</a></li>
+<li><a href="./#cachedvalidatorlist">CachedValidatorList</a></li>
+<li><a href="./#cachedvalidatorlistproxyhandler">CachedValidatorListProxyHandler</a></li>
+<li><a href="./#eth_to_gwei">ETH_TO_GWEI</a></li>
+<li><a href="./#epochcontext">EpochContext</a></li>
+<li><a href="./#epochcontexterror">EpochContextError</a></li>
+<li><a href="./#epochcontexterrorcode">EpochContextErrorCode</a></li>
+<li><a href="./#epochcontextopts">EpochContextOpts</a></li>
+<li><a href="./#flag_curr_head_attester">FLAG_CURR_HEAD_ATTESTER</a></li>
+<li><a href="./#flag_curr_source_attester">FLAG_CURR_SOURCE_ATTESTER</a></li>
+<li><a href="./#flag_curr_target_attester">FLAG_CURR_TARGET_ATTESTER</a></li>
+<li><a href="./#flag_eligible_attester">FLAG_ELIGIBLE_ATTESTER</a></li>
+<li><a href="./#flag_prev_head_attester">FLAG_PREV_HEAD_ATTESTER</a></li>
+<li><a href="./#flag_prev_head_attester_or_unslashed">FLAG_PREV_HEAD_ATTESTER_OR_UNSLASHED</a></li>
+<li><a href="./#flag_prev_source_attester">FLAG_PREV_SOURCE_ATTESTER</a></li>
+<li><a href="./#flag_prev_source_attester_or_unslashed">FLAG_PREV_SOURCE_ATTESTER_OR_UNSLASHED</a></li>
+<li><a href="./#flag_prev_target_attester">FLAG_PREV_TARGET_ATTESTER</a></li>
+<li><a href="./#flag_prev_target_attester_or_unslashed">FLAG_PREV_TARGET_ATTESTER_OR_UNSLASHED</a></li>
+<li><a href="./#flag_unslashed">FLAG_UNSLASHED</a></li>
+<li><a href="./#iattesterstatus">IAttesterStatus</a></li>
+<li><a href="./#iepochprocess">IEpochProcess</a></li>
+<li><a href="./#iepochshuffling">IEpochShuffling</a></li>
+<li><a href="./#iepochstakesummary">IEpochStakeSummary</a></li>
+<li><a href="./#ireadonlyepochshuffling">IReadonlyEpochShuffling</a></li>
+<li><a href="./#indexedsynccommittee">IndexedSyncCommittee</a></li>
+<li><a href="./#pubkeyindexmap">PubkeyIndexMap</a></li>
+<li><a href="./#computecommitteecount">computeCommitteeCount</a></li>
+<li><a href="./#computeepochshuffling">computeEpochShuffling</a></li>
+<li><a href="./#computeproposers">computeProposers</a></li>
+<li><a href="./#computesubnetforattestation">computeSubnetForAttestation</a></li>
+<li><a href="./#computesubnetforslot">computeSubnetForSlot</a></li>
+<li><a href="./#computesynccomitteemap">computeSyncComitteeMap</a></li>
+<li><a href="./#computesyncparticipantreward">computeSyncParticipantReward</a></li>
+<li><a href="./#computeweaksubjectivityperiod">computeWeakSubjectivityPeriod</a></li>
+<li><a href="./#computeweaksubjectivityperiodfromconstituents">computeWeakSubjectivityPeriodFromConstituents</a></li>
+<li><a href="./#converttoindexedsynccommittee">convertToIndexedSyncCommittee</a></li>
+<li><a href="./#createcachedbeaconstate">createCachedBeaconState</a></li>
+<li><a href="./#createepochcontext">createEpochContext</a></li>
+<li><a href="./#createiattesterstatus">createIAttesterStatus</a></li>
+<li><a href="./#createiepochprocess">createIEpochProcess</a></li>
+<li><a href="./#createindexedsynccommittee">createIndexedSyncCommittee</a></li>
+<li><a href="./#createvalidatorflat">createValidatorFlat</a></li>
+<li><a href="./#emptyindexedsynccommittee">emptyIndexedSyncCommittee</a></li>
+<li><a href="./#getlatestblockroot">getLatestBlockRoot</a></li>
+<li><a href="./#getlatestweaksubjectivitycheckpointepoch">getLatestWeakSubjectivityCheckpointEpoch</a></li>
+<li><a href="./#hasmarkers">hasMarkers</a></li>
+<li><a href="./#iswithinweaksubjectivityperiod">isWithinWeakSubjectivityPeriod</a></li>
+<li><a href="./#parseattesterflags">parseAttesterFlags</a></li>
+<li><a href="./#prepareepochprocessstate">prepareEpochProcessState</a></li>
+<li><a href="./#rotateepochs">rotateEpochs</a></li>
+<li><a href="./#syncpubkeys">syncPubkeys</a></li>
+</ul>
+<h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="../../enums/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontexterrorcode/">EpochContextErrorCode</a></li>
+</ul>
+<h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.beaconstatecontext/">BeaconStateContext</a></li>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedbalancelist/">CachedBalanceList</a></li>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedepochparticipation/">CachedEpochParticipation</a></li>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedinactivityscorelist/">CachedInactivityScoreList</a></li>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedvalidatorlist/">CachedValidatorList</a></li>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a></li>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontexterror/">EpochContextError</a></li>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a></li>
+<li><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a></li>
+</ul>
+<h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iattesterstatus/">IAttesterStatus</a></li>
+<li><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.icachedepochparticipationopts/">ICachedEpochParticipationOpts</a></li>
+<li><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochcontextdata/">IEpochContextData</a></li>
+<li><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a></li>
+<li><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochshuffling/">IEpochShuffling</a></li>
+<li><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochstakesummary/">IEpochStakeSummary</a></li>
+<li><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iparticipationstatus/">IParticipationStatus</a></li>
+<li><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.ireadonlyepochshuffling/">IReadonlyEpochShuffling</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="./#attesterduty">AttesterDuty</a></li>
+<li><a href="./#attesterflags">AttesterFlags</a></li>
+<li><a href="./#cachedbeaconstate">CachedBeaconState</a></li>
+<li><a href="./#epochcontexterrortype">EpochContextErrorType</a></li>
+<li><a href="./#epochcontextopts">EpochContextOpts</a></li>
+<li><a href="./#pubkeyhex">PubkeyHex</a></li>
+<li><a href="./#synccomitteevalidatorindexmap">SyncComitteeValidatorIndexMap</a></li>
+</ul>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="./#const-eth_to_gwei">ETH_TO_GWEI</a></li>
+<li><a href="./#const-flag_curr_head_attester">FLAG_CURR_HEAD_ATTESTER</a></li>
+<li><a href="./#const-flag_curr_source_attester">FLAG_CURR_SOURCE_ATTESTER</a></li>
+<li><a href="./#const-flag_curr_target_attester">FLAG_CURR_TARGET_ATTESTER</a></li>
+<li><a href="./#const-flag_eligible_attester">FLAG_ELIGIBLE_ATTESTER</a></li>
+<li><a href="./#const-flag_prev_head_attester">FLAG_PREV_HEAD_ATTESTER</a></li>
+<li><a href="./#const-flag_prev_head_attester_or_unslashed">FLAG_PREV_HEAD_ATTESTER_OR_UNSLASHED</a></li>
+<li><a href="./#const-flag_prev_source_attester">FLAG_PREV_SOURCE_ATTESTER</a></li>
+<li><a href="./#const-flag_prev_source_attester_or_unslashed">FLAG_PREV_SOURCE_ATTESTER_OR_UNSLASHED</a></li>
+<li><a href="./#const-flag_prev_target_attester">FLAG_PREV_TARGET_ATTESTER</a></li>
+<li><a href="./#const-flag_prev_target_attester_or_unslashed">FLAG_PREV_TARGET_ATTESTER_OR_UNSLASHED</a></li>
+<li><a href="./#const-flag_unslashed">FLAG_UNSLASHED</a></li>
+<li><a href="./#const-safety_decay">SAFETY_DECAY</a></li>
+<li><a href="./#const-timely_head">TIMELY_HEAD</a></li>
+<li><a href="./#const-timely_source">TIMELY_SOURCE</a></li>
+<li><a href="./#const-timely_target">TIMELY_TARGET</a></li>
+<li><a href="./#const-emptyindexedsynccommittee">emptyIndexedSyncCommittee</a></li>
+</ul>
+<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="./#computecommitteecount">computeCommitteeCount</a></li>
+<li><a href="./#computeepochshuffling">computeEpochShuffling</a></li>
+<li><a href="./#computeproposers">computeProposers</a></li>
+<li><a href="./#computesubnetforattestation">computeSubnetForAttestation</a></li>
+<li><a href="./#computesubnetforslot">computeSubnetForSlot</a></li>
+<li><a href="./#computesynccomitteemap">computeSyncComitteeMap</a></li>
+<li><a href="./#computesynccommitteeindices">computeSyncCommitteeIndices</a></li>
+<li><a href="./#computesyncparticipantreward">computeSyncParticipantReward</a></li>
+<li><a href="./#computeweaksubjectivityperiod">computeWeakSubjectivityPeriod</a></li>
+<li><a href="./#computeweaksubjectivityperiodfromconstituents">computeWeakSubjectivityPeriodFromConstituents</a></li>
+<li><a href="./#converttoindexedsynccommittee">convertToIndexedSyncCommittee</a></li>
+<li><a href="./#createcachedbeaconstate">createCachedBeaconState</a></li>
+<li><a href="./#createepochcontext">createEpochContext</a></li>
+<li><a href="./#createiattesterstatus">createIAttesterStatus</a></li>
+<li><a href="./#createiepochprocess">createIEpochProcess</a></li>
+<li><a href="./#createindexedsynccommittee">createIndexedSyncCommittee</a></li>
+<li><a href="./#createvalidatorflat">createValidatorFlat</a></li>
+<li><a href="./#fromparticipationflags">fromParticipationFlags</a></li>
+<li><a href="./#getlatestblockroot">getLatestBlockRoot</a></li>
+<li><a href="./#getlatestweaksubjectivitycheckpointepoch">getLatestWeakSubjectivityCheckpointEpoch</a></li>
+<li><a href="./#hasmarkers">hasMarkers</a></li>
+<li><a href="./#iswithinweaksubjectivityperiod">isWithinWeakSubjectivityPeriod</a></li>
+<li><a href="./#parseattesterflags">parseAttesterFlags</a></li>
+<li><a href="./#prepareepochprocessstate">prepareEpochProcessState</a></li>
+<li><a href="./#rotateepochs">rotateEpochs</a></li>
+<li><a href="./#syncpubkeys">syncPubkeys</a></li>
+<li><a href="./#tohexstringmaybe">toHexStringMaybe</a></li>
+<li><a href="./#toparticipationflags">toParticipationFlags</a></li>
+<li><a href="./#unsafeuint8arraytotree">unsafeUint8ArrayToTree</a></li>
+</ul>
+<h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="./#const-cachedbalancelistproxyhandler">CachedBalanceListProxyHandler</a></li>
+<li><a href="./#const-cachedbeaconstateproxyhandler">CachedBeaconStateProxyHandler</a></li>
+<li><a href="./#const-cachedepochparticipationproxyhandler">CachedEpochParticipationProxyHandler</a></li>
+<li><a href="./#const-cachedinactivityscorelistproxyhandler">CachedInactivityScoreListProxyHandler</a></li>
+<li><a href="./#const-cachedvalidatorlistproxyhandler">CachedValidatorListProxyHandler</a></li>
+</ul>
+<h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">¶</a></h2>
+<h3 id="attesterduty">AttesterDuty<a class="headerlink" href="#attesterduty" title="Permanent link">¶</a></h3>
+<p>• <strong>AttesterDuty</strong>:</p>
+<hr/>
+<h3 id="attesterflags">AttesterFlags<a class="headerlink" href="#attesterflags" title="Permanent link">¶</a></h3>
+<p>• <strong>AttesterFlags</strong>:</p>
+<hr/>
+<h3 id="beaconstatecontext">BeaconStateContext<a class="headerlink" href="#beaconstatecontext" title="Permanent link">¶</a></h3>
+<p>• <strong>BeaconStateContext</strong>:</p>
+<hr/>
+<h3 id="cachedbeaconstate">CachedBeaconState<a class="headerlink" href="#cachedbeaconstate" title="Permanent link">¶</a></h3>
+<p>• <strong>CachedBeaconState</strong>:</p>
+<hr/>
+<h3 id="cachedbeaconstateproxyhandler">CachedBeaconStateProxyHandler<a class="headerlink" href="#cachedbeaconstateproxyhandler" title="Permanent link">¶</a></h3>
+<p>• <strong>CachedBeaconStateProxyHandler</strong>:</p>
+<hr/>
+<h3 id="cachedvalidatorlist">CachedValidatorList<a class="headerlink" href="#cachedvalidatorlist" title="Permanent link">¶</a></h3>
+<p>• <strong>CachedValidatorList</strong>:</p>
+<hr/>
+<h3 id="cachedvalidatorlistproxyhandler">CachedValidatorListProxyHandler<a class="headerlink" href="#cachedvalidatorlistproxyhandler" title="Permanent link">¶</a></h3>
+<p>• <strong>CachedValidatorListProxyHandler</strong>:</p>
+<hr/>
+<h3 id="eth_to_gwei">ETH_TO_GWEI<a class="headerlink" href="#eth_to_gwei" title="Permanent link">¶</a></h3>
+<p>• <strong>ETH_TO_GWEI</strong>:</p>
+<hr/>
+<h3 id="epochcontext">EpochContext<a class="headerlink" href="#epochcontext" title="Permanent link">¶</a></h3>
+<p>• <strong>EpochContext</strong>:</p>
+<hr/>
+<h3 id="epochcontexterror">EpochContextError<a class="headerlink" href="#epochcontexterror" title="Permanent link">¶</a></h3>
+<p>• <strong>EpochContextError</strong>:</p>
+<hr/>
+<h3 id="epochcontexterrorcode">EpochContextErrorCode<a class="headerlink" href="#epochcontexterrorcode" title="Permanent link">¶</a></h3>
+<p>• <strong>EpochContextErrorCode</strong>:</p>
+<hr/>
+<h3 id="epochcontextopts">EpochContextOpts<a class="headerlink" href="#epochcontextopts" title="Permanent link">¶</a></h3>
+<p>• <strong>EpochContextOpts</strong>:</p>
+<hr/>
+<h3 id="flag_curr_head_attester">FLAG_CURR_HEAD_ATTESTER<a class="headerlink" href="#flag_curr_head_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_CURR_HEAD_ATTESTER</strong>:</p>
+<hr/>
+<h3 id="flag_curr_source_attester">FLAG_CURR_SOURCE_ATTESTER<a class="headerlink" href="#flag_curr_source_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_CURR_SOURCE_ATTESTER</strong>:</p>
+<hr/>
+<h3 id="flag_curr_target_attester">FLAG_CURR_TARGET_ATTESTER<a class="headerlink" href="#flag_curr_target_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_CURR_TARGET_ATTESTER</strong>:</p>
+<hr/>
+<h3 id="flag_eligible_attester">FLAG_ELIGIBLE_ATTESTER<a class="headerlink" href="#flag_eligible_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_ELIGIBLE_ATTESTER</strong>:</p>
+<hr/>
+<h3 id="flag_prev_head_attester">FLAG_PREV_HEAD_ATTESTER<a class="headerlink" href="#flag_prev_head_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_HEAD_ATTESTER</strong>:</p>
+<hr/>
+<h3 id="flag_prev_head_attester_or_unslashed">FLAG_PREV_HEAD_ATTESTER_OR_UNSLASHED<a class="headerlink" href="#flag_prev_head_attester_or_unslashed" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_HEAD_ATTESTER_OR_UNSLASHED</strong>:</p>
+<hr/>
+<h3 id="flag_prev_source_attester">FLAG_PREV_SOURCE_ATTESTER<a class="headerlink" href="#flag_prev_source_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_SOURCE_ATTESTER</strong>:</p>
+<hr/>
+<h3 id="flag_prev_source_attester_or_unslashed">FLAG_PREV_SOURCE_ATTESTER_OR_UNSLASHED<a class="headerlink" href="#flag_prev_source_attester_or_unslashed" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_SOURCE_ATTESTER_OR_UNSLASHED</strong>:</p>
+<hr/>
+<h3 id="flag_prev_target_attester">FLAG_PREV_TARGET_ATTESTER<a class="headerlink" href="#flag_prev_target_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_TARGET_ATTESTER</strong>:</p>
+<hr/>
+<h3 id="flag_prev_target_attester_or_unslashed">FLAG_PREV_TARGET_ATTESTER_OR_UNSLASHED<a class="headerlink" href="#flag_prev_target_attester_or_unslashed" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_TARGET_ATTESTER_OR_UNSLASHED</strong>:</p>
+<hr/>
+<h3 id="flag_unslashed">FLAG_UNSLASHED<a class="headerlink" href="#flag_unslashed" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_UNSLASHED</strong>:</p>
+<hr/>
+<h3 id="iattesterstatus">IAttesterStatus<a class="headerlink" href="#iattesterstatus" title="Permanent link">¶</a></h3>
+<p>• <strong>IAttesterStatus</strong>:</p>
+<hr/>
+<h3 id="iepochprocess">IEpochProcess<a class="headerlink" href="#iepochprocess" title="Permanent link">¶</a></h3>
+<p>• <strong>IEpochProcess</strong>:</p>
+<hr/>
+<h3 id="iepochshuffling">IEpochShuffling<a class="headerlink" href="#iepochshuffling" title="Permanent link">¶</a></h3>
+<p>• <strong>IEpochShuffling</strong>:</p>
+<hr/>
+<h3 id="iepochstakesummary">IEpochStakeSummary<a class="headerlink" href="#iepochstakesummary" title="Permanent link">¶</a></h3>
+<p>• <strong>IEpochStakeSummary</strong>:</p>
+<hr/>
+<h3 id="ireadonlyepochshuffling">IReadonlyEpochShuffling<a class="headerlink" href="#ireadonlyepochshuffling" title="Permanent link">¶</a></h3>
+<p>• <strong>IReadonlyEpochShuffling</strong>:</p>
+<hr/>
+<h3 id="indexedsynccommittee">IndexedSyncCommittee<a class="headerlink" href="#indexedsynccommittee" title="Permanent link">¶</a></h3>
+<p>• <strong>IndexedSyncCommittee</strong>:</p>
+<hr/>
+<h3 id="pubkeyindexmap">PubkeyIndexMap<a class="headerlink" href="#pubkeyindexmap" title="Permanent link">¶</a></h3>
+<p>• <strong>PubkeyIndexMap</strong>:</p>
+<hr/>
+<h3 id="computecommitteecount">computeCommitteeCount<a class="headerlink" href="#computecommitteecount" title="Permanent link">¶</a></h3>
+<p>• <strong>computeCommitteeCount</strong>:</p>
+<hr/>
+<h3 id="computeepochshuffling">computeEpochShuffling<a class="headerlink" href="#computeepochshuffling" title="Permanent link">¶</a></h3>
+<p>• <strong>computeEpochShuffling</strong>:</p>
+<hr/>
+<h3 id="computeproposers">computeProposers<a class="headerlink" href="#computeproposers" title="Permanent link">¶</a></h3>
+<p>• <strong>computeProposers</strong>:</p>
+<hr/>
+<h3 id="computesubnetforattestation">computeSubnetForAttestation<a class="headerlink" href="#computesubnetforattestation" title="Permanent link">¶</a></h3>
+<p>• <strong>computeSubnetForAttestation</strong>:</p>
+<hr/>
+<h3 id="computesubnetforslot">computeSubnetForSlot<a class="headerlink" href="#computesubnetforslot" title="Permanent link">¶</a></h3>
+<p>• <strong>computeSubnetForSlot</strong>:</p>
+<hr/>
+<h3 id="computesynccomitteemap">computeSyncComitteeMap<a class="headerlink" href="#computesynccomitteemap" title="Permanent link">¶</a></h3>
+<p>• <strong>computeSyncComitteeMap</strong>:</p>
+<hr/>
+<h3 id="computesyncparticipantreward">computeSyncParticipantReward<a class="headerlink" href="#computesyncparticipantreward" title="Permanent link">¶</a></h3>
+<p>• <strong>computeSyncParticipantReward</strong>:</p>
+<hr/>
+<h3 id="computeweaksubjectivityperiod">computeWeakSubjectivityPeriod<a class="headerlink" href="#computeweaksubjectivityperiod" title="Permanent link">¶</a></h3>
+<p>• <strong>computeWeakSubjectivityPeriod</strong>:</p>
+<hr/>
+<h3 id="computeweaksubjectivityperiodfromconstituents">computeWeakSubjectivityPeriodFromConstituents<a class="headerlink" href="#computeweaksubjectivityperiodfromconstituents" title="Permanent link">¶</a></h3>
+<p>• <strong>computeWeakSubjectivityPeriodFromConstituents</strong>:</p>
+<hr/>
+<h3 id="converttoindexedsynccommittee">convertToIndexedSyncCommittee<a class="headerlink" href="#converttoindexedsynccommittee" title="Permanent link">¶</a></h3>
+<p>• <strong>convertToIndexedSyncCommittee</strong>:</p>
+<hr/>
+<h3 id="createcachedbeaconstate">createCachedBeaconState<a class="headerlink" href="#createcachedbeaconstate" title="Permanent link">¶</a></h3>
+<p>• <strong>createCachedBeaconState</strong>:</p>
+<hr/>
+<h3 id="createepochcontext">createEpochContext<a class="headerlink" href="#createepochcontext" title="Permanent link">¶</a></h3>
+<p>• <strong>createEpochContext</strong>:</p>
+<hr/>
+<h3 id="createiattesterstatus">createIAttesterStatus<a class="headerlink" href="#createiattesterstatus" title="Permanent link">¶</a></h3>
+<p>• <strong>createIAttesterStatus</strong>:</p>
+<hr/>
+<h3 id="createiepochprocess">createIEpochProcess<a class="headerlink" href="#createiepochprocess" title="Permanent link">¶</a></h3>
+<p>• <strong>createIEpochProcess</strong>:</p>
+<hr/>
+<h3 id="createindexedsynccommittee">createIndexedSyncCommittee<a class="headerlink" href="#createindexedsynccommittee" title="Permanent link">¶</a></h3>
+<p>• <strong>createIndexedSyncCommittee</strong>:</p>
+<hr/>
+<h3 id="createvalidatorflat">createValidatorFlat<a class="headerlink" href="#createvalidatorflat" title="Permanent link">¶</a></h3>
+<p>• <strong>createValidatorFlat</strong>:</p>
+<hr/>
+<h3 id="emptyindexedsynccommittee">emptyIndexedSyncCommittee<a class="headerlink" href="#emptyindexedsynccommittee" title="Permanent link">¶</a></h3>
+<p>• <strong>emptyIndexedSyncCommittee</strong>:</p>
+<hr/>
+<h3 id="getlatestblockroot">getLatestBlockRoot<a class="headerlink" href="#getlatestblockroot" title="Permanent link">¶</a></h3>
+<p>• <strong>getLatestBlockRoot</strong>:</p>
+<hr/>
+<h3 id="getlatestweaksubjectivitycheckpointepoch">getLatestWeakSubjectivityCheckpointEpoch<a class="headerlink" href="#getlatestweaksubjectivitycheckpointepoch" title="Permanent link">¶</a></h3>
+<p>• <strong>getLatestWeakSubjectivityCheckpointEpoch</strong>:</p>
+<hr/>
+<h3 id="hasmarkers">hasMarkers<a class="headerlink" href="#hasmarkers" title="Permanent link">¶</a></h3>
+<p>• <strong>hasMarkers</strong>:</p>
+<hr/>
+<h3 id="iswithinweaksubjectivityperiod">isWithinWeakSubjectivityPeriod<a class="headerlink" href="#iswithinweaksubjectivityperiod" title="Permanent link">¶</a></h3>
+<p>• <strong>isWithinWeakSubjectivityPeriod</strong>:</p>
+<hr/>
+<h3 id="parseattesterflags">parseAttesterFlags<a class="headerlink" href="#parseattesterflags" title="Permanent link">¶</a></h3>
+<p>• <strong>parseAttesterFlags</strong>:</p>
+<hr/>
+<h3 id="prepareepochprocessstate">prepareEpochProcessState<a class="headerlink" href="#prepareepochprocessstate" title="Permanent link">¶</a></h3>
+<p>• <strong>prepareEpochProcessState</strong>:</p>
+<hr/>
+<h3 id="rotateepochs">rotateEpochs<a class="headerlink" href="#rotateepochs" title="Permanent link">¶</a></h3>
+<p>• <strong>rotateEpochs</strong>:</p>
+<hr/>
+<h3 id="syncpubkeys">syncPubkeys<a class="headerlink" href="#syncpubkeys" title="Permanent link">¶</a></h3>
+<p>• <strong>syncPubkeys</strong>:</p>
+<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
+<h3 id="attesterduty_1">AttesterDuty<a class="headerlink" href="#attesterduty_1" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>AttesterDuty</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L41">packages/beacon-state-transition/src/allForks/util/epochContext.ts:41</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p><strong>committeeIndex</strong>: <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#committeeindex">CommitteeIndex</a></em></p>
+</li>
+<li>
+<p><strong>committeeLength</strong>: <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#number64">Number64</a></em></p>
+</li>
+<li>
+<p><strong>committeesAtSlot</strong>: <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#number64">Number64</a></em></p>
+</li>
+<li>
+<p><strong>slot</strong>: <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#slot">Slot</a></em></p>
+</li>
+<li>
+<p><strong>validatorCommitteeIndex</strong>: <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#number64">Number64</a></em></p>
+</li>
+<li>
+<p><strong>validatorIndex</strong>: <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a></em></p>
+</li>
+</ul>
+<hr/>
+<h3 id="attesterflags_1">AttesterFlags<a class="headerlink" href="#attesterflags_1" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>AttesterFlags</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L40">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:40</a></em></p>
+<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p><strong>currHeadAttester</strong>: <em>boolean</em></p>
+</li>
+<li>
+<p><strong>currSourceAttester</strong>: <em>boolean</em></p>
+</li>
+<li>
+<p><strong>currTargetAttester</strong>: <em>boolean</em></p>
+</li>
+<li>
+<p><strong>eligibleAttester</strong>: <em>boolean</em></p>
+</li>
+<li>
+<p><strong>prevHeadAttester</strong>: <em>boolean</em></p>
+</li>
+<li>
+<p><strong>prevSourceAttester</strong>: <em>boolean</em></p>
+</li>
+<li>
+<p><strong>prevTargetAttester</strong>: <em>boolean</em></p>
+</li>
+<li>
+<p><strong>unslashed</strong>: <em>boolean</em></p>
+</li>
+</ul>
+<hr/>
+<h3 id="cachedbeaconstate_1">CachedBeaconState<a class="headerlink" href="#cachedbeaconstate_1" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>CachedBeaconState</strong>: <em><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.beaconstatecontext/">BeaconStateContext</a>‹T› &amp; <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a> &amp; ITreeBacked‹T› &amp; T</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L49">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:49</a></em></p>
+<p><code>BeaconState</code> with various caches</p>
+<p>Currently contains the following:
+- The full list of network params, ssz types, and fork schedule
+- The ssz type for the state
+- The full merkle tree representation of the state
+- A cache of shufflings, committees, proposers, expanded pubkeys
+- A flat copy of validators (for fast access/iteration)</p>
+<hr/>
+<h3 id="epochcontexterrortype">EpochContextErrorType<a class="headerlink" href="#epochcontexterrortype" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>EpochContextErrorType</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L430">packages/beacon-state-transition/src/allForks/util/epochContext.ts:430</a></em></p>
+<h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p><strong>code</strong>: <em><a href="../../enums/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontexterrorcode/#committee_index_out_of_range">COMMITTEE_INDEX_OUT_OF_RANGE</a></em></p>
+</li>
+<li>
+<p><strong>index</strong>: <em>number</em></p>
+</li>
+<li>
+<p><strong>maxIndex</strong>: <em>number</em></p>
+</li>
+</ul>
+<hr/>
+<h3 id="epochcontextopts_1">EpochContextOpts<a class="headerlink" href="#epochcontextopts_1" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>EpochContextOpts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L55">packages/beacon-state-transition/src/allForks/util/epochContext.ts:55</a></em></p>
+<h4 id="type-declaration_3">Type declaration:<a class="headerlink" href="#type-declaration_3" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p><strong>index2pubkey</strong>? : <em>PublicKey[]</em></p>
+</li>
+<li>
+<p><strong>pubkey2index</strong>? : <em><a href="./#pubkeyindexmap">PubkeyIndexMap</a></em></p>
+</li>
+<li>
+<p><strong>skipSyncPubkeys</strong>? : <em>undefined | false | true</em></p>
+</li>
+</ul>
+<hr/>
+<h3 id="pubkeyhex">PubkeyHex<a class="headerlink" href="#pubkeyhex" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>PubkeyHex</strong>: <em>string</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L61">packages/beacon-state-transition/src/allForks/util/epochContext.ts:61</a></em></p>
+<hr/>
+<h3 id="synccomitteevalidatorindexmap">SyncComitteeValidatorIndexMap<a class="headerlink" href="#synccomitteevalidatorindexmap" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>SyncComitteeValidatorIndexMap</strong>: <em><a href="../../classes/util.mapdef/#static-map">Map</a>‹phase0.ValidatorIndex, number[]›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts#L5">packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts:5</a></em></p>
+<h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
+<h3 id="const-eth_to_gwei"><code>Const</code> ETH_TO_GWEI<a class="headerlink" href="#const-eth_to_gwei" title="Permanent link">¶</a></h3>
+<p>• <strong>ETH_TO_GWEI</strong>: <em>bigint</em> = BigInt(10 ** 9)</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts#L17">packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts:17</a></em></p>
+<hr/>
+<h3 id="const-flag_curr_head_attester"><code>Const</code> FLAG_CURR_HEAD_ATTESTER<a class="headerlink" href="#const-flag_curr_head_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_CURR_HEAD_ATTESTER</strong>: <em>number</em> = 1 &lt;&lt; 5</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L6">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:6</a></em></p>
+<hr/>
+<h3 id="const-flag_curr_source_attester"><code>Const</code> FLAG_CURR_SOURCE_ATTESTER<a class="headerlink" href="#const-flag_curr_source_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_CURR_SOURCE_ATTESTER</strong>: <em>number</em> = 1 &lt;&lt; 3</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L4">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:4</a></em></p>
+<hr/>
+<h3 id="const-flag_curr_target_attester"><code>Const</code> FLAG_CURR_TARGET_ATTESTER<a class="headerlink" href="#const-flag_curr_target_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_CURR_TARGET_ATTESTER</strong>: <em>number</em> = 1 &lt;&lt; 4</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L5">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:5</a></em></p>
+<hr/>
+<h3 id="const-flag_eligible_attester"><code>Const</code> FLAG_ELIGIBLE_ATTESTER<a class="headerlink" href="#const-flag_eligible_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_ELIGIBLE_ATTESTER</strong>: <em>number</em> = 1 &lt;&lt; 7</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L9">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:9</a></em></p>
+<hr/>
+<h3 id="const-flag_prev_head_attester"><code>Const</code> FLAG_PREV_HEAD_ATTESTER<a class="headerlink" href="#const-flag_prev_head_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_HEAD_ATTESTER</strong>: <em>number</em> = 1 &lt;&lt; 2</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L3">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:3</a></em></p>
+<hr/>
+<h3 id="const-flag_prev_head_attester_or_unslashed"><code>Const</code> FLAG_PREV_HEAD_ATTESTER_OR_UNSLASHED<a class="headerlink" href="#const-flag_prev_head_attester_or_unslashed" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_HEAD_ATTESTER_OR_UNSLASHED</strong>: <em>number</em> = FLAG_PREV_HEAD_ATTESTER | FLAG_UNSLASHED</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L13">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:13</a></em></p>
+<hr/>
+<h3 id="const-flag_prev_source_attester"><code>Const</code> FLAG_PREV_SOURCE_ATTESTER<a class="headerlink" href="#const-flag_prev_source_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_SOURCE_ATTESTER</strong>: <em>number</em> = 1 &lt;&lt; 0</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L1">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:1</a></em></p>
+<hr/>
+<h3 id="const-flag_prev_source_attester_or_unslashed"><code>Const</code> FLAG_PREV_SOURCE_ATTESTER_OR_UNSLASHED<a class="headerlink" href="#const-flag_prev_source_attester_or_unslashed" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_SOURCE_ATTESTER_OR_UNSLASHED</strong>: <em>number</em> = FLAG_PREV_SOURCE_ATTESTER | FLAG_UNSLASHED</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L11">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:11</a></em></p>
+<hr/>
+<h3 id="const-flag_prev_target_attester"><code>Const</code> FLAG_PREV_TARGET_ATTESTER<a class="headerlink" href="#const-flag_prev_target_attester" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_TARGET_ATTESTER</strong>: <em>number</em> = 1 &lt;&lt; 1</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L2">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:2</a></em></p>
+<hr/>
+<h3 id="const-flag_prev_target_attester_or_unslashed"><code>Const</code> FLAG_PREV_TARGET_ATTESTER_OR_UNSLASHED<a class="headerlink" href="#const-flag_prev_target_attester_or_unslashed" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_PREV_TARGET_ATTESTER_OR_UNSLASHED</strong>: <em>number</em> = FLAG_PREV_TARGET_ATTESTER | FLAG_UNSLASHED</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L12">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:12</a></em></p>
+<hr/>
+<h3 id="const-flag_unslashed"><code>Const</code> FLAG_UNSLASHED<a class="headerlink" href="#const-flag_unslashed" title="Permanent link">¶</a></h3>
+<p>• <strong>FLAG_UNSLASHED</strong>: <em>number</em> = 1 &lt;&lt; 6</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L8">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:8</a></em></p>
+<hr/>
+<h3 id="const-safety_decay"><code>Const</code> SAFETY_DECAY<a class="headerlink" href="#const-safety_decay" title="Permanent link">¶</a></h3>
+<p>• <strong>SAFETY_DECAY</strong>: <em>bigint</em> = BigInt(10)</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts#L18">packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts:18</a></em></p>
+<hr/>
+<h3 id="const-timely_head"><code>Const</code> TIMELY_HEAD<a class="headerlink" href="#const-timely_head" title="Permanent link">¶</a></h3>
+<p>• <strong>TIMELY_HEAD</strong>: <em>number</em> = 1 &lt;&lt; TIMELY_HEAD_FLAG_INDEX</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts#L17">packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts:17</a></em></p>
+<hr/>
+<h3 id="const-timely_source"><code>Const</code> TIMELY_SOURCE<a class="headerlink" href="#const-timely_source" title="Permanent link">¶</a></h3>
+<p>• <strong>TIMELY_SOURCE</strong>: <em>number</em> = 1 &lt;&lt; TIMELY_SOURCE_FLAG_INDEX</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts#L15">packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts:15</a></em></p>
+<p>Same to https://github.com/ethereum/eth2.0-specs/blob/v1.1.0-alpha.5/specs/altair/beacon-chain.md#has_flag</p>
+<hr/>
+<h3 id="const-timely_target"><code>Const</code> TIMELY_TARGET<a class="headerlink" href="#const-timely_target" title="Permanent link">¶</a></h3>
+<p>• <strong>TIMELY_TARGET</strong>: <em>number</em> = 1 &lt;&lt; TIMELY_TARGET_FLAG_INDEX</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts#L16">packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts:16</a></em></p>
+<hr/>
+<h3 id="const-emptyindexedsynccommittee"><code>Const</code> emptyIndexedSyncCommittee<a class="headerlink" href="#const-emptyindexedsynccommittee" title="Permanent link">¶</a></h3>
+<p>• <strong>emptyIndexedSyncCommittee</strong>: <em><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a>‹›</em> = new IndexedSyncCommittee(
+  ssz.altair.SyncCommittee.defaultTreeBacked(),
+  [],
+  new Map()
+)</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts#L45">packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts:45</a></em></p>
+<h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
+<h3 id="computecommitteecount_1">computeCommitteeCount<a class="headerlink" href="#computecommitteecount_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeCommitteeCount</strong>(<code>activeValidatorCount</code>: number): <em>number</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochShuffling.ts#L52">packages/beacon-state-transition/src/allForks/util/epochShuffling.ts:52</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>activeValidatorCount</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>number</em></p>
+<hr/>
+<h3 id="computeepochshuffling_1">computeEpochShuffling<a class="headerlink" href="#computeepochshuffling_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeEpochShuffling</strong>(<code>state</code>: allForks.BeaconState, <code>indicesBounded</code>: [<a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a>, <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>, <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>][], <code>epoch</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>): <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochshuffling/">IEpochShuffling</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochShuffling.ts#L58">packages/beacon-state-transition/src/allForks/util/epochShuffling.ts:58</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>state</code></td>
+<td>allForks.BeaconState</td>
+</tr>
+<tr>
+<td><code>indicesBounded</code></td>
+<td>[<a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a>, <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>, <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>][]</td>
+</tr>
+<tr>
+<td><code>epoch</code></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochshuffling/">IEpochShuffling</a></em></p>
+<hr/>
+<h3 id="computeproposers_1">computeProposers<a class="headerlink" href="#computeproposers_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeProposers</strong>(<code>state</code>: allForks.BeaconState, <code>shuffling</code>: <a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochshuffling/">IEpochShuffling</a>): <em>number[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L175">packages/beacon-state-transition/src/allForks/util/epochContext.ts:175</a></em></p>
+<p>Compute proposer indices for an epoch</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>state</code></td>
+<td>allForks.BeaconState</td>
+</tr>
+<tr>
+<td><code>shuffling</code></td>
+<td><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochshuffling/">IEpochShuffling</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>number[]</em></p>
+<hr/>
+<h3 id="computesubnetforattestation_1">computeSubnetForAttestation<a class="headerlink" href="#computesubnetforattestation_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeSubnetForAttestation</strong>(<code>epochCtx</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a>, <code>attestation</code>: Attestation): <em>number</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attestation.ts#L9">packages/beacon-state-transition/src/allForks/util/attestation.ts:9</a></em></p>
+<p>Compute the correct subnet for an attestation</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>attestation</code></td>
+<td>Attestation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>number</em></p>
+<hr/>
+<h3 id="computesubnetforslot_1">computeSubnetForSlot<a class="headerlink" href="#computesubnetforslot_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeSubnetForSlot</strong>(<code>epochCtx</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a>, <code>slot</code>: number, <code>committeeIndex</code>: number): <em>number</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attestation.ts#L17">packages/beacon-state-transition/src/allForks/util/attestation.ts:17</a></em></p>
+<p>Compute the correct subnet for a slot/committee index</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>slot</code></td>
+<td>number</td>
+</tr>
+<tr>
+<td><code>committeeIndex</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>number</em></p>
+<hr/>
+<h3 id="computesynccomitteemap_1">computeSyncComitteeMap<a class="headerlink" href="#computesynccomitteemap_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeSyncComitteeMap</strong>(<code>syncCommitteeIndexes</code>: phase0.ValidatorIndex[]): <em><a href="./#synccomitteevalidatorindexmap">SyncComitteeValidatorIndexMap</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts#L74">packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts:74</a></em></p>
+<p>Compute all index in sync committee for all validatorIndexes in <code>syncCommitteeIndexes</code>.
+Helps reduce work necessary to verify a validatorIndex belongs in a sync committee and which.
+This is similar to compute_subnets_for_sync_committee in https://github.com/ethereum/eth2.0-specs/blob/v1.1.0-alpha.5/specs/altair/validator.md</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>syncCommitteeIndexes</code></td>
+<td>phase0.ValidatorIndex[]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#synccomitteevalidatorindexmap">SyncComitteeValidatorIndexMap</a></em></p>
+<hr/>
+<h3 id="computesynccommitteeindices">computeSyncCommitteeIndices<a class="headerlink" href="#computesynccommitteeindices" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeSyncCommitteeIndices</strong>(<code>syncCommittee</code>: SyncCommittee, <code>pubkey2index</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a>): <em>phase0.ValidatorIndex[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts#L95">packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts:95</a></em></p>
+<p>Extract validator indices from current and next sync committee</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>syncCommittee</code></td>
+<td>SyncCommittee</td>
+</tr>
+<tr>
+<td><code>pubkey2index</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>phase0.ValidatorIndex[]</em></p>
+<hr/>
+<h3 id="computesyncparticipantreward_1">computeSyncParticipantReward<a class="headerlink" href="#computesyncparticipantreward_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeSyncParticipantReward</strong>(<code>config</code>: IBeaconConfig, <code>totalActiveBalance</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#gwei">Gwei</a>): <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#gwei">Gwei</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L190">packages/beacon-state-transition/src/allForks/util/epochContext.ts:190</a></em></p>
+<p>Same logic in https://github.com/ethereum/eth2.0-specs/blob/v1.1.0-alpha.5/specs/altair/beacon-chain.md#sync-committee-processing</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>totalActiveBalance</code></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#gwei">Gwei</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#gwei">Gwei</a></em></p>
+<hr/>
+<h3 id="computeweaksubjectivityperiod_1">computeWeakSubjectivityPeriod<a class="headerlink" href="#computeweaksubjectivityperiod_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeWeakSubjectivityPeriod</strong>(<code>config</code>: IChainForkConfig, <code>state</code>: allForks.BeaconState): <em>number</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts#L39">packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts:39</a></em></p>
+<p>Returns the weak subjectivity period for the current <code>state</code>.
+This computation takes into account the effect of:
+- validator set churn (bounded by <code>get_validator_churn_limit()</code> per epoch), and
+- validator balance top-ups (bounded by <code>MAX_DEPOSITS * SLOTS_PER_EPOCH</code> per epoch).
+A detailed calculation can be found at:
+https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IChainForkConfig</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>allForks.BeaconState</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>number</em></p>
+<hr/>
+<h3 id="computeweaksubjectivityperiodfromconstituents_1">computeWeakSubjectivityPeriodFromConstituents<a class="headerlink" href="#computeweaksubjectivityperiodfromconstituents_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>computeWeakSubjectivityPeriodFromConstituents</strong>(<code>activeValidatorCount</code>: number, <code>totalBalance</code>: bigint, <code>churnLimit</code>: number, <code>minWithdrawabilityDelay</code>: number): <em>number</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts#L49">packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts:49</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>activeValidatorCount</code></td>
+<td>number</td>
+</tr>
+<tr>
+<td><code>totalBalance</code></td>
+<td>bigint</td>
+</tr>
+<tr>
+<td><code>churnLimit</code></td>
+<td>number</td>
+</tr>
+<tr>
+<td><code>minWithdrawabilityDelay</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>number</em></p>
+<hr/>
+<h3 id="converttoindexedsynccommittee_1">convertToIndexedSyncCommittee<a class="headerlink" href="#converttoindexedsynccommittee_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>convertToIndexedSyncCommittee</strong>(<code>syncCommittee</code>: TreeBacked‹SyncCommittee›, <code>pubkey2index</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a>): <em><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts#L60">packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts:60</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>syncCommittee</code></td>
+<td>TreeBacked‹SyncCommittee›</td>
+</tr>
+<tr>
+<td><code>pubkey2index</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a></em></p>
+<hr/>
+<h3 id="createcachedbeaconstate_1">createCachedBeaconState<a class="headerlink" href="#createcachedbeaconstate_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>createCachedBeaconState</strong>‹<strong>T</strong>›(<code>chainForkConfig</code>: IChainForkConfig, <code>state</code>: TreeBacked‹T›, <code>opts?</code>: <a href="./#epochcontextopts">EpochContextOpts</a>): <em><a href="./#cachedbeaconstate">CachedBeaconState</a>‹T›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L59">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:59</a></em></p>
+<p><strong>Type parameters:</strong></p>
+<p>▪ <strong>T</strong>: <em>allForks.BeaconState</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chainForkConfig</code></td>
+<td>IChainForkConfig</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>TreeBacked‹T›</td>
+</tr>
+<tr>
+<td><code>opts?</code></td>
+<td><a href="./#epochcontextopts">EpochContextOpts</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#cachedbeaconstate">CachedBeaconState</a>‹T›</em></p>
+<hr/>
+<h3 id="createepochcontext_1">createEpochContext<a class="headerlink" href="#createepochcontext_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>createEpochContext</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: allForks.BeaconState, <code>validators</code>: MutableVector‹Validator›, <code>opts?</code>: <a href="./#epochcontextopts">EpochContextOpts</a>): <em><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L87">packages/beacon-state-transition/src/allForks/util/epochContext.ts:87</a></em></p>
+<p>Create an epoch cache</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>allForks.BeaconState</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>validators</code></td>
+<td>MutableVector‹Validator›</td>
+<td>cached validators that matches <code>state.validators</code></td>
+</tr>
+<tr>
+<td><code>opts?</code></td>
+<td><a href="./#epochcontextopts">EpochContextOpts</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a></em></p>
+<hr/>
+<h3 id="createiattesterstatus_1">createIAttesterStatus<a class="headerlink" href="#createiattesterstatus_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>createIAttesterStatus</strong>(): <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iattesterstatus/">IAttesterStatus</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L27">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:27</a></em></p>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iattesterstatus/">IAttesterStatus</a></em></p>
+<hr/>
+<h3 id="createiepochprocess_1">createIEpochProcess<a class="headerlink" href="#createiepochprocess_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>createIEpochProcess</strong>(): <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochProcess.ts#L61">packages/beacon-state-transition/src/allForks/util/epochProcess.ts:61</a></em></p>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a></em></p>
+<hr/>
+<h3 id="createindexedsynccommittee_1">createIndexedSyncCommittee<a class="headerlink" href="#createindexedsynccommittee_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>createIndexedSyncCommittee</strong>(<code>pubkey2index</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a>, <code>state</code>: TreeBacked‹BeaconState›, <code>isNext</code>: boolean): <em><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts#L51">packages/beacon-state-transition/src/allForks/util/indexedSyncCommittee.ts:51</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pubkey2index</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>TreeBacked‹BeaconState›</td>
+</tr>
+<tr>
+<td><code>isNext</code></td>
+<td>boolean</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a></em></p>
+<hr/>
+<h3 id="createvalidatorflat_1">createValidatorFlat<a class="headerlink" href="#createvalidatorflat_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>createValidatorFlat</strong>(<code>v</code>: Validator): <em>Validator</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/flat.ts#L5">packages/beacon-state-transition/src/allForks/util/flat.ts:5</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>v</code></td>
+<td>Validator</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Validator</em></p>
+<hr/>
+<h3 id="fromparticipationflags">fromParticipationFlags<a class="headerlink" href="#fromparticipationflags" title="Permanent link">¶</a></h3>
+<p>▸ <strong>fromParticipationFlags</strong>(<code>flags</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#participationflags">ParticipationFlags</a>): <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iparticipationstatus/">IParticipationStatus</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts#L27">packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts:27</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flags</code></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#participationflags">ParticipationFlags</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iparticipationstatus/">IParticipationStatus</a></em></p>
+<hr/>
+<h3 id="getlatestblockroot_1">getLatestBlockRoot<a class="headerlink" href="#getlatestblockroot_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>getLatestBlockRoot</strong>(<code>config</code>: IChainForkConfig, <code>state</code>: allForks.BeaconState): <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts#L77">packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts:77</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IChainForkConfig</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>allForks.BeaconState</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#root">Root</a></em></p>
+<hr/>
+<h3 id="getlatestweaksubjectivitycheckpointepoch_1">getLatestWeakSubjectivityCheckpointEpoch<a class="headerlink" href="#getlatestweaksubjectivitycheckpointepoch_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>getLatestWeakSubjectivityCheckpointEpoch</strong>(<code>config</code>: IChainForkConfig, <code>state</code>: <a href="./#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›): <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts#L24">packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts:24</a></em></p>
+<p>Returns the epoch of the latest weak subjectivity checkpoint for the given
+<code>state</code> and <code>safetyDecay</code>. The default <code>safetyDecay</code> used should be 10% (= 0.1)</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IChainForkConfig</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td><a href="./#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a></em></p>
+<hr/>
+<h3 id="hasmarkers_1">hasMarkers<a class="headerlink" href="#hasmarkers_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>hasMarkers</strong>(<code>flags</code>: number, <code>markers</code>: number): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L36">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:36</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flags</code></td>
+<td>number</td>
+</tr>
+<tr>
+<td><code>markers</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<hr/>
+<h3 id="iswithinweaksubjectivityperiod_1">isWithinWeakSubjectivityPeriod<a class="headerlink" href="#iswithinweaksubjectivityperiod_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>isWithinWeakSubjectivityPeriod</strong>(<code>config</code>: IBeaconConfig, <code>store</code>: allForks.BeaconState, <code>wsState</code>: allForks.BeaconState, <code>wsCheckpoint</code>: Checkpoint): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts#L85">packages/beacon-state-transition/src/allForks/util/weakSubjectivity.ts:85</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>store</code></td>
+<td>allForks.BeaconState</td>
+</tr>
+<tr>
+<td><code>wsState</code></td>
+<td>allForks.BeaconState</td>
+</tr>
+<tr>
+<td><code>wsCheckpoint</code></td>
+<td>Checkpoint</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<hr/>
+<h3 id="parseattesterflags_1">parseAttesterFlags<a class="headerlink" href="#parseattesterflags_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>parseAttesterFlags</strong>(<code>flags</code>: number): <em><a href="./#attesterflags">AttesterFlags</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/attesterStatus.ts#L51">packages/beacon-state-transition/src/allForks/util/attesterStatus.ts:51</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flags</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#attesterflags">AttesterFlags</a></em></p>
+<hr/>
+<h3 id="prepareepochprocessstate_1">prepareEpochProcessState<a class="headerlink" href="#prepareepochprocessstate_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>prepareEpochProcessState</strong>‹<strong>T</strong>›(<code>state</code>: <a href="./#cachedbeaconstate">CachedBeaconState</a>‹T›): <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochProcess.ts#L86">packages/beacon-state-transition/src/allForks/util/epochProcess.ts:86</a></em></p>
+<p><strong>Type parameters:</strong></p>
+<p>▪ <strong>T</strong>: <em>allForks.BeaconState</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>state</code></td>
+<td><a href="./#cachedbeaconstate">CachedBeaconState</a>‹T›</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iepochprocess/">IEpochProcess</a></em></p>
+<hr/>
+<h3 id="rotateepochs_1">rotateEpochs<a class="headerlink" href="#rotateepochs_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>rotateEpochs</strong>(<code>epochCtx</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a>, <code>state</code>: allForks.BeaconState, <code>indicesBounded</code>: [<a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a>, <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>, <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>][]): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L203">packages/beacon-state-transition/src/allForks/util/epochContext.ts:203</a></em></p>
+<p>Called to re-use information, such as the shuffling of the next epoch, after transitioning into a
+new epoch.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>allForks.BeaconState</td>
+</tr>
+<tr>
+<td><code>indicesBounded</code></td>
+<td>[<a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#validatorindex">ValidatorIndex</a>, <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>, <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#epoch">Epoch</a>][]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>void</em></p>
+<hr/>
+<h3 id="syncpubkeys_1">syncPubkeys<a class="headerlink" href="#syncpubkeys_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>syncPubkeys</strong>(<code>state</code>: allForks.BeaconState, <code>pubkey2index</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a>, <code>index2pubkey</code>: PublicKey[]): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L152">packages/beacon-state-transition/src/allForks/util/epochContext.ts:152</a></em></p>
+<p>Checks the pubkey indices against a state and adds missing pubkeys</p>
+<p>Mutates <code>pubkey2index</code> and <code>index2pubkey</code></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>state</code></td>
+<td>allForks.BeaconState</td>
+</tr>
+<tr>
+<td><code>pubkey2index</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.pubkeyindexmap/">PubkeyIndexMap</a></td>
+</tr>
+<tr>
+<td><code>index2pubkey</code></td>
+<td>PublicKey[]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>void</em></p>
+<hr/>
+<h3 id="tohexstringmaybe">toHexStringMaybe<a class="headerlink" href="#tohexstringmaybe" title="Permanent link">¶</a></h3>
+<p>▸ <strong>toHexStringMaybe</strong>(<code>hex</code>: ByteVector | string): <em>string</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/epochContext.ts#L63">packages/beacon-state-transition/src/allForks/util/epochContext.ts:63</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hex</code></td>
+<td>ByteVector | string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>string</em></p>
+<hr/>
+<h3 id="toparticipationflags">toParticipationFlags<a class="headerlink" href="#toparticipationflags" title="Permanent link">¶</a></h3>
+<p>▸ <strong>toParticipationFlags</strong>(<code>data</code>: <a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iparticipationstatus/">IParticipationStatus</a>): <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#participationflags">ParticipationFlags</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts#L19">packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts:19</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data</code></td>
+<td><a href="../../interfaces/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.iparticipationstatus/">IParticipationStatus</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#participationflags">ParticipationFlags</a></em></p>
+<hr/>
+<h3 id="unsafeuint8arraytotree">unsafeUint8ArrayToTree<a class="headerlink" href="#unsafeuint8arraytotree" title="Permanent link">¶</a></h3>
+<p>▸ <strong>unsafeUint8ArrayToTree</strong>(<code>data</code>: Uint8Array, <code>depth</code>: number): <em>Node</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/unsafeUint8ArrayToTree.ts#L8">packages/beacon-state-transition/src/allForks/util/unsafeUint8ArrayToTree.ts:8</a></em></p>
+<p>Convert a Uint8Array to a merkle tree, using the underlying array's underlying ArrayBuffer</p>
+<p><code>data</code> MUST NOT be modified after this, or risk the merkle nodes being modified.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data</code></td>
+<td>Uint8Array</td>
+</tr>
+<tr>
+<td><code>depth</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Node</em></p>
+<h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">¶</a></h2>
+<h3 id="const-cachedbalancelistproxyhandler"><code>Const</code> CachedBalanceListProxyHandler<a class="headerlink" href="#const-cachedbalancelistproxyhandler" title="Permanent link">¶</a></h3>
+<h3 id="cachedbalancelistproxyhandler-object">▪ <strong>CachedBalanceListProxyHandler</strong>: <em>object</em><a class="headerlink" href="#cachedbalancelistproxyhandler-object" title="Permanent link">¶</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedBalanceList.ts#L79">packages/beacon-state-transition/src/allForks/util/cachedBalanceList.ts:79</a></em></p>
+<h3 id="get">get<a class="headerlink" href="#get" title="Permanent link">¶</a></h3>
+<p>▸ <strong>get</strong>(<code>target</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedbalancelist/">CachedBalanceList</a>, <code>key</code>: PropertyKey): <em>unknown</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedBalanceList.ts#L80">packages/beacon-state-transition/src/allForks/util/cachedBalanceList.ts:80</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedbalancelist/">CachedBalanceList</a></td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>PropertyKey</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>unknown</em></p>
+<h3 id="set">set<a class="headerlink" href="#set" title="Permanent link">¶</a></h3>
+<p>▸ <strong>set</strong>(<code>target</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedbalancelist/">CachedBalanceList</a>, <code>key</code>: PropertyKey, <code>value</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#gwei">Gwei</a>): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedBalanceList.ts#L93">packages/beacon-state-transition/src/allForks/util/cachedBalanceList.ts:93</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedbalancelist/">CachedBalanceList</a></td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>PropertyKey</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#gwei">Gwei</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<hr/>
+<h3 id="const-cachedbeaconstateproxyhandler"><code>Const</code> CachedBeaconStateProxyHandler<a class="headerlink" href="#const-cachedbeaconstateproxyhandler" title="Permanent link">¶</a></h3>
+<h3 id="cachedbeaconstateproxyhandler-object">▪ <strong>CachedBeaconStateProxyHandler</strong>: <em>object</em><a class="headerlink" href="#cachedbeaconstateproxyhandler-object" title="Permanent link">¶</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L244">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:244</a></em></p>
+<h3 id="get_1">get<a class="headerlink" href="#get_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>get</strong>(<code>target</code>: <a href="./#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›, <code>key</code>: string): <em>unknown</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L245">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:245</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="./#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›</td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>unknown</em></p>
+<h3 id="set_1">set<a class="headerlink" href="#set_1" title="Permanent link">¶</a></h3>
+<p>▸ <strong>set</strong>(<code>target</code>: <a href="./#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›, <code>key</code>: string, <code>value</code>: unknown): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L280">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:280</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="./#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›</td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>string</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>unknown</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<hr/>
+<h3 id="const-cachedepochparticipationproxyhandler"><code>Const</code> CachedEpochParticipationProxyHandler<a class="headerlink" href="#const-cachedepochparticipationproxyhandler" title="Permanent link">¶</a></h3>
+<h3 id="cachedepochparticipationproxyhandler-object">▪ <strong>CachedEpochParticipationProxyHandler</strong>: <em>object</em><a class="headerlink" href="#cachedepochparticipationproxyhandler-object" title="Permanent link">¶</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts#L145">packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts:145</a></em></p>
+<h3 id="get_2">get<a class="headerlink" href="#get_2" title="Permanent link">¶</a></h3>
+<p>▸ <strong>get</strong>(<code>target</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedepochparticipation/">CachedEpochParticipation</a>, <code>key</code>: PropertyKey): <em>unknown</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts#L146">packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts:146</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedepochparticipation/">CachedEpochParticipation</a></td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>PropertyKey</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>unknown</em></p>
+<h3 id="set_2">set<a class="headerlink" href="#set_2" title="Permanent link">¶</a></h3>
+<p>▸ <strong>set</strong>(<code>target</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedepochparticipation/">CachedEpochParticipation</a>, <code>key</code>: PropertyKey, <code>value</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#participationflags">ParticipationFlags</a>): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts#L161">packages/beacon-state-transition/src/allForks/util/cachedEpochParticipation.ts:161</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedepochparticipation/">CachedEpochParticipation</a></td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>PropertyKey</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#participationflags">ParticipationFlags</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<hr/>
+<h3 id="const-cachedinactivityscorelistproxyhandler"><code>Const</code> CachedInactivityScoreListProxyHandler<a class="headerlink" href="#const-cachedinactivityscorelistproxyhandler" title="Permanent link">¶</a></h3>
+<h3 id="cachedinactivityscorelistproxyhandler-object">▪ <strong>CachedInactivityScoreListProxyHandler</strong>: <em>object</em><a class="headerlink" href="#cachedinactivityscorelistproxyhandler-object" title="Permanent link">¶</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedInactivityScoreList.ts#L69">packages/beacon-state-transition/src/allForks/util/cachedInactivityScoreList.ts:69</a></em></p>
+<h3 id="get_3">get<a class="headerlink" href="#get_3" title="Permanent link">¶</a></h3>
+<p>▸ <strong>get</strong>(<code>target</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedinactivityscorelist/">CachedInactivityScoreList</a>, <code>key</code>: PropertyKey): <em>unknown</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedInactivityScoreList.ts#L70">packages/beacon-state-transition/src/allForks/util/cachedInactivityScoreList.ts:70</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedinactivityscorelist/">CachedInactivityScoreList</a></td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>PropertyKey</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>unknown</em></p>
+<h3 id="set_3">set<a class="headerlink" href="#set_3" title="Permanent link">¶</a></h3>
+<p>▸ <strong>set</strong>(<code>target</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedinactivityscorelist/">CachedInactivityScoreList</a>, <code>key</code>: PropertyKey, <code>value</code>: <a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#number64">Number64</a>): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedInactivityScoreList.ts#L83">packages/beacon-state-transition/src/allForks/util/cachedInactivityScoreList.ts:83</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedinactivityscorelist/">CachedInactivityScoreList</a></td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>PropertyKey</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><a href="../reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_phase0/#number64">Number64</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<hr/>
+<h3 id="const-cachedvalidatorlistproxyhandler"><code>Const</code> CachedValidatorListProxyHandler<a class="headerlink" href="#const-cachedvalidatorlistproxyhandler" title="Permanent link">¶</a></h3>
+<h3 id="cachedvalidatorlistproxyhandler-object">▪ <strong>CachedValidatorListProxyHandler</strong>: <em>object</em><a class="headerlink" href="#cachedvalidatorlistproxyhandler-object" title="Permanent link">¶</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedValidatorList.ts#L76">packages/beacon-state-transition/src/allForks/util/cachedValidatorList.ts:76</a></em></p>
+<h3 id="get_4">get<a class="headerlink" href="#get_4" title="Permanent link">¶</a></h3>
+<p>▸ <strong>get</strong>(<code>target</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedvalidatorlist/">CachedValidatorList</a>‹Validator›, <code>key</code>: PropertyKey): <em>unknown</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedValidatorList.ts#L77">packages/beacon-state-transition/src/allForks/util/cachedValidatorList.ts:77</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedvalidatorlist/">CachedValidatorList</a>‹Validator›</td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>PropertyKey</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>unknown</em></p>
+<h3 id="set_4">set<a class="headerlink" href="#set_4" title="Permanent link">¶</a></h3>
+<p>▸ <strong>set</strong>(<code>target</code>: <a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedvalidatorlist/">CachedValidatorList</a>‹Validator›, <code>key</code>: PropertyKey, <code>value</code>: Validator): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d8f702b/packages/beacon-state-transition/src/allForks/util/cachedValidatorList.ts#L90">packages/beacon-state-transition/src/allForks/util/cachedValidatorList.ts:90</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td><a href="../../classes/reflection-11457.reflection-11458._.reflection-11460._beacon_state_transition_src_allforks_util.cachedvalidatorlist/">CachedValidatorList</a>‹Validator›</td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td>PropertyKey</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>Validator</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+<div class="md-footer-social">
+<a class="md-footer-social__link" href="https://github.com/ChainSafe/lodestar" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</a>
+<a class="md-footer-social__link" href="https://twitter.com/ChainSafe" rel="noopener" target="_blank" title="twitter.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+<a class="md-footer-social__link" href="https://discord.gg/yjyvFRP" rel="noopener" target="_blank" title="discord.gg">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"></path></svg>
+</a>
+<a class="md-footer-social__link" href="https://medium.com/ChainSafe" rel="noopener" target="_blank" title="medium.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 32v448h448V32H0zm372.2 106.1-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.716f8af4.min.js"></script>
+</body>
+</html>
