@@ -8,9 +8,9 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/reference/cli/" rel="canonical"/>
 <link href="../../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-7.2.0" name="generator"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.2.1" name="generator"/>
 <title>Command line - Lodestar documentation</title>
-<link href="../../assets/stylesheets/main.fe914879.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.1118c9be.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.ba0d045b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -655,8 +655,14 @@
 <tr>
 <td><code>--eth1.providerUrl</code></td>
 <td>string</td>
-<td>Url to Eth1 node with enabled rpc</td>
-<td>http://localhost:8545</td>
+<td>[DEPRECATED] Url to Eth1 node with enabled rpc</td>
+<td>[DEPRECATED]</td>
+</tr>
+<tr>
+<td><code>--eth1.providerUrls</code></td>
+<td>array</td>
+<td>Urls to Eth1 node with enabled rpc</td>
+<td>["http://localhost:8545"]</td>
 </tr>
 <tr>
 <td><code>--eth1.depositContractDeployBlock</code></td>
