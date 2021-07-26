@@ -258,6 +258,11 @@
     getLodestarApi
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regenrequesttojson">
+    regenRequestToJson
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -277,11 +282,12 @@
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h3>
 <ul>
 <li><a href="./#getlodestarapi">getLodestarApi</a></li>
+<li><a href="./#regenrequesttojson">regenRequestToJson</a></li>
 </ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="getlodestarapi">getLodestarApi<a class="headerlink" href="#getlodestarapi" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getLodestarApi</strong>(<code>__namedParameters</code>: object): <em>routes.lodestar.Api</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/api/impl/lodestar/index.ts#L5">packages/lodestar/src/api/impl/lodestar/index.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/api/impl/lodestar/index.ts#L11">packages/lodestar/src/api/impl/lodestar/index.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -301,12 +307,40 @@
 <td>IChainForkConfig</td>
 </tr>
 <tr>
+<td><code>network</code></td>
+<td><a href="../../interfaces/network.inetwork/">INetwork</a></td>
+</tr>
+<tr>
 <td><code>sync</code></td>
 <td><a href="../../interfaces/sync.ibeaconsync/">IBeaconSync</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>routes.lodestar.Api</em></p>
+<hr/>
+<h3 id="regenrequesttojson">regenRequestToJson<a class="headerlink" href="#regenrequesttojson" title="Permanent link">¶</a></h3>
+<p>▸ <strong>regenRequestToJson</strong>(<code>config</code>: IChainForkConfig, <code>regenRequest</code>: <a href="../chain_regen/#regenrequest">RegenRequest</a>): <em>Json</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/api/impl/lodestar/index.ts#L125">packages/lodestar/src/api/impl/lodestar/index.ts:125</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IChainForkConfig</td>
+</tr>
+<tr>
+<td><code>regenRequest</code></td>
+<td><a href="../chain_regen/#regenrequest">RegenRequest</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Json</em></p>
 </article>
 </div>
 </div>

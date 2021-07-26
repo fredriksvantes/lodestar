@@ -240,6 +240,11 @@
 <nav aria-label="Index" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+    References
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#enumerations">
     Enumerations
   </a>
@@ -268,16 +273,65 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#references_1">
+    References
+  </a>
+<nav aria-label="References" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iqueuemetrics">
+    IQueueMetrics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#jobfnqueue">
+    JobFnQueue
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#jobitemqueue">
+    JobItemQueue
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#jobqueueopts">
+    JobQueueOpts
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#queueerror">
+    QueueError
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#queueerrorcode">
+    QueueErrorCode
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#queuetype">
+    QueueType
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#defaultqueueopts">
+    defaultQueueOpts
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#type-aliases_1">
     Type aliases
   </a>
 <nav aria-label="Type aliases" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#job">
-    Job
+<a class="md-nav__link" href="#fn">
+    Fn
   </a>
-<nav aria-label="Job" class="md-nav">
+<nav aria-label="Fn" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#type-declaration">
@@ -288,27 +342,13 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#jobqueueitem">
-    JobQueueItem
-  </a>
-<nav aria-label="JobQueueItem" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#type-declaration_1">
-    Type declaration:
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#jobqueueopts">
+<a class="md-nav__link" href="#jobqueueopts_1">
     JobQueueOpts
   </a>
 <nav aria-label="JobQueueOpts" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#type-declaration_2">
+<a class="md-nav__link" href="#type-declaration_1">
     Type declaration:
   </a>
 </li>
@@ -370,6 +410,17 @@
 <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">util/queue</a></p>
 <h1 id="module-utilqueue">Module: util/queue<a class="headerlink" href="#module-utilqueue" title="Permanent link">¶</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">¶</a></h2>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="./#iqueuemetrics">IQueueMetrics</a></li>
+<li><a href="./#jobfnqueue">JobFnQueue</a></li>
+<li><a href="./#jobitemqueue">JobItemQueue</a></li>
+<li><a href="./#jobqueueopts">JobQueueOpts</a></li>
+<li><a href="./#queueerror">QueueError</a></li>
+<li><a href="./#queueerrorcode">QueueErrorCode</a></li>
+<li><a href="./#queuetype">QueueType</a></li>
+<li><a href="./#defaultqueueopts">defaultQueueOpts</a></li>
+</ul>
 <h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">¶</a></h3>
 <ul>
 <li><a href="../../enums/util_queue.queueerrorcode/">QueueErrorCode</a></li>
@@ -377,7 +428,8 @@
 </ul>
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="../../classes/util_queue.jobqueue/">JobQueue</a></li>
+<li><a href="../../classes/util_queue.jobfnqueue/">JobFnQueue</a></li>
+<li><a href="../../classes/util_queue.jobitemqueue/">JobItemQueue</a></li>
 <li><a href="../../classes/util_queue.queueerror/">QueueError</a></li>
 </ul>
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">¶</a></h3>
@@ -386,8 +438,7 @@
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="./#job">Job</a></li>
-<li><a href="./#jobqueueitem">JobQueueItem</a></li>
+<li><a href="./#fn">Fn</a></li>
 <li><a href="./#jobqueueopts">JobQueueOpts</a></li>
 <li><a href="./#queueerrorcodetype">QueueErrorCodeType</a></li>
 </ul>
@@ -395,10 +446,34 @@
 <ul>
 <li><a href="./#const-defaultqueueopts">defaultQueueOpts</a></li>
 </ul>
+<h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">¶</a></h2>
+<h3 id="iqueuemetrics">IQueueMetrics<a class="headerlink" href="#iqueuemetrics" title="Permanent link">¶</a></h3>
+<p>• <strong>IQueueMetrics</strong>:</p>
+<hr/>
+<h3 id="jobfnqueue">JobFnQueue<a class="headerlink" href="#jobfnqueue" title="Permanent link">¶</a></h3>
+<p>• <strong>JobFnQueue</strong>:</p>
+<hr/>
+<h3 id="jobitemqueue">JobItemQueue<a class="headerlink" href="#jobitemqueue" title="Permanent link">¶</a></h3>
+<p>• <strong>JobItemQueue</strong>:</p>
+<hr/>
+<h3 id="jobqueueopts">JobQueueOpts<a class="headerlink" href="#jobqueueopts" title="Permanent link">¶</a></h3>
+<p>• <strong>JobQueueOpts</strong>:</p>
+<hr/>
+<h3 id="queueerror">QueueError<a class="headerlink" href="#queueerror" title="Permanent link">¶</a></h3>
+<p>• <strong>QueueError</strong>:</p>
+<hr/>
+<h3 id="queueerrorcode">QueueErrorCode<a class="headerlink" href="#queueerrorcode" title="Permanent link">¶</a></h3>
+<p>• <strong>QueueErrorCode</strong>:</p>
+<hr/>
+<h3 id="queuetype">QueueType<a class="headerlink" href="#queuetype" title="Permanent link">¶</a></h3>
+<p>• <strong>QueueType</strong>:</p>
+<hr/>
+<h3 id="defaultqueueopts">defaultQueueOpts<a class="headerlink" href="#defaultqueueopts" title="Permanent link">¶</a></h3>
+<p>• <strong>defaultQueueOpts</strong>:</p>
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
-<h3 id="job">Job<a class="headerlink" href="#job" title="Permanent link">¶</a></h3>
-<p>Ƭ <strong>Job</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/util/queue/index.ts#L38">packages/lodestar/src/util/queue/index.ts:38</a></em></p>
+<h3 id="fn">Fn<a class="headerlink" href="#fn" title="Permanent link">¶</a></h3>
+<p>Ƭ <strong>Fn</strong>: <em>function</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/util/queue/fnQueue.ts#L5">packages/lodestar/src/util/queue/fnQueue.ts:5</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <p>▸ (...<code>args</code>: any): <em>Promise‹R›</em></p>
 <p><strong>Parameters:</strong></p>
@@ -417,35 +492,10 @@
 </tbody>
 </table>
 <hr/>
-<h3 id="jobqueueitem">JobQueueItem<a class="headerlink" href="#jobqueueitem" title="Permanent link">¶</a></h3>
-<p>Ƭ <strong>JobQueueItem</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/util/queue/index.ts#L40">packages/lodestar/src/util/queue/index.ts:40</a></em></p>
-<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
-<ul>
-<li>
-<p><strong>addedTimeMs</strong>: <em>number</em></p>
-</li>
-<li>
-<p><strong>job</strong>: <em>Fn</em></p>
-</li>
-<li>
-<p><strong>reject</strong>(): <em>function</em></p>
-</li>
-<li>
-<p>(<code>error?</code>: <a href="../../classes/chain_regen.regenerror/#static-error">Error</a>): <em>void</em></p>
-</li>
-<li>
-<p><strong>resolve</strong>(): <em>function</em></p>
-</li>
-<li>
-<p>(<code>result</code>: R | PromiseLike‹R›): <em>void</em></p>
-</li>
-</ul>
-<hr/>
-<h3 id="jobqueueopts">JobQueueOpts<a class="headerlink" href="#jobqueueopts" title="Permanent link">¶</a></h3>
+<h3 id="jobqueueopts_1">JobQueueOpts<a class="headerlink" href="#jobqueueopts_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>JobQueueOpts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/util/queue/index.ts#L12">packages/lodestar/src/util/queue/index.ts:12</a></em></p>
-<h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">¶</a></h4>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/util/queue/options.ts#L8">packages/lodestar/src/util/queue/options.ts:8</a></em></p>
+<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
 <ul>
 <li>
 <p><strong>maxConcurrency</strong>? : <em>undefined | number</em></p>
@@ -457,7 +507,7 @@
 <p><strong>signal</strong>: <em>AbortSignal</em></p>
 </li>
 <li>
-<p><strong>type</strong>? : <em><a href="../../enums/util_queue.queuetype/">QueueType</a></em></p>
+<p><strong>type</strong>? : <em><a href="./#queuetype">QueueType</a></em></p>
 </li>
 <li>
 <p><strong>yieldEveryMs</strong>? : <em>undefined | number</em></p>
@@ -466,20 +516,20 @@
 <hr/>
 <h3 id="queueerrorcodetype">QueueErrorCodeType<a class="headerlink" href="#queueerrorcodetype" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>QueueErrorCodeType</strong>: <em>object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/util/queue/errors.ts#L8">packages/lodestar/src/util/queue/errors.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/util/queue/errors.ts#L8">packages/lodestar/src/util/queue/errors.ts:8</a></em></p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">¶</a></h2>
 <h3 id="const-defaultqueueopts"><code>Const</code> defaultQueueOpts<a class="headerlink" href="#const-defaultqueueopts" title="Permanent link">¶</a></h3>
 <h3 id="defaultqueueopts-object">▪ <strong>defaultQueueOpts</strong>: <em>object</em><a class="headerlink" href="#defaultqueueopts-object" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/util/queue/index.ts#L23">packages/lodestar/src/util/queue/index.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/util/queue/options.ts#L27">packages/lodestar/src/util/queue/options.ts:27</a></em></p>
 <h3 id="maxconcurrency">maxConcurrency<a class="headerlink" href="#maxconcurrency" title="Permanent link">¶</a></h3>
 <p>• <strong>maxConcurrency</strong>: <em>number</em> = 1</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/util/queue/index.ts#L24">packages/lodestar/src/util/queue/index.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/util/queue/options.ts#L28">packages/lodestar/src/util/queue/options.ts:28</a></em></p>
 <h3 id="type">type<a class="headerlink" href="#type" title="Permanent link">¶</a></h3>
 <p>• <strong>type</strong>: <em><a href="../../enums/util_queue.queuetype/#fifo">FIFO</a></em> = QueueType.FIFO</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/util/queue/index.ts#L26">packages/lodestar/src/util/queue/index.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/util/queue/options.ts#L30">packages/lodestar/src/util/queue/options.ts:30</a></em></p>
 <h3 id="yieldeveryms">yieldEveryMs<a class="headerlink" href="#yieldeveryms" title="Permanent link">¶</a></h3>
 <p>• <strong>yieldEveryMs</strong>: <em>number</em> = 50</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/util/queue/index.ts#L25">packages/lodestar/src/util/queue/index.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/util/queue/options.ts#L29">packages/lodestar/src/util/queue/options.ts:29</a></em></p>
 </article>
 </div>
 </div>

@@ -293,18 +293,13 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#private-config">
-    Private config
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#private-forkchoice">
     Private forkChoice
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#private-jobqueue">
-    Private jobQueue
+<a class="md-nav__link" href="#readonly-jobqueue">
+    Readonly jobQueue
   </a>
 </li>
 <li class="md-nav__item">
@@ -346,6 +341,11 @@
     getState
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#private-jobqueueprocessor">
+    Private jobQueueProcessor
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -379,9 +379,8 @@
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">¶</a></h3>
 <ul>
 <li><a href="./#private-checkpointstatecache">checkpointStateCache</a></li>
-<li><a href="./#private-config">config</a></li>
 <li><a href="./#private-forkchoice">forkChoice</a></li>
-<li><a href="./#private-jobqueue">jobQueue</a></li>
+<li><a href="./#readonly-jobqueue">jobQueue</a></li>
 <li><a href="./#private-regen">regen</a></li>
 <li><a href="./#private-statecache">stateCache</a></li>
 </ul>
@@ -391,11 +390,12 @@
 <li><a href="./#getcheckpointstate">getCheckpointState</a></li>
 <li><a href="./#getprestate">getPreState</a></li>
 <li><a href="./#getstate">getState</a></li>
+<li><a href="./#private-jobqueueprocessor">jobQueueProcessor</a></li>
 </ul>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new QueuedStateRegenerator</strong>(<code>modules</code>: <a href="../../modules/chain_regen/#queuedstateregeneratormodules">QueuedStateRegeneratorModules</a>): <em><a href="./">QueuedStateRegenerator</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L40">packages/lodestar/src/chain/regen/queued.ts:40</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L43">packages/lodestar/src/chain/regen/queued.ts:43</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -415,31 +415,27 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="private-checkpointstatecache"><code>Private</code> checkpointStateCache<a class="headerlink" href="#private-checkpointstatecache" title="Permanent link">¶</a></h3>
 <p>• <strong>checkpointStateCache</strong>: <em><a href="../chain_statecache.checkpointstatecache/">CheckpointStateCache</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L40">packages/lodestar/src/chain/regen/queued.ts:40</a></em></p>
-<hr/>
-<h3 id="private-config"><code>Private</code> config<a class="headerlink" href="#private-config" title="Permanent link">¶</a></h3>
-<p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L37">packages/lodestar/src/chain/regen/queued.ts:37</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L43">packages/lodestar/src/chain/regen/queued.ts:43</a></em></p>
 <hr/>
 <h3 id="private-forkchoice"><code>Private</code> forkChoice<a class="headerlink" href="#private-forkchoice" title="Permanent link">¶</a></h3>
 <p>• <strong>forkChoice</strong>: <em>IForkChoice</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L38">packages/lodestar/src/chain/regen/queued.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L41">packages/lodestar/src/chain/regen/queued.ts:41</a></em></p>
 <hr/>
-<h3 id="private-jobqueue"><code>Private</code> jobQueue<a class="headerlink" href="#private-jobqueue" title="Permanent link">¶</a></h3>
-<p>• <strong>jobQueue</strong>: <em><a href="../util_queue.jobqueue/">JobQueue</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L35">packages/lodestar/src/chain/regen/queued.ts:35</a></em></p>
+<h3 id="readonly-jobqueue"><code>Readonly</code> jobQueue<a class="headerlink" href="#readonly-jobqueue" title="Permanent link">¶</a></h3>
+<p>• <strong>jobQueue</strong>: <em><a href="../util_queue.jobitemqueue/">JobItemQueue</a>‹[<a href="../../modules/chain_regen/#regenrequest">RegenRequest</a>], <a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L38">packages/lodestar/src/chain/regen/queued.ts:38</a></em></p>
 <hr/>
 <h3 id="private-regen"><code>Private</code> regen<a class="headerlink" href="#private-regen" title="Permanent link">¶</a></h3>
 <p>• <strong>regen</strong>: <em><a href="../chain_regen.stateregenerator/">StateRegenerator</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L34">packages/lodestar/src/chain/regen/queued.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L39">packages/lodestar/src/chain/regen/queued.ts:39</a></em></p>
 <hr/>
 <h3 id="private-statecache"><code>Private</code> stateCache<a class="headerlink" href="#private-statecache" title="Permanent link">¶</a></h3>
 <p>• <strong>stateCache</strong>: <em><a href="../chain_statecache.statecontextcache/">StateContextCache</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L39">packages/lodestar/src/chain/regen/queued.ts:39</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L42">packages/lodestar/src/chain/regen/queued.ts:42</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="getblockslotstate">getBlockSlotState<a class="headerlink" href="#getblockslotstate" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getBlockSlotState</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_phase0/#root">Root</a>, <code>slot</code>: <a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>Promise‹<a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L94">packages/lodestar/src/chain/regen/queued.ts:94</a></em></p>
+<p>▸ <strong>getBlockSlotState</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_phase0/#root">Root</a>, <code>slot</code>: <a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L97">packages/lodestar/src/chain/regen/queued.ts:97</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -451,19 +447,19 @@
 <tbody>
 <tr>
 <td><code>blockRoot</code></td>
-<td><a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_phase0/#root">Root</a></td>
+<td><a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_phase0/#root">Root</a></td>
 </tr>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
 <hr/>
 <h3 id="getcheckpointstate">getCheckpointState<a class="headerlink" href="#getcheckpointstate" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getCheckpointState</strong>(<code>cp</code>: Checkpoint): <em>Promise‹<a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L84">packages/lodestar/src/chain/regen/queued.ts:84</a></em></p>
+<p>▸ <strong>getCheckpointState</strong>(<code>cp</code>: Checkpoint): <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L87">packages/lodestar/src/chain/regen/queued.ts:87</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -479,11 +475,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
 <hr/>
 <h3 id="getprestate">getPreState<a class="headerlink" href="#getprestate" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getPreState</strong>(<code>block</code>: allForks.BeaconBlock): <em>Promise‹<a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L54">packages/lodestar/src/chain/regen/queued.ts:54</a></em></p>
+<p>▸ <strong>getPreState</strong>(<code>block</code>: allForks.BeaconBlock): <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L57">packages/lodestar/src/chain/regen/queued.ts:57</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -499,11 +495,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
 <hr/>
 <h3 id="getstate">getState<a class="headerlink" href="#getstate" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getState</strong>(<code>stateRoot</code>: <a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_phase0/#root">Root</a>): <em>Promise‹<a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/lodestar/src/chain/regen/queued.ts#L98">packages/lodestar/src/chain/regen/queued.ts:98</a></em></p>
+<p>▸ <strong>getState</strong>(<code>stateRoot</code>: <a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_phase0/#root">Root</a>): <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L101">packages/lodestar/src/chain/regen/queued.ts:101</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -515,11 +511,31 @@
 <tbody>
 <tr>
 <td><code>stateRoot</code></td>
-<td><a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_phase0/#root">Root</a></td>
+<td><a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_phase0/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11433.reflection-11434._.reflection-11436._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<hr/>
+<h3 id="private-jobqueueprocessor"><code>Private</code> jobQueueProcessor<a class="headerlink" href="#private-jobqueueprocessor" title="Permanent link">¶</a></h3>
+<p>▸ <strong>jobQueueProcessor</strong>(<code>regenRequest</code>: <a href="../../modules/chain_regen/#regenrequest">RegenRequest</a>): <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9443048/packages/lodestar/src/chain/regen/queued.ts#L111">packages/lodestar/src/chain/regen/queued.ts:111</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>regenRequest</code></td>
+<td><a href="../../modules/chain_regen/#regenrequest">RegenRequest</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/reflection-11487.reflection-11488._.reflection-11490._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState››</em></p>
 </article>
 </div>
 </div>
