@@ -493,7 +493,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="assertvalidattesterslashing_1">assertValidAttesterSlashing<a class="headerlink" href="#assertvalidattesterslashing_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>assertValidAttesterSlashing</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>attesterSlashing</code>: AttesterSlashing, <code>verifySignatures</code>: boolean): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processAttesterSlashing.ts#L40">packages/beacon-state-transition/src/allForks/block/processAttesterSlashing.ts:40</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processAttesterSlashing.ts#L40">packages/beacon-state-transition/src/allForks/block/processAttesterSlashing.ts:40</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -525,7 +525,7 @@
 <hr/>
 <h3 id="assertvalidproposerslashing_1">assertValidProposerSlashing<a class="headerlink" href="#assertvalidproposerslashing_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>assertValidProposerSlashing</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>proposerSlashing</code>: ProposerSlashing, <code>verifySignatures</code>: boolean): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processProposerSlashing.ts#L22">packages/beacon-state-transition/src/allForks/block/processProposerSlashing.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processProposerSlashing.ts#L22">packages/beacon-state-transition/src/allForks/block/processProposerSlashing.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -557,7 +557,7 @@
 <hr/>
 <h3 id="assertvalidvoluntaryexit_1">assertValidVoluntaryExit<a class="headerlink" href="#assertvalidvoluntaryexit_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>assertValidVoluntaryExit</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>signedVoluntaryExit</code>: SignedVoluntaryExit, <code>verifySignature</code>: boolean): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processVoluntaryExit.ts#L23">packages/beacon-state-transition/src/allForks/block/processVoluntaryExit.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processVoluntaryExit.ts#L23">packages/beacon-state-transition/src/allForks/block/processVoluntaryExit.ts:23</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -589,7 +589,7 @@
 <hr/>
 <h3 id="getneweth1data_1">getNewEth1Data<a class="headerlink" href="#getneweth1data_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getNewEth1Data</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>newEth1Data</code>: Eth1Data): <em>Eth1Data | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processEth1Data.ts#L20">packages/beacon-state-transition/src/allForks/block/processEth1Data.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processEth1Data.ts#L20">packages/beacon-state-transition/src/allForks/block/processEth1Data.ts:20</a></em></p>
 <p>Returns <code>newEth1Data</code> if adding the given <code>eth1Data</code> to <code>state.eth1DataVotes</code> would
 result in a change to <code>state.eth1Data</code>.</p>
 <p><strong>Parameters:</strong></p>
@@ -615,7 +615,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="initiatevalidatorexit_1">initiateValidatorExit<a class="headerlink" href="#initiatevalidatorexit_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>initiateValidatorExit</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>index</code>: <a href="../phase0/#validatorindex">ValidatorIndex</a>, <code>blockProcess</code>: <a href="../../interfaces/util.blockprocess/">BlockProcess</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/initiateValidatorExit.ts#L11">packages/beacon-state-transition/src/allForks/block/initiateValidatorExit.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/initiateValidatorExit.ts#L11">packages/beacon-state-transition/src/allForks/block/initiateValidatorExit.ts:11</a></em></p>
 <p>Initiate the exit of the validator with index <code>index</code>.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -644,7 +644,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="isvalidindexedattestation_1">isValidIndexedAttestation<a class="headerlink" href="#isvalidindexedattestation_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isValidIndexedAttestation</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>indexedAttestation</code>: IndexedAttestation, <code>verifySignature</code>: boolean): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/isValidIndexedAttestation.ts#L10">packages/beacon-state-transition/src/allForks/block/isValidIndexedAttestation.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/isValidIndexedAttestation.ts#L10">packages/beacon-state-transition/src/allForks/block/isValidIndexedAttestation.ts:10</a></em></p>
 <p>Check if <code>indexedAttestation</code> has sorted and unique indices and a valid aggregate signature.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -677,7 +677,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="processattesterslashing_1">processAttesterSlashing<a class="headerlink" href="#processattesterslashing_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processAttesterSlashing</strong>(<code>fork</code>: ForkName, <code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>attesterSlashing</code>: AttesterSlashing, <code>blockProcess</code>: <a href="../../interfaces/util.blockprocess/">BlockProcess</a>, <code>verifySignatures</code>: boolean): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processAttesterSlashing.ts#L10">packages/beacon-state-transition/src/allForks/block/processAttesterSlashing.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processAttesterSlashing.ts#L10">packages/beacon-state-transition/src/allForks/block/processAttesterSlashing.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -719,7 +719,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="processblockheader_1">processBlockHeader<a class="headerlink" href="#processblockheader_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processBlockHeader</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>block</code>: <a href="../allforks/#beaconblock">BeaconBlock</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processBlockHeader.ts#L5">packages/beacon-state-transition/src/allForks/block/processBlockHeader.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processBlockHeader.ts#L5">packages/beacon-state-transition/src/allForks/block/processBlockHeader.ts:5</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -743,7 +743,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="processdeposit_1">processDeposit<a class="headerlink" href="#processdeposit_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processDeposit</strong>(<code>fork</code>: ForkName, <code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>deposit</code>: Deposit): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processDeposit.ts#L17">packages/beacon-state-transition/src/allForks/block/processDeposit.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processDeposit.ts#L17">packages/beacon-state-transition/src/allForks/block/processDeposit.ts:17</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -771,7 +771,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="processeth1data_1">processEth1Data<a class="headerlink" href="#processeth1data_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processEth1Data</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>body</code>: <a href="../allforks/#beaconblockbody">BeaconBlockBody</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processEth1Data.ts#L7">packages/beacon-state-transition/src/allForks/block/processEth1Data.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processEth1Data.ts#L7">packages/beacon-state-transition/src/allForks/block/processEth1Data.ts:7</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -795,7 +795,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="processproposerslashing_1">processProposerSlashing<a class="headerlink" href="#processproposerslashing_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processProposerSlashing</strong>(<code>fork</code>: ForkName, <code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>proposerSlashing</code>: ProposerSlashing, <code>blockProcess</code>: <a href="../../interfaces/util.blockprocess/">BlockProcess</a>, <code>verifySignatures</code>: boolean): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processProposerSlashing.ts#L10">packages/beacon-state-transition/src/allForks/block/processProposerSlashing.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processProposerSlashing.ts#L10">packages/beacon-state-transition/src/allForks/block/processProposerSlashing.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -837,7 +837,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="processrandao_1">processRandao<a class="headerlink" href="#processrandao_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processRandao</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>block</code>: <a href="../allforks/#beaconblock">BeaconBlock</a>, <code>verifySignature</code>: boolean): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processRandao.ts#L9">packages/beacon-state-transition/src/allForks/block/processRandao.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processRandao.ts#L9">packages/beacon-state-transition/src/allForks/block/processRandao.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -869,7 +869,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="processvoluntaryexit_1">processVoluntaryExit<a class="headerlink" href="#processvoluntaryexit_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processVoluntaryExit</strong>(<code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>signedVoluntaryExit</code>: SignedVoluntaryExit, <code>blockProcess</code>: <a href="../../interfaces/util.blockprocess/">BlockProcess</a>, <code>verifySignature</code>: boolean): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/processVoluntaryExit.ts#L9">packages/beacon-state-transition/src/allForks/block/processVoluntaryExit.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/processVoluntaryExit.ts#L9">packages/beacon-state-transition/src/allForks/block/processVoluntaryExit.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -906,7 +906,7 @@ result in a change to <code>state.eth1Data</code>.</p>
 <hr/>
 <h3 id="slashvalidatorallforks">slashValidatorAllForks<a class="headerlink" href="#slashvalidatorallforks" title="Permanent link">¶</a></h3>
 <p>▸ <strong>slashValidatorAllForks</strong>(<code>fork</code>: ForkName, <code>state</code>: <a href="../allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹<a href="../allforks/#beaconstate">BeaconState</a>›, <code>slashedIndex</code>: <a href="../phase0/#validatorindex">ValidatorIndex</a>, <code>blockProcess</code>: <a href="../../interfaces/util.blockprocess/">BlockProcess</a>, <code>whistleblowerIndex?</code>: <a href="../phase0/#validatorindex">ValidatorIndex</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6cf8c1f/packages/beacon-state-transition/src/allForks/block/slashValidator.ts#L18">packages/beacon-state-transition/src/allForks/block/slashValidator.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5aecd7b/packages/beacon-state-transition/src/allForks/block/slashValidator.ts#L18">packages/beacon-state-transition/src/allForks/block/slashValidator.ts:18</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
