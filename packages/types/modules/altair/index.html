@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/types/modules/altair/" rel="canonical"/>
-<link href="../../../../images/favicon.ico" rel="icon"/>
+<link href="../../../../assets/round-icon.ico" rel="icon"/>
 <meta content="mkdocs-1.2.2, mkdocs-material-7.2.1" name="generator"/>
 <title>Altair - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.1118c9be.min.css" rel="stylesheet"/>
@@ -17,8 +17,9 @@
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
 <link href="../../../../stylesheets/extras.css" rel="stylesheet"/>
 </head>
-<body data-md-color-accent="black" data-md-color-primary="" data-md-color-scheme="preference" dir="ltr">
+<body data-md-color-accent="deep-purple" data-md-color-primary="black" data-md-color-scheme="preference" dir="ltr">
 <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
@@ -32,7 +33,7 @@
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="Lodestar documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -53,6 +54,16 @@
 </div>
 </div>
 </div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="preference" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"></path></svg>
+</label>
+</form>
 <label class="md-header__button md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 </label>
@@ -104,7 +115,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Lodestar documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
     Lodestar documentation
   </label>
@@ -508,11 +519,11 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="blspubkey">BLSPubkey<a class="headerlink" href="#blspubkey" title="Permanent link">¶</a></h3>
 <p>• <strong>BLSPubkey</strong>: <em>ByteVectorType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L32">packages/types/src/altair/sszTypes.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L32">packages/types/src/altair/sszTypes.ts:32</a></em></p>
 <hr/>
 <h3 id="blssignature">BLSSignature<a class="headerlink" href="#blssignature" title="Permanent link">¶</a></h3>
 <p>• <strong>BLSSignature</strong>: <em>ByteVectorType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L33">packages/types/src/altair/sszTypes.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L33">packages/types/src/altair/sszTypes.ts:33</a></em></p>
 <hr/>
 <h3 id="const-beaconblock"><code>Const</code> BeaconBlock<a class="headerlink" href="#const-beaconblock" title="Permanent link">¶</a></h3>
 <p>• <strong>BeaconBlock</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.beaconblock/">BeaconBlock</a>›</em> = new ContainerType<altair.beaconblock>({
@@ -525,7 +536,7 @@
     body: BeaconBlockBody,
   },
 })</altair.beaconblock></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L139">packages/types/src/altair/sszTypes.ts:139</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L139">packages/types/src/altair/sszTypes.ts:139</a></em></p>
 <hr/>
 <h3 id="const-beaconblockbody"><code>Const</code> BeaconBlockBody<a class="headerlink" href="#const-beaconblockbody" title="Permanent link">¶</a></h3>
 <p>• <strong>BeaconBlockBody</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.beaconblockbody/">BeaconBlockBody</a>›</em> = new ContainerType<altair.beaconblockbody>({
@@ -534,7 +545,7 @@
     syncAggregate: SyncAggregate,
   },
 })</altair.beaconblockbody></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L132">packages/types/src/altair/sszTypes.ts:132</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L132">packages/types/src/altair/sszTypes.ts:132</a></em></p>
 <hr/>
 <h3 id="const-beaconstate"><code>Const</code> BeaconState<a class="headerlink" href="#const-beaconstate" title="Permanent link">¶</a></h3>
 <p>• <strong>BeaconState</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.beaconstate/">BeaconState</a>‹››</em> = new ContainerType<altair.beaconstate>({
@@ -585,11 +596,11 @@
     nextSyncCommittee: SyncCommittee,
   },
 })</altair.beaconstate></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L159">packages/types/src/altair/sszTypes.ts:159</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L159">packages/types/src/altair/sszTypes.ts:159</a></em></p>
 <hr/>
 <h3 id="bytes32">Bytes32<a class="headerlink" href="#bytes32" title="Permanent link">¶</a></h3>
 <p>• <strong>Bytes32</strong>: <em>ByteVectorType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L23">packages/types/src/altair/sszTypes.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L23">packages/types/src/altair/sszTypes.ts:23</a></em></p>
 <hr/>
 <h3 id="const-contributionandproof"><code>Const</code> ContributionAndProof<a class="headerlink" href="#const-contributionandproof" title="Permanent link">¶</a></h3>
 <p>• <strong>ContributionAndProof</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.contributionandproof/">ContributionAndProof</a>›</em> = new ContainerType<altair.contributionandproof>({
@@ -599,11 +610,11 @@
     selectionProof: BLSSignature,
   },
 })</altair.contributionandproof></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L81">packages/types/src/altair/sszTypes.ts:81</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L81">packages/types/src/altair/sszTypes.ts:81</a></em></p>
 <hr/>
 <h3 id="gwei">Gwei<a class="headerlink" href="#gwei" title="Permanent link">¶</a></h3>
 <p>• <strong>Gwei</strong>: <em>BigIntUintType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L29">packages/types/src/altair/sszTypes.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L29">packages/types/src/altair/sszTypes.ts:29</a></em></p>
 <hr/>
 <h3 id="const-historicalbatch"><code>Const</code> HistoricalBatch<a class="headerlink" href="#const-historicalbatch" title="Permanent link">¶</a></h3>
 <p>• <strong>HistoricalBatch</strong>: <em>ContainerType‹<a href="../../interfaces/phase0_types.historicalbatch/">HistoricalBatch</a>›</em> = new ContainerType<altair.historicalbatch>({
@@ -612,21 +623,21 @@
     stateRoots: HistoricalStateRoots,
   },
 })</altair.historicalbatch></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L125">packages/types/src/altair/sszTypes.ts:125</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L125">packages/types/src/altair/sszTypes.ts:125</a></em></p>
 <hr/>
 <h3 id="const-historicalblockroots"><code>Const</code> HistoricalBlockRoots<a class="headerlink" href="#const-historicalblockroots" title="Permanent link">¶</a></h3>
 <p>• <strong>HistoricalBlockRoots</strong>: <em>VectorType‹Vector‹ByteVector››</em> = new VectorType<vector\<altair.root>&gt;({
   elementType: new RootType({expandedType: () =&gt; typesRef.get().BeaconBlock}),
   length: SLOTS_PER_HISTORICAL_ROOT,
 })</vector\<altair.root></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L115">packages/types/src/altair/sszTypes.ts:115</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L115">packages/types/src/altair/sszTypes.ts:115</a></em></p>
 <hr/>
 <h3 id="const-historicalstateroots"><code>Const</code> HistoricalStateRoots<a class="headerlink" href="#const-historicalstateroots" title="Permanent link">¶</a></h3>
 <p>• <strong>HistoricalStateRoots</strong>: <em>VectorType‹Vector‹ByteVector››</em> = new VectorType<vector\<altair.root>&gt;({
   elementType: new RootType({expandedType: () =&gt; typesRef.get().BeaconState}),
   length: SLOTS_PER_HISTORICAL_ROOT,
 })</vector\<altair.root></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L120">packages/types/src/altair/sszTypes.ts:120</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L120">packages/types/src/altair/sszTypes.ts:120</a></em></p>
 <hr/>
 <h3 id="const-lightclientsnapshot"><code>Const</code> LightClientSnapshot<a class="headerlink" href="#const-lightclientsnapshot" title="Permanent link">¶</a></h3>
 <p>• <strong>LightClientSnapshot</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.lightclientsnapshot/">LightClientSnapshot</a>›</em> = new ContainerType<altair.lightclientsnapshot>({
@@ -636,7 +647,7 @@
     currentSyncCommittee: SyncCommittee,
   },
 })</altair.lightclientsnapshot></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L208">packages/types/src/altair/sszTypes.ts:208</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L208">packages/types/src/altair/sszTypes.ts:208</a></em></p>
 <hr/>
 <h3 id="const-lightclientstore"><code>Const</code> LightClientStore<a class="headerlink" href="#const-lightclientstore" title="Permanent link">¶</a></h3>
 <p>• <strong>LightClientStore</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.lightclientstore/">LightClientStore</a>›</em> = new ContainerType<altair.lightclientstore>({
@@ -648,7 +659,7 @@
     }),
   },
 })</altair.lightclientstore></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L232">packages/types/src/altair/sszTypes.ts:232</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L232">packages/types/src/altair/sszTypes.ts:232</a></em></p>
 <hr/>
 <h3 id="const-lightclientupdate"><code>Const</code> LightClientUpdate<a class="headerlink" href="#const-lightclientupdate" title="Permanent link">¶</a></h3>
 <p>• <strong>LightClientUpdate</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.lightclientupdate/">LightClientUpdate</a>›</em> = new ContainerType<altair.lightclientupdate>({
@@ -666,7 +677,7 @@
     forkVersion: Version,
   },
 })</altair.lightclientupdate></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L216">packages/types/src/altair/sszTypes.ts:216</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L216">packages/types/src/altair/sszTypes.ts:216</a></em></p>
 <hr/>
 <h3 id="const-metadata"><code>Const</code> Metadata<a class="headerlink" href="#const-metadata" title="Permanent link">¶</a></h3>
 <p>• <strong>Metadata</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.metadata/">Metadata</a>›</em> = new ContainerType<altair.metadata>({
@@ -676,19 +687,19 @@
     syncnets: SyncSubnets,
   },
 })</altair.metadata></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L47">packages/types/src/altair/sszTypes.ts:47</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L47">packages/types/src/altair/sszTypes.ts:47</a></em></p>
 <hr/>
 <h3 id="number64">Number64<a class="headerlink" href="#number64" title="Permanent link">¶</a></h3>
 <p>• <strong>Number64</strong>: <em>NumberUintType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L24">packages/types/src/altair/sszTypes.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L24">packages/types/src/altair/sszTypes.ts:24</a></em></p>
 <hr/>
 <h3 id="participationflags">ParticipationFlags<a class="headerlink" href="#participationflags" title="Permanent link">¶</a></h3>
 <p>• <strong>ParticipationFlags</strong>: <em>NumberUintType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L34">packages/types/src/altair/sszTypes.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L34">packages/types/src/altair/sszTypes.ts:34</a></em></p>
 <hr/>
 <h3 id="root">Root<a class="headerlink" href="#root" title="Permanent link">¶</a></h3>
 <p>• <strong>Root</strong>: <em>RootType‹CompositeValue›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L30">packages/types/src/altair/sszTypes.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L30">packages/types/src/altair/sszTypes.ts:30</a></em></p>
 <hr/>
 <h3 id="const-signedbeaconblock"><code>Const</code> SignedBeaconBlock<a class="headerlink" href="#const-signedbeaconblock" title="Permanent link">¶</a></h3>
 <p>• <strong>SignedBeaconBlock</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.signedbeaconblock/">SignedBeaconBlock</a>›</em> = new ContainerType<altair.signedbeaconblock>({
@@ -697,7 +708,7 @@
     signature: BLSSignature,
   },
 })</altair.signedbeaconblock></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L150">packages/types/src/altair/sszTypes.ts:150</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L150">packages/types/src/altair/sszTypes.ts:150</a></em></p>
 <hr/>
 <h3 id="const-signedcontributionandproof"><code>Const</code> SignedContributionAndProof<a class="headerlink" href="#const-signedcontributionandproof" title="Permanent link">¶</a></h3>
 <p>• <strong>SignedContributionAndProof</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.signedcontributionandproof/">SignedContributionAndProof</a>›</em> = new ContainerType<altair.signedcontributionandproof>({
@@ -706,15 +717,15 @@
     signature: BLSSignature,
   },
 })</altair.signedcontributionandproof></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L89">packages/types/src/altair/sszTypes.ts:89</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L89">packages/types/src/altair/sszTypes.ts:89</a></em></p>
 <hr/>
 <h3 id="slot">Slot<a class="headerlink" href="#slot" title="Permanent link">¶</a></h3>
 <p>• <strong>Slot</strong>: <em>NumberUintType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L26">packages/types/src/altair/sszTypes.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L26">packages/types/src/altair/sszTypes.ts:26</a></em></p>
 <hr/>
 <h3 id="subcommitteeindex">SubCommitteeIndex<a class="headerlink" href="#subcommitteeindex" title="Permanent link">¶</a></h3>
 <p>• <strong>SubCommitteeIndex</strong>: <em>NumberUintType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L27">packages/types/src/altair/sszTypes.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L27">packages/types/src/altair/sszTypes.ts:27</a></em></p>
 <hr/>
 <h3 id="const-syncaggregate"><code>Const</code> SyncAggregate<a class="headerlink" href="#const-syncaggregate" title="Permanent link">¶</a></h3>
 <p>• <strong>SyncAggregate</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.syncaggregate/">SyncAggregate</a>›</em> = new ContainerType<altair.syncaggregate>({
@@ -723,7 +734,7 @@
     syncCommitteeSignature: BLSSignature,
   },
 })</altair.syncaggregate></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L107">packages/types/src/altair/sszTypes.ts:107</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L107">packages/types/src/altair/sszTypes.ts:107</a></em></p>
 <hr/>
 <h3 id="const-syncaggregatorselectiondata"><code>Const</code> SyncAggregatorSelectionData<a class="headerlink" href="#const-syncaggregatorselectiondata" title="Permanent link">¶</a></h3>
 <p>• <strong>SyncAggregatorSelectionData</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.syncaggregatorselectiondata/">SyncAggregatorSelectionData</a>›</em> = new ContainerType<altair.syncaggregatorselectiondata>({
@@ -732,7 +743,7 @@
     subCommitteeIndex: SubCommitteeIndex,
   },
 })</altair.syncaggregatorselectiondata></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L96">packages/types/src/altair/sszTypes.ts:96</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L96">packages/types/src/altair/sszTypes.ts:96</a></em></p>
 <hr/>
 <h3 id="const-synccommittee"><code>Const</code> SyncCommittee<a class="headerlink" href="#const-synccommittee" title="Permanent link">¶</a></h3>
 <p>• <strong>SyncCommittee</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.synccommittee/">SyncCommittee</a>›</em> = new ContainerType<altair.synccommittee>({
@@ -741,13 +752,13 @@
     aggregatePubkey: BLSPubkey,
   },
 })</altair.synccommittee></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L55">packages/types/src/altair/sszTypes.ts:55</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L55">packages/types/src/altair/sszTypes.ts:55</a></em></p>
 <hr/>
 <h3 id="const-synccommitteebits"><code>Const</code> SyncCommitteeBits<a class="headerlink" href="#const-synccommitteebits" title="Permanent link">¶</a></h3>
 <p>• <strong>SyncCommitteeBits</strong>: <em>BitVectorType‹›</em> = new BitVectorType({
   length: SYNC_COMMITTEE_SIZE,
 })</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L103">packages/types/src/altair/sszTypes.ts:103</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L103">packages/types/src/altair/sszTypes.ts:103</a></em></p>
 <hr/>
 <h3 id="const-synccommitteecontribution"><code>Const</code> SyncCommitteeContribution<a class="headerlink" href="#const-synccommitteecontribution" title="Permanent link">¶</a></h3>
 <p>• <strong>SyncCommitteeContribution</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.synccommitteecontribution/">SyncCommitteeContribution</a>›</em> = new ContainerType<altair.synccommitteecontribution>({
@@ -759,7 +770,7 @@
     signature: BLSSignature,
   },
 })</altair.synccommitteecontribution></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L71">packages/types/src/altair/sszTypes.ts:71</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L71">packages/types/src/altair/sszTypes.ts:71</a></em></p>
 <hr/>
 <h3 id="const-synccommitteemessage"><code>Const</code> SyncCommitteeMessage<a class="headerlink" href="#const-synccommitteemessage" title="Permanent link">¶</a></h3>
 <p>• <strong>SyncCommitteeMessage</strong>: <em>ContainerType‹<a href="../../interfaces/altair_types.synccommitteemessage/">SyncCommitteeMessage</a>›</em> = new ContainerType<altair.synccommitteemessage>({
@@ -770,32 +781,32 @@
     signature: BLSSignature,
   },
 })</altair.synccommitteemessage></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L62">packages/types/src/altair/sszTypes.ts:62</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L62">packages/types/src/altair/sszTypes.ts:62</a></em></p>
 <hr/>
 <h3 id="const-syncsubnets"><code>Const</code> SyncSubnets<a class="headerlink" href="#const-syncsubnets" title="Permanent link">¶</a></h3>
 <p>• <strong>SyncSubnets</strong>: <em>BitVectorType‹›</em> = new BitVectorType({
   length: SYNC_COMMITTEE_SUBNET_COUNT,
 })</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L43">packages/types/src/altair/sszTypes.ts:43</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L43">packages/types/src/altair/sszTypes.ts:43</a></em></p>
 <hr/>
 <h3 id="uint64">Uint64<a class="headerlink" href="#uint64" title="Permanent link">¶</a></h3>
 <p>• <strong>Uint64</strong>: <em>BigIntUintType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L25">packages/types/src/altair/sszTypes.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L25">packages/types/src/altair/sszTypes.ts:25</a></em></p>
 <hr/>
 <h3 id="validatorindex">ValidatorIndex<a class="headerlink" href="#validatorindex" title="Permanent link">¶</a></h3>
 <p>• <strong>ValidatorIndex</strong>: <em>NumberUintType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L28">packages/types/src/altair/sszTypes.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L28">packages/types/src/altair/sszTypes.ts:28</a></em></p>
 <hr/>
 <h3 id="version">Version<a class="headerlink" href="#version" title="Permanent link">¶</a></h3>
 <p>• <strong>Version</strong>: <em>ByteVectorType‹›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L31">packages/types/src/altair/sszTypes.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L31">packages/types/src/altair/sszTypes.ts:31</a></em></p>
 <hr/>
 <h3 id="const-typesref"><code>Const</code> typesRef<a class="headerlink" href="#const-typesref" title="Permanent link">¶</a></h3>
 <p>• <strong>typesRef</strong>: <em><a href="../../classes/utils.lazyvariable/">LazyVariable</a>‹object›</em> = new LazyVariable&lt;{
   BeaconBlock: ContainerType<altair.beaconblock>;
   BeaconState: ContainerType<altair.beaconstate>;
 }&gt;()</altair.beaconstate></altair.beaconblock></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6b8ade0/packages/types/src/altair/sszTypes.ts#L38">packages/types/src/altair/sszTypes.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/types/src/altair/sszTypes.ts#L38">packages/types/src/altair/sszTypes.ts:38</a></em></p>
 </article>
 </div>
 </div>
