@@ -347,15 +347,15 @@ This stays in-memory and should be pruned per slot.</p>
 <p>• <strong>aggregateByRootBySlot</strong>: <em><a href="../util.mapdef/">MapDef</a>‹number, <a href="../util.mapdef/#static-map">Map</a>‹string, <a href="../../modules/chain_oppools/#syncaggregatefast">SyncAggregateFast</a>››</em> = new MapDef<phase0.slot, map\<blockroothex,="" syncaggregatefast="">&gt;(
     () =&gt; new Map<blockroothex, syncaggregatefast="">()
   )</blockroothex,></phase0.slot,></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L36">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L36">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:36</a></em></p>
 <hr/>
 <h3 id="private-lowestpermissibleslot"><code>Private</code> lowestPermissibleSlot<a class="headerlink" href="#private-lowestpermissibleslot" title="Permanent link">¶</a></h3>
 <p>• <strong>lowestPermissibleSlot</strong>: <em>number</em> = 0</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L39">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:39</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L39">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:39</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="add">add<a class="headerlink" href="#add" title="Permanent link">¶</a></h3>
 <p>▸ <strong>add</strong>(<code>contributionAndProof</code>: ContributionAndProof): <em><a href="../../enums/chain_oppools.insertoutcome/">InsertOutcome</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L44">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L44">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:44</a></em></p>
 <p>Only call this once we pass all validation.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -376,7 +376,7 @@ This stays in-memory and should be pruned per slot.</p>
 <hr/>
 <h3 id="getaggregate">getAggregate<a class="headerlink" href="#getaggregate" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getAggregate</strong>(<code>slot</code>: phase0.Slot, <code>prevBlockRoot</code>: phase0.Root): <em>SyncAggregate</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L76">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:76</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L76">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:76</a></em></p>
 <p>This is for the block factory, the same to process_sync_committee_contributions in the spec.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -400,8 +400,8 @@ This stays in-memory and should be pruned per slot.</p>
 <p><strong>Returns:</strong> <em>SyncAggregate</em></p>
 <hr/>
 <h3 id="prune">prune<a class="headerlink" href="#prune" title="Permanent link">¶</a></h3>
-<p>▸ <strong>prune</strong>(<code>headSlot</code>: <a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L99">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:99</a></em></p>
+<p>▸ <strong>prune</strong>(<code>headSlot</code>: <a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#slot">Slot</a>): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts#L99">packages/lodestar/src/chain/opPools/syncContributionAndProofPool.ts:99</a></em></p>
 <p>Prune per head slot.
 SyncCommittee aggregates are only useful for the next block they have signed.
 We don't want to prune by clock slot in case there's a long period of skipped slots.</p>
@@ -416,7 +416,7 @@ We don't want to prune by clock slot in case there's a long period of skipped sl
 <tbody>
 <tr>
 <td><code>headSlot</code></td>
-<td><a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>

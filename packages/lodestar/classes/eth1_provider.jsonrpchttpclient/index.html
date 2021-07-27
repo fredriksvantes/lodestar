@@ -380,7 +380,7 @@
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new JsonRpcHttpClient</strong>(<code>urls</code>: string[], <code>opts</code>: object): <em><a href="./">JsonRpcHttpClient</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L28">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L28">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:28</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>urls</strong>: <em>string[]</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
@@ -409,7 +409,7 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="private-readonly-opts"><code>Private</code> <code>Readonly</code> opts<a class="headerlink" href="#private-readonly-opts" title="Permanent link">¶</a></h3>
 <p>• <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L31">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L31">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:31</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -422,11 +422,11 @@
 <hr/>
 <h3 id="private-readonly-urls"><code>Private</code> <code>Readonly</code> urls<a class="headerlink" href="#private-readonly-urls" title="Permanent link">¶</a></h3>
 <p>• <strong>urls</strong>: <em>string[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L30">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L30">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:30</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="fetch">fetch<a class="headerlink" href="#fetch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>fetch</strong>‹<strong>R</strong>›(<code>payload</code>: <a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a>, <code>opts?</code>: <a href="../../modules/eth1/#reqopts">ReqOpts</a>): <em>Promise‹R›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L51">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:51</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L51">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:51</a></em></p>
 <p>Perform RPC request</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>R</strong></p>
@@ -453,7 +453,7 @@
 <hr/>
 <h3 id="fetchbatch">fetchBatch<a class="headerlink" href="#fetchbatch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>fetchBatch</strong>‹<strong>R</strong>›(<code>rpcPayloadArr</code>: <a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a>[], <code>opts?</code>: <a href="../../modules/eth1/#reqopts">ReqOpts</a>): <em>Promise‹R[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L60">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:60</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L60">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:60</a></em></p>
 <p>Perform RPC batched request
 Type-wise assumes all requests results have the same type</p>
 <p><strong>Type parameters:</strong></p>
@@ -481,7 +481,7 @@ Type-wise assumes all requests results have the same type</p>
 <hr/>
 <h3 id="private-fetchjson"><code>Private</code> fetchJson<a class="headerlink" href="#private-fetchjson" title="Permanent link">¶</a></h3>
 <p>▸ <strong>fetchJson</strong>‹<strong>R</strong>, <strong>T</strong>›(<code>json</code>: T, <code>opts?</code>: <a href="../../modules/eth1/#reqopts">ReqOpts</a>): <em>Promise‹R›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L70">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:70</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L70">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:70</a></em></p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>R</strong></p>
 <p>▪ <strong>T</strong></p>
@@ -508,7 +508,7 @@ Type-wise assumes all requests results have the same type</p>
 <hr/>
 <h3 id="private-fetchjsononeurl"><code>Private</code> fetchJsonOneUrl<a class="headerlink" href="#private-fetchjsononeurl" title="Permanent link">¶</a></h3>
 <p>▸ <strong>fetchJsonOneUrl</strong>‹<strong>R</strong>, <strong>T</strong>›(<code>url</code>: string, <code>json</code>: T, <code>opts?</code>: <a href="../../modules/eth1/#reqopts">ReqOpts</a>): <em>Promise‹R›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3a3ae0b/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L97">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:97</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L97">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:97</a></em></p>
 <p>Fetches JSON and throws detailed errors in case the HTTP request is not ok</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>R</strong></p>
