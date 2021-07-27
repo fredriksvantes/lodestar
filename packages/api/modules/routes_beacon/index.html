@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/api/modules/routes_beacon/" rel="canonical"/>
-<link href="../../../../assets/round-icon.ico" rel="icon"/>
+<link href="../../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.2.2, mkdocs-material-7.2.1" name="generator"/>
 <title>Routes beacon - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.1118c9be.min.css" rel="stylesheet"/>
@@ -17,9 +17,8 @@
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
 <link href="../../../../stylesheets/extras.css" rel="stylesheet"/>
 </head>
-<body data-md-color-accent="deep-purple" data-md-color-primary="black" data-md-color-scheme="preference" dir="ltr">
+<body data-md-color-accent="black" data-md-color-primary="" data-md-color-scheme="preference" dir="ltr">
 <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
@@ -33,7 +32,7 @@
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="Lodestar documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
+<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -54,16 +53,6 @@
 </div>
 </div>
 </div>
-<form class="md-header__option" data-md-component="palette">
-<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="preference" id="__palette_1" name="__palette" type="radio"/>
-<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"></path></svg>
-</label>
-<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
-<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"></path></svg>
-</label>
-</form>
 <label class="md-header__button md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 </label>
@@ -115,7 +104,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Lodestar documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
+<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
 </a>
     Lodestar documentation
   </label>
@@ -846,7 +835,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="api">Api<a class="headerlink" href="#api" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>Api</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L28">packages/api/src/routes/beacon/block.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L28">packages/api/src/routes/beacon/block.ts:28</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -874,7 +863,7 @@
 <hr/>
 <h3 id="api_1">Api<a class="headerlink" href="#api_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>Api</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L22">packages/api/src/routes/beacon/pool.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L22">packages/api/src/routes/beacon/pool.ts:22</a></em></p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -908,7 +897,7 @@
 <hr/>
 <h3 id="api_2">Api<a class="headerlink" href="#api_2" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>Api</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L73">packages/api/src/routes/beacon/state.ts:73</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L73">packages/api/src/routes/beacon/state.ts:73</a></em></p>
 <h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -939,11 +928,11 @@
 <hr/>
 <h3 id="api_3">Api<a class="headerlink" href="#api_3" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>Api</strong>: <em>block.Api &amp; pool.Api &amp; state.Api &amp; object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/index.ts#L29">packages/api/src/routes/beacon/index.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/index.ts#L29">packages/api/src/routes/beacon/index.ts:29</a></em></p>
 <hr/>
 <h3 id="attestationfilters_1">AttestationFilters<a class="headerlink" href="#attestationfilters_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>AttestationFilters</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L17">packages/api/src/routes/beacon/pool.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L17">packages/api/src/routes/beacon/pool.ts:17</a></em></p>
 <h4 id="type-declaration_3">Type declaration:<a class="headerlink" href="#type-declaration_3" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -956,7 +945,7 @@
 <hr/>
 <h3 id="blockheaderresponse_1">BlockHeaderResponse<a class="headerlink" href="#blockheaderresponse_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>BlockHeaderResponse</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L22">packages/api/src/routes/beacon/block.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L22">packages/api/src/routes/beacon/block.ts:22</a></em></p>
 <h4 id="type-declaration_4">Type declaration:<a class="headerlink" href="#type-declaration_4" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -972,11 +961,11 @@
 <hr/>
 <h3 id="blockid_1">BlockId<a class="headerlink" href="#blockid_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>BlockId</strong>: <em>"head" | "genesis" | "finalized" | string | number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L20">packages/api/src/routes/beacon/block.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L20">packages/api/src/routes/beacon/block.ts:20</a></em></p>
 <hr/>
 <h3 id="blockidonlyreq">BlockIdOnlyReq<a class="headerlink" href="#blockidonlyreq" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>BlockIdOnlyReq</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L107">packages/api/src/routes/beacon/block.ts:107</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L107">packages/api/src/routes/beacon/block.ts:107</a></em></p>
 <h4 id="type-declaration_5">Type declaration:<a class="headerlink" href="#type-declaration_5" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -989,7 +978,7 @@
 <hr/>
 <h3 id="committeesfilters_1">CommitteesFilters<a class="headerlink" href="#committeesfilters_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>CommitteesFilters</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L35">packages/api/src/routes/beacon/state.ts:35</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L35">packages/api/src/routes/beacon/state.ts:35</a></em></p>
 <h4 id="type-declaration_6">Type declaration:<a class="headerlink" href="#type-declaration_6" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1005,7 +994,7 @@
 <hr/>
 <h3 id="epochcommitteeresponse_1">EpochCommitteeResponse<a class="headerlink" href="#epochcommitteeresponse_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>EpochCommitteeResponse</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L59">packages/api/src/routes/beacon/state.ts:59</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L59">packages/api/src/routes/beacon/state.ts:59</a></em></p>
 <h4 id="type-declaration_7">Type declaration:<a class="headerlink" href="#type-declaration_7" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1021,7 +1010,7 @@
 <hr/>
 <h3 id="epochsynccommitteeresponse_1">EpochSyncCommitteeResponse<a class="headerlink" href="#epochsynccommitteeresponse_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>EpochSyncCommitteeResponse</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L65">packages/api/src/routes/beacon/state.ts:65</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L65">packages/api/src/routes/beacon/state.ts:65</a></em></p>
 <h4 id="type-declaration_8">Type declaration:<a class="headerlink" href="#type-declaration_8" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1034,7 +1023,7 @@
 <hr/>
 <h3 id="finalitycheckpoints_1">FinalityCheckpoints<a class="headerlink" href="#finalitycheckpoints_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>FinalityCheckpoints</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L41">packages/api/src/routes/beacon/state.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L41">packages/api/src/routes/beacon/state.ts:41</a></em></p>
 <h4 id="type-declaration_9">Type declaration:<a class="headerlink" href="#type-declaration_9" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1050,7 +1039,7 @@
 <hr/>
 <h3 id="reqtypes">ReqTypes<a class="headerlink" href="#reqtypes" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ReqTypes</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L110">packages/api/src/routes/beacon/block.ts:110</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L110">packages/api/src/routes/beacon/block.ts:110</a></em></p>
 <h4 id="type-declaration_10">Type declaration:<a class="headerlink" href="#type-declaration_10" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1092,7 +1081,7 @@
 <hr/>
 <h3 id="reqtypes_1">ReqTypes<a class="headerlink" href="#reqtypes_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ReqTypes</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L120">packages/api/src/routes/beacon/pool.ts:120</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L120">packages/api/src/routes/beacon/pool.ts:120</a></em></p>
 <h4 id="type-declaration_11">Type declaration:<a class="headerlink" href="#type-declaration_11" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1152,7 +1141,7 @@
 <hr/>
 <h3 id="reqtypes_2">ReqTypes<a class="headerlink" href="#reqtypes_2" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ReqTypes</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L158">packages/api/src/routes/beacon/state.ts:158</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L158">packages/api/src/routes/beacon/state.ts:158</a></em></p>
 <h4 id="type-declaration_12">Type declaration:<a class="headerlink" href="#type-declaration_12" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1255,16 +1244,16 @@
 <hr/>
 <h3 id="reqtypes_3">ReqTypes<a class="headerlink" href="#reqtypes_3" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ReqTypes</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/index.ts#L42">packages/api/src/routes/beacon/index.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/index.ts#L42">packages/api/src/routes/beacon/index.ts:42</a></em></p>
 <h4 id="type-declaration_13">Type declaration:<a class="headerlink" href="#type-declaration_13" title="Permanent link">¶</a></h4>
 <hr/>
 <h3 id="stateid_1">StateId<a class="headerlink" href="#stateid_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>StateId</strong>: <em>string | "head" | "genesis" | "finalized" | "justified"</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L16">packages/api/src/routes/beacon/state.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L16">packages/api/src/routes/beacon/state.ts:16</a></em></p>
 <hr/>
 <h3 id="stateidonlyreq">StateIdOnlyReq<a class="headerlink" href="#stateidonlyreq" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>StateIdOnlyReq</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L156">packages/api/src/routes/beacon/state.ts:156</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L156">packages/api/src/routes/beacon/state.ts:156</a></em></p>
 <h4 id="type-declaration_14">Type declaration:<a class="headerlink" href="#type-declaration_14" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1277,7 +1266,7 @@
 <hr/>
 <h3 id="validatorbalance_1">ValidatorBalance<a class="headerlink" href="#validatorbalance_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ValidatorBalance</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L54">packages/api/src/routes/beacon/state.ts:54</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L54">packages/api/src/routes/beacon/state.ts:54</a></em></p>
 <h4 id="type-declaration_15">Type declaration:<a class="headerlink" href="#type-declaration_15" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1290,7 +1279,7 @@
 <hr/>
 <h3 id="validatorfilters_1">ValidatorFilters<a class="headerlink" href="#validatorfilters_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ValidatorFilters</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L31">packages/api/src/routes/beacon/state.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L31">packages/api/src/routes/beacon/state.ts:31</a></em></p>
 <h4 id="type-declaration_16">Type declaration:<a class="headerlink" href="#type-declaration_16" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1303,11 +1292,11 @@
 <hr/>
 <h3 id="validatorid_1">ValidatorId<a class="headerlink" href="#validatorid_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ValidatorId</strong>: <em>string | number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L17">packages/api/src/routes/beacon/state.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L17">packages/api/src/routes/beacon/state.ts:17</a></em></p>
 <hr/>
 <h3 id="validatorresponse_1">ValidatorResponse<a class="headerlink" href="#validatorresponse_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ValidatorResponse</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L47">packages/api/src/routes/beacon/state.ts:47</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L47">packages/api/src/routes/beacon/state.ts:47</a></em></p>
 <h4 id="type-declaration_17">Type declaration:<a class="headerlink" href="#type-declaration_17" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1326,11 +1315,11 @@
 <hr/>
 <h3 id="validatorstatus_1">ValidatorStatus<a class="headerlink" href="#validatorstatus_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ValidatorStatus</strong>: <em>"active" | "pending_initialized" | "pending_queued" | "active_ongoing" | "active_exiting" | "active_slashed" | "exited_unslashed" | "exited_slashed" | "withdrawal_possible" | "withdrawal_done"</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L19">packages/api/src/routes/beacon/state.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L19">packages/api/src/routes/beacon/state.ts:19</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="getreqserializers">getReqSerializers<a class="headerlink" href="#getreqserializers" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getReqSerializers</strong>(<code>config</code>: IChainForkConfig): <em><a href="../utils/#reqserializers">ReqSerializers</a>‹<a href="./#api">Api</a>, <a href="./#reqtypes">ReqTypes</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L120">packages/api/src/routes/beacon/block.ts:120</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L120">packages/api/src/routes/beacon/block.ts:120</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1350,17 +1339,17 @@
 <hr/>
 <h3 id="getreqserializers_1">getReqSerializers<a class="headerlink" href="#getreqserializers_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getReqSerializers</strong>(): <em><a href="../utils/#reqserializers">ReqSerializers</a>‹<a href="./#api">Api</a>, <a href="./#reqtypes">ReqTypes</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L132">packages/api/src/routes/beacon/pool.ts:132</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L132">packages/api/src/routes/beacon/pool.ts:132</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../utils/#reqserializers">ReqSerializers</a>‹<a href="./#api">Api</a>, <a href="./#reqtypes">ReqTypes</a>›</em></p>
 <hr/>
 <h3 id="getreqserializers_2">getReqSerializers<a class="headerlink" href="#getreqserializers_2" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getReqSerializers</strong>(): <em><a href="../utils/#reqserializers">ReqSerializers</a>‹<a href="./#api">Api</a>, <a href="./#reqtypes">ReqTypes</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L169">packages/api/src/routes/beacon/state.ts:169</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L169">packages/api/src/routes/beacon/state.ts:169</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../utils/#reqserializers">ReqSerializers</a>‹<a href="./#api">Api</a>, <a href="./#reqtypes">ReqTypes</a>›</em></p>
 <hr/>
 <h3 id="getreqserializers_3">getReqSerializers<a class="headerlink" href="#getreqserializers_3" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getReqSerializers</strong>(<code>config</code>: IChainForkConfig): <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/index.ts#L47">packages/api/src/routes/beacon/index.ts:47</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/index.ts#L47">packages/api/src/routes/beacon/index.ts:47</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1383,30 +1372,30 @@
 <hr/>
 <h3 id="getreturntypes">getReturnTypes<a class="headerlink" href="#getreturntypes" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getReturnTypes</strong>(): <em><a href="../utils/#returntypes">ReturnTypes</a>‹<a href="./#api">Api</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L151">packages/api/src/routes/beacon/block.ts:151</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L151">packages/api/src/routes/beacon/block.ts:151</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../utils/#returntypes">ReturnTypes</a>‹<a href="./#api">Api</a>›</em></p>
 <hr/>
 <h3 id="getreturntypes_1">getReturnTypes<a class="headerlink" href="#getreturntypes_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getReturnTypes</strong>(): <em><a href="../utils/#returntypes">ReturnTypes</a>‹<a href="./#api">Api</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L150">packages/api/src/routes/beacon/pool.ts:150</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L150">packages/api/src/routes/beacon/pool.ts:150</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../utils/#returntypes">ReturnTypes</a>‹<a href="./#api">Api</a>›</em></p>
 <hr/>
 <h3 id="getreturntypes_2">getReturnTypes<a class="headerlink" href="#getreturntypes_2" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getReturnTypes</strong>(): <em><a href="../utils/#returntypes">ReturnTypes</a>‹<a href="./#api">Api</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L228">packages/api/src/routes/beacon/state.ts:228</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L228">packages/api/src/routes/beacon/state.ts:228</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../utils/#returntypes">ReturnTypes</a>‹<a href="./#api">Api</a>›</em></p>
 <hr/>
 <h3 id="getreturntypes_3">getReturnTypes<a class="headerlink" href="#getreturntypes_3" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getReturnTypes</strong>(): <em><a href="../utils/#returntypes">ReturnTypes</a>‹<a href="./#api">Api</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/index.ts#L56">packages/api/src/routes/beacon/index.ts:56</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/index.ts#L56">packages/api/src/routes/beacon/index.ts:56</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../utils/#returntypes">ReturnTypes</a>‹<a href="./#api">Api</a>›</em></p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">¶</a></h2>
 <h3 id="const-routesdata"><code>Const</code> routesData<a class="headerlink" href="#const-routesdata" title="Permanent link">¶</a></h3>
 <h3 id="routesdata-object">▪ <strong>routesData</strong>: <em>object</em><a class="headerlink" href="#routesdata-object" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L97">packages/api/src/routes/beacon/block.ts:97</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L97">packages/api/src/routes/beacon/block.ts:97</a></em></p>
 <p>Define javascript values for each route</p>
 <p>▪ <strong>getBlock</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L98">packages/api/src/routes/beacon/block.ts:98</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L98">packages/api/src/routes/beacon/block.ts:98</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1416,7 +1405,7 @@
 </li>
 </ul>
 <p>▪ <strong>getBlockAttestations</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L100">packages/api/src/routes/beacon/block.ts:100</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L100">packages/api/src/routes/beacon/block.ts:100</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1426,7 +1415,7 @@
 </li>
 </ul>
 <p>▪ <strong>getBlockHeader</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L101">packages/api/src/routes/beacon/block.ts:101</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L101">packages/api/src/routes/beacon/block.ts:101</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1436,7 +1425,7 @@
 </li>
 </ul>
 <p>▪ <strong>getBlockHeaders</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L102">packages/api/src/routes/beacon/block.ts:102</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L102">packages/api/src/routes/beacon/block.ts:102</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1446,7 +1435,7 @@
 </li>
 </ul>
 <p>▪ <strong>getBlockRoot</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L103">packages/api/src/routes/beacon/block.ts:103</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L103">packages/api/src/routes/beacon/block.ts:103</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1456,7 +1445,7 @@
 </li>
 </ul>
 <p>▪ <strong>getBlockV2</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L99">packages/api/src/routes/beacon/block.ts:99</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L99">packages/api/src/routes/beacon/block.ts:99</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1466,7 +1455,7 @@
 </li>
 </ul>
 <p>▪ <strong>publishBlock</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/block.ts#L104">packages/api/src/routes/beacon/block.ts:104</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/block.ts#L104">packages/api/src/routes/beacon/block.ts:104</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"POST"</em> = "POST"</p>
@@ -1478,10 +1467,10 @@
 <hr/>
 <h3 id="const-routesdata_1"><code>Const</code> routesData<a class="headerlink" href="#const-routesdata_1" title="Permanent link">¶</a></h3>
 <h3 id="routesdata-object_1">▪ <strong>routesData</strong>: <em>object</em><a class="headerlink" href="#routesdata-object_1" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L107">packages/api/src/routes/beacon/pool.ts:107</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L107">packages/api/src/routes/beacon/pool.ts:107</a></em></p>
 <p>Define javascript values for each route</p>
 <p>▪ <strong>getPoolAttestations</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L108">packages/api/src/routes/beacon/pool.ts:108</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L108">packages/api/src/routes/beacon/pool.ts:108</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1491,7 +1480,7 @@
 </li>
 </ul>
 <p>▪ <strong>getPoolAttesterSlashings</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L109">packages/api/src/routes/beacon/pool.ts:109</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L109">packages/api/src/routes/beacon/pool.ts:109</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1501,7 +1490,7 @@
 </li>
 </ul>
 <p>▪ <strong>getPoolProposerSlashings</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L110">packages/api/src/routes/beacon/pool.ts:110</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L110">packages/api/src/routes/beacon/pool.ts:110</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1511,7 +1500,7 @@
 </li>
 </ul>
 <p>▪ <strong>getPoolVoluntaryExits</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L111">packages/api/src/routes/beacon/pool.ts:111</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L111">packages/api/src/routes/beacon/pool.ts:111</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1521,7 +1510,7 @@
 </li>
 </ul>
 <p>▪ <strong>submitPoolAttestations</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L112">packages/api/src/routes/beacon/pool.ts:112</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L112">packages/api/src/routes/beacon/pool.ts:112</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"POST"</em> = "POST"</p>
@@ -1531,7 +1520,7 @@
 </li>
 </ul>
 <p>▪ <strong>submitPoolAttesterSlashing</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L113">packages/api/src/routes/beacon/pool.ts:113</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L113">packages/api/src/routes/beacon/pool.ts:113</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"POST"</em> = "POST"</p>
@@ -1541,7 +1530,7 @@
 </li>
 </ul>
 <p>▪ <strong>submitPoolProposerSlashing</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L114">packages/api/src/routes/beacon/pool.ts:114</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L114">packages/api/src/routes/beacon/pool.ts:114</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"POST"</em> = "POST"</p>
@@ -1551,7 +1540,7 @@
 </li>
 </ul>
 <p>▪ <strong>submitPoolSyncCommitteeSignatures</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L116">packages/api/src/routes/beacon/pool.ts:116</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L116">packages/api/src/routes/beacon/pool.ts:116</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"POST"</em> = "POST"</p>
@@ -1561,7 +1550,7 @@
 </li>
 </ul>
 <p>▪ <strong>submitPoolVoluntaryExit</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/pool.ts#L115">packages/api/src/routes/beacon/pool.ts:115</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/pool.ts#L115">packages/api/src/routes/beacon/pool.ts:115</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"POST"</em> = "POST"</p>
@@ -1573,10 +1562,10 @@
 <hr/>
 <h3 id="const-routesdata_2"><code>Const</code> routesData<a class="headerlink" href="#const-routesdata_2" title="Permanent link">¶</a></h3>
 <h3 id="routesdata-object_2">▪ <strong>routesData</strong>: <em>object</em><a class="headerlink" href="#routesdata-object_2" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L145">packages/api/src/routes/beacon/state.ts:145</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L145">packages/api/src/routes/beacon/state.ts:145</a></em></p>
 <p>Define javascript values for each route</p>
 <p>▪ <strong>getEpochCommittees</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L146">packages/api/src/routes/beacon/state.ts:146</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L146">packages/api/src/routes/beacon/state.ts:146</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1586,7 +1575,7 @@
 </li>
 </ul>
 <p>▪ <strong>getEpochSyncCommittees</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L147">packages/api/src/routes/beacon/state.ts:147</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L147">packages/api/src/routes/beacon/state.ts:147</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1596,7 +1585,7 @@
 </li>
 </ul>
 <p>▪ <strong>getStateFinalityCheckpoints</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L148">packages/api/src/routes/beacon/state.ts:148</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L148">packages/api/src/routes/beacon/state.ts:148</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1606,7 +1595,7 @@
 </li>
 </ul>
 <p>▪ <strong>getStateFork</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L149">packages/api/src/routes/beacon/state.ts:149</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L149">packages/api/src/routes/beacon/state.ts:149</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1616,7 +1605,7 @@
 </li>
 </ul>
 <p>▪ <strong>getStateRoot</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L150">packages/api/src/routes/beacon/state.ts:150</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L150">packages/api/src/routes/beacon/state.ts:150</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1626,7 +1615,7 @@
 </li>
 </ul>
 <p>▪ <strong>getStateValidator</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L151">packages/api/src/routes/beacon/state.ts:151</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L151">packages/api/src/routes/beacon/state.ts:151</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1636,7 +1625,7 @@
 </li>
 </ul>
 <p>▪ <strong>getStateValidatorBalances</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L153">packages/api/src/routes/beacon/state.ts:153</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L153">packages/api/src/routes/beacon/state.ts:153</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1646,7 +1635,7 @@
 </li>
 </ul>
 <p>▪ <strong>getStateValidators</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/state.ts#L152">packages/api/src/routes/beacon/state.ts:152</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/state.ts#L152">packages/api/src/routes/beacon/state.ts:152</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
@@ -1658,9 +1647,9 @@
 <hr/>
 <h3 id="const-routesdata_3"><code>Const</code> routesData<a class="headerlink" href="#const-routesdata_3" title="Permanent link">¶</a></h3>
 <h3 id="routesdata-object_3">▪ <strong>routesData</strong>: <em>object</em><a class="headerlink" href="#routesdata-object_3" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/index.ts#L35">packages/api/src/routes/beacon/index.ts:35</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/index.ts#L35">packages/api/src/routes/beacon/index.ts:35</a></em></p>
 <p>▪ <strong>getGenesis</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f4d734/packages/api/src/routes/beacon/index.ts#L36">packages/api/src/routes/beacon/index.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/api/src/routes/beacon/index.ts#L36">packages/api/src/routes/beacon/index.ts:36</a></em></p>
 <ul>
 <li>
 <p><strong>method</strong>: <em>"GET"</em> = "GET"</p>
