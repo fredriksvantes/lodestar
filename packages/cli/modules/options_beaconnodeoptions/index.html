@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/cli/modules/options_beaconnodeoptions/" rel="canonical"/>
-<link href="../../../../images/favicon.ico" rel="icon"/>
+<link href="../../../../assets/round-icon.ico" rel="icon"/>
 <meta content="mkdocs-1.2.2, mkdocs-material-7.2.1" name="generator"/>
 <title>Options beaconnodeoptions - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.1118c9be.min.css" rel="stylesheet"/>
@@ -17,8 +17,9 @@
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
 <link href="../../../../stylesheets/extras.css" rel="stylesheet"/>
 </head>
-<body data-md-color-accent="black" data-md-color-primary="" data-md-color-scheme="preference" dir="ltr">
+<body data-md-color-accent="deep-purple" data-md-color-primary="black" data-md-color-scheme="preference" dir="ltr">
 <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
@@ -32,7 +33,7 @@
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="Lodestar documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -53,6 +54,16 @@
 </div>
 </div>
 </div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="preference" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"></path></svg>
+</label>
+</form>
 <label class="md-header__button md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 </label>
@@ -104,7 +115,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Lodestar documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
     Lodestar documentation
   </label>
@@ -495,15 +506,15 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="ibeaconnodeargs">IBeaconNodeArgs<a class="headerlink" href="#ibeaconnodeargs" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>IBeaconNodeArgs</strong>: <em><a href="../../interfaces/options_beaconnodeoptions.iapiargs/">IApiArgs</a> &amp; <a href="../../interfaces/options_beaconnodeoptions.ichainargs/">IChainArgs</a> &amp; <a href="../../interfaces/options_beaconnodeoptions.ieth1args/">IEth1Args</a> &amp; logger.ILoggerArgs &amp; <a href="../../interfaces/options_beaconnodeoptions.imetricsargs/">IMetricsArgs</a> &amp; <a href="../../interfaces/options_beaconnodeoptions.inetworkargs/">INetworkArgs</a> &amp; <a href="../../interfaces/options_beaconnodeoptions.isyncargs/">ISyncArgs</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/index.ts#L12">packages/cli/src/options/beaconNodeOptions/index.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/index.ts#L12">packages/cli/src/options/beaconNodeOptions/index.ts:12</a></em></p>
 <hr/>
 <h3 id="iloggerargs">ILoggerArgs<a class="headerlink" href="#iloggerargs" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ILoggerArgs</strong>: <em>Record‹string, unknown›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/logger.ts#L9">packages/cli/src/options/beaconNodeOptions/logger.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/logger.ts#L9">packages/cli/src/options/beaconNodeOptions/logger.ts:9</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-enabledall"><code>Const</code> enabledAll<a class="headerlink" href="#const-enabledall" title="Permanent link">¶</a></h3>
 <p>• <strong>enabledAll</strong>: <em>"</em>"<em> = "</em>"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/api.ts#L4">packages/cli/src/options/beaconNodeOptions/api.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/api.ts#L4">packages/cli/src/options/beaconNodeOptions/api.ts:4</a></em></p>
 <hr/>
 <h3 id="const-options"><code>Const</code> options<a class="headerlink" href="#const-options" title="Permanent link">¶</a></h3>
 <p>• <strong>options</strong>: <em><a href="../util/#iclicommandoptions">ICliCommandOptions</a>‹<a href="./#iloggerargs">ILoggerArgs</a>›</em> = ObjectKeys(defaultOptions.logger).reduce(
@@ -520,13 +531,13 @@
   }),
   {}
 )</string,></string,></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/logger.ts#L26">packages/cli/src/options/beaconNodeOptions/logger.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/logger.ts#L26">packages/cli/src/options/beaconNodeOptions/logger.ts:26</a></em></p>
 <p>Generates an option for each module in defaultOptions.logger
 chain, db, eth1, etc</p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="const-getargkey"><code>Const</code> getArgKey<a class="headerlink" href="#const-getargkey" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getArgKey</strong>(<code>logModule</code>: keyof IBeaconNodeOptions["logger"]): <em>keyof ILoggerArgs</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/logger.ts#L11">packages/cli/src/options/beaconNodeOptions/logger.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/logger.ts#L11">packages/cli/src/options/beaconNodeOptions/logger.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -546,7 +557,7 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="parseargs">parseArgs<a class="headerlink" href="#parseargs" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseArgs</strong>(<code>args</code>: <a href="../../interfaces/options_beaconnodeoptions.iapiargs/">IApiArgs</a>): <em>IBeaconNodeOptions["api"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/api.ts#L14">packages/cli/src/options/beaconNodeOptions/api.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/api.ts#L14">packages/cli/src/options/beaconNodeOptions/api.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -566,7 +577,7 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="parseargs_1">parseArgs<a class="headerlink" href="#parseargs_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseArgs</strong>(<code>args</code>: <a href="../../interfaces/options_beaconnodeoptions.ichainargs/">IChainArgs</a>): <em>IBeaconNodeOptions["chain"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/chain.ts#L9">packages/cli/src/options/beaconNodeOptions/chain.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/chain.ts#L9">packages/cli/src/options/beaconNodeOptions/chain.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -586,7 +597,7 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="parseargs_2">parseArgs<a class="headerlink" href="#parseargs_2" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseArgs</strong>(<code>args</code>: <a href="../../interfaces/options_beaconnodeoptions.ieth1args/">IEth1Args</a>): <em>IBeaconNodeOptions["eth1"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L11">packages/cli/src/options/beaconNodeOptions/eth1.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L11">packages/cli/src/options/beaconNodeOptions/eth1.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -606,7 +617,7 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="parseargs_3">parseArgs<a class="headerlink" href="#parseargs_3" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseArgs</strong>(<code>args</code>: <a href="./#iloggerargs">ILoggerArgs</a>): <em>Partial‹IBeaconNodeOptions["logger"]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/logger.ts#L14">packages/cli/src/options/beaconNodeOptions/logger.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/logger.ts#L14">packages/cli/src/options/beaconNodeOptions/logger.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -626,7 +637,7 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="parseargs_4">parseArgs<a class="headerlink" href="#parseargs_4" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseArgs</strong>(<code>args</code>: <a href="../../interfaces/options_beaconnodeoptions.imetricsargs/">IMetricsArgs</a>): <em>IBeaconNodeOptions["metrics"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L12">packages/cli/src/options/beaconNodeOptions/metrics.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L12">packages/cli/src/options/beaconNodeOptions/metrics.ts:12</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -646,7 +657,7 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="parseargs_5">parseArgs<a class="headerlink" href="#parseargs_5" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseArgs</strong>(<code>args</code>: <a href="../../interfaces/options_beaconnodeoptions.inetworkargs/">INetworkArgs</a>): <em>IBeaconNodeOptions["network"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L15">packages/cli/src/options/beaconNodeOptions/network.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L15">packages/cli/src/options/beaconNodeOptions/network.ts:15</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -666,7 +677,7 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="parseargs_6">parseArgs<a class="headerlink" href="#parseargs_6" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseArgs</strong>(<code>args</code>: <a href="../../interfaces/options_beaconnodeoptions.isyncargs/">ISyncArgs</a>): <em>IBeaconNodeOptions["sync"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/sync.ts#L9">packages/cli/src/options/beaconNodeOptions/sync.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/sync.ts#L9">packages/cli/src/options/beaconNodeOptions/sync.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -686,7 +697,7 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="parsebeaconnodeargs">parseBeaconNodeArgs<a class="headerlink" href="#parsebeaconnodeargs" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseBeaconNodeArgs</strong>(<code>args</code>: <a href="./#ibeaconnodeargs">IBeaconNodeArgs</a>): <em>RecursivePartial‹IBeaconNodeOptions›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/index.ts#L20">packages/cli/src/options/beaconNodeOptions/index.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/index.ts#L20">packages/cli/src/options/beaconNodeOptions/index.ts:20</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -706,13 +717,13 @@ chain, db, eth1, etc</p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">¶</a></h2>
 <h3 id="const-beaconnodeoptions"><code>Const</code> beaconNodeOptions<a class="headerlink" href="#const-beaconnodeoptions" title="Permanent link">¶</a></h3>
 <h3 id="beaconnodeoptions-object">▪ <strong>beaconNodeOptions</strong>: <em>object</em><a class="headerlink" href="#beaconnodeoptions-object" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/index.ts#L34">packages/cli/src/options/beaconNodeOptions/index.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/index.ts#L34">packages/cli/src/options/beaconNodeOptions/index.ts:34</a></em></p>
 <hr/>
 <h3 id="const-options_1"><code>Const</code> options<a class="headerlink" href="#const-options_1" title="Permanent link">¶</a></h3>
 <h3 id="options-object">▪ <strong>options</strong>: <em>object</em><a class="headerlink" href="#options-object" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/api.ts#L26">packages/cli/src/options/beaconNodeOptions/api.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/api.ts#L26">packages/cli/src/options/beaconNodeOptions/api.ts:26</a></em></p>
 <p>▪ <strong>api.rest.api</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/api.ts#L27">packages/cli/src/options/beaconNodeOptions/api.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/api.ts#L27">packages/cli/src/options/beaconNodeOptions/api.ts:27</a></em></p>
 <ul>
 <li>
 <p><strong>choices</strong>: <em>string[]</em> = [...allNamespaces, enabledAll]</p>
@@ -734,7 +745,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>api.rest.cors</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/api.ts#L41">packages/cli/src/options/beaconNodeOptions/api.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/api.ts#L41">packages/cli/src/options/beaconNodeOptions/api.ts:41</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = defaultOptions.api.rest.cors</p>
@@ -750,7 +761,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>api.rest.enabled</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/api.ts#L48">packages/cli/src/options/beaconNodeOptions/api.ts:48</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/api.ts#L48">packages/cli/src/options/beaconNodeOptions/api.ts:48</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.api.rest.enabled)</p>
@@ -766,7 +777,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>api.rest.host</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/api.ts#L55">packages/cli/src/options/beaconNodeOptions/api.ts:55</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/api.ts#L55">packages/cli/src/options/beaconNodeOptions/api.ts:55</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = defaultOptions.api.rest.host</p>
@@ -782,7 +793,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>api.rest.port</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/api.ts#L62">packages/cli/src/options/beaconNodeOptions/api.ts:62</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/api.ts#L62">packages/cli/src/options/beaconNodeOptions/api.ts:62</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.api.rest.port)</p>
@@ -800,9 +811,9 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="const-options_2"><code>Const</code> options<a class="headerlink" href="#const-options_2" title="Permanent link">¶</a></h3>
 <h3 id="options-object_1">▪ <strong>options</strong>: <em>object</em><a class="headerlink" href="#options-object_1" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/chain.ts#L16">packages/cli/src/options/beaconNodeOptions/chain.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/chain.ts#L16">packages/cli/src/options/beaconNodeOptions/chain.ts:16</a></em></p>
 <p>▪ <strong>chain.disableBlsBatchVerify</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/chain.ts#L25">packages/cli/src/options/beaconNodeOptions/chain.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/chain.ts#L25">packages/cli/src/options/beaconNodeOptions/chain.ts:25</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.chain.disableBlsBatchVerify)</p>
@@ -821,7 +832,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>chain.useSingleThreadVerifier</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/chain.ts#L17">packages/cli/src/options/beaconNodeOptions/chain.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/chain.ts#L17">packages/cli/src/options/beaconNodeOptions/chain.ts:17</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.chain.useSingleThreadVerifier)</p>
@@ -842,9 +853,9 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="const-options_3"><code>Const</code> options<a class="headerlink" href="#const-options_3" title="Permanent link">¶</a></h3>
 <h3 id="options-object_2">▪ <strong>options</strong>: <em>object</em><a class="headerlink" href="#options-object_2" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L26">packages/cli/src/options/beaconNodeOptions/eth1.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L26">packages/cli/src/options/beaconNodeOptions/eth1.ts:26</a></em></p>
 <p>▪ <strong>eth1.depositContractDeployBlock</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L48">packages/cli/src/options/beaconNodeOptions/eth1.ts:48</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L48">packages/cli/src/options/beaconNodeOptions/eth1.ts:48</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.eth1.depositContractDeployBlock)</p>
@@ -860,7 +871,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>eth1.enabled</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L27">packages/cli/src/options/beaconNodeOptions/eth1.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L27">packages/cli/src/options/beaconNodeOptions/eth1.ts:27</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.eth1.enabled)</p>
@@ -876,7 +887,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>eth1.providerUrl</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L34">packages/cli/src/options/beaconNodeOptions/eth1.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L34">packages/cli/src/options/beaconNodeOptions/eth1.ts:34</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = "[DEPRECATED]"</p>
@@ -892,7 +903,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>eth1.providerUrls</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L41">packages/cli/src/options/beaconNodeOptions/eth1.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/eth1.ts#L41">packages/cli/src/options/beaconNodeOptions/eth1.ts:41</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = JSON.stringify(defaultOptions.eth1.providerUrls)</p>
@@ -910,9 +921,9 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="const-options_4"><code>Const</code> options<a class="headerlink" href="#const-options_4" title="Permanent link">¶</a></h3>
 <h3 id="options-object_3">▪ <strong>options</strong>: <em>object</em><a class="headerlink" href="#options-object_3" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L22">packages/cli/src/options/beaconNodeOptions/metrics.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L22">packages/cli/src/options/beaconNodeOptions/metrics.ts:22</a></em></p>
 <p>▪ <strong>metrics.enabled</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L23">packages/cli/src/options/beaconNodeOptions/metrics.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L23">packages/cli/src/options/beaconNodeOptions/metrics.ts:23</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.metrics.enabled)</p>
@@ -928,7 +939,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>metrics.gatewayUrl</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L30">packages/cli/src/options/beaconNodeOptions/metrics.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L30">packages/cli/src/options/beaconNodeOptions/metrics.ts:30</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = defaultOptions.metrics.gatewayUrl || ""</p>
@@ -944,7 +955,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>metrics.listenAddr</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L51">packages/cli/src/options/beaconNodeOptions/metrics.ts:51</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L51">packages/cli/src/options/beaconNodeOptions/metrics.ts:51</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.metrics.listenAddr)</p>
@@ -960,7 +971,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>metrics.serverPort</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L37">packages/cli/src/options/beaconNodeOptions/metrics.ts:37</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L37">packages/cli/src/options/beaconNodeOptions/metrics.ts:37</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.metrics.serverPort)</p>
@@ -976,7 +987,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>metrics.timeout</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L44">packages/cli/src/options/beaconNodeOptions/metrics.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/metrics.ts#L44">packages/cli/src/options/beaconNodeOptions/metrics.ts:44</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.metrics.timeout)</p>
@@ -994,9 +1005,9 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="const-options_5"><code>Const</code> options<a class="headerlink" href="#const-options_5" title="Permanent link">¶</a></h3>
 <h3 id="options-object_4">▪ <strong>options</strong>: <em>object</em><a class="headerlink" href="#options-object_4" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L32">packages/cli/src/options/beaconNodeOptions/network.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L32">packages/cli/src/options/beaconNodeOptions/network.ts:32</a></em></p>
 <p>▪ <strong>network.bootMultiaddrs</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L69">packages/cli/src/options/beaconNodeOptions/network.ts:69</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L69">packages/cli/src/options/beaconNodeOptions/network.ts:69</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = JSON.stringify(defaultOptions.network.bootMultiaddrs)</p>
@@ -1012,7 +1023,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>network.discv5.bindAddr</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L41">packages/cli/src/options/beaconNodeOptions/network.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L41">packages/cli/src/options/beaconNodeOptions/network.ts:41</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = (defaultOptions.network.discv5 || {}).bindAddr || ""</p>
@@ -1028,7 +1039,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>network.discv5.bootEnrs</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L48">packages/cli/src/options/beaconNodeOptions/network.ts:48</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L48">packages/cli/src/options/beaconNodeOptions/network.ts:48</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = JSON.stringify((defaultOptions.network.discv5 || {}).bootEnrs || [])</p>
@@ -1044,7 +1055,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>network.discv5.enabled</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L33">packages/cli/src/options/beaconNodeOptions/network.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L33">packages/cli/src/options/beaconNodeOptions/network.ts:33</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(true)</p>
@@ -1060,7 +1071,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>network.localMultiaddrs</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L76">packages/cli/src/options/beaconNodeOptions/network.ts:76</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L76">packages/cli/src/options/beaconNodeOptions/network.ts:76</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = JSON.stringify(defaultOptions.network.localMultiaddrs)</p>
@@ -1076,7 +1087,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>network.maxPeers</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L55">packages/cli/src/options/beaconNodeOptions/network.ts:55</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L55">packages/cli/src/options/beaconNodeOptions/network.ts:55</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.network.maxPeers)</p>
@@ -1092,7 +1103,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>network.subscribeAllSubnets</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L83">packages/cli/src/options/beaconNodeOptions/network.ts:83</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L83">packages/cli/src/options/beaconNodeOptions/network.ts:83</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.network.subscribeAllSubnets === true)</p>
@@ -1108,7 +1119,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>network.targetPeers</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/network.ts#L62">packages/cli/src/options/beaconNodeOptions/network.ts:62</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/network.ts#L62">packages/cli/src/options/beaconNodeOptions/network.ts:62</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.network.targetPeers)</p>
@@ -1126,9 +1137,9 @@ chain, db, eth1, etc</p>
 <hr/>
 <h3 id="const-options_6"><code>Const</code> options<a class="headerlink" href="#const-options_6" title="Permanent link">¶</a></h3>
 <h3 id="options-object_5">▪ <strong>options</strong>: <em>object</em><a class="headerlink" href="#options-object_5" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/sync.ts#L16">packages/cli/src/options/beaconNodeOptions/sync.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/sync.ts#L16">packages/cli/src/options/beaconNodeOptions/sync.ts:16</a></em></p>
 <p>▪ <strong>sync.disableProcessAsChainSegment</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/sync.ts#L27">packages/cli/src/options/beaconNodeOptions/sync.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/sync.ts#L27">packages/cli/src/options/beaconNodeOptions/sync.ts:27</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.sync.disableProcessAsChainSegment)</p>
@@ -1147,7 +1158,7 @@ chain, db, eth1, etc</p>
 </li>
 </ul>
 <p>▪ <strong>sync.isSingleNode</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/options/beaconNodeOptions/sync.ts#L17">packages/cli/src/options/beaconNodeOptions/sync.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/options/beaconNodeOptions/sync.ts#L17">packages/cli/src/options/beaconNodeOptions/sync.ts:17</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = String(defaultOptions.sync.isSingleNode)</p>

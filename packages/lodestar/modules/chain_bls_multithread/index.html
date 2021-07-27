@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/chain_bls_multithread/" rel="canonical"/>
-<link href="../../../../images/favicon.ico" rel="icon"/>
+<link href="../../../../assets/round-icon.ico" rel="icon"/>
 <meta content="mkdocs-1.2.2, mkdocs-material-7.2.1" name="generator"/>
 <title>Chain bls multithread - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.1118c9be.min.css" rel="stylesheet"/>
@@ -17,8 +17,9 @@
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
 <link href="../../../../stylesheets/extras.css" rel="stylesheet"/>
 </head>
-<body data-md-color-accent="black" data-md-color-primary="" data-md-color-scheme="preference" dir="ltr">
+<body data-md-color-accent="deep-purple" data-md-color-primary="black" data-md-color-scheme="preference" dir="ltr">
 <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
@@ -32,7 +33,7 @@
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="Lodestar documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -53,6 +54,16 @@
 </div>
 </div>
 </div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="preference" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"></path></svg>
+</label>
+</form>
 <label class="md-header__button md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 </label>
@@ -104,7 +115,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Lodestar documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
     Lodestar documentation
   </label>
@@ -526,7 +537,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="blsmultithreadworkerpoolmodules">BlsMultiThreadWorkerPoolModules<a class="headerlink" href="#blsmultithreadworkerpoolmodules" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>BlsMultiThreadWorkerPoolModules</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/index.ts#L19">packages/lodestar/src/chain/bls/multithread/index.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/index.ts#L19">packages/lodestar/src/chain/bls/multithread/index.ts:19</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -542,7 +553,7 @@
 <hr/>
 <h3 id="blsworkreq">BlsWorkReq<a class="headerlink" href="#blsworkreq" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>BlsWorkReq</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/types.ts#L14">packages/lodestar/src/chain/bls/multithread/types.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/types.ts#L14">packages/lodestar/src/chain/bls/multithread/types.ts:14</a></em></p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -555,7 +566,7 @@
 <hr/>
 <h3 id="blsworkresult">BlsWorkResult<a class="headerlink" href="#blsworkresult" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>BlsWorkResult</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/types.ts#L26">packages/lodestar/src/chain/bls/multithread/types.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/types.ts#L26">packages/lodestar/src/chain/bls/multithread/types.ts:26</a></em></p>
 <h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -580,7 +591,7 @@
 <hr/>
 <h3 id="jobqueueitem">JobQueueItem<a class="headerlink" href="#jobqueueitem" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>JobQueueItem</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/index.ts#L57">packages/lodestar/src/chain/bls/multithread/index.ts:57</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/index.ts#L57">packages/lodestar/src/chain/bls/multithread/index.ts:57</a></em></p>
 <h4 id="type-declaration_3">Type declaration:<a class="headerlink" href="#type-declaration_3" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -605,7 +616,7 @@
 <hr/>
 <h3 id="serializedset">SerializedSet<a class="headerlink" href="#serializedset" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>SerializedSet</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/types.ts#L8">packages/lodestar/src/chain/bls/multithread/types.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/types.ts#L8">packages/lodestar/src/chain/bls/multithread/types.ts:8</a></em></p>
 <h4 id="type-declaration_4">Type declaration:<a class="headerlink" href="#type-declaration_4" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -621,11 +632,11 @@
 <hr/>
 <h3 id="workresult">WorkResult<a class="headerlink" href="#workresult" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>WorkResult</strong>: <em>object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/types.ts#L24">packages/lodestar/src/chain/bls/multithread/types.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/types.ts#L24">packages/lodestar/src/chain/bls/multithread/types.ts:24</a></em></p>
 <hr/>
 <h3 id="workerapi">WorkerApi<a class="headerlink" href="#workerapi" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>WorkerApi</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/index.ts#L53">packages/lodestar/src/chain/bls/multithread/index.ts:53</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/index.ts#L53">packages/lodestar/src/chain/bls/multithread/index.ts:53</a></em></p>
 <h4 id="type-declaration_5">Type declaration:<a class="headerlink" href="#type-declaration_5" title="Permanent link">¶</a></h4>
 <ul>
 <li><strong>verifyManySignatureSets</strong>(<code>workReqArr</code>: <a href="./#blsworkreq">BlsWorkReq</a>[]): <em>Promise‹<a href="./#blsworkresult">BlsWorkResult</a>›</em></li>
@@ -633,7 +644,7 @@
 <hr/>
 <h3 id="workerdata">WorkerData<a class="headerlink" href="#workerdata" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>WorkerData</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/types.ts#L3">packages/lodestar/src/chain/bls/multithread/types.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/types.ts#L3">packages/lodestar/src/chain/bls/multithread/types.ts:3</a></em></p>
 <h4 id="type-declaration_6">Type declaration:<a class="headerlink" href="#type-declaration_6" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -646,7 +657,7 @@
 <hr/>
 <h3 id="workerdescriptor">WorkerDescriptor<a class="headerlink" href="#workerdescriptor" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>WorkerDescriptor</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/index.ts#L79">packages/lodestar/src/chain/bls/multithread/index.ts:79</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/index.ts#L79">packages/lodestar/src/chain/bls/multithread/index.ts:79</a></em></p>
 <h4 id="type-declaration_7">Type declaration:<a class="headerlink" href="#type-declaration_7" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -659,11 +670,11 @@
 <hr/>
 <h3 id="workerstatus">WorkerStatus<a class="headerlink" href="#workerstatus" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>WorkerStatus</strong>: <em>object | object | object | object | object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/index.ts#L72">packages/lodestar/src/chain/bls/multithread/index.ts:72</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/index.ts#L72">packages/lodestar/src/chain/bls/multithread/index.ts:72</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-batchable_min_per_chunk"><code>Const</code> BATCHABLE_MIN_PER_CHUNK<a class="headerlink" href="#const-batchable_min_per_chunk" title="Permanent link">¶</a></h3>
 <p>• <strong>BATCHABLE_MIN_PER_CHUNK</strong>: <em>16</em> = 16</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/worker.ts#L15">packages/lodestar/src/chain/bls/multithread/worker.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/worker.ts#L15">packages/lodestar/src/chain/bls/multithread/worker.ts:15</a></em></p>
 <p>Split batchable sets in chunks of minimum size 16.
 Batch verify 16 has an aprox cost of 16+1. For 32 it's 32+1. After ~16 the additional savings are not significant.
 However, if a sig is invalid the whole batch has to be re-verified. So it's important to keep this number low.
@@ -672,7 +683,7 @@ After observing metrics this number can be reviewed</p>
 <hr/>
 <h3 id="const-max_buffered_sigs"><code>Const</code> MAX_BUFFERED_SIGS<a class="headerlink" href="#const-max_buffered_sigs" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_BUFFERED_SIGS</strong>: <em>32</em> = 32</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/index.ts#L42">packages/lodestar/src/chain/bls/multithread/index.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/index.ts#L42">packages/lodestar/src/chain/bls/multithread/index.ts:42</a></em></p>
 <p>If there are more than <code>MAX_BUFFERED_SIGS</code> buffered sigs, verify them immediatelly without waiting <code>MAX_BUFFER_WAIT_MS</code>.</p>
 <p>The efficency improvement of batching sets asymptotically reaches x2. However, for batching large sets
 has more risk in case a signature is invalid, requiring to revalidate all sets in the batch. 32 is sweet
@@ -680,7 +691,7 @@ point for this tradeoff.</p>
 <hr/>
 <h3 id="const-max_buffer_wait_ms"><code>Const</code> MAX_BUFFER_WAIT_MS<a class="headerlink" href="#const-max_buffer_wait_ms" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_BUFFER_WAIT_MS</strong>: <em>100</em> = 100</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/index.ts#L51">packages/lodestar/src/chain/bls/multithread/index.ts:51</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/index.ts#L51">packages/lodestar/src/chain/bls/multithread/index.ts:51</a></em></p>
 <p>Gossip objects usually come in bursts. Buffering them for a short period of time allows to increase batching
 efficieny, at the cost of delaying validation. Unless running in production shows otherwise, it's not critical
 to hold attestations and aggregates for 100ms. Lodestar existing queues may hold those objects for much more anyway.</p>
@@ -689,7 +700,7 @@ value needs revision</p>
 <hr/>
 <h3 id="const-max_signature_sets_per_job"><code>Const</code> MAX_SIGNATURE_SETS_PER_JOB<a class="headerlink" href="#const-max_signature_sets_per_job" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_SIGNATURE_SETS_PER_JOB</strong>: <em>128</em> = 128</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/index.ts#L33">packages/lodestar/src/chain/bls/multithread/index.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/index.ts#L33">packages/lodestar/src/chain/bls/multithread/index.ts:33</a></em></p>
 <p>Split big signature sets into smaller sets so they can be sent to multiple workers.</p>
 <p>The biggest sets happen during sync, on mainnet batches of 64 blocks have around ~8000 signatures.
 The latency cost of sending the job to and from the worker is aprox a single sig verification.
@@ -698,19 +709,19 @@ For 128, the extra time cost is about 0.3%. No specific reasoning for <code>128<
 <hr/>
 <h3 id="implementation">implementation<a class="headerlink" href="#implementation" title="Permanent link">¶</a></h3>
 <p>• <strong>implementation</strong>: <em>"herumi" | "blst-native"</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/worker.ts#L22">packages/lodestar/src/chain/bls/multithread/worker.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/worker.ts#L22">packages/lodestar/src/chain/bls/multithread/worker.ts:22</a></em></p>
 <hr/>
 <h3 id="const-workerdata"><code>Const</code> workerData<a class="headerlink" href="#const-workerdata" title="Permanent link">¶</a></h3>
 <p>• <strong>workerData</strong>: <em><a href="./#workerdata">WorkerData</a></em> = worker.workerData as WorkerData</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/worker.ts#L20">packages/lodestar/src/chain/bls/multithread/worker.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/worker.ts#L20">packages/lodestar/src/chain/bls/multithread/worker.ts:20</a></em></p>
 <hr/>
 <h3 id="workerid">workerId<a class="headerlink" href="#workerid" title="Permanent link">¶</a></h3>
 <p>• <strong>workerId</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/worker.ts#L22">packages/lodestar/src/chain/bls/multithread/worker.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/worker.ts#L22">packages/lodestar/src/chain/bls/multithread/worker.ts:22</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="chunkifymaximizechunksize">chunkifyMaximizeChunkSize<a class="headerlink" href="#chunkifymaximizechunksize" title="Permanent link">¶</a></h3>
 <p>▸ <strong>chunkifyMaximizeChunkSize</strong>‹<strong>T</strong>›(<code>arr</code>: T[], <code>minPerChunk</code>: number): <em>T[][]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/utils.ts#L4">packages/lodestar/src/chain/bls/multithread/utils.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/utils.ts#L4">packages/lodestar/src/chain/bls/multithread/utils.ts:4</a></em></p>
 <p>Splits an array into an array of arrays maximizing the size of the smallest chunk.</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong></p>
@@ -737,7 +748,7 @@ For 128, the extra time cost is about 0.3%. No specific reasoning for <code>128<
 <hr/>
 <h3 id="deserializeset">deserializeSet<a class="headerlink" href="#deserializeset" title="Permanent link">¶</a></h3>
 <p>▸ <strong>deserializeSet</strong>(<code>set</code>: <a href="./#serializedset">SerializedSet</a>): <em><a href="../chain_bls/#signaturesetdeserialized">SignatureSetDeserialized</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/worker.ts#L109">packages/lodestar/src/chain/bls/multithread/worker.ts:109</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/worker.ts#L109">packages/lodestar/src/chain/bls/multithread/worker.ts:109</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -757,13 +768,13 @@ For 128, the extra time cost is about 0.3%. No specific reasoning for <code>128<
 <hr/>
 <h3 id="getdefaultpoolsize">getDefaultPoolSize<a class="headerlink" href="#getdefaultpoolsize" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getDefaultPoolSize</strong>(): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/utils.ts#L24">packages/lodestar/src/chain/bls/multithread/utils.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/utils.ts#L24">packages/lodestar/src/chain/bls/multithread/utils.ts:24</a></em></p>
 <p>Cross-platform fetch an aprox number of logical cores</p>
 <p><strong>Returns:</strong> <em>number</em></p>
 <hr/>
 <h3 id="verifymanysignaturesets">verifyManySignatureSets<a class="headerlink" href="#verifymanysignaturesets" title="Permanent link">¶</a></h3>
 <p>▸ <strong>verifyManySignatureSets</strong>(<code>workReqArr</code>: <a href="./#blsworkreq">BlsWorkReq</a>[]): <em><a href="./#blsworkresult">BlsWorkResult</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/chain/bls/multithread/worker.ts#L31">packages/lodestar/src/chain/bls/multithread/worker.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/chain/bls/multithread/worker.ts#L31">packages/lodestar/src/chain/bls/multithread/worker.ts:31</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

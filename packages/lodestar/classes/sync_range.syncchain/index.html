@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/lodestar/classes/sync_range.syncchain/" rel="canonical"/>
-<link href="../../../../images/favicon.ico" rel="icon"/>
+<link href="../../../../assets/round-icon.ico" rel="icon"/>
 <meta content="mkdocs-1.2.2, mkdocs-material-7.2.1" name="generator"/>
 <title>Sync range.syncchain - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.1118c9be.min.css" rel="stylesheet"/>
@@ -17,8 +17,9 @@
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
 <link href="../../../../stylesheets/extras.css" rel="stylesheet"/>
 </head>
-<body data-md-color-accent="black" data-md-color-primary="" data-md-color-scheme="preference" dir="ltr">
+<body data-md-color-accent="deep-purple" data-md-color-primary="black" data-md-color-scheme="preference" dir="ltr">
 <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
@@ -32,7 +33,7 @@
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="Lodestar documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -53,6 +54,16 @@
 </div>
 </div>
 </div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="preference" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"></path></svg>
+</label>
+</form>
 <label class="md-header__button md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 </label>
@@ -104,7 +115,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Lodestar documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
     Lodestar documentation
   </label>
@@ -554,8 +565,8 @@ root are grouped into the peer pool and queried for batches when downloading the
 </ul>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
-<p>+ <strong>new SyncChain</strong>(<code>startEpoch</code>: <a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#epoch">Epoch</a>, <code>syncType</code>: <a href="../../enums/sync_utils.rangesynctype/">RangeSyncType</a>, <code>fns</code>: <a href="../../modules/sync_range/#syncchainfns">SyncChainFns</a>, <code>modules</code>: <a href="../../modules/sync_range/#syncchainmodules">SyncChainModules</a>, <code>opts?</code>: <a href="../../modules/sync_range/#syncchainopts">SyncChainOpts</a>): <em><a href="./">SyncChain</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L110">packages/lodestar/src/sync/range/chain.ts:110</a></em></p>
+<p>+ <strong>new SyncChain</strong>(<code>startEpoch</code>: <a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#epoch">Epoch</a>, <code>syncType</code>: <a href="../../enums/sync_utils.rangesynctype/">RangeSyncType</a>, <code>fns</code>: <a href="../../modules/sync_range/#syncchainfns">SyncChainFns</a>, <code>modules</code>: <a href="../../modules/sync_range/#syncchainmodules">SyncChainModules</a>, <code>opts?</code>: <a href="../../modules/sync_range/#syncchainopts">SyncChainOpts</a>): <em><a href="./">SyncChain</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L110">packages/lodestar/src/sync/range/chain.ts:110</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -567,7 +578,7 @@ root are grouped into the peer pool and queried for batches when downloading the
 <tbody>
 <tr>
 <td><code>startEpoch</code></td>
-<td><a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#epoch">Epoch</a></td>
+<td><a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#epoch">Epoch</a></td>
 </tr>
 <tr>
 <td><code>syncType</code></td>
@@ -591,88 +602,88 @@ root are grouped into the peer pool and queried for batches when downloading the
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="private-readonly-batchprocessor"><code>Private</code> <code>Readonly</code> batchProcessor<a class="headerlink" href="#private-readonly-batchprocessor" title="Permanent link">¶</a></h3>
 <p>• <strong>batchProcessor</strong>: <em><a href="../util.ittrigger/">ItTrigger</a>‹›</em> = new ItTrigger()</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L103">packages/lodestar/src/sync/range/chain.ts:103</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L103">packages/lodestar/src/sync/range/chain.ts:103</a></em></p>
 <p>AsyncIterable that guarantees processChainSegment is run only at once at anytime</p>
 <hr/>
 <h3 id="private-readonly-batches"><code>Private</code> <code>Readonly</code> batches<a class="headerlink" href="#private-readonly-batches" title="Permanent link">¶</a></h3>
 <p>• <strong>batches</strong>: <em><a href="../util.mapdef/#static-map">Map</a>‹number, <a href="../sync_range.batch/">Batch</a>‹››</em> = new Map<epoch, batch="">()</epoch,></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L105">packages/lodestar/src/sync/range/chain.ts:105</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L105">packages/lodestar/src/sync/range/chain.ts:105</a></em></p>
 <p>Sorted map of batches undergoing some kind of processing.</p>
 <hr/>
 <h3 id="private-readonly-config"><code>Private</code> <code>Readonly</code> config<a class="headerlink" href="#private-readonly-config" title="Permanent link">¶</a></h3>
 <p>• <strong>config</strong>: <em>IChainForkConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L109">packages/lodestar/src/sync/range/chain.ts:109</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L109">packages/lodestar/src/sync/range/chain.ts:109</a></em></p>
 <hr/>
 <h3 id="private-readonly-downloadbeaconblocksbyrange"><code>Private</code> <code>Readonly</code> downloadBeaconBlocksByRange<a class="headerlink" href="#private-readonly-downloadbeaconblocksbyrange" title="Permanent link">¶</a></h3>
 <p>• <strong>downloadBeaconBlocksByRange</strong>: <em>SyncChainFns["downloadBeaconBlocksByRange"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L100">packages/lodestar/src/sync/range/chain.ts:100</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L100">packages/lodestar/src/sync/range/chain.ts:100</a></em></p>
 <hr/>
 <h3 id="readonly-logid"><code>Readonly</code> logId<a class="headerlink" href="#readonly-logid" title="Permanent link">¶</a></h3>
 <p>• <strong>logId</strong>: <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L87">packages/lodestar/src/sync/range/chain.ts:87</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L87">packages/lodestar/src/sync/range/chain.ts:87</a></em></p>
 <p>Short string id to identify this SyncChain in logs</p>
 <hr/>
 <h3 id="private-readonly-logger"><code>Private</code> <code>Readonly</code> logger<a class="headerlink" href="#private-readonly-logger" title="Permanent link">¶</a></h3>
 <p>• <strong>logger</strong>: <em>ILogger</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L108">packages/lodestar/src/sync/range/chain.ts:108</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L108">packages/lodestar/src/sync/range/chain.ts:108</a></em></p>
 <hr/>
 <h3 id="private-readonly-opts"><code>Private</code> <code>Readonly</code> opts<a class="headerlink" href="#private-readonly-opts" title="Permanent link">¶</a></h3>
 <p>• <strong>opts</strong>: <em><a href="../../modules/sync_range/#batchopts">BatchOpts</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L110">packages/lodestar/src/sync/range/chain.ts:110</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L110">packages/lodestar/src/sync/range/chain.ts:110</a></em></p>
 <hr/>
 <h3 id="private-readonly-peerset"><code>Private</code> <code>Readonly</code> peerset<a class="headerlink" href="#private-readonly-peerset" title="Permanent link">¶</a></h3>
 <p>• <strong>peerset</strong>: <em><a href="../util.peermap/">PeerMap</a>‹<a href="../../modules/sync_range/#chaintarget">ChainTarget</a>›</em> = new PeerMap<chaintarget>()</chaintarget></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L106">packages/lodestar/src/sync/range/chain.ts:106</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L106">packages/lodestar/src/sync/range/chain.ts:106</a></em></p>
 <hr/>
 <h3 id="private-readonly-processchainsegment"><code>Private</code> <code>Readonly</code> processChainSegment<a class="headerlink" href="#private-readonly-processchainsegment" title="Permanent link">¶</a></h3>
 <p>• <strong>processChainSegment</strong>: <em>SyncChainFns["processChainSegment"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L99">packages/lodestar/src/sync/range/chain.ts:99</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L99">packages/lodestar/src/sync/range/chain.ts:99</a></em></p>
 <hr/>
 <h3 id="private-readonly-reportpeer"><code>Private</code> <code>Readonly</code> reportPeer<a class="headerlink" href="#private-readonly-reportpeer" title="Permanent link">¶</a></h3>
 <p>• <strong>reportPeer</strong>: <em>SyncChainFns["reportPeer"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L101">packages/lodestar/src/sync/range/chain.ts:101</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L101">packages/lodestar/src/sync/range/chain.ts:101</a></em></p>
 <hr/>
 <h3 id="private-startepoch"><code>Private</code> startEpoch<a class="headerlink" href="#private-startepoch" title="Permanent link">¶</a></h3>
-<p>• <strong>startEpoch</strong>: <em><a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#epoch">Epoch</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L96">packages/lodestar/src/sync/range/chain.ts:96</a></em></p>
+<p>• <strong>startEpoch</strong>: <em><a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#epoch">Epoch</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L96">packages/lodestar/src/sync/range/chain.ts:96</a></em></p>
 <p>The start of the chain segment. Any epoch previous to this one has been validated.</p>
 <hr/>
 <h3 id="private-status"><code>Private</code> status<a class="headerlink" href="#private-status" title="Permanent link">¶</a></h3>
 <p>• <strong>status</strong>: <em><a href="../../enums/sync_range.syncchainstatus/">SyncChainStatus</a></em> = SyncChainStatus.Stopped</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L97">packages/lodestar/src/sync/range/chain.ts:97</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L97">packages/lodestar/src/sync/range/chain.ts:97</a></em></p>
 <hr/>
 <h3 id="readonly-synctype"><code>Readonly</code> syncType<a class="headerlink" href="#readonly-synctype" title="Permanent link">¶</a></h3>
 <p>• <strong>syncType</strong>: <em><a href="../../enums/sync_utils.rangesynctype/">RangeSyncType</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L88">packages/lodestar/src/sync/range/chain.ts:88</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L88">packages/lodestar/src/sync/range/chain.ts:88</a></em></p>
 <hr/>
 <h3 id="target">target<a class="headerlink" href="#target" title="Permanent link">¶</a></h3>
 <p>• <strong>target</strong>: <em><a href="../../modules/sync_range/#chaintarget">ChainTarget</a> | null</em> = null</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L90">packages/lodestar/src/sync/range/chain.ts:90</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L90">packages/lodestar/src/sync/range/chain.ts:90</a></em></p>
 <p>Should sync up until this slot, then stop</p>
 <hr/>
 <h3 id="validatedepochs">validatedEpochs<a class="headerlink" href="#validatedepochs" title="Permanent link">¶</a></h3>
 <p>• <strong>validatedEpochs</strong>: <em>number</em> = 0</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L93">packages/lodestar/src/sync/range/chain.ts:93</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L93">packages/lodestar/src/sync/range/chain.ts:93</a></em></p>
 <p>Number of validated epochs. For the SyncRange to prevent switching chains too fast</p>
 <h2 id="accessors_1">Accessors<a class="headerlink" href="#accessors_1" title="Permanent link">¶</a></h2>
 <h3 id="isremovable">isRemovable<a class="headerlink" href="#isremovable" title="Permanent link">¶</a></h3>
 <p>• <strong>get isRemovable</strong>(): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L208">packages/lodestar/src/sync/range/chain.ts:208</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L208">packages/lodestar/src/sync/range/chain.ts:208</a></em></p>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr/>
 <h3 id="issyncing">isSyncing<a class="headerlink" href="#issyncing" title="Permanent link">¶</a></h3>
 <p>• <strong>get isSyncing</strong>(): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L204">packages/lodestar/src/sync/range/chain.ts:204</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L204">packages/lodestar/src/sync/range/chain.ts:204</a></em></p>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr/>
 <h3 id="peers">peers<a class="headerlink" href="#peers" title="Permanent link">¶</a></h3>
 <p>• <strong>get peers</strong>(): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L212">packages/lodestar/src/sync/range/chain.ts:212</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L212">packages/lodestar/src/sync/range/chain.ts:212</a></em></p>
 <p><strong>Returns:</strong> <em>number</em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="addpeer">addPeer<a class="headerlink" href="#addpeer" title="Permanent link">¶</a></h3>
 <p>▸ <strong>addPeer</strong>(<code>peer</code>: PeerId, <code>target</code>: <a href="../../modules/sync_range/#chaintarget">ChainTarget</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L181">packages/lodestar/src/sync/range/chain.ts:181</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L181">packages/lodestar/src/sync/range/chain.ts:181</a></em></p>
 <p>Add peer to the chain and request batches if active</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -696,8 +707,8 @@ root are grouped into the peer pool and queried for batches when downloading the
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr/>
 <h3 id="private-advancechain"><code>Private</code> advanceChain<a class="headerlink" href="#private-advancechain" title="Permanent link">¶</a></h3>
-<p>▸ <strong>advanceChain</strong>(<code>newStartEpoch</code>: <a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#epoch">Epoch</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L454">packages/lodestar/src/sync/range/chain.ts:454</a></em></p>
+<p>▸ <strong>advanceChain</strong>(<code>newStartEpoch</code>: <a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#epoch">Epoch</a>): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L454">packages/lodestar/src/sync/range/chain.ts:454</a></em></p>
 <p>Drops any batches previous to <code>newStartEpoch</code> and updates the chain boundaries</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -710,7 +721,7 @@ root are grouped into the peer pool and queried for batches when downloading the
 <tbody>
 <tr>
 <td><code>newStartEpoch</code></td>
-<td><a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#epoch">Epoch</a></td>
+<td><a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#epoch">Epoch</a></td>
 </tr>
 </tbody>
 </table>
@@ -718,35 +729,35 @@ root are grouped into the peer pool and queried for batches when downloading the
 <hr/>
 <h3 id="private-computetarget"><code>Private</code> computeTarget<a class="headerlink" href="#private-computetarget" title="Permanent link">¶</a></h3>
 <p>▸ <strong>computeTarget</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L233">packages/lodestar/src/sync/range/chain.ts:233</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L233">packages/lodestar/src/sync/range/chain.ts:233</a></em></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr/>
 <h3 id="getbatchesstate">getBatchesState<a class="headerlink" href="#getbatchesstate" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getBatchesState</strong>(): <em><a href="../../modules/sync_range/#batchmetadata">BatchMetadata</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L200">packages/lodestar/src/sync/range/chain.ts:200</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L200">packages/lodestar/src/sync/range/chain.ts:200</a></em></p>
 <p>Helper to print internal state for debugging when chain gets stuck</p>
 <p><strong>Returns:</strong> <em><a href="../../modules/sync_range/#batchmetadata">BatchMetadata</a>[]</em></p>
 <hr/>
 <h3 id="getdebugstate">getDebugState<a class="headerlink" href="#getdebugstate" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getDebugState</strong>(): <em><a href="../../modules/sync_range/#syncchaindebugstate">SyncChainDebugState</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L221">packages/lodestar/src/sync/range/chain.ts:221</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L221">packages/lodestar/src/sync/range/chain.ts:221</a></em></p>
 <p>Full debug state for lodestar API</p>
 <p><strong>Returns:</strong> <em><a href="../../modules/sync_range/#syncchaindebugstate">SyncChainDebugState</a></em></p>
 <hr/>
 <h3 id="getpeers">getPeers<a class="headerlink" href="#getpeers" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getPeers</strong>(): <em>PeerId[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L216">packages/lodestar/src/sync/range/chain.ts:216</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L216">packages/lodestar/src/sync/range/chain.ts:216</a></em></p>
 <p><strong>Returns:</strong> <em>PeerId[]</em></p>
 <hr/>
 <h3 id="private-includenextbatch"><code>Private</code> includeNextBatch<a class="headerlink" href="#private-includenextbatch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>includeNextBatch</strong>(): <em><a href="../sync_range.batch/">Batch</a> | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L346">packages/lodestar/src/sync/range/chain.ts:346</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L346">packages/lodestar/src/sync/range/chain.ts:346</a></em></p>
 <p>Creates the next required batch from the chain. If there are no more batches required, returns <code>null</code>.</p>
 <p><strong>Returns:</strong> <em><a href="../sync_range.batch/">Batch</a> | null</em></p>
 <hr/>
 <h3 id="private-processbatch"><code>Private</code> processBatch<a class="headerlink" href="#private-processbatch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>processBatch</strong>(<code>batch</code>: <a href="../sync_range.batch/">Batch</a>): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L410">packages/lodestar/src/sync/range/chain.ts:410</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L410">packages/lodestar/src/sync/range/chain.ts:410</a></em></p>
 <p>Sends <code>batch</code> to the processor. Note: batch may be empty</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -767,13 +778,13 @@ root are grouped into the peer pool and queried for batches when downloading the
 <hr/>
 <h3 id="remove">remove<a class="headerlink" href="#remove" title="Permanent link">¶</a></h3>
 <p>▸ <strong>remove</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L174">packages/lodestar/src/sync/range/chain.ts:174</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L174">packages/lodestar/src/sync/range/chain.ts:174</a></em></p>
 <p>Permanently remove this chain. Throws the main AsyncIterable</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr/>
 <h3 id="removepeer">removePeer<a class="headerlink" href="#removepeer" title="Permanent link">¶</a></h3>
 <p>▸ <strong>removePeer</strong>(<code>peerId</code>: PeerId): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L191">packages/lodestar/src/sync/range/chain.ts:191</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L191">packages/lodestar/src/sync/range/chain.ts:191</a></em></p>
 <p>Returns true if the peer existed and has been removed
 NOTE: The RangeSync will take care of deleting the SyncChain if peers = 0</p>
 <p><strong>Parameters:</strong></p>
@@ -795,7 +806,7 @@ NOTE: The RangeSync will take care of deleting the SyncChain if peers = 0</p>
 <hr/>
 <h3 id="private-requestbatches"><code>Private</code> requestBatches<a class="headerlink" href="#private-requestbatches" title="Permanent link">¶</a></h3>
 <p>▸ <strong>requestBatches</strong>(<code>peers</code>: PeerId[]): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L314">packages/lodestar/src/sync/range/chain.ts:314</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L314">packages/lodestar/src/sync/range/chain.ts:314</a></em></p>
 <p>Attempts to request the next required batches from the peer pool if the chain is syncing.
 It will exhaust the peer pool and left over batches until the batch buffer is reached.</p>
 <p><strong>Parameters:</strong></p>
@@ -817,7 +828,7 @@ It will exhaust the peer pool and left over batches until the batch buffer is re
 <hr/>
 <h3 id="private-sendbatch"><code>Private</code> sendBatch<a class="headerlink" href="#private-sendbatch" title="Permanent link">¶</a></h3>
 <p>▸ <strong>sendBatch</strong>(<code>batch</code>: <a href="../sync_range.batch/">Batch</a>, <code>peer</code>: PeerId): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L381">packages/lodestar/src/sync/range/chain.ts:381</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L381">packages/lodestar/src/sync/range/chain.ts:381</a></em></p>
 <p>Requests the batch asigned to the given id from a given peer.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -841,8 +852,8 @@ It will exhaust the peer pool and left over batches until the batch buffer is re
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr/>
 <h3 id="startsyncing">startSyncing<a class="headerlink" href="#startsyncing" title="Permanent link">¶</a></h3>
-<p>▸ <strong>startSyncing</strong>(<code>localFinalizedEpoch</code>: <a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#epoch">Epoch</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L140">packages/lodestar/src/sync/range/chain.ts:140</a></em></p>
+<p>▸ <strong>startSyncing</strong>(<code>localFinalizedEpoch</code>: <a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#epoch">Epoch</a>): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L140">packages/lodestar/src/sync/range/chain.ts:140</a></em></p>
 <p>Start syncing a new chain or an old one with an existing peer list
 In the same call, advance the chain if localFinalizedEpoch &gt;</p>
 <p><strong>Parameters:</strong></p>
@@ -856,7 +867,7 @@ In the same call, advance the chain if localFinalizedEpoch &gt;</p>
 <tbody>
 <tr>
 <td><code>localFinalizedEpoch</code></td>
-<td><a href="../../modules/reflection-11504.reflection-11505._.reflection-11507._beacon_state_transition_src_phase0/#epoch">Epoch</a></td>
+<td><a href="../../modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_phase0/#epoch">Epoch</a></td>
 </tr>
 </tbody>
 </table>
@@ -864,27 +875,27 @@ In the same call, advance the chain if localFinalizedEpoch &gt;</p>
 <hr/>
 <h3 id="stopsyncing">stopSyncing<a class="headerlink" href="#stopsyncing" title="Permanent link">¶</a></h3>
 <p>▸ <strong>stopSyncing</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L167">packages/lodestar/src/sync/range/chain.ts:167</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L167">packages/lodestar/src/sync/range/chain.ts:167</a></em></p>
 <p>Temporarily stop the chain. Will prevent batches from being processed</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr/>
 <h3 id="private-sync"><code>Private</code> sync<a class="headerlink" href="#private-sync" title="Permanent link">¶</a></h3>
 <p>▸ <strong>sync</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L242">packages/lodestar/src/sync/range/chain.ts:242</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L242">packages/lodestar/src/sync/range/chain.ts:242</a></em></p>
 <p>Main Promise that handles the sync process. Will resolve when initial sync completes
 i.e. when it successfully processes a epoch &gt;= than this chain <code>targetEpoch</code></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr/>
 <h3 id="private-triggerbatchdownloader"><code>Private</code> triggerBatchDownloader<a class="headerlink" href="#private-triggerbatchdownloader" title="Permanent link">¶</a></h3>
 <p>▸ <strong>triggerBatchDownloader</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L301">packages/lodestar/src/sync/range/chain.ts:301</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L301">packages/lodestar/src/sync/range/chain.ts:301</a></em></p>
 <p>Request to download batches if possible
 Backlogs requests into a single pending request</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr/>
 <h3 id="private-triggerbatchprocessor"><code>Private</code> triggerBatchProcessor<a class="headerlink" href="#private-triggerbatchprocessor" title="Permanent link">¶</a></h3>
 <p>▸ <strong>triggerBatchProcessor</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/lodestar/src/sync/range/chain.ts#L293">packages/lodestar/src/sync/range/chain.ts:293</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/lodestar/src/sync/range/chain.ts#L293">packages/lodestar/src/sync/range/chain.ts:293</a></em></p>
 <p>Request to process batches if possible</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 </article>

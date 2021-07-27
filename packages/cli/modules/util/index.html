@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/cli/modules/util/" rel="canonical"/>
-<link href="../../../../images/favicon.ico" rel="icon"/>
+<link href="../../../../assets/round-icon.ico" rel="icon"/>
 <meta content="mkdocs-1.2.2, mkdocs-material-7.2.1" name="generator"/>
 <title>Util - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.1118c9be.min.css" rel="stylesheet"/>
@@ -17,8 +17,9 @@
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
 <link href="../../../../stylesheets/extras.css" rel="stylesheet"/>
 </head>
-<body data-md-color-accent="black" data-md-color-primary="" data-md-color-scheme="preference" dir="ltr">
+<body data-md-color-accent="deep-purple" data-md-color-primary="black" data-md-color-scheme="preference" dir="ltr">
 <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
@@ -32,7 +33,7 @@
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="Lodestar documentation" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -53,6 +54,16 @@
 </div>
 </div>
 </div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="preference" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="deep-purple" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"></path></svg>
+</label>
+</form>
 <label class="md-header__button md-icon" for="__search">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
 </label>
@@ -104,7 +115,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Lodestar documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Lodestar documentation">
-<img alt="logo" src="../../../../assets/300ppi/short-LS-hookS-WHITE.png"/>
+<img alt="logo" src="../../../../assets/lodestar_icon_300.png"/>
 </a>
     Lodestar documentation
   </label>
@@ -1002,11 +1013,11 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="iclicommandoptions_1">ICliCommandOptions<a class="headerlink" href="#iclicommandoptions_1" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ICliCommandOptions</strong>: <em>Required‹object›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/command.ts#L3">packages/cli/src/util/command.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/command.ts#L3">packages/cli/src/util/command.ts:3</a></em></p>
 <hr/>
 <h3 id="lernajson">LernaJson<a class="headerlink" href="#lernajson" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>LernaJson</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/version.ts#L4">packages/cli/src/util/version.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/version.ts#L4">packages/cli/src/util/version.ts:4</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <ul>
 <li><strong>version</strong>: <em>string</em></li>
@@ -1014,7 +1025,7 @@
 <hr/>
 <h3 id="lockfile">Lockfile<a class="headerlink" href="#lockfile" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>Lockfile</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/lockfile.ts#L1">packages/cli/src/util/lockfile.ts:1</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/lockfile.ts#L1">packages/cli/src/util/lockfile.ts:1</a></em></p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -1027,19 +1038,19 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-default_password_len"><code>Const</code> DEFAULT_PASSWORD_LEN<a class="headerlink" href="#const-default_password_len" title="Permanent link">¶</a></h3>
 <p>• <strong>DEFAULT_PASSWORD_LEN</strong>: <em>48</em> = 48</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/randomPassword.ts#L3">packages/cli/src/util/randomPassword.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/randomPassword.ts#L3">packages/cli/src/util/randomPassword.ts:3</a></em></p>
 <hr/>
 <h3 id="const-exitsignals"><code>Const</code> exitSignals<a class="headerlink" href="#const-exitsignals" title="Permanent link">¶</a></h3>
 <p>• <strong>exitSignals</strong>: <em>Signals[]</em> = ["SIGTERM", "SIGINT"] as NodeJS.Signals[]</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/process.ts#L1">packages/cli/src/util/process.ts:1</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/process.ts#L1">packages/cli/src/util/process.ts:1</a></em></p>
 <hr/>
 <h3 id="let-lockfile"><code>Let</code> lockFile<a class="headerlink" href="#let-lockfile" title="Permanent link">¶</a></h3>
 <p>• <strong>lockFile</strong>: <em><a href="./#lockfile">Lockfile</a> | null</em> = null</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/lockfile.ts#L6">packages/cli/src/util/lockfile.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/lockfile.ts#L6">packages/cli/src/util/lockfile.ts:6</a></em></p>
 <hr/>
 <h3 id="const-lodestarpackagename"><code>Const</code> lodestarPackageName<a class="headerlink" href="#const-lodestarpackagename" title="Permanent link">¶</a></h3>
 <p>• <strong>lodestarPackageName</strong>: <em>"chainsafe/lodestar"</em> = "chainsafe/lodestar"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/graffiti.ts#L3">packages/cli/src/util/graffiti.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/graffiti.ts#L3">packages/cli/src/util/graffiti.ts:3</a></em></p>
 <hr/>
 <h3 id="const-yamlschema"><code>Const</code> yamlSchema<a class="headerlink" href="#const-yamlschema" title="Permanent link">¶</a></h3>
 <p>• <strong>yamlSchema</strong>: <em>Schema‹›</em> = new Schema({
@@ -1054,11 +1065,11 @@
     }),
   ],
 })</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L9">packages/cli/src/util/file.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L9">packages/cli/src/util/file.ts:9</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="objectkeys_1">ObjectKeys<a class="headerlink" href="#objectkeys_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>ObjectKeys</strong>‹<strong>T</strong>›(<code>o</code>: T): <em>keyof T[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/types.ts#L5">packages/cli/src/util/types.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/types.ts#L5">packages/cli/src/util/types.ts:5</a></em></p>
 <p>Typed <code>Object.keys(o: T)</code> function, returning <code>(keyof T)[]</code></p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong>: <em>object</em></p>
@@ -1081,7 +1092,7 @@
 <hr/>
 <h3 id="add0xprefix_1">add0xPrefix<a class="headerlink" href="#add0xprefix_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>add0xPrefix</strong>(<code>hex</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/format.ts#L4">packages/cli/src/util/format.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/format.ts#L4">packages/cli/src/util/format.ts:4</a></em></p>
 <p>0x prefix a string if not prefixed already</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1102,7 +1113,7 @@
 <hr/>
 <h3 id="downloadfile_1">downloadFile<a class="headerlink" href="#downloadfile_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>downloadFile</strong>(<code>pathDest</code>: string, <code>url</code>: string): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L124">packages/cli/src/util/file.ts:124</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L124">packages/cli/src/util/file.ts:124</a></em></p>
 <p>Downloads a genesis file per network if it does not exist</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1127,7 +1138,7 @@
 <hr/>
 <h3 id="downloadorcopyfile_1">downloadOrCopyFile<a class="headerlink" href="#downloadorcopyfile_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>downloadOrCopyFile</strong>(<code>pathDest</code>: string, <code>urlOrPathSrc</code>: string): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L112">packages/cli/src/util/file.ts:112</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L112">packages/cli/src/util/file.ts:112</a></em></p>
 <p>Download from URL or copy from local filesystem</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1155,7 +1166,7 @@
 <hr/>
 <h3 id="downloadorloadfile_1">downloadOrLoadFile<a class="headerlink" href="#downloadorloadfile_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>downloadOrLoadFile</strong>(<code>pathOrUrl</code>: string): <em>Promise‹Uint8Array›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L135">packages/cli/src/util/file.ts:135</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L135">packages/cli/src/util/file.ts:135</a></em></p>
 <p>Download from URL to memory or load from local filesystem</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1176,7 +1187,7 @@
 <hr/>
 <h3 id="ensuredirexists_1">ensureDirExists<a class="headerlink" href="#ensuredirexists_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>ensureDirExists</strong>(<code>dirPath</code>: string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/fs.ts#L18">packages/cli/src/util/fs.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/fs.ts#L18">packages/cli/src/util/fs.ts:18</a></em></p>
 <p>If <code>dirPath</code> does not exist, creates a directory recursively</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1197,12 +1208,12 @@
 <hr/>
 <h3 id="errorlogger_1">errorLogger<a class="headerlink" href="#errorlogger_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>errorLogger</strong>(): <em>ILogger</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/logger.ts#L22">packages/cli/src/util/logger.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/logger.ts#L22">packages/cli/src/util/logger.ts:22</a></em></p>
 <p><strong>Returns:</strong> <em>ILogger</em></p>
 <hr/>
 <h3 id="getclilogger_1">getCliLogger<a class="headerlink" href="#getclilogger_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getCliLogger</strong>(<code>args</code>: <a href="../../interfaces/util.ilogargs/">ILogArgs</a>, <code>paths</code>: object, <code>config</code>: IChainForkConfig): <em>ILogger</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/logger.ts#L29">packages/cli/src/util/logger.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/logger.ts#L29">packages/cli/src/util/logger.ts:29</a></em></p>
 <p>Setup a CLI logger, common for beacon, validator and dev commands</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>args</strong>: <em><a href="../../interfaces/util.ilogargs/">ILogArgs</a></em></p>
@@ -1226,13 +1237,13 @@
 <hr/>
 <h3 id="getdefaultgraffiti_1">getDefaultGraffiti<a class="headerlink" href="#getdefaultgraffiti_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getDefaultGraffiti</strong>(): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/graffiti.ts#L8">packages/cli/src/util/graffiti.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/graffiti.ts#L8">packages/cli/src/util/graffiti.ts:8</a></em></p>
 <p>Computes a default graffiti fetching dynamically the package info</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr/>
 <h3 id="getetherssigner_1">getEthersSigner<a class="headerlink" href="#getetherssigner_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getEthersSigner</strong>(<code>__namedParameters</code>: object): <em>Promise‹Signer›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/ethers.ts#L7">packages/cli/src/util/ethers.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/ethers.ts#L7">packages/cli/src/util/ethers.ts:7</a></em></p>
 <p>Returns a connected ethers signer from a variety of provider options</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
@@ -1274,13 +1285,13 @@
 <hr/>
 <h3 id="getlocalversion">getLocalVersion<a class="headerlink" href="#getlocalversion" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getLocalVersion</strong>(): <em>string | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/version.ts#L10">packages/cli/src/util/version.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/version.ts#L10">packages/cli/src/util/version.ts:10</a></em></p>
 <p>Returns local version from <code>lerna.json</code> as <code>"0.18.0"</code></p>
 <p><strong>Returns:</strong> <em>string | null</em></p>
 <hr/>
 <h3 id="getlockfile">getLockFile<a class="headerlink" href="#getlockfile" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getLockFile</strong>(): <em><a href="./#lockfile">Lockfile</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/lockfile.ts#L13">packages/cli/src/util/lockfile.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/lockfile.ts#L13">packages/cli/src/util/lockfile.ts:13</a></em></p>
 <p>When lockfile it's required it registers listeners to process
 Since it's only used by the validator client, require lazily to not pollute
 beacon_node client context</p>
@@ -1288,12 +1299,12 @@ beacon_node client context</p>
 <hr/>
 <h3 id="initbls_1">initBLS<a class="headerlink" href="#initbls_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>initBLS</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/bls.ts#L3">packages/cli/src/util/bls.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/bls.ts#L3">packages/cli/src/util/bls.ts:3</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr/>
 <h3 id="ispassphrasefile_1">isPassphraseFile<a class="headerlink" href="#ispassphrasefile_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isPassphraseFile</strong>(<code>filename</code>: string): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/recursivelyFind.ts#L59">packages/cli/src/util/recursivelyFind.ts:59</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/recursivelyFind.ts#L59">packages/cli/src/util/recursivelyFind.ts:59</a></em></p>
 <p>Returns true if filename is a BLS Keystore passphrase file</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1314,7 +1325,7 @@ beacon_node client context</p>
 <hr/>
 <h3 id="isurl">isUrl<a class="headerlink" href="#isurl" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isUrl</strong>(<code>pathOrUrl</code>: string): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L147">packages/cli/src/util/file.ts:147</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L147">packages/cli/src/util/file.ts:147</a></em></p>
 <p>Returns boolean for whether the string is a URL.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1335,7 +1346,7 @@ beacon_node client context</p>
 <hr/>
 <h3 id="isvotingkeystore_1">isVotingKeystore<a class="headerlink" href="#isvotingkeystore_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isVotingKeystore</strong>(<code>filename</code>: string): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/recursivelyFind.ts#L34">packages/cli/src/util/recursivelyFind.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/recursivelyFind.ts#L34">packages/cli/src/util/recursivelyFind.ts:34</a></em></p>
 <p>Returns <code>true</code> if we should consider the <code>filename</code> to represent a voting keystore.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1356,7 +1367,7 @@ beacon_node client context</p>
 <hr/>
 <h3 id="mkdir_1">mkdir<a class="headerlink" href="#mkdir_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>mkdir</strong>(<code>dirname</code>: string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L25">packages/cli/src/util/file.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L25">packages/cli/src/util/file.ts:25</a></em></p>
 <p>Maybe create a directory</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1377,7 +1388,7 @@ beacon_node client context</p>
 <hr/>
 <h3 id="ongracefulshutdown_1">onGracefulShutdown<a class="headerlink" href="#ongracefulshutdown_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>onGracefulShutdown</strong>(<code>cleanUpFunction</code>: function, <code>logFn</code>: function): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/process.ts#L9">packages/cli/src/util/process.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/process.ts#L9">packages/cli/src/util/process.ts:9</a></em></p>
 <p>All CLI handlers should register this callback to exit properly and not leave
 a process hanging forever. Pass a clean function that will be run until the
 user forcibly kills the process by doing CTRL+C again</p>
@@ -1405,7 +1416,7 @@ user forcibly kills the process by doing CTRL+C again</p>
 <hr/>
 <h3 id="parse_1">parse<a class="headerlink" href="#parse_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parse</strong>‹<strong>T</strong>›(<code>contents</code>: string, <code>fileFormat</code>: <a href="./#fileformat">FileFormat</a>): <em>T</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L39">packages/cli/src/util/file.ts:39</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L39">packages/cli/src/util/file.ts:39</a></em></p>
 <p>Parse file contents as Json.</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong></p>
@@ -1432,7 +1443,7 @@ user forcibly kills the process by doing CTRL+C again</p>
 <hr/>
 <h3 id="parserange_1">parseRange<a class="headerlink" href="#parserange_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseRange</strong>(<code>range</code>: string): <em>number[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/format.ts#L15">packages/cli/src/util/format.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/format.ts#L15">packages/cli/src/util/format.ts:15</a></em></p>
 <p>Parse string inclusive range: <code>0..32</code>, into an array of all values in that range</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1453,18 +1464,18 @@ user forcibly kills the process by doing CTRL+C again</p>
 <hr/>
 <h3 id="randompassword_1">randomPassword<a class="headerlink" href="#randompassword_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>randomPassword</strong>(): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/randomPassword.ts#L8">packages/cli/src/util/randomPassword.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/randomPassword.ts#L8">packages/cli/src/util/randomPassword.ts:8</a></em></p>
 <p>Generates a hex encoded random password</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr/>
 <h3 id="readclipackagejson">readCliPackageJson<a class="headerlink" href="#readclipackagejson" title="Permanent link">¶</a></h3>
 <p>▸ <strong>readCliPackageJson</strong>(): <em>string | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/version.ts#L22">packages/cli/src/util/version.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/version.ts#L22">packages/cli/src/util/version.ts:22</a></em></p>
 <p><strong>Returns:</strong> <em>string | null</em></p>
 <hr/>
 <h3 id="readfile_1">readFile<a class="headerlink" href="#readfile_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>readFile</strong>‹<strong>T</strong>›(<code>filepath</code>: string): <em>T</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L86">packages/cli/src/util/file.ts:86</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L86">packages/cli/src/util/file.ts:86</a></em></p>
 <p>Read a JSON serializable object from a file</p>
 <p>Parse either from json, yaml, or toml</p>
 <p><strong>Type parameters:</strong></p>
@@ -1488,7 +1499,7 @@ user forcibly kills the process by doing CTRL+C again</p>
 <hr/>
 <h3 id="readfileifexists_1">readFileIfExists<a class="headerlink" href="#readfileifexists_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>readFileIfExists</strong>‹<strong>T</strong>›(<code>filepath</code>: string): <em>T | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L96">packages/cli/src/util/file.ts:96</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L96">packages/cli/src/util/file.ts:96</a></em></p>
 <p><strong><code>see</code></strong> readFile
 If <code>filepath</code> does not exist returns null</p>
 <p><strong>Type parameters:</strong></p>
@@ -1512,7 +1523,7 @@ If <code>filepath</code> does not exist returns null</p>
 <hr/>
 <h3 id="readpassphrasefile_1">readPassphraseFile<a class="headerlink" href="#readpassphrasefile_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>readPassphraseFile</strong>(<code>passphraseFile</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/passphrase.ts#L10">packages/cli/src/util/passphrase.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/passphrase.ts#L10">packages/cli/src/util/passphrase.ts:10</a></em></p>
 <p>Utility to read file as UTF8 and strip any trailing new lines.
 All passphrase files must be read with this function</p>
 <p><strong>Parameters:</strong></p>
@@ -1534,7 +1545,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="readvalidatorpassphrase_1">readValidatorPassphrase<a class="headerlink" href="#readvalidatorpassphrase_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>readValidatorPassphrase</strong>(<code>__namedParameters</code>: object): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/passphrase.ts#L29">packages/cli/src/util/passphrase.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/passphrase.ts#L29">packages/cli/src/util/passphrase.ts:29</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -1559,12 +1570,12 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="readversionfromlernajson">readVersionFromLernaJson<a class="headerlink" href="#readversionfromlernajson" title="Permanent link">¶</a></h3>
 <p>▸ <strong>readVersionFromLernaJson</strong>(): <em>string | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/version.ts#L14">packages/cli/src/util/version.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/version.ts#L14">packages/cli/src/util/version.ts:14</a></em></p>
 <p><strong>Returns:</strong> <em>string | null</em></p>
 <hr/>
 <h3 id="recursivelyfind_1">recursivelyFind<a class="headerlink" href="#recursivelyfind_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>recursivelyFind</strong>(<code>dirPath</code>: string, <code>filenameMatcher</code>: function): <em>string[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/recursivelyFind.ts#L11">packages/cli/src/util/recursivelyFind.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/recursivelyFind.ts#L11">packages/cli/src/util/recursivelyFind.ts:11</a></em></p>
 <p>Find files recursively in <code>dirPath</code> whose filename matches a custom function</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>dirPath</strong>: <em>string</em></p>
@@ -1590,7 +1601,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="recursivelyfindvotingkeystores_1">recursivelyFindVotingKeystores<a class="headerlink" href="#recursivelyfindvotingkeystores_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>recursivelyFindVotingKeystores</strong>(<code>dirPath</code>: string): <em>string[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/recursivelyFind.ts#L27">packages/cli/src/util/recursivelyFind.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/recursivelyFind.ts#L27">packages/cli/src/util/recursivelyFind.ts:27</a></em></p>
 <p>Find voting keystores recursively in <code>dirPath</code></p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1611,7 +1622,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="registercommandtoyargs_1">registerCommandToYargs<a class="headerlink" href="#registercommandtoyargs_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>registerCommandToYargs</strong>(<code>yargs</code>: Argv, <code>cliCommand</code>: <a href="../../interfaces/util.iclicommand/">ICliCommand</a>‹any, any›): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/command.ts#L24">packages/cli/src/util/command.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/command.ts#L24">packages/cli/src/util/command.ts:24</a></em></p>
 <p>Register a ICliCommand type to yargs. Recursively registers subcommands too.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1639,7 +1650,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="removeundefinedrecursive_1">removeUndefinedRecursive<a class="headerlink" href="#removeundefinedrecursive_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>removeUndefinedRecursive</strong>‹<strong>T</strong>›(<code>obj</code>: T): <em>RecursivePartial‹T›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/object.ts#L7">packages/cli/src/util/object.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/object.ts#L7">packages/cli/src/util/object.ts:7</a></em></p>
 <p>Removes (mutates) all properties with a value === undefined, recursively</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong>: <em>object</em></p>
@@ -1662,7 +1673,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="sleep_1">sleep<a class="headerlink" href="#sleep_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>sleep</strong>(<code>ms</code>: number): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/sleep.ts#L1">packages/cli/src/util/sleep.ts:1</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/sleep.ts#L1">packages/cli/src/util/sleep.ts:1</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1682,7 +1693,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="stringify_1">stringify<a class="headerlink" href="#stringify_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>stringify</strong>‹<strong>T</strong>›(<code>obj</code>: T, <code>fileFormat</code>: <a href="./#fileformat">FileFormat</a>): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L54">packages/cli/src/util/file.ts:54</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L54">packages/cli/src/util/file.ts:54</a></em></p>
 <p>Stringify file contents.</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong></p>
@@ -1709,7 +1720,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="stripoffnewlines_1">stripOffNewlines<a class="headerlink" href="#stripoffnewlines_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>stripOffNewlines</strong>(<code>s</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/stripOffNewlines.ts#L4">packages/cli/src/util/stripOffNewlines.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/stripOffNewlines.ts#L4">packages/cli/src/util/stripOffNewlines.ts:4</a></em></p>
 <p>Remove trailing new lines '\n' or '\r' if any</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1730,7 +1741,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="writefile_1">writeFile<a class="headerlink" href="#writefile_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>writeFile</strong>(<code>filepath</code>: string, <code>obj</code>: Json): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/file.ts#L75">packages/cli/src/util/file.ts:75</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/file.ts#L75">packages/cli/src/util/file.ts:75</a></em></p>
 <p>Write a JSON serializable object to a file</p>
 <p>Serialize either to json, yaml, or toml</p>
 <p><strong>Parameters:</strong></p>
@@ -1756,7 +1767,7 @@ All passphrase files must be read with this function</p>
 <hr/>
 <h3 id="writefile600perm_1">writeFile600Perm<a class="headerlink" href="#writefile600perm_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>writeFile600Perm</strong>(<code>filepath</code>: string, <code>data</code>: string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/fs.ts#L9">packages/cli/src/util/fs.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/fs.ts#L9">packages/cli/src/util/fs.ts:9</a></em></p>
 <p>Create a file with <code>600 (-rw-------)</code> permissions
 <em>Note</em>: 600: Owner has full read and write access to the file,
 while no other user can access the file</p>
@@ -1783,7 +1794,7 @@ while no other user can access the file</p>
 <hr/>
 <h3 id="writevalidatorpassphrase_1">writeValidatorPassphrase<a class="headerlink" href="#writevalidatorpassphrase_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>writeValidatorPassphrase</strong>(<code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6c2a1f0/packages/cli/src/util/passphrase.ts#L39">packages/cli/src/util/passphrase.ts:39</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a61ea0/packages/cli/src/util/passphrase.ts#L39">packages/cli/src/util/passphrase.ts:39</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
