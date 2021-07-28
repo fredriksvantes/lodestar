@@ -6,10 +6,10 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
-<link href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_allforks_slot/" rel="canonical"/>
+<link href="https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1878.reflection-1872/" rel="canonical"/>
 <link href="../../../../assets/round-icon.ico" rel="icon"/>
 <meta content="mkdocs-1.2.2, mkdocs-material-7.2.1" name="generator"/>
-<title>Reflection 11510.reflection 11511. .reflection 11513. beacon state transition src allforks slot - Lodestar documentation</title>
+<title>Reflection 1878.reflection 1872 - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.1118c9be.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.ba0d045b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -24,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#module-beacon-state-transitionsrcallforksslot">
+<a class="md-skip" href="#module">
           Skip to content
         </a>
 </div>
@@ -48,7 +48,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Reflection 11510.reflection 11511. .reflection 11513. beacon state transition src allforks slot
+              Reflection 1878.reflection 1872
             
           </span>
 </div>
@@ -251,8 +251,32 @@
 <nav aria-label="Index" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#variables">
+    Variables
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#functions">
     Functions
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#variables_1">
+    Variables
+  </a>
+<nav aria-label="Variables" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-bottombanner">
+    Const bottomBanner
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#const-topbanner">
+    Const topBanner
   </a>
 </li>
 </ul>
@@ -265,8 +289,8 @@
 <nav aria-label="Functions" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#processslot">
-    processSlot
+<a class="md-nav__link" href="#getlodestarcli">
+    getLodestarCli
   </a>
 </li>
 </ul>
@@ -279,37 +303,36 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/modules/reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_allforks_slot.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/cli/modules/reflection-1878.reflection-1872.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="../reflection-11510/"></a> › <a href="../reflection-11510.reflection-11511/"></a> › <a href="../reflection-11510.reflection-11511._/">/</a> › <a href="../reflection-11510.reflection-11511._.reflection-11513/"></a> › <a href="./">/beacon-state-transition/src/allForks/slot</a></p>
-<h1 id="module-beacon-state-transitionsrcallforksslot">Module: /beacon-state-transition/src/allForks/slot<a class="headerlink" href="#module-beacon-state-transitionsrcallforksslot" title="Permanent link">¶</a></h1>
+<p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="../reflection-1878/"></a> › <a href="./"></a></p>
+<h1 id="module">Module:<a class="headerlink" href="#module" title="Permanent link">¶</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">¶</a></h2>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="./#const-bottombanner">bottomBanner</a></li>
+<li><a href="./#const-topbanner">topBanner</a></li>
+</ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h3>
 <ul>
-<li><a href="./#processslot">processSlot</a></li>
+<li><a href="./#getlodestarcli">getLodestarCli</a></li>
 </ul>
+<h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
+<h3 id="const-bottombanner"><code>Const</code> bottomBanner<a class="headerlink" href="#const-bottombanner" title="Permanent link">¶</a></h3>
+<p>• <strong>bottomBanner</strong>: <em>"For more information, check the CLI reference https://chainsafe.github.io/lodestar/reference/cli"</em> = "For more information, check the CLI reference https://chainsafe.github.io/lodestar/reference/cli"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/55f0028/packages/cli/src/cli.ts#L8">packages/cli/src/cli.ts:8</a></em></p>
+<hr/>
+<h3 id="const-topbanner"><code>Const</code> topBanner<a class="headerlink" href="#const-topbanner" title="Permanent link">¶</a></h3>
+<p>• <strong>topBanner</strong>: <em>"🌟 Lodestar: Ethereum 2.0 TypeScript Implementation of the Beacon Chain"</em> = "🌟 Lodestar: Ethereum 2.0 TypeScript Implementation of the Beacon Chain"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/55f0028/packages/cli/src/cli.ts#L7">packages/cli/src/cli.ts:7</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
-<h3 id="processslot">processSlot<a class="headerlink" href="#processslot" title="Permanent link">¶</a></h3>
-<p>▸ <strong>processSlot</strong>(<code>state</code>: <a href="../reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d46f754/packages/beacon-state-transition/src/allForks/slot/index.ts#L9">packages/beacon-state-transition/src/allForks/slot/index.ts:9</a></em></p>
-<p>Dial state to next slot. Common for all forks</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>state</code></td>
-<td><a href="../reflection-11510.reflection-11511._.reflection-11513._beacon_state_transition_src_allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹allForks.BeaconState›</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
+<h3 id="getlodestarcli">getLodestarCli<a class="headerlink" href="#getlodestarcli" title="Permanent link">¶</a></h3>
+<p>▸ <strong>getLodestarCli</strong>(): <em>Argv</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/55f0028/packages/cli/src/cli.ts#L14">packages/cli/src/cli.ts:14</a></em></p>
+<p>Common factory for running the CLI and running integration tests
+The CLI must actually be executed in a different script</p>
+<p><strong>Returns:</strong> <em>Argv</em></p>
 </article>
 </div>
 </div>
