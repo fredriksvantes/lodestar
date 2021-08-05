@@ -842,7 +842,7 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="let-active_preset"><code>Let</code> ACTIVE_PRESET<a class="headerlink" href="#let-active_preset" title="Permanent link">¶</a></h3>
 <p>• <strong>ACTIVE_PRESET</strong>: <em><a href="../../enums/preset.presetname/">PresetName</a></em> = parsePresetName(process?.env?.LODESTAR_PRESET as string)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L25">activePreset.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L25">activePreset.ts:25</a></em></p>
 <p>The preset name currently exported by this library</p>
 <p>The <code>LODESTAR_PRESET</code> environment variable is used to select the active preset
 If <code>LODESTAR_PRESET</code> is not set, the default is <code>mainnet</code>.</p>
@@ -850,328 +850,328 @@ If <code>LODESTAR_PRESET</code> is not set, the default is <code>mainnet</code>.
 <hr/>
 <h3 id="const-attestation_subnet_count"><code>Const</code> ATTESTATION_SUBNET_COUNT<a class="headerlink" href="#const-attestation_subnet_count" title="Permanent link">¶</a></h3>
 <p>• <strong>ATTESTATION_SUBNET_COUNT</strong>: <em>64</em> = 64</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L53">constants.ts:53</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L53">constants.ts:53</a></em></p>
 <p>Rationale: https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/p2p-interface.md#why-are-there-attestation_subnet_count-attestation-subnets</p>
 <hr/>
 <h3 id="const-base_rewards_per_epoch"><code>Const</code> BASE_REWARDS_PER_EPOCH<a class="headerlink" href="#const-base_rewards_per_epoch" title="Permanent link">¶</a></h3>
 <p>• <strong>BASE_REWARDS_PER_EPOCH</strong>: <em>4</em> = 4</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L6">constants.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L6">constants.ts:6</a></em></p>
 <hr/>
 <h3 id="base_reward_factor">BASE_REWARD_FACTOR<a class="headerlink" href="#base_reward_factor" title="Permanent link">¶</a></h3>
 <p>• <strong>BASE_REWARD_FACTOR</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L52">activePreset.ts:52</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L52">activePreset.ts:52</a></em></p>
 <hr/>
 <h3 id="const-bls_withdrawal_prefix"><code>Const</code> BLS_WITHDRAWAL_PREFIX<a class="headerlink" href="#const-bls_withdrawal_prefix" title="Permanent link">¶</a></h3>
 <p>• <strong>BLS_WITHDRAWAL_PREFIX</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L12">constants.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L12">constants.ts:12</a></em></p>
 <hr/>
 <h3 id="const-deposit_contract_tree_depth"><code>Const</code> DEPOSIT_CONTRACT_TREE_DEPTH<a class="headerlink" href="#const-deposit_contract_tree_depth" title="Permanent link">¶</a></h3>
 <p>• <strong>DEPOSIT_CONTRACT_TREE_DEPTH</strong>: <em>number</em> = 2 ** 5</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L7">constants.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L7">constants.ts:7</a></em></p>
 <hr/>
 <h3 id="const-domain_aggregate_and_proof"><code>Const</code> DOMAIN_AGGREGATE_AND_PROOF<a class="headerlink" href="#const-domain_aggregate_and_proof" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_AGGREGATE_AND_PROOF</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([6, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L23">constants.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L23">constants.ts:23</a></em></p>
 <hr/>
 <h3 id="const-domain_beacon_attester"><code>Const</code> DOMAIN_BEACON_ATTESTER<a class="headerlink" href="#const-domain_beacon_attester" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_BEACON_ATTESTER</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([1, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L18">constants.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L18">constants.ts:18</a></em></p>
 <hr/>
 <h3 id="const-domain_beacon_proposer"><code>Const</code> DOMAIN_BEACON_PROPOSER<a class="headerlink" href="#const-domain_beacon_proposer" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_BEACON_PROPOSER</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([0, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L17">constants.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L17">constants.ts:17</a></em></p>
 <hr/>
 <h3 id="const-domain_contribution_and_proof"><code>Const</code> DOMAIN_CONTRIBUTION_AND_PROOF<a class="headerlink" href="#const-domain_contribution_and_proof" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_CONTRIBUTION_AND_PROOF</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([9, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L26">constants.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L26">constants.ts:26</a></em></p>
 <hr/>
 <h3 id="const-domain_deposit"><code>Const</code> DOMAIN_DEPOSIT<a class="headerlink" href="#const-domain_deposit" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_DEPOSIT</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([3, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L20">constants.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L20">constants.ts:20</a></em></p>
 <hr/>
 <h3 id="const-domain_randao"><code>Const</code> DOMAIN_RANDAO<a class="headerlink" href="#const-domain_randao" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_RANDAO</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([2, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L19">constants.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L19">constants.ts:19</a></em></p>
 <hr/>
 <h3 id="const-domain_selection_proof"><code>Const</code> DOMAIN_SELECTION_PROOF<a class="headerlink" href="#const-domain_selection_proof" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_SELECTION_PROOF</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([5, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L22">constants.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L22">constants.ts:22</a></em></p>
 <hr/>
 <h3 id="const-domain_sync_committee"><code>Const</code> DOMAIN_SYNC_COMMITTEE<a class="headerlink" href="#const-domain_sync_committee" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_SYNC_COMMITTEE</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([7, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L24">constants.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L24">constants.ts:24</a></em></p>
 <hr/>
 <h3 id="const-domain_sync_committee_selection_proof"><code>Const</code> DOMAIN_SYNC_COMMITTEE_SELECTION_PROOF<a class="headerlink" href="#const-domain_sync_committee_selection_proof" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_SYNC_COMMITTEE_SELECTION_PROOF</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([8, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L25">constants.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L25">constants.ts:25</a></em></p>
 <hr/>
 <h3 id="const-domain_voluntary_exit"><code>Const</code> DOMAIN_VOLUNTARY_EXIT<a class="headerlink" href="#const-domain_voluntary_exit" title="Permanent link">¶</a></h3>
 <p>• <strong>DOMAIN_VOLUNTARY_EXIT</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([4, 0, 0, 0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L21">constants.ts:21</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L21">constants.ts:21</a></em></p>
 <hr/>
 <h3 id="effective_balance_increment">EFFECTIVE_BALANCE_INCREMENT<a class="headerlink" href="#effective_balance_increment" title="Permanent link">¶</a></h3>
 <p>• <strong>EFFECTIVE_BALANCE_INCREMENT</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L40">activePreset.ts:40</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L40">activePreset.ts:40</a></em></p>
 <hr/>
 <h3 id="epochs_per_eth1_voting_period">EPOCHS_PER_ETH1_VOTING_PERIOD<a class="headerlink" href="#epochs_per_eth1_voting_period" title="Permanent link">¶</a></h3>
 <p>• <strong>EPOCHS_PER_ETH1_VOTING_PERIOD</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L45">activePreset.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L45">activePreset.ts:45</a></em></p>
 <hr/>
 <h3 id="epochs_per_historical_vector">EPOCHS_PER_HISTORICAL_VECTOR<a class="headerlink" href="#epochs_per_historical_vector" title="Permanent link">¶</a></h3>
 <p>• <strong>EPOCHS_PER_HISTORICAL_VECTOR</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L48">activePreset.ts:48</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L48">activePreset.ts:48</a></em></p>
 <hr/>
 <h3 id="const-epochs_per_random_subnet_subscription"><code>Const</code> EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION<a class="headerlink" href="#const-epochs_per_random_subnet_subscription" title="Permanent link">¶</a></h3>
 <p>• <strong>EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION</strong>: <em>256</em> = 256</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L51">constants.ts:51</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L51">constants.ts:51</a></em></p>
 <hr/>
 <h3 id="epochs_per_slashings_vector">EPOCHS_PER_SLASHINGS_VECTOR<a class="headerlink" href="#epochs_per_slashings_vector" title="Permanent link">¶</a></h3>
 <p>• <strong>EPOCHS_PER_SLASHINGS_VECTOR</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L49">activePreset.ts:49</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L49">activePreset.ts:49</a></em></p>
 <hr/>
 <h3 id="epochs_per_sync_committee_period">EPOCHS_PER_SYNC_COMMITTEE_PERIOD<a class="headerlink" href="#epochs_per_sync_committee_period" title="Permanent link">¶</a></h3>
 <p>• <strong>EPOCHS_PER_SYNC_COMMITTEE_PERIOD</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L64">activePreset.ts:64</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L64">activePreset.ts:64</a></em></p>
 <hr/>
 <h3 id="const-eth1_address_withdrawal_prefix"><code>Const</code> ETH1_ADDRESS_WITHDRAWAL_PREFIX<a class="headerlink" href="#const-eth1_address_withdrawal_prefix" title="Permanent link">¶</a></h3>
 <p>• <strong>ETH1_ADDRESS_WITHDRAWAL_PREFIX</strong>: <em>Uint8Array‹›</em> = Uint8Array.from([0])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L13">constants.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L13">constants.ts:13</a></em></p>
 <hr/>
 <h3 id="const-far_future_epoch"><code>Const</code> FAR_FUTURE_EPOCH<a class="headerlink" href="#const-far_future_epoch" title="Permanent link">¶</a></h3>
 <p>• <strong>FAR_FUTURE_EPOCH</strong>: <em>number</em> = Infinity</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L5">constants.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L5">constants.ts:5</a></em></p>
 <hr/>
 <h3 id="const-finalized_root_index"><code>Const</code> FINALIZED_ROOT_INDEX<a class="headerlink" href="#const-finalized_root_index" title="Permanent link">¶</a></h3>
 <p>• <strong>FINALIZED_ROOT_INDEX</strong>: <em>105</em> = 105</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L72">constants.ts:72</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L72">constants.ts:72</a></em></p>
 <div class="highlight"><pre><span></span><code><span class="nx">config</span><span class="p">.</span><span class="nx">types</span><span class="p">.</span><span class="nx">altair</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">getPathGindex</span><span class="p">([</span><span class="s2">"finalizedCheckpoint"</span><span class="p">,</span> <span class="s2">"root"</span><span class="p">])</span>
 </code></pre></div>
 <hr/>
 <h3 id="const-finalized_root_index_floorlog2"><code>Const</code> FINALIZED_ROOT_INDEX_FLOORLOG2<a class="headerlink" href="#const-finalized_root_index_floorlog2" title="Permanent link">¶</a></h3>
 <p>• <strong>FINALIZED_ROOT_INDEX_FLOORLOG2</strong>: <em>6</em> = 6</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L78">constants.ts:78</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L78">constants.ts:78</a></em></p>
 <div class="highlight"><pre><span></span><code><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">log2</span><span class="p">(</span><span class="nx">FINALIZED_ROOT_INDEX</span><span class="p">))</span>
 </code></pre></div>
 <hr/>
 <h3 id="const-genesis_epoch"><code>Const</code> GENESIS_EPOCH<a class="headerlink" href="#const-genesis_epoch" title="Permanent link">¶</a></h3>
 <p>• <strong>GENESIS_EPOCH</strong>: <em>0</em> = 0</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L4">constants.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L4">constants.ts:4</a></em></p>
 <hr/>
 <h3 id="const-genesis_slot"><code>Const</code> GENESIS_SLOT<a class="headerlink" href="#const-genesis_slot" title="Permanent link">¶</a></h3>
 <p>• <strong>GENESIS_SLOT</strong>: <em>0</em> = 0</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L3">constants.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L3">constants.ts:3</a></em></p>
 <hr/>
 <h3 id="historical_roots_limit">HISTORICAL_ROOTS_LIMIT<a class="headerlink" href="#historical_roots_limit" title="Permanent link">¶</a></h3>
 <p>• <strong>HISTORICAL_ROOTS_LIMIT</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L50">activePreset.ts:50</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L50">activePreset.ts:50</a></em></p>
 <hr/>
 <h3 id="hysteresis_downward_multiplier">HYSTERESIS_DOWNWARD_MULTIPLIER<a class="headerlink" href="#hysteresis_downward_multiplier" title="Permanent link">¶</a></h3>
 <p>• <strong>HYSTERESIS_DOWNWARD_MULTIPLIER</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L35">activePreset.ts:35</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L35">activePreset.ts:35</a></em></p>
 <hr/>
 <h3 id="hysteresis_quotient">HYSTERESIS_QUOTIENT<a class="headerlink" href="#hysteresis_quotient" title="Permanent link">¶</a></h3>
 <p>• <strong>HYSTERESIS_QUOTIENT</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L34">activePreset.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L34">activePreset.ts:34</a></em></p>
 <hr/>
 <h3 id="hysteresis_upward_multiplier">HYSTERESIS_UPWARD_MULTIPLIER<a class="headerlink" href="#hysteresis_upward_multiplier" title="Permanent link">¶</a></h3>
 <p>• <strong>HYSTERESIS_UPWARD_MULTIPLIER</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L36">activePreset.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L36">activePreset.ts:36</a></em></p>
 <hr/>
 <h3 id="inactivity_penalty_quotient">INACTIVITY_PENALTY_QUOTIENT<a class="headerlink" href="#inactivity_penalty_quotient" title="Permanent link">¶</a></h3>
 <p>• <strong>INACTIVITY_PENALTY_QUOTIENT</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L55">activePreset.ts:55</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L55">activePreset.ts:55</a></em></p>
 <hr/>
 <h3 id="inactivity_penalty_quotient_altair">INACTIVITY_PENALTY_QUOTIENT_ALTAIR<a class="headerlink" href="#inactivity_penalty_quotient_altair" title="Permanent link">¶</a></h3>
 <p>• <strong>INACTIVITY_PENALTY_QUOTIENT_ALTAIR</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L65">activePreset.ts:65</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L65">activePreset.ts:65</a></em></p>
 <hr/>
 <h3 id="const-justification_bits_length"><code>Const</code> JUSTIFICATION_BITS_LENGTH<a class="headerlink" href="#const-justification_bits_length" title="Permanent link">¶</a></h3>
 <p>• <strong>JUSTIFICATION_BITS_LENGTH</strong>: <em>4</em> = 4</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L8">constants.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L8">constants.ts:8</a></em></p>
 <hr/>
 <h3 id="max_attestations">MAX_ATTESTATIONS<a class="headerlink" href="#max_attestations" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_ATTESTATIONS</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L60">activePreset.ts:60</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L60">activePreset.ts:60</a></em></p>
 <hr/>
 <h3 id="max_attester_slashings">MAX_ATTESTER_SLASHINGS<a class="headerlink" href="#max_attester_slashings" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_ATTESTER_SLASHINGS</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L59">activePreset.ts:59</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L59">activePreset.ts:59</a></em></p>
 <hr/>
 <h3 id="max_committees_per_slot">MAX_COMMITTEES_PER_SLOT<a class="headerlink" href="#max_committees_per_slot" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_COMMITTEES_PER_SLOT</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L30">activePreset.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L30">activePreset.ts:30</a></em></p>
 <hr/>
 <h3 id="max_deposits">MAX_DEPOSITS<a class="headerlink" href="#max_deposits" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_DEPOSITS</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L61">activePreset.ts:61</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L61">activePreset.ts:61</a></em></p>
 <hr/>
 <h3 id="max_effective_balance">MAX_EFFECTIVE_BALANCE<a class="headerlink" href="#max_effective_balance" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_EFFECTIVE_BALANCE</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L39">activePreset.ts:39</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L39">activePreset.ts:39</a></em></p>
 <hr/>
 <h3 id="max_proposer_slashings">MAX_PROPOSER_SLASHINGS<a class="headerlink" href="#max_proposer_slashings" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_PROPOSER_SLASHINGS</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L58">activePreset.ts:58</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L58">activePreset.ts:58</a></em></p>
 <hr/>
 <h3 id="const-max_request_blocks"><code>Const</code> MAX_REQUEST_BLOCKS<a class="headerlink" href="#const-max_request_blocks" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_REQUEST_BLOCKS</strong>: <em>number</em> = 2 ** 10</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L60">constants.ts:60</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L60">constants.ts:60</a></em></p>
 <hr/>
 <h3 id="max_seed_lookahead">MAX_SEED_LOOKAHEAD<a class="headerlink" href="#max_seed_lookahead" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_SEED_LOOKAHEAD</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L44">activePreset.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L44">activePreset.ts:44</a></em></p>
 <hr/>
 <h3 id="max_validators_per_committee">MAX_VALIDATORS_PER_COMMITTEE<a class="headerlink" href="#max_validators_per_committee" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_VALIDATORS_PER_COMMITTEE</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L32">activePreset.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L32">activePreset.ts:32</a></em></p>
 <hr/>
 <h3 id="max_voluntary_exits">MAX_VOLUNTARY_EXITS<a class="headerlink" href="#max_voluntary_exits" title="Permanent link">¶</a></h3>
 <p>• <strong>MAX_VOLUNTARY_EXITS</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L62">activePreset.ts:62</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L62">activePreset.ts:62</a></em></p>
 <hr/>
 <h3 id="min_attestation_inclusion_delay">MIN_ATTESTATION_INCLUSION_DELAY<a class="headerlink" href="#min_attestation_inclusion_delay" title="Permanent link">¶</a></h3>
 <p>• <strong>MIN_ATTESTATION_INCLUSION_DELAY</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L41">activePreset.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L41">activePreset.ts:41</a></em></p>
 <hr/>
 <h3 id="min_deposit_amount">MIN_DEPOSIT_AMOUNT<a class="headerlink" href="#min_deposit_amount" title="Permanent link">¶</a></h3>
 <p>• <strong>MIN_DEPOSIT_AMOUNT</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L38">activePreset.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L38">activePreset.ts:38</a></em></p>
 <hr/>
 <h3 id="min_epochs_to_inactivity_penalty">MIN_EPOCHS_TO_INACTIVITY_PENALTY<a class="headerlink" href="#min_epochs_to_inactivity_penalty" title="Permanent link">¶</a></h3>
 <p>• <strong>MIN_EPOCHS_TO_INACTIVITY_PENALTY</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L47">activePreset.ts:47</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L47">activePreset.ts:47</a></em></p>
 <hr/>
 <h3 id="min_seed_lookahead">MIN_SEED_LOOKAHEAD<a class="headerlink" href="#min_seed_lookahead" title="Permanent link">¶</a></h3>
 <p>• <strong>MIN_SEED_LOOKAHEAD</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L43">activePreset.ts:43</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L43">activePreset.ts:43</a></em></p>
 <hr/>
 <h3 id="min_slashing_penalty_quotient">MIN_SLASHING_PENALTY_QUOTIENT<a class="headerlink" href="#min_slashing_penalty_quotient" title="Permanent link">¶</a></h3>
 <p>• <strong>MIN_SLASHING_PENALTY_QUOTIENT</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L56">activePreset.ts:56</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L56">activePreset.ts:56</a></em></p>
 <hr/>
 <h3 id="min_slashing_penalty_quotient_altair">MIN_SLASHING_PENALTY_QUOTIENT_ALTAIR<a class="headerlink" href="#min_slashing_penalty_quotient_altair" title="Permanent link">¶</a></h3>
 <p>• <strong>MIN_SLASHING_PENALTY_QUOTIENT_ALTAIR</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L66">activePreset.ts:66</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L66">activePreset.ts:66</a></em></p>
 <hr/>
 <h3 id="const-min_sync_committee_participants"><code>Const</code> MIN_SYNC_COMMITTEE_PARTICIPANTS<a class="headerlink" href="#const-min_sync_committee_participants" title="Permanent link">¶</a></h3>
 <p>• <strong>MIN_SYNC_COMMITTEE_PARTICIPANTS</strong>: <em>1</em> = 1</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L64">constants.ts:64</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L64">constants.ts:64</a></em></p>
 <hr/>
 <h3 id="const-next_sync_committee_index"><code>Const</code> NEXT_SYNC_COMMITTEE_INDEX<a class="headerlink" href="#const-next_sync_committee_index" title="Permanent link">¶</a></h3>
 <p>• <strong>NEXT_SYNC_COMMITTEE_INDEX</strong>: <em>55</em> = 55</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L84">constants.ts:84</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L84">constants.ts:84</a></em></p>
 <div class="highlight"><pre><span></span><code><span class="nx">config</span><span class="p">.</span><span class="nx">types</span><span class="p">.</span><span class="nx">altair</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">.</span><span class="nx">getPathGindex</span><span class="p">([</span><span class="s2">"nextSyncCommittee"</span><span class="p">])</span>
 </code></pre></div>
 <hr/>
 <h3 id="const-next_sync_committee_index_floorlog2"><code>Const</code> NEXT_SYNC_COMMITTEE_INDEX_FLOORLOG2<a class="headerlink" href="#const-next_sync_committee_index_floorlog2" title="Permanent link">¶</a></h3>
 <p>• <strong>NEXT_SYNC_COMMITTEE_INDEX_FLOORLOG2</strong>: <em>5</em> = 5</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L90">constants.ts:90</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L90">constants.ts:90</a></em></p>
 <div class="highlight"><pre><span></span><code><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">log2</span><span class="p">(</span><span class="nx">NEXT_SYNC_COMMITTEE_INDEX</span><span class="p">))</span>
 </code></pre></div>
 <hr/>
 <h3 id="const-participation_flag_weights"><code>Const</code> PARTICIPATION_FLAG_WEIGHTS<a class="headerlink" href="#const-participation_flag_weights" title="Permanent link">¶</a></h3>
 <p>• <strong>PARTICIPATION_FLAG_WEIGHTS</strong>: <em>bigint[]</em> = [TIMELY_SOURCE_WEIGHT, TIMELY_TARGET_WEIGHT, TIMELY_HEAD_WEIGHT]</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L45">constants.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L45">constants.ts:45</a></em></p>
 <hr/>
 <h3 id="proportional_slashing_multiplier">PROPORTIONAL_SLASHING_MULTIPLIER<a class="headerlink" href="#proportional_slashing_multiplier" title="Permanent link">¶</a></h3>
 <p>• <strong>PROPORTIONAL_SLASHING_MULTIPLIER</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L57">activePreset.ts:57</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L57">activePreset.ts:57</a></em></p>
 <hr/>
 <h3 id="proportional_slashing_multiplier_altair">PROPORTIONAL_SLASHING_MULTIPLIER_ALTAIR<a class="headerlink" href="#proportional_slashing_multiplier_altair" title="Permanent link">¶</a></h3>
 <p>• <strong>PROPORTIONAL_SLASHING_MULTIPLIER_ALTAIR</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L67">activePreset.ts:67</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L67">activePreset.ts:67</a></em></p>
 <hr/>
 <h3 id="proposer_reward_quotient">PROPOSER_REWARD_QUOTIENT<a class="headerlink" href="#proposer_reward_quotient" title="Permanent link">¶</a></h3>
 <p>• <strong>PROPOSER_REWARD_QUOTIENT</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L54">activePreset.ts:54</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L54">activePreset.ts:54</a></em></p>
 <hr/>
 <h3 id="const-proposer_weight"><code>Const</code> PROPOSER_WEIGHT<a class="headerlink" href="#const-proposer_weight" title="Permanent link">¶</a></h3>
 <p>• <strong>PROPOSER_WEIGHT</strong>: <em>bigint</em> = BigInt(8)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L40">constants.ts:40</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L40">constants.ts:40</a></em></p>
 <hr/>
 <h3 id="const-random_subnets_per_validator"><code>Const</code> RANDOM_SUBNETS_PER_VALIDATOR<a class="headerlink" href="#const-random_subnets_per_validator" title="Permanent link">¶</a></h3>
 <p>• <strong>RANDOM_SUBNETS_PER_VALIDATOR</strong>: <em>1</em> = 1</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L50">constants.ts:50</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L50">constants.ts:50</a></em></p>
 <hr/>
 <h3 id="safe_slots_to_update_justified">SAFE_SLOTS_TO_UPDATE_JUSTIFIED<a class="headerlink" href="#safe_slots_to_update_justified" title="Permanent link">¶</a></h3>
 <p>• <strong>SAFE_SLOTS_TO_UPDATE_JUSTIFIED</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L37">activePreset.ts:37</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L37">activePreset.ts:37</a></em></p>
 <hr/>
 <h3 id="shuffle_round_count">SHUFFLE_ROUND_COUNT<a class="headerlink" href="#shuffle_round_count" title="Permanent link">¶</a></h3>
 <p>• <strong>SHUFFLE_ROUND_COUNT</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L33">activePreset.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L33">activePreset.ts:33</a></em></p>
 <hr/>
 <h3 id="slots_per_epoch">SLOTS_PER_EPOCH<a class="headerlink" href="#slots_per_epoch" title="Permanent link">¶</a></h3>
 <p>• <strong>SLOTS_PER_EPOCH</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L42">activePreset.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L42">activePreset.ts:42</a></em></p>
 <hr/>
 <h3 id="slots_per_historical_root">SLOTS_PER_HISTORICAL_ROOT<a class="headerlink" href="#slots_per_historical_root" title="Permanent link">¶</a></h3>
 <p>• <strong>SLOTS_PER_HISTORICAL_ROOT</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L46">activePreset.ts:46</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L46">activePreset.ts:46</a></em></p>
 <hr/>
 <h3 id="sync_committee_size">SYNC_COMMITTEE_SIZE<a class="headerlink" href="#sync_committee_size" title="Permanent link">¶</a></h3>
 <p>• <strong>SYNC_COMMITTEE_SIZE</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L63">activePreset.ts:63</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L63">activePreset.ts:63</a></em></p>
 <hr/>
 <h3 id="const-sync_committee_subnet_count"><code>Const</code> SYNC_COMMITTEE_SUBNET_COUNT<a class="headerlink" href="#const-sync_committee_subnet_count" title="Permanent link">¶</a></h3>
 <p>• <strong>SYNC_COMMITTEE_SUBNET_COUNT</strong>: <em>4</em> = 4</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L58">constants.ts:58</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L58">constants.ts:58</a></em></p>
 <hr/>
 <h3 id="const-sync_reward_weight"><code>Const</code> SYNC_REWARD_WEIGHT<a class="headerlink" href="#const-sync_reward_weight" title="Permanent link">¶</a></h3>
 <p>• <strong>SYNC_REWARD_WEIGHT</strong>: <em>bigint</em> = BigInt(2)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L39">constants.ts:39</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L39">constants.ts:39</a></em></p>
 <hr/>
 <h3 id="const-target_aggregators_per_committee"><code>Const</code> TARGET_AGGREGATORS_PER_COMMITTEE<a class="headerlink" href="#const-target_aggregators_per_committee" title="Permanent link">¶</a></h3>
 <p>• <strong>TARGET_AGGREGATORS_PER_COMMITTEE</strong>: <em>16</em> = 16</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L49">constants.ts:49</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L49">constants.ts:49</a></em></p>
 <hr/>
 <h3 id="const-target_aggregators_per_sync_subcommittee"><code>Const</code> TARGET_AGGREGATORS_PER_SYNC_SUBCOMMITTEE<a class="headerlink" href="#const-target_aggregators_per_sync_subcommittee" title="Permanent link">¶</a></h3>
 <p>• <strong>TARGET_AGGREGATORS_PER_SYNC_SUBCOMMITTEE</strong>: <em>16</em> = 16</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L57">constants.ts:57</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L57">constants.ts:57</a></em></p>
 <hr/>
 <h3 id="target_committee_size">TARGET_COMMITTEE_SIZE<a class="headerlink" href="#target_committee_size" title="Permanent link">¶</a></h3>
 <p>• <strong>TARGET_COMMITTEE_SIZE</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L31">activePreset.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L31">activePreset.ts:31</a></em></p>
 <hr/>
 <h3 id="const-timely_head_flag_index"><code>Const</code> TIMELY_HEAD_FLAG_INDEX<a class="headerlink" href="#const-timely_head_flag_index" title="Permanent link">¶</a></h3>
 <p>• <strong>TIMELY_HEAD_FLAG_INDEX</strong>: <em>2</em> = 2</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L32">constants.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L32">constants.ts:32</a></em></p>
 <hr/>
 <h3 id="const-timely_head_weight"><code>Const</code> TIMELY_HEAD_WEIGHT<a class="headerlink" href="#const-timely_head_weight" title="Permanent link">¶</a></h3>
 <p>• <strong>TIMELY_HEAD_WEIGHT</strong>: <em>bigint</em> = BigInt(14)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L38">constants.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L38">constants.ts:38</a></em></p>
 <hr/>
 <h3 id="const-timely_source_flag_index"><code>Const</code> TIMELY_SOURCE_FLAG_INDEX<a class="headerlink" href="#const-timely_source_flag_index" title="Permanent link">¶</a></h3>
 <p>• <strong>TIMELY_SOURCE_FLAG_INDEX</strong>: <em>0</em> = 0</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L30">constants.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L30">constants.ts:30</a></em></p>
 <hr/>
 <h3 id="const-timely_source_weight"><code>Const</code> TIMELY_SOURCE_WEIGHT<a class="headerlink" href="#const-timely_source_weight" title="Permanent link">¶</a></h3>
 <p>• <strong>TIMELY_SOURCE_WEIGHT</strong>: <em>bigint</em> = BigInt(14)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L36">constants.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L36">constants.ts:36</a></em></p>
 <hr/>
 <h3 id="const-timely_target_flag_index"><code>Const</code> TIMELY_TARGET_FLAG_INDEX<a class="headerlink" href="#const-timely_target_flag_index" title="Permanent link">¶</a></h3>
 <p>• <strong>TIMELY_TARGET_FLAG_INDEX</strong>: <em>1</em> = 1</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L31">constants.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L31">constants.ts:31</a></em></p>
 <hr/>
 <h3 id="const-timely_target_weight"><code>Const</code> TIMELY_TARGET_WEIGHT<a class="headerlink" href="#const-timely_target_weight" title="Permanent link">¶</a></h3>
 <p>• <strong>TIMELY_TARGET_WEIGHT</strong>: <em>bigint</em> = BigInt(26)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L37">constants.ts:37</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L37">constants.ts:37</a></em></p>
 <hr/>
 <h3 id="validator_registry_limit">VALIDATOR_REGISTRY_LIMIT<a class="headerlink" href="#validator_registry_limit" title="Permanent link">¶</a></h3>
 <p>• <strong>VALIDATOR_REGISTRY_LIMIT</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L51">activePreset.ts:51</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L51">activePreset.ts:51</a></em></p>
 <hr/>
 <h3 id="const-weight_denominator"><code>Const</code> WEIGHT_DENOMINATOR<a class="headerlink" href="#const-weight_denominator" title="Permanent link">¶</a></h3>
 <p>• <strong>WEIGHT_DENOMINATOR</strong>: <em>bigint</em> = BigInt(64)</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/constants.ts#L41">constants.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/constants.ts#L41">constants.ts:41</a></em></p>
 <hr/>
 <h3 id="whistleblower_reward_quotient">WHISTLEBLOWER_REWARD_QUOTIENT<a class="headerlink" href="#whistleblower_reward_quotient" title="Permanent link">¶</a></h3>
 <p>• <strong>WHISTLEBLOWER_REWARD_QUOTIENT</strong>: <em>bigint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L53">activePreset.ts:53</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L53">activePreset.ts:53</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="createibeaconpreset">createIBeaconPreset<a class="headerlink" href="#createibeaconpreset" title="Permanent link">¶</a></h3>
 <p>▸ <strong>createIBeaconPreset</strong>(<code>input</code>: Record‹string, unknown›): <em>Partial‹<a href="../preset/#ibeaconpreset">IBeaconPreset</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/utils.ts#L5">utils.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/utils.ts#L5">utils.ts:5</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1191,7 +1191,7 @@ If <code>LODESTAR_PRESET</code> is not set, the default is <code>mainnet</code>.
 <hr/>
 <h3 id="parsepresetname">parsePresetName<a class="headerlink" href="#parsepresetname" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parsePresetName</strong>(<code>name</code>: string): <em><a href="../../enums/preset.presetname/">PresetName</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L13">activePreset.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L13">activePreset.ts:13</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1211,7 +1211,7 @@ If <code>LODESTAR_PRESET</code> is not set, the default is <code>mainnet</code>.
 <hr/>
 <h3 id="setactivepreset">setActivePreset<a class="headerlink" href="#setactivepreset" title="Permanent link">¶</a></h3>
 <p>▸ <strong>setActivePreset</strong>(<code>presetName</code>: <a href="../../enums/preset.presetname/">PresetName</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L77">activePreset.ts:77</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L77">activePreset.ts:77</a></em></p>
 <p>Override the active preset</p>
 <p>WARNING: Lodestar libraries rely on preset values being <em>constant</em>, so the active preset must be set <em>before</em> loading any other lodestar libraries.</p>
 <p>Only call this function if you <em>really</em> know what you are doing.</p>
@@ -1234,13 +1234,13 @@ If <code>LODESTAR_PRESET</code> is not set, the default is <code>mainnet</code>.
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">¶</a></h2>
 <h3 id="const-presets"><code>Const</code> presets<a class="headerlink" href="#const-presets" title="Permanent link">¶</a></h3>
 <h3 id="presets-object">▪ <strong>presets</strong>: <em>object</em><a class="headerlink" href="#presets-object" title="Permanent link">¶</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L8">activePreset.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L8">activePreset.ts:8</a></em></p>
 <h3 id="presetnamemainnet">[PresetName.mainnet]<a class="headerlink" href="#presetnamemainnet" title="Permanent link">¶</a></h3>
 <p>• <strong>[PresetName.mainnet]</strong>: <em><a href="../preset/#ibeaconpreset">IBeaconPreset</a></em> = mainnet</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L9">activePreset.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L9">activePreset.ts:9</a></em></p>
 <h3 id="presetnameminimal">[PresetName.minimal]<a class="headerlink" href="#presetnameminimal" title="Permanent link">¶</a></h3>
 <p>• <strong>[PresetName.minimal]</strong>: <em><a href="../preset/#ibeaconpreset">IBeaconPreset</a></em> = minimal</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1a3def0/packages/params/src/activePreset.ts#L10">activePreset.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bcdf1d9/packages/params/src/activePreset.ts#L10">activePreset.ts:10</a></em></p>
 </article>
 </div>
 </div>
