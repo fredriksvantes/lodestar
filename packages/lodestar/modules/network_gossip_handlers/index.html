@@ -354,7 +354,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">¶</a></h2>
 <h3 id="gossiphandlerfn">GossipHandlerFn<a class="headerlink" href="#gossiphandlerfn" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>GossipHandlerFn</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c9e92a7/packages/lodestar/src/network/gossip/handlers/index.ts#L22">packages/lodestar/src/network/gossip/handlers/index.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08fee5c/packages/lodestar/src/network/gossip/handlers/index.ts#L22">packages/lodestar/src/network/gossip/handlers/index.ts:22</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">¶</a></h4>
 <p>▸ (<code>object</code>: GossipTypeMap[GossipType], <code>topic</code>: GossipTopicMap[GossipType]): <em>Promise‹void›</em></p>
 <p><strong>Parameters:</strong></p>
@@ -379,12 +379,12 @@
 <hr/>
 <h3 id="gossiphandlers">GossipHandlers<a class="headerlink" href="#gossiphandlers" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>GossipHandlers</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c9e92a7/packages/lodestar/src/network/gossip/handlers/index.ts#L23">packages/lodestar/src/network/gossip/handlers/index.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08fee5c/packages/lodestar/src/network/gossip/handlers/index.ts#L23">packages/lodestar/src/network/gossip/handlers/index.ts:23</a></em></p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">¶</a></h4>
 <hr/>
 <h3 id="validatorfnsmodules">ValidatorFnsModules<a class="headerlink" href="#validatorfnsmodules" title="Permanent link">¶</a></h3>
 <p>Ƭ <strong>ValidatorFnsModules</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c9e92a7/packages/lodestar/src/network/gossip/handlers/index.ts#L27">packages/lodestar/src/network/gossip/handlers/index.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08fee5c/packages/lodestar/src/network/gossip/handlers/index.ts#L27">packages/lodestar/src/network/gossip/handlers/index.ts:27</a></em></p>
 <h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -409,7 +409,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="getgossiphandlers">getGossipHandlers<a class="headerlink" href="#getgossiphandlers" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getGossipHandlers</strong>(<code>modules</code>: <a href="./#validatorfnsmodules">ValidatorFnsModules</a>): <em><a href="./#gossiphandlers">GossipHandlers</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c9e92a7/packages/lodestar/src/network/gossip/handlers/index.ts#L50">packages/lodestar/src/network/gossip/handlers/index.ts:50</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08fee5c/packages/lodestar/src/network/gossip/handlers/index.ts#L50">packages/lodestar/src/network/gossip/handlers/index.ts:50</a></em></p>
 <p>Gossip handlers perform validation + handling in a single function.
 - This gossip handlers MUST only be registered as validator functions. No handler is registered for any topic.
 - All <code>chain/validation/*</code> functions MUST throw typed GossipActionError instances so they gossip action is captured
