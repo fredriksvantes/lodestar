@@ -280,6 +280,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#getcontributionpubkeys">
+    getContributionPubkeys
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#getselectionproofsignatureset">
     getSelectionProofSignatureSet
   </a>
@@ -319,7 +324,7 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#getcontributionpubkeys">
+<a class="md-nav__link" href="#getcontributionpubkeys_1">
     getContributionPubkeys
   </a>
 </li>
@@ -363,6 +368,7 @@
 <ul>
 <li><a href="./#getaggregateandproofsignatureset">getAggregateAndProofSignatureSet</a></li>
 <li><a href="./#getcontributionandproofsignatureset">getContributionAndProofSignatureSet</a></li>
+<li><a href="./#getcontributionpubkeys">getContributionPubkeys</a></li>
 <li><a href="./#getselectionproofsignatureset">getSelectionProofSignatureSet</a></li>
 <li><a href="./#getsynccommitteecontributionsignatureset">getSyncCommitteeContributionSignatureSet</a></li>
 <li><a href="./#getsynccommitteeselectionproofsignatureset">getSyncCommitteeSelectionProofSignatureSet</a></li>
@@ -385,6 +391,9 @@
 <h3 id="getcontributionandproofsignatureset">getContributionAndProofSignatureSet<a class="headerlink" href="#getcontributionandproofsignatureset" title="Permanent link">¶</a></h3>
 <p>• <strong>getContributionAndProofSignatureSet</strong>:</p>
 <hr/>
+<h3 id="getcontributionpubkeys">getContributionPubkeys<a class="headerlink" href="#getcontributionpubkeys" title="Permanent link">¶</a></h3>
+<p>• <strong>getContributionPubkeys</strong>:</p>
+<hr/>
 <h3 id="getselectionproofsignatureset">getSelectionProofSignatureSet<a class="headerlink" href="#getselectionproofsignatureset" title="Permanent link">¶</a></h3>
 <p>• <strong>getSelectionProofSignatureSet</strong>:</p>
 <hr/>
@@ -399,7 +408,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="getaggregateandproofsignatureset_1">getAggregateAndProofSignatureSet<a class="headerlink" href="#getaggregateandproofsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getAggregateAndProofSignatureSet</strong>(<code>state</code>: allForks.CachedBeaconState‹allForks.BeaconState›, <code>epoch</code>: Epoch, <code>aggregator</code>: PublicKey, <code>aggregateAndProof</code>: SignedAggregateAndProof): <em>ISignatureSet</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bea1304/packages/lodestar/src/chain/validation/signatureSets/aggregateAndProof.ts#L13">packages/lodestar/src/chain/validation/signatureSets/aggregateAndProof.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4505b4b/packages/lodestar/src/chain/validation/signatureSets/aggregateAndProof.ts#L13">packages/lodestar/src/chain/validation/signatureSets/aggregateAndProof.ts:13</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -431,7 +440,7 @@
 <hr/>
 <h3 id="getcontributionandproofsignatureset_1">getContributionAndProofSignatureSet<a class="headerlink" href="#getcontributionandproofsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getContributionAndProofSignatureSet</strong>(<code>state</code>: CachedBeaconState‹allForks.BeaconState›, <code>signedContributionAndProof</code>: SignedContributionAndProof): <em>ISignatureSet</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bea1304/packages/lodestar/src/chain/validation/signatureSets/contributionAndProof.ts#L10">packages/lodestar/src/chain/validation/signatureSets/contributionAndProof.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4505b4b/packages/lodestar/src/chain/validation/signatureSets/contributionAndProof.ts#L10">packages/lodestar/src/chain/validation/signatureSets/contributionAndProof.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -453,9 +462,9 @@
 </table>
 <p><strong>Returns:</strong> <em>ISignatureSet</em></p>
 <hr/>
-<h3 id="getcontributionpubkeys">getContributionPubkeys<a class="headerlink" href="#getcontributionpubkeys" title="Permanent link">¶</a></h3>
+<h3 id="getcontributionpubkeys_1">getContributionPubkeys<a class="headerlink" href="#getcontributionpubkeys_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getContributionPubkeys</strong>(<code>state</code>: CachedBeaconState‹BeaconState›, <code>contribution</code>: SyncCommitteeContribution): <em>PublicKey[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bea1304/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts#L31">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4505b4b/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts#L32">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts:32</a></em></p>
 <p>Retrieve pubkeys in contribution aggregate using epochCtx:
 - currSyncCommitteeIndexes cache
 - index2pubkey cache</p>
@@ -482,7 +491,7 @@
 <hr/>
 <h3 id="getselectionproofsignatureset_1">getSelectionProofSignatureSet<a class="headerlink" href="#getselectionproofsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSelectionProofSignatureSet</strong>(<code>state</code>: allForks.CachedBeaconState‹allForks.BeaconState›, <code>slot</code>: Slot, <code>aggregator</code>: PublicKey, <code>aggregateAndProof</code>: SignedAggregateAndProof): <em>ISignatureSet</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bea1304/packages/lodestar/src/chain/validation/signatureSets/selectionProof.ts#L11">packages/lodestar/src/chain/validation/signatureSets/selectionProof.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4505b4b/packages/lodestar/src/chain/validation/signatureSets/selectionProof.ts#L11">packages/lodestar/src/chain/validation/signatureSets/selectionProof.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -513,8 +522,8 @@
 <p><strong>Returns:</strong> <em>ISignatureSet</em></p>
 <hr/>
 <h3 id="getsynccommitteecontributionsignatureset_1">getSyncCommitteeContributionSignatureSet<a class="headerlink" href="#getsynccommitteecontributionsignatureset_1" title="Permanent link">¶</a></h3>
-<p>▸ <strong>getSyncCommitteeContributionSignatureSet</strong>(<code>state</code>: CachedBeaconState‹BeaconState›, <code>contribution</code>: SyncCommitteeContribution): <em>ISignatureSet</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bea1304/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts#L13">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts:13</a></em></p>
+<p>▸ <strong>getSyncCommitteeContributionSignatureSet</strong>(<code>state</code>: CachedBeaconState‹BeaconState›, <code>contribution</code>: SyncCommitteeContribution, <code>pubkeys</code>: PublicKey[]): <em>ISignatureSet</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4505b4b/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts#L13">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeContribution.ts:13</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -532,13 +541,17 @@
 <td><code>contribution</code></td>
 <td>SyncCommitteeContribution</td>
 </tr>
+<tr>
+<td><code>pubkeys</code></td>
+<td>PublicKey[]</td>
+</tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>ISignatureSet</em></p>
 <hr/>
 <h3 id="getsynccommitteeselectionproofsignatureset_1">getSyncCommitteeSelectionProofSignatureSet<a class="headerlink" href="#getsynccommitteeselectionproofsignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSyncCommitteeSelectionProofSignatureSet</strong>(<code>state</code>: CachedBeaconState‹allForks.BeaconState›, <code>contributionAndProof</code>: ContributionAndProof): <em>ISignatureSet</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bea1304/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeSelectionProof.ts#L10">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeSelectionProof.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4505b4b/packages/lodestar/src/chain/validation/signatureSets/syncCommitteeSelectionProof.ts#L10">packages/lodestar/src/chain/validation/signatureSets/syncCommitteeSelectionProof.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -562,7 +575,7 @@
 <hr/>
 <h3 id="getsynccommitteesignatureset_1">getSyncCommitteeSignatureSet<a class="headerlink" href="#getsynccommitteesignatureset_1" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getSyncCommitteeSignatureSet</strong>(<code>state</code>: CachedBeaconState‹allForks.BeaconState›, <code>syncCommittee</code>: SyncCommitteeMessage): <em>ISignatureSet</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bea1304/packages/lodestar/src/chain/validation/signatureSets/syncCommittee.ts#L10">packages/lodestar/src/chain/validation/signatureSets/syncCommittee.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4505b4b/packages/lodestar/src/chain/validation/signatureSets/syncCommittee.ts#L10">packages/lodestar/src/chain/validation/signatureSets/syncCommittee.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
