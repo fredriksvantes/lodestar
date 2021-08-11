@@ -251,12 +251,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-2053.reflection-825.ibeaconstatetransitionmetrics/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-2056.reflection-828.ibeaconstatetransitionmetrics/</loc>
          <lastmod>2021-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-2053.reflection-825.ihistogram/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/interfaces/reflection-2056.reflection-828.ihistogram/</loc>
          <lastmod>2021-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -331,12 +331,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-2053/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-2056/</loc>
          <lastmod>2021-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-2053.reflection-825/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/beacon-state-transition/modules/reflection-2056.reflection-828/</loc>
          <lastmod>2021-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
