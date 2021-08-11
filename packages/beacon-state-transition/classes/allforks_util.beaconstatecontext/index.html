@@ -432,7 +432,7 @@
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new BeaconStateContext</strong>(<code>type</code>: ContainerType‹T›, <code>tree</code>: Tree, <code>validatorCache</code>: MutableVector‹T["validators"][number]›, <code>balanceCache</code>: MutableVector‹T["balances"][number]›, <code>previousEpochParticipationCache</code>: MutableVector‹<a href="../../interfaces/allforks_util.iparticipationstatus/">IParticipationStatus</a>›, <code>currentEpochParticipationCache</code>: MutableVector‹<a href="../../interfaces/allforks_util.iparticipationstatus/">IParticipationStatus</a>›, <code>currentSyncCommittee</code>: <a href="../allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a>, <code>nextSyncCommittee</code>: <a href="../allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a>, <code>inactivityScoresCache</code>: MutableVector‹<a href="../../modules/phase0/#number64">Number64</a>›, <code>epochCtx</code>: <a href="../allforks_util.epochcontext/">EpochContext</a>): <em><a href="./">BeaconStateContext</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L216">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:216</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L216">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:216</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -488,7 +488,7 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="balances">balances<a class="headerlink" href="#balances" title="Permanent link">¶</a></h3>
 <p>• <strong>balances</strong>: <em><a href="../allforks_util.cachedbalancelist/">CachedBalanceList</a> &amp; T["balances"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L164">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:164</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L164">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:164</a></em></p>
 <p>Returns a Proxy to CachedBalanceList</p>
 <p>Stores state.balances in two duplicated forms (both structures are structurally shared):
 1. TreeBacked, for efficient hashing
@@ -503,16 +503,16 @@ are updated. However it may have tiny changes during block processing if:
 <hr/>
 <h3 id="config">config<a class="headerlink" href="#config" title="Permanent link">¶</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L118">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:118</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L118">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:118</a></em></p>
 <hr/>
 <h3 id="currentepochparticipation">currentEpochParticipation<a class="headerlink" href="#currentepochparticipation" title="Permanent link">¶</a></h3>
 <p>• <strong>currentEpochParticipation</strong>: <em><a href="../allforks_util.cachedepochparticipation/">CachedEpochParticipation</a> &amp; List‹<a href="../../modules/phase0/#participationflags">ParticipationFlags</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L181">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:181</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L181">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:181</a></em></p>
 <p>Same as previousEpochParticipation</p>
 <hr/>
 <h3 id="currentsynccommittee">currentSyncCommittee<a class="headerlink" href="#currentsynccommittee" title="Permanent link">¶</a></h3>
 <p>• <strong>currentSyncCommittee</strong>: <em><a href="../allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L196">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:196</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L196">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:196</a></em></p>
 <p>Returns a Proxy to IndexedSyncCommittee (Note: phase0 has no sync committee)</p>
 <p>Stores state<altair>.currentSyncCommittee in two duplicated forms (not structurally shared):
 1. TreeBacked, for efficient hashing
@@ -526,14 +526,14 @@ It contains fixed 512 members so it's rather small.</p>
 <hr/>
 <h3 id="epochctx">epochCtx<a class="headerlink" href="#epochctx" title="Permanent link">¶</a></h3>
 <p>• <strong>epochCtx</strong>: <em><a href="../allforks_util.epochcontext/">EpochContext</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L124">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:124</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L124">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:124</a></em></p>
 <p>Epoch cache: Caches constant data through the epoch: @see EpochContext
 - Proposer indexes: 32 x Number
 - Shufflings: 3 x $VALIDATOR_COUNT x Number</p>
 <hr/>
 <h3 id="inactivityscores">inactivityScores<a class="headerlink" href="#inactivityscores" title="Permanent link">¶</a></h3>
 <p>• <strong>inactivityScores</strong>: <em><a href="../allforks_util.cachedinactivityscorelist/">CachedInactivityScoreList</a> &amp; List‹<a href="../../modules/phase0/#number64">Number64</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L216">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:216</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L216">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:216</a></em></p>
 <p>Returns a Proxy to CachedInactivityScoreList</p>
 <p>Stores state<altair>.inactivityScores in two duplicated forms (both structures are structurally shared):
 1. TreeBacked, for efficient hashing
@@ -549,12 +549,12 @@ changes update the tree directly.</p>
 <hr/>
 <h3 id="nextsynccommittee">nextSyncCommittee<a class="headerlink" href="#nextsynccommittee" title="Permanent link">¶</a></h3>
 <p>• <strong>nextSyncCommittee</strong>: <em><a href="../allforks_util.indexedsynccommittee/">IndexedSyncCommittee</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L198">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:198</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L198">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:198</a></em></p>
 <p>Same as currentSyncCommittee</p>
 <hr/>
 <h3 id="previousepochparticipation">previousEpochParticipation<a class="headerlink" href="#previousepochparticipation" title="Permanent link">¶</a></h3>
 <p>• <strong>previousEpochParticipation</strong>: <em><a href="../allforks_util.cachedepochparticipation/">CachedEpochParticipation</a> &amp; List‹<a href="../../modules/phase0/#participationflags">ParticipationFlags</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L179">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:179</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L179">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:179</a></em></p>
 <p>Returns a Proxy to CachedEpochParticipation</p>
 <p>Stores state<altair>.previousEpochParticipation in two duplicated forms (both structures are structurally shared):
 1. TreeBacked, for efficient hashing
@@ -567,17 +567,17 @@ and set the values fast to the tree. Maybe batching?</p>
 <hr/>
 <h3 id="tree">tree<a class="headerlink" href="#tree" title="Permanent link">¶</a></h3>
 <p>• <strong>tree</strong>: <em>Tree</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L128">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:128</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L128">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:128</a></em></p>
 <p>The original BeaconState as a Tree</p>
 <hr/>
 <h3 id="type">type<a class="headerlink" href="#type" title="Permanent link">¶</a></h3>
 <p>• <strong>type</strong>: <em>ContainerType‹T›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L126">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:126</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L126">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:126</a></em></p>
 <p>The BeaconState ssz type</p>
 <hr/>
 <h3 id="validators">validators<a class="headerlink" href="#validators" title="Permanent link">¶</a></h3>
 <p>• <strong>validators</strong>: <em><a href="../allforks_util.cachedvalidatorlist/">CachedValidatorList</a>‹T["validators"][number]› &amp; T["validators"]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L147">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:147</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L147">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:147</a></em></p>
 <p>Returns a Proxy to CachedValidatorList.</p>
 <p>Stores state.validators in two duplicated forms (both structures are structurally shared):
 1. TreeBacked, for efficient hashing
@@ -594,23 +594,23 @@ However its contents don't change very often. Validators only change when;
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="clone">clone<a class="headerlink" href="#clone" title="Permanent link">¶</a></h3>
 <p>▸ <strong>clone</strong>(): <em><a href="../../modules/allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹T›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L278">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:278</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L278">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:278</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../../modules/allforks_util/#cachedbeaconstate">CachedBeaconState</a>‹T›</em></p>
 <hr/>
 <h3 id="rotatesynccommittee">rotateSyncCommittee<a class="headerlink" href="#rotatesynccommittee" title="Permanent link">¶</a></h3>
 <p>▸ <strong>rotateSyncCommittee</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L297">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:297</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L297">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:297</a></em></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr/>
 <h3 id="setstatecachesaspersistent">setStateCachesAsPersistent<a class="headerlink" href="#setstatecachesaspersistent" title="Permanent link">¶</a></h3>
 <p>▸ <strong>setStateCachesAsPersistent</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L322">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:322</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L322">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:322</a></em></p>
 <p>Toggle all <code>MutableVector</code> caches to use <code>PersistentVector</code></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr/>
 <h3 id="setstatecachesastransient">setStateCachesAsTransient<a class="headerlink" href="#setstatecachesastransient" title="Permanent link">¶</a></h3>
 <p>▸ <strong>setStateCachesAsTransient</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/53f0c9e/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L311">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:311</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/56e4d3c/packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts#L311">packages/beacon-state-transition/src/allForks/util/cachedBeaconState.ts:311</a></em></p>
 <p>Toggle all <code>MutableVector</code> caches to use <code>TransientVector</code></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 </article>
