@@ -60,6 +60,7 @@
     "@chainsafe/ssz": "^0.8.13",
     "@ethersproject/abi": "^5.0.0",
     "@types/datastore-level": "^1.1.1",
+    "bigint-hash": "^0.2.2",
     "bl": "^4.0.2",
     "cross-fetch": "^3.1.4",
     "datastore-level": "^2.0.0",
