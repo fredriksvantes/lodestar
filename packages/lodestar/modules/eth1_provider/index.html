@@ -8,7 +8,7 @@
 <meta content="Lodestar documentation - Typescript Eth2.0 client" name="description"/>
 <link href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/eth1_provider/" rel="canonical"/>
 <link href="../../../../assets/round-icon.ico" rel="icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-7.2.3" name="generator"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.2.4" name="generator"/>
 <title>Eth1 provider - Lodestar documentation</title>
 <link href="../../../../assets/stylesheets/main.f7f47774.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
@@ -375,16 +375,16 @@
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">¶</a></h2>
 <h3 id="const-request_timeout"><code>Const</code> REQUEST_TIMEOUT<a class="headerlink" href="#const-request_timeout" title="Permanent link">¶</a></h3>
 <p>• <strong>REQUEST_TIMEOUT</strong>: <em>number</em> = 30 * 1000</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0add9d1/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L13">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9a9a2dd/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L13">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:13</a></em></p>
 <hr/>
 <h3 id="const-maxstringlengthtoprint"><code>Const</code> maxStringLengthToPrint<a class="headerlink" href="#const-maxstringlengthtoprint" title="Permanent link">¶</a></h3>
 <p>• <strong>maxStringLengthToPrint</strong>: <em>500</em> = 500</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0add9d1/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L12">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9a9a2dd/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L12">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:12</a></em></p>
 <p>Limits the amount of response text printed with RPC or parsing errors</p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">¶</a></h2>
 <h3 id="isjsonrpctruncatederror">isJsonRpcTruncatedError<a class="headerlink" href="#isjsonrpctruncatederror" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isJsonRpcTruncatedError</strong>(<code>error</code>: <a href="../../classes/chain_regen.regenerror/#static-error">Error</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0add9d1/packages/lodestar/src/eth1/provider/eth1Provider.ts#L179">packages/lodestar/src/eth1/provider/eth1Provider.ts:179</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9a9a2dd/packages/lodestar/src/eth1/provider/eth1Provider.ts#L179">packages/lodestar/src/eth1/provider/eth1Provider.ts:179</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -404,7 +404,7 @@
 <hr/>
 <h3 id="parseblock">parseBlock<a class="headerlink" href="#parseblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseBlock</strong>(<code>blockRaw</code>: IEthJsonRpcTypes["eth_getBlockByNumber"]): <em>Eth1Block</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0add9d1/packages/lodestar/src/eth1/provider/eth1Provider.ts#L171">packages/lodestar/src/eth1/provider/eth1Provider.ts:171</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9a9a2dd/packages/lodestar/src/eth1/provider/eth1Provider.ts#L171">packages/lodestar/src/eth1/provider/eth1Provider.ts:171</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -424,7 +424,7 @@
 <hr/>
 <h3 id="parsejson">parseJson<a class="headerlink" href="#parsejson" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseJson</strong>‹<strong>T</strong>›(<code>json</code>: string): <em>T</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0add9d1/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L147">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:147</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9a9a2dd/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L147">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:147</a></em></p>
 <p>Util: Parse JSON but display the original source string in case of error
 Helps debug instances where an API returns a plain text instead of JSON,
 such as getting an HTML page due to a wrong API URL</p>
@@ -449,7 +449,7 @@ such as getting an HTML page due to a wrong API URL</p>
 <hr/>
 <h3 id="parsejsonrpcerrorcode">parseJsonRpcErrorCode<a class="headerlink" href="#parsejsonrpcerrorcode" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseJsonRpcErrorCode</strong>(<code>code</code>: number): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0add9d1/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L189">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:189</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9a9a2dd/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L189">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:189</a></em></p>
 <p>JSON RPC spec errors https://www.jsonrpc.org/specification#response_object</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -470,7 +470,7 @@ such as getting an HTML page due to a wrong API URL</p>
 <hr/>
 <h3 id="parserpcresponse">parseRpcResponse<a class="headerlink" href="#parserpcresponse" title="Permanent link">¶</a></h3>
 <p>▸ <strong>parseRpcResponse</strong>‹<strong>R</strong>›(<code>res</code>: <a href="../../interfaces/eth1_provider.irpcresponse/">IRpcResponse</a>‹R›, <code>payload</code>: <a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a>): <em>R</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0add9d1/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L137">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:137</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9a9a2dd/packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts#L137">packages/lodestar/src/eth1/provider/jsonRpcHttpClient.ts:137</a></em></p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>R</strong></p>
 <p><strong>Parameters:</strong></p>
@@ -496,7 +496,7 @@ such as getting an HTML page due to a wrong API URL</p>
 <hr/>
 <h3 id="tohex">toHex<a class="headerlink" href="#tohex" title="Permanent link">¶</a></h3>
 <p>▸ <strong>toHex</strong>(<code>n</code>: number): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0add9d1/packages/lodestar/src/eth1/provider/eth1Provider.ts#L167">packages/lodestar/src/eth1/provider/eth1Provider.ts:167</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9a9a2dd/packages/lodestar/src/eth1/provider/eth1Provider.ts#L167">packages/lodestar/src/eth1/provider/eth1Provider.ts:167</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -549,6 +549,6 @@ such as getting an HTML page due to a wrong API URL</p>
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
-<script src="../../../../assets/javascripts/bundle.29db7785.min.js"></script>
+<script src="../../../../assets/javascripts/bundle.febc23d1.min.js"></script>
 </body>
 </html>
