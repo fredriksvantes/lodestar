@@ -53,18 +53,3 @@ export function decreaseBalance(state: allForks.BeaconState, index: ValidatorInd
   const currentBalance = state.balances[index];
   state.balances[index] = delta > currentBalance ? BigInt(0) : currentBalance - delta;
 }
-
-/**
- * TODO - PERFORMANCE WARNING - NAIVE CODE
- * This method is used to get justified balances from a justified state.
- *
- * SLOW CODE - 🐢
- */
-export function getEffectiveBalances(justifiedState: CachedBeaconState<allForks.BeaconState>): Gwei[] {
-  const justifiedEpoch = justifiedState.currentShuffling.epoch;
-  const effectiveBalances: Gwei[] = [];
-  justifiedState.validators.forEach((v) => {
-    effectiveBalances.push(isActiveValidator(v, justifiedEpoch) ? v.effectiveBalance : BigInt(0));
-  });
-  return effectiveBalances;
-}

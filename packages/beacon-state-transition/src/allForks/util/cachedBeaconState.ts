@@ -1,6 +1,5 @@
 import {
   BasicListType,
-  CompositeListType,
   CompositeValue,
   ContainerType,
   isCompositeType,
@@ -14,10 +13,7 @@ import {allForks, altair, Number64, ParticipationFlags} from "@chainsafe/lodesta
 import {createIBeaconConfig, IBeaconConfig, IChainForkConfig} from "@chainsafe/lodestar-config";
 import {Tree} from "@chainsafe/persistent-merkle-tree";
 import {MutableVector} from "@chainsafe/persistent-ts";
-import {createValidatorFlat} from "./flat";
 import {createEpochContext, EpochContext, EpochContextOpts} from "./epochContext";
-import {CachedValidatorList, CachedValidatorListProxyHandler} from "./cachedValidatorList";
-import {CachedBalanceList, CachedBalanceListProxyHandler} from "./cachedBalanceList";
 import {
   CachedEpochParticipation,
   CachedEpochParticipationProxyHandler,
@@ -63,19 +59,19 @@ export function createCachedBeaconState<T extends allForks.BeaconState>(
 ): CachedBeaconState<T> {
   const config = createIBeaconConfig(chainForkConfig, state.genesisValidatorsRoot);
 
-  // SLOW CODE - 🐢
-  const cachedValidators = MutableVector.from(
-    Array.from(readonlyValues(state.validators), (v) => createValidatorFlat(v))
-  );
-
-  const cachedBalances = MutableVector.from(readonlyValues(state.balances));
   let cachedPreviousParticipation, cachedCurrentParticipation;
   const forkName = config.getForkName(state.slot);
   let currIndexedSyncCommittee: IndexedSyncCommittee;
   let nextIndexedSyncCommittee: IndexedSyncCommittee;
-  const epochCtx = createEpochContext(config, state, cachedValidators, opts);
+
+  // TODO: Try to merge the validator loop inside createEpochContext() with the loops above
+  const epochCtx = createEpochContext(config, state, opts);
   let cachedInactivityScores: MutableVector<Number64>;
+
   if (forkName === ForkName.phase0) {
+    // TODO: More efficient way of getting the length?
+    const validatorCount = state.validators.length;
+
     const emptyParticipationStatus = {
       timelyHead: false,
       timelySource: false,
@@ -83,9 +79,10 @@ export function createCachedBeaconState<T extends allForks.BeaconState>(
     };
     currIndexedSyncCommittee = emptyIndexedSyncCommittee;
     nextIndexedSyncCommittee = emptyIndexedSyncCommittee;
+
     // Can these arrays be zero-ed for phase0? Are they actually used?
-    cachedPreviousParticipation = MutableVector.from(newFilledArray(cachedValidators.length, emptyParticipationStatus));
-    cachedCurrentParticipation = MutableVector.from(newFilledArray(cachedValidators.length, emptyParticipationStatus));
+    cachedPreviousParticipation = MutableVector.from(newFilledArray(validatorCount, emptyParticipationStatus));
+    cachedCurrentParticipation = MutableVector.from(newFilledArray(validatorCount, emptyParticipationStatus));
     cachedInactivityScores = MutableVector.empty();
   } else {
     const {pubkey2index} = epochCtx;
@@ -104,8 +101,8 @@ export function createCachedBeaconState<T extends allForks.BeaconState>(
     new BeaconStateContext(
       state.type as ContainerType<T>,
       state.tree,
-      cachedValidators,
-      cachedBalances,
+      // cachedValidators,
+      // cachedBalances,
       cachedPreviousParticipation,
       cachedCurrentParticipation,
       currIndexedSyncCommittee,
@@ -147,7 +144,7 @@ export class BeaconStateContext<T extends allForks.BeaconState> {
    *
    * TODO: How to quickly access the tree without having to duplicate its data?
    */
-  validators: CachedValidatorList<T["validators"][number]> & T["validators"];
+  // validators: CachedValidatorList & T["validators"];
   /**
    * Returns a Proxy to CachedBalanceList
    *
@@ -159,12 +156,12 @@ export class BeaconStateContext<T extends allForks.BeaconState> {
    * are updated. However it may have tiny changes during block processing if:
    * - On a valid deposit
    * - Validator gets slashed?
-   * - On altair, the block proposer
+   * - On altair, the block proposer. Optimized to only happen once per block
    *
    * TODO: Individual balances could be stored as regular numbers:
    * - Number.MAX_SAFE_INTEGER = 9007199254740991, which is 9e6 GWEI
    */
-  balances: CachedBalanceList & T["balances"];
+  // balances: CachedBalanceList & T["balances"];
   /**
    * Returns a Proxy to CachedEpochParticipation
    *
@@ -221,8 +218,8 @@ export class BeaconStateContext<T extends allForks.BeaconState> {
   constructor(
     type: ContainerType<T>,
     tree: Tree,
-    validatorCache: MutableVector<T["validators"][number]>,
-    balanceCache: MutableVector<T["balances"][number]>,
+    // validatorCache: MutableVector<ValidatorFlat>,
+    // balanceCache: MutableVector<T["balances"][number]>,
     previousEpochParticipationCache: MutableVector<IParticipationStatus>,
     currentEpochParticipationCache: MutableVector<IParticipationStatus>,
     currentSyncCommittee: IndexedSyncCommittee,
@@ -234,22 +231,23 @@ export class BeaconStateContext<T extends allForks.BeaconState> {
     this.type = type;
     this.tree = tree;
     this.epochCtx = epochCtx;
-    this.validators = (new Proxy(
-      new CachedValidatorList(
-        this.type.fields["validators"] as CompositeListType<List<T["validators"][number]>>,
-        this.type.tree_getProperty(this.tree, "validators") as Tree,
-        validatorCache
-      ),
-      CachedValidatorListProxyHandler
-    ) as unknown) as CachedValidatorList<T["validators"][number]> & T["validators"];
-    this.balances = (new Proxy(
-      new CachedBalanceList(
-        this.type.fields["balances"] as BasicListType<List<T["balances"][number]>>,
-        this.type.tree_getProperty(this.tree, "balances") as Tree,
-        balanceCache
-      ),
-      CachedBalanceListProxyHandler
-    ) as unknown) as CachedBalanceList & T["balances"];
+
+    // this.validators = (new Proxy(
+    //   new CachedValidatorList(
+    //     this.type.fields["validators"] as CompositeListType<List<T["validators"][number]>>,
+    //     this.type.tree_getProperty(this.tree, "validators") as Tree,
+    //     validatorCache
+    //   ),
+    //   CachedValidatorListProxyHandler
+    // ) as unknown) as CachedValidatorList & T["validators"];
+    // this.balances = (new Proxy(
+    //   new CachedBalanceList(
+    //     this.type.fields["balances"] as BasicListType<List<T["balances"][number]>>,
+    //     this.type.tree_getProperty(this.tree, "balances") as Tree,
+    //     balanceCache
+    //   ),
+    //   CachedBalanceListProxyHandler
+    // ) as unknown) as CachedBalanceList & T["balances"];
     this.previousEpochParticipation = (new Proxy(
       new CachedEpochParticipation({
         type: this.type.fields["previousEpochParticipation"] as BasicListType<List<ParticipationFlags>>,
@@ -283,8 +281,8 @@ export class BeaconStateContext<T extends allForks.BeaconState> {
       new BeaconStateContext(
         this.type,
         this.tree.clone(),
-        this.validators.persistent.clone(),
-        this.balances.persistent.clone(),
+        // this.validators.persistent.clone(),
+        // this.balances.persistent.clone(),
         this.previousEpochParticipation.persistent.clone(),
         this.currentEpochParticipation.persistent.clone(),
         // states in the same sync period has same sync committee
@@ -312,8 +310,8 @@ export class BeaconStateContext<T extends allForks.BeaconState> {
    * Toggle all `MutableVector` caches to use `TransientVector`
    */
   setStateCachesAsTransient(): void {
-    this.validators.persistent.asTransient();
-    this.balances.persistent.asTransient();
+    // this.validators.persistent.asTransient();
+    // this.balances.persistent.asTransient();
     this.previousEpochParticipation.persistent.asTransient();
     this.currentEpochParticipation.persistent.asTransient();
     this.inactivityScores.persistent.asTransient();
@@ -323,8 +321,8 @@ export class BeaconStateContext<T extends allForks.BeaconState> {
    * Toggle all `MutableVector` caches to use `PersistentVector`
    */
   setStateCachesAsPersistent(): void {
-    this.validators.persistent.asPersistent();
-    this.balances.persistent.asPersistent();
+    // this.validators.persistent.asPersistent();
+    // this.balances.persistent.asPersistent();
     this.previousEpochParticipation.persistent.asPersistent();
     this.currentEpochParticipation.persistent.asPersistent();
     this.inactivityScores.persistent.asPersistent();
@@ -334,11 +332,12 @@ export class BeaconStateContext<T extends allForks.BeaconState> {
 // eslint-disable-next-line @typescript-eslint/naming-convention
 export const CachedBeaconStateProxyHandler: ProxyHandler<CachedBeaconState<allForks.BeaconState>> = {
   get(target: CachedBeaconState<allForks.BeaconState>, key: string): unknown {
-    if (key === "validators") {
-      return target.validators;
-    } else if (key === "balances") {
-      return target.balances;
-    } else if (key === "previousEpochParticipation") {
+    // if (key === "validators") {
+    //   return target.validators;
+    // } else if (key === "balances") {
+    //   return target.balances;
+    // }
+    if (key === "previousEpochParticipation") {
       return target.previousEpochParticipation;
     } else if (key === "currentEpochParticipation") {
       return target.currentEpochParticipation;
@@ -369,11 +368,12 @@ export const CachedBeaconStateProxyHandler: ProxyHandler<CachedBeaconState<allFo
     return undefined;
   },
   set(target: CachedBeaconState<allForks.BeaconState>, key: string, value: unknown): boolean {
-    if (key === "validators") {
-      throw new Error("Cannot set validators");
-    } else if (key === "balances") {
-      throw new Error("Cannot set balances");
-    } else if (key === "previousEpochParticipation") {
+    // if (key === "validators") {
+    //   throw new Error("Cannot set validators");
+    // } else if (key === "balances") {
+    //   throw new Error("Cannot set balances");
+    // }
+    if (key === "previousEpochParticipation") {
       throw new Error("Cannot set previousEpochParticipation");
     } else if (key === "currentEpochParticipation") {
       throw new Error("Cannot set currentEpochParticipation");

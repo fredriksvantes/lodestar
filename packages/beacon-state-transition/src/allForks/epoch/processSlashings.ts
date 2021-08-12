@@ -21,25 +21,33 @@ import {CachedBeaconState, IEpochProcess} from "../../allForks/util";
 export function processSlashingsAllForks(
   fork: ForkName,
   state: CachedBeaconState<allForks.BeaconState>,
-  process: IEpochProcess
+  epochProcess: IEpochProcess
 ): void {
   // No need to compute totalSlashings if there no index to slash
-  if (process.indicesToSlash.length === 0) {
+  if (epochProcess.indicesToSlash.length === 0) {
     return;
   }
 
-  const totalBalance = process.totalActiveStake;
-  const totalSlashings = Array.from(readonlyValues(state.slashings)).reduce((a, b) => a + b, BigInt(0));
+  const totalBalance = epochProcess.totalActiveStake;
+  // TODO: Use readonlyAllValues()
+  let totalSlashings = BigInt(0);
+  for (const slashing of readonlyValues(state.slashings)) {
+    totalSlashings += slashing;
+  }
 
   const proportionalSlashingMultiplier =
     fork === ForkName.phase0 ? PROPORTIONAL_SLASHING_MULTIPLIER : PROPORTIONAL_SLASHING_MULTIPLIER_ALTAIR;
 
   const adjustedTotalSlashingBalance = bigIntMin(totalSlashings * proportionalSlashingMultiplier, totalBalance);
   const increment = EFFECTIVE_BALANCE_INCREMENT;
-  for (const index of process.indicesToSlash) {
-    const effectiveBalance = process.validators[index].effectiveBalance;
+  for (const index of epochProcess.indicesToSlash) {
+    const effectiveBalance = state.epochCtx.effectiveBalances.get(index)!;
+
     const penaltyNumerator = (effectiveBalance / increment) * adjustedTotalSlashingBalance;
     const penalty = (penaltyNumerator / totalBalance) * increment;
+
+    // In all forks processSlashings() is called after processRewardsAndPenalties() but before processEffectiveBalanceUpdates()
+    // The changes done here must apply to both the state and balances array mutated in processRewardsAndPenalties()
     decreaseBalance(state, index, penalty);
   }
 }

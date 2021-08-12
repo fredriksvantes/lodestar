@@ -27,8 +27,8 @@ export function processInactivityUpdates(
   const {INACTIVITY_SCORE_BIAS, INACTIVITY_SCORE_RECOVERY_RATE} = config;
   const inActivityLeak = isInInactivityLeak((state as unknown) as phase0.BeaconState);
   const {inactivityScores} = state;
-  for (let i = 0; i < epochProcess.statuses.length; i++) {
-    const status = epochProcess.statuses[i];
+  for (let i = 0; i < epochProcess.statusesFlat.length; i++) {
+    const status = epochProcess.statusesFlat[i];
     if (hasMarkers(status.flags, FLAG_ELIGIBLE_ATTESTER)) {
       let inactivityScore = inactivityScores[i];
       const prevInactivityScore = inactivityScore;

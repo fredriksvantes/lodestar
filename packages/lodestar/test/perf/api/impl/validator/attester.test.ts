@@ -67,10 +67,9 @@ describe("api / impl / validator", () => {
   if (impls.includes(Impl.persistent)) {
     for (const reqCount of reqCounts) {
       itBench(`getPubkeys - persistent - req ${reqCount} vs - ${numValidators} vc`, () => {
-        const validators = state.validators.persistent;
+        const validators = state.validators;
         for (let i = 0; i < reqCount; i++) {
-          const validator = validators.get(i);
-          if (!validator) throw Error(`Index ${i} not found`);
+          const validator = validators[i];
           validator.pubkey;
         }
       });
