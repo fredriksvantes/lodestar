@@ -19,8 +19,10 @@ enum TestType {
   ArrayBuffer,
   Number,
   // From Proto
-  FixedObject,
+  FixedObject8,
+  FixedObject4,
   FixedArray,
+  FixedObject4BigInt,
   String32BytesHex,
   NativeBinding32Bytes,
   BlstPublicKey,
@@ -29,7 +31,7 @@ enum TestType {
   FinalizationRegistry,
 }
 
-const testType = TestType.Uint8Array;
+const testType = TestType.FixedObject4;
 const size = 32;
 
 const zero = Buffer.alloc(32, 1);
@@ -86,7 +88,7 @@ for (let i = 0; i < 1e8; i++) {
       refs.push(i);
       break;
 
-    case TestType.FixedObject: {
+    case TestType.FixedObject8: {
       const t = 1 << 31;
       const obj = {
         a: t,
@@ -102,12 +104,36 @@ for (let i = 0; i < 1e8; i++) {
       break;
     }
 
+    case TestType.FixedObject4: {
+      const t = 1 << 50;
+      const obj = {
+        a: t,
+        b: t + 1,
+        c: t + 2,
+        d: t + 3,
+      };
+      refs.push(obj);
+      break;
+    }
+
     //
     case TestType.FixedArray: {
       const t = 1 << 31;
       const obj = [t + i, t + i + 1, t + i + 2, t + i + 3, t + i + 4, t + i + 5, t + i + 6, t + i + 7];
       // with .freeze() -> rssM: 669
       // Object.freeze(obj);
+      refs.push(obj);
+      break;
+    }
+
+    case TestType.FixedObject4BigInt: {
+      const t = BigInt(1) << BigInt(31);
+      const obj = {
+        a: t,
+        b: t + BigInt(1),
+        c: t + BigInt(2),
+        d: t + BigInt(3),
+      };
       refs.push(obj);
       break;
     }
