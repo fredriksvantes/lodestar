@@ -443,7 +443,7 @@
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">¶</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">¶</a></h3>
 <p>+ <strong>new ProtoArray</strong>(<code>__namedParameters</code>: object): <em><a href="./">ProtoArray</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L15">packages/fork-choice/src/protoArray/protoArray.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L15">packages/fork-choice/src/protoArray/protoArray.ts:15</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -472,27 +472,27 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h2>
 <h3 id="finalizedepoch">finalizedEpoch<a class="headerlink" href="#finalizedepoch" title="Permanent link">¶</a></h3>
 <p>• <strong>finalizedEpoch</strong>: <em>Epoch</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L13">packages/fork-choice/src/protoArray/protoArray.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L13">packages/fork-choice/src/protoArray/protoArray.ts:13</a></em></p>
 <hr/>
 <h3 id="indices">indices<a class="headerlink" href="#indices" title="Permanent link">¶</a></h3>
 <p>• <strong>indices</strong>: <em>Map‹<a href="../../modules/protoarray/#hexroot">HexRoot</a>, number›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L15">packages/fork-choice/src/protoArray/protoArray.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L15">packages/fork-choice/src/protoArray/protoArray.ts:15</a></em></p>
 <hr/>
 <h3 id="justifiedepoch">justifiedEpoch<a class="headerlink" href="#justifiedepoch" title="Permanent link">¶</a></h3>
 <p>• <strong>justifiedEpoch</strong>: <em>Epoch</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L12">packages/fork-choice/src/protoArray/protoArray.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L12">packages/fork-choice/src/protoArray/protoArray.ts:12</a></em></p>
 <hr/>
 <h3 id="nodes">nodes<a class="headerlink" href="#nodes" title="Permanent link">¶</a></h3>
 <p>• <strong>nodes</strong>: <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L14">packages/fork-choice/src/protoArray/protoArray.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L14">packages/fork-choice/src/protoArray/protoArray.ts:14</a></em></p>
 <hr/>
 <h3 id="prunethreshold">pruneThreshold<a class="headerlink" href="#prunethreshold" title="Permanent link">¶</a></h3>
 <p>• <strong>pruneThreshold</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L11">packages/fork-choice/src/protoArray/protoArray.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L11">packages/fork-choice/src/protoArray/protoArray.ts:11</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">¶</a></h2>
 <h3 id="applyscorechanges">applyScoreChanges<a class="headerlink" href="#applyscorechanges" title="Permanent link">¶</a></h3>
 <p>▸ <strong>applyScoreChanges</strong>(<code>deltas</code>: Gwei[], <code>justifiedEpoch</code>: Epoch, <code>finalizedEpoch</code>: Epoch): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L82">packages/fork-choice/src/protoArray/protoArray.ts:82</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L82">packages/fork-choice/src/protoArray/protoArray.ts:82</a></em></p>
 <p>Iterate backwards through the array, touching all nodes and their parents and potentially
 the best-child of each parent.</p>
 <p>The structure of the <code>self.nodes</code> array ensures that the child of each node is always
@@ -532,7 +532,7 @@ should become the best child.</li>
 <hr/>
 <h3 id="findhead">findHead<a class="headerlink" href="#findhead" title="Permanent link">¶</a></h3>
 <p>▸ <strong>findHead</strong>(<code>justifiedRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../modules/protoarray/#hexroot">HexRoot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L180">packages/fork-choice/src/protoArray/protoArray.ts:180</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L180">packages/fork-choice/src/protoArray/protoArray.ts:180</a></em></p>
 <p>Follows the best-descendant links to find the best-block (i.e., head-block).</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -553,7 +553,7 @@ should become the best child.</li>
 <hr/>
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getBlock</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotoblock/">IProtoBlock</a> | undefined</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L561">packages/fork-choice/src/protoArray/protoArray.ts:561</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L561">packages/fork-choice/src/protoArray/protoArray.ts:561</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -573,7 +573,7 @@ should become the best child.</li>
 <hr/>
 <h3 id="getnode">getNode<a class="headerlink" href="#getnode" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getNode</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a> | undefined</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L553">packages/fork-choice/src/protoArray/protoArray.ts:553</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L553">packages/fork-choice/src/protoArray/protoArray.ts:553</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -593,7 +593,7 @@ should become the best child.</li>
 <hr/>
 <h3 id="getnodebyindex">getNodeByIndex<a class="headerlink" href="#getnodebyindex" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getNodeByIndex</strong>(<code>blockIndex</code>: number): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a> | undefined</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L529">packages/fork-choice/src/protoArray/protoArray.ts:529</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L529">packages/fork-choice/src/protoArray/protoArray.ts:529</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -613,7 +613,7 @@ should become the best child.</li>
 <hr/>
 <h3 id="getnodesbetween">getNodesBetween<a class="headerlink" href="#getnodesbetween" title="Permanent link">¶</a></h3>
 <p>▸ <strong>getNodesBetween</strong>(<code>upperIndex</code>: number, <code>lowerIndex</code>: number): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L538">packages/fork-choice/src/protoArray/protoArray.ts:538</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L538">packages/fork-choice/src/protoArray/protoArray.ts:538</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -637,7 +637,7 @@ should become the best child.</li>
 <hr/>
 <h3 id="hasblock">hasBlock<a class="headerlink" href="#hasblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>hasBlock</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L525">packages/fork-choice/src/protoArray/protoArray.ts:525</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L525">packages/fork-choice/src/protoArray/protoArray.ts:525</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -657,7 +657,7 @@ should become the best child.</li>
 <hr/>
 <h3 id="isdescendant">isDescendant<a class="headerlink" href="#isdescendant" title="Permanent link">¶</a></h3>
 <p>▸ <strong>isDescendant</strong>(<code>ancestorRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>, <code>descendantRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L576">packages/fork-choice/src/protoArray/protoArray.ts:576</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L576">packages/fork-choice/src/protoArray/protoArray.ts:576</a></em></p>
 <p>Returns <code>true</code> if the <code>descendantRoot</code> has an ancestor with <code>ancestorRoot</code>.
 Always returns <code>false</code> if either input roots are unknown.
 Still returns <code>true</code> if <code>ancestorRoot</code> === <code>descendantRoot</code> (and the roots are known)</p>
@@ -684,7 +684,7 @@ Still returns <code>true</code> if <code>ancestorRoot</code> === <code>descendan
 <hr/>
 <h3 id="iteratenodes">iterateNodes<a class="headerlink" href="#iteratenodes" title="Permanent link">¶</a></h3>
 <p>▸ <strong>iterateNodes</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L450">packages/fork-choice/src/protoArray/protoArray.ts:450</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L450">packages/fork-choice/src/protoArray/protoArray.ts:450</a></em></p>
 <p>Iterate from a block root backwards over nodes</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -705,7 +705,7 @@ Still returns <code>true</code> if <code>ancestorRoot</code> === <code>descendan
 <hr/>
 <h3 id="iteratenonancestornodes">iterateNonAncestorNodes<a class="headerlink" href="#iteratenonancestornodes" title="Permanent link">¶</a></h3>
 <p>▸ <strong>iterateNonAncestorNodes</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L483">packages/fork-choice/src/protoArray/protoArray.ts:483</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L483">packages/fork-choice/src/protoArray/protoArray.ts:483</a></em></p>
 <p>The opposite of iterateNodes.
 iterateNodes is to find ancestor nodes of a blockRoot.
 this is to find non-ancestor nodes of a blockRoot.</p>
@@ -728,12 +728,12 @@ this is to find non-ancestor nodes of a blockRoot.</p>
 <hr/>
 <h3 id="length">length<a class="headerlink" href="#length" title="Permanent link">¶</a></h3>
 <p>▸ <strong>length</strong>(): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L592">packages/fork-choice/src/protoArray/protoArray.ts:592</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L592">packages/fork-choice/src/protoArray/protoArray.ts:592</a></em></p>
 <p><strong>Returns:</strong> <em>number</em></p>
 <hr/>
 <h3 id="maybeprune">maybePrune<a class="headerlink" href="#maybeprune" title="Permanent link">¶</a></h3>
 <p>▸ <strong>maybePrune</strong>(<code>finalizedRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotoblock/">IProtoBlock</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L238">packages/fork-choice/src/protoArray/protoArray.ts:238</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L238">packages/fork-choice/src/protoArray/protoArray.ts:238</a></em></p>
 <p>Update the tree with new finalization information. The tree is only actually pruned if both
 of the two following criteria are met:</p>
 <ul>
@@ -766,7 +766,7 @@ of the two following criteria are met:</p>
 <hr/>
 <h3 id="maybeupdatebestchildanddescendant">maybeUpdateBestChildAndDescendant<a class="headerlink" href="#maybeupdatebestchildanddescendant" title="Permanent link">¶</a></h3>
 <p>▸ <strong>maybeUpdateBestChildAndDescendant</strong>(<code>parentIndex</code>: number, <code>childIndex</code>: number): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L325">packages/fork-choice/src/protoArray/protoArray.ts:325</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L325">packages/fork-choice/src/protoArray/protoArray.ts:325</a></em></p>
 <p>Observe the parent at <code>parent_index</code> with respect to the child at <code>child_index</code> and
 potentially modify the <code>parent.best_child</code> and <code>parent.best_descendant</code> values.</p>
 <h2 id="detail">Detail<a class="headerlink" href="#detail" title="Permanent link">¶</a></h2>
@@ -801,7 +801,7 @@ best-descendant.</li>
 <hr/>
 <h3 id="nodeisviableforhead">nodeIsViableForHead<a class="headerlink" href="#nodeisviableforhead" title="Permanent link">¶</a></h3>
 <p>▸ <strong>nodeIsViableForHead</strong>(<code>node</code>: <a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L440">packages/fork-choice/src/protoArray/protoArray.ts:440</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L440">packages/fork-choice/src/protoArray/protoArray.ts:440</a></em></p>
 <p>This is the equivalent to the <code>filter_block_tree</code> function in the eth2 spec:</p>
 <p>https://github.com/ethereum/eth2.0-specs/blob/v1.0.1/specs/phase0/fork-choice.md#filter_block_tree</p>
 <p>Any node that has a different finalized or justified epoch should not be viable for the
@@ -825,7 +825,7 @@ head.</p>
 <hr/>
 <h3 id="nodeleadstoviablehead">nodeLeadsToViableHead<a class="headerlink" href="#nodeleadstoviablehead" title="Permanent link">¶</a></h3>
 <p>▸ <strong>nodeLeadsToViableHead</strong>(<code>node</code>: <a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L413">packages/fork-choice/src/protoArray/protoArray.ts:413</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L413">packages/fork-choice/src/protoArray/protoArray.ts:413</a></em></p>
 <p>Indicates if the node itself is viable for the head, or if it's best descendant is viable
 for the head.</p>
 <p><strong>Parameters:</strong></p>
@@ -847,7 +847,7 @@ for the head.</p>
 <hr/>
 <h3 id="nodesatslot">nodesAtSlot<a class="headerlink" href="#nodesatslot" title="Permanent link">¶</a></h3>
 <p>▸ <strong>nodesAtSlot</strong>(<code>slot</code>: Slot): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L515">packages/fork-choice/src/protoArray/protoArray.ts:515</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L515">packages/fork-choice/src/protoArray/protoArray.ts:515</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -867,7 +867,7 @@ for the head.</p>
 <hr/>
 <h3 id="onblock">onBlock<a class="headerlink" href="#onblock" title="Permanent link">¶</a></h3>
 <p>▸ <strong>onBlock</strong>(<code>block</code>: <a href="../../interfaces/protoarray.iprotoblock/">IProtoBlock</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L148">packages/fork-choice/src/protoArray/protoArray.ts:148</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L148">packages/fork-choice/src/protoArray/protoArray.ts:148</a></em></p>
 <p>Register a block with the fork choice.</p>
 <p>It is only sane to supply an undefined parent for the genesis block</p>
 <p><strong>Parameters:</strong></p>
@@ -889,7 +889,7 @@ for the head.</p>
 <hr/>
 <h3 id="static-initialize"><code>Static</code> initialize<a class="headerlink" href="#static-initialize" title="Permanent link">¶</a></h3>
 <p>▸ <strong>initialize</strong>(<code>__namedParameters</code>: object): <em><a href="./">ProtoArray</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7f4f950/packages/fork-choice/src/protoArray/protoArray.ts#L33">packages/fork-choice/src/protoArray/protoArray.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/5e8b0bc/packages/fork-choice/src/protoArray/protoArray.ts#L33">packages/fork-choice/src/protoArray/protoArray.ts:33</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
