@@ -272,7 +272,7 @@
 </ul>
 <h3 id="fork-names">Fork names<a class="headerlink" href="#fork-names" title="Permanent link">¶</a></h3>
 <p>Many downstream components are namespaced on fork names, or otherwise rely on knowing the fork names ahead of time. The Lodestar params package exports an enum <code>ForkName</code> the enumerates all known fork names.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ForkName</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ForkName</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
 
 <span class="c1">// dummy data</span>
 <span class="kd">let</span> <span class="nx">forkName</span> <span class="o">=</span> <span class="s2">"phase0"</span><span class="p">;</span>
@@ -285,12 +285,12 @@
 </code></pre></div>
 <h3 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">¶</a></h3>
 <p>All constants defined in the spec are exported verbatim.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
 </code></pre></div>
 <h3 id="presets">Presets<a class="headerlink" href="#presets" title="Permanent link">¶</a></h3>
 <p>Presets are "constants"-ish defined in the spec that can only be configured at build-time. These are meant to be treated as constants, and indeed are treated as constants by all downstream Lodestar libraries. The default preset is <code>mainnet</code>.  The only other preset defined is <code>minimal</code>, used only in testing environments.</p>
 <p>The active preset is exported under the <code>ACTIVE_PRESET</code> named export.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ACTIVE_PRESET</span><span class="p">,</span> <span class="nx">SLOTS_PER_EPOCH</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">ACTIVE_PRESET</span><span class="p">,</span> <span class="nx">SLOTS_PER_EPOCH</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
 </code></pre></div>
 <p>The preset may be set in one of two ways:</p>
 <ol>

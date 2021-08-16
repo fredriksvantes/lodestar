@@ -274,19 +274,19 @@
 </ul>
 <h3 id="chain-config">Chain config<a class="headerlink" href="#chain-config" title="Permanent link">¶</a></h3>
 <p>The Ethereum consensus spec defines a bunch of variables that may be easily configured per testnet. These include the <code>GENESIS_TIME</code>, <code>SECONDS_PER_SLOT</code>, and various <code>*_FORK_EPOCH</code>s, <code>*_FORK_VERSION</code>s, etc. The Lodestar config package exports the <code>IChainConfig</code> interface and matching <code>ChainConfig</code> SSZ type, which include all of these variables, named verbatim from the spec.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">IChainConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">chainConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">IChainConfig</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">chainConfig</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
 
 <span class="kd">let</span> <span class="nx">config</span>: <span class="kt">IChainConfig</span> <span class="o">=</span> <span class="nx">chainConfig</span><span class="p">;</span>
 <span class="kd">const</span> <span class="nx">x</span>: <span class="kt">number</span> <span class="o">=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">SECONDS_PER_SLOT</span><span class="p">;</span>
 </code></pre></div>
 <p>Mainnet default values are available as a singleton <code>IChainConfig</code> under the <code>default</code> import path.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">chainConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">chainConfig</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
 
 <span class="nx">chainConfig</span><span class="p">.</span><span class="nx">SECONDS_PER_SLOT</span> <span class="o">===</span> <span class="mf">12</span><span class="p">;</span>
 </code></pre></div>
 <p>There are also utility functions to help create a <code>IChainConfig</code> from unknown input and partial configs.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">createIChainConfig</span><span class="p">,</span> <span class="nx">IChainConfig</span><span class="p">,</span> <span class="nx">parsePartialIChainConfigJson</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">createIChainConfig</span><span class="p">,</span> <span class="nx">IChainConfig</span><span class="p">,</span> <span class="nx">parsePartialIChainConfigJson</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
 
 <span class="c1">// example config</span>
 <span class="kd">let</span> <span class="nx">chainConfigObj</span>: <span class="kt">Record</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="nx">unknown</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">{</span>
@@ -322,9 +322,9 @@
 <h3 id="fork-config">Fork config<a class="headerlink" href="#fork-config" title="Permanent link">¶</a></h3>
 <p>The variables described in the spec can be used to assemble a more structured 'fork schedule'. This info is organized as <code>IForkConfig</code> in the Lodestar config package. In practice, the <code>IChainConfig</code> and <code>IForkConfig</code> are usually combined as a <code>IChainForkConfig</code>.</p>
 <p>A <code>IForkConfig</code> provides methods to select the fork info, fork name, fork version, or fork ssz types given a slot. </p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">createIChainForkConfig</span><span class="p">,</span> <span class="nx">IChainForkConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">config</span> <span class="kr">as</span> <span class="nx">chainConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">createIChainForkConfig</span><span class="p">,</span> <span class="nx">IChainForkConfig</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">config</span> <span class="kr">as</span> <span class="nx">chainConfig</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
 
 <span class="kd">const</span> <span class="nx">config</span>: <span class="kt">IChainForkConfig</span> <span class="o">=</span> <span class="nx">createIChainForkConfig</span><span class="p">(</span><span class="nx">chainConfig</span><span class="p">);</span>
 
@@ -332,12 +332,12 @@
 </code></pre></div>
 <h3 id="cached-genesis">Cached genesis<a class="headerlink" href="#cached-genesis" title="Permanent link">¶</a></h3>
 <p>For signing Ethereum consensus objects, a cryptographic "domain" is computed and mixed into the signed message. This domain separates signatures made for the Ethereum mainnet from testnets or other instances of the chain. The <code>ICachedGenesis</code> interface is used to provide a cache for this purpose. Practically, the domain rarely changes, only per-fork, and so the value can be easily cached. Since the genesis validators root is part of the domain, it is required input to instantiate an <code>ICachedGenesis</code>. In practice, the <code>IChainForkConfig</code> and <code>ICachedGenesis</code> are usually combined as a <code>IBeaconConfig</code>. This is the 'highest level' object exported by the Lodestar config library.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">DOMAIN_DEPOSIT</span><span class="p">,</span> <span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">createIBeaconConfig</span><span class="p">,</span> <span class="nx">IBeaconConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">config</span> <span class="kr">as</span> <span class="nx">chainConfig</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span><span class="nx">DOMAIN_DEPOSIT</span><span class="p">,</span> <span class="nx">GENESIS_SLOT</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-params"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">createIBeaconConfig</span><span class="p">,</span> <span class="nx">IBeaconConfig</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-config"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">config</span> <span class="kr">as</span> <span class="nx">chainConfig</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">"@chainsafe/lodestar-config/default"</span><span class="p">;</span>
 
 <span class="c1">// dummy test root</span>
-<span class="kd">let</span> <span class="nx">genesisValidatorsRoot</span>: <span class="kt">Uint8Array</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint8Array</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">genesisValidatorsRoot</span>: <span class="kt">Uint8Array</span> <span class="o">=</span> <span class="ow">new</span> <span class="nb">Uint8Array</span><span class="p">();</span>
 
 <span class="kd">const</span> <span class="nx">config</span>: <span class="kt">IBeaconConfig</span> <span class="o">=</span> <span class="nx">createIBeaconConfig</span><span class="p">(</span><span class="nx">chainConfig</span><span class="p">,</span> <span class="nx">genesisValidatorsRoot</span><span class="p">);</span>
 
