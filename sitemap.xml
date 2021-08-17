@@ -401,6 +401,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/enums/util.releasetrack/</loc>
+         <lastmod>2021-08-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chainsafe.github.io/lodestar/packages/cli/interfaces/cmds_account.iaccountpaths/</loc>
          <lastmod>2021-08-17</lastmod>
          <changefreq>daily</changefreq>
@@ -611,12 +616,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1885/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1893/</loc>
          <lastmod>2021-08-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1885.reflection-1879/</loc>
+         <loc>https://chainsafe.github.io/lodestar/packages/cli/modules/reflection-1893.reflection-1886/</loc>
          <lastmod>2021-08-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
